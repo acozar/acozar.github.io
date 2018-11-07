@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!-- Metadata -->
+		<title>Khothar CSS</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Revolutionary CSS framework with no more classes!">
+		<meta name="keywords" content="CSS semantic component library">
+		<meta name="author" content="Acózar">
+		<!-- Metadata: GeoTags -->
+		<meta name="geo.region" content="Catalunya">
+		<meta name="geo.placename" content="Barcelona">
+		<meta name="geo.position" content="41.426812,2.234972">
+		<meta name="ICBM" content="41.426812,2.234972">
+		
+		<!-- Metadata: Twitter Cards -->
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@polacozar">
+		<MainOrArchivepage>
+		<meta name="twitter:title" content="<$BlogTitle$>">
+		<meta name="twitter:description" content="<$BlogDescription$>">
+		</MainOrArchivepage>
+		<ItemPage>
+		<Blogger>
+		<meta name="twitter:title" content="<$BlogItemTitle$>">
+		<meta name="twitter:description" content="#KhotharCSS">
+		</Blogger>
+		</ItemPage>
+		<meta name="twitter:image" content="http://codi.realitat.cat/src/png/iconrealitat.jpg" />
+		
+		<!-- Screen styles -->
+		<link href="../src/styles/screen.min.css" rel="stylesheet" media="screen">
+		<link href="../src/styles/components.min.css" rel="stylesheet" media="screen">
+		<link href="../src/styles/helpers.min.css" rel="stylesheet" media="screen">
+		<!-- Print styles -->
+		<link href="../src/styles/print.css" rel="stylesheet" media="print">
+		<!-- If iexplorer :( -->
+		<!--[if lt IE 9]><script src="../src/styles/html5shiv.js"></script><![endif]-->
+		<!--[if IE]><link rel="stylesheet" type="text/css" href="../src/styles/iexplorer.css" /><![endif]-->
+		<!-- If JS disabled -->
+		<noscript><link href="../src/styles/noscript.css" rel="stylesheet" media="screen"></noscript>
+		<!-- Site Feed -->
+		<link rel="alternate" type="application/rss+xml" title="rss" href="FeedUrl">
+		<!-- Page Icons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="../src/ics/apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="../src/ics/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="../src/ics/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="../src/ics/manifest.json">
+		<link rel="mask-icon" href="../src/ics/safari-pinned-tab.svg" color="#dd0000">
+		<link rel="shortcut icon" href="../src/ics/favicon.ico">
+		<meta name="msapplication-config" content="../src/ics/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body>
+				
+		<!-- Theme inputs (invisibles) -->		
+		<input type="radio" id="theme-light" name="theme" aria-hidden="true" hidden>
+		<input type="radio" id="theme-soft" name="theme" aria-hidden="true" hidden>
+		<input type="radio" id="theme-dark" name="theme" aria-hidden="true" hidden> 
+		
+		<!-- Page content -->
+		<div id="page" data-mode="page">
+			<nav id="site-nav" class="nav-smart">
+				<div>
+					<a class="site-logo" href="index.html" title="KhotharCSS: Main">
+						<img src="../src/ics/android-chrome-192x192.png" alt="KhotharCSS logo">
+					</a>
+					<input type="checkbox" id="mobnav" name="mobnav" aria-hidden="true" hidden> 
+					<strong><label for="mobnav">Menú<mark></mark></label></strong>
+					<div hidden>
+						<a href="index.html" title="KhotharCSS">KhotharCSS</a>
+						<a href="styles.html" title="Styles">Styles</a>
+						<a href="layouts.html" title="Layouts">Layouts</a>
+						<a href="components.html" title="Components">Components</a>
+						<a href="extras.html" title="Extras">Extras</a>
+						<form action="http://www.google.com/cse"> 
+							<input type="hidden" name="cx" value="GoogleCSEID"> 
+							<input type="text" name="q" placeholder="cerca"> 
+							<input type="submit" name="sa" value="·"> 
+						</form>
+					</div>
+				 </div>
+			</nav>
+			<header id="page-header">
+				<div>
+					<h1>
+					 	KhotharCSS <br class="shown-phone"><small>layouts</small>
+					 </h1>
+				</div>
+			</header>
+			<nav id="page-nav" class="nav-scroll">
+				<div>
+					<a href="#page-main" title="Dinamycal views">Dinamycal views</a>
+					<a href="#section-staticviews" title="Static views">Static views</a>
+				 </div>
+			</nav>
+			<main id="page-main">
+				<div id="layout">
+					<nav class="nav-scroll">
+						<div>
+							<label for="layout-simple" title="Simple" id="label-simple">Simple</label>
+							<label for="layout-list" title="List" id="label-list">List</label>
+							<label for="layout-table" title="Table" id="label-table">Table</label>
+							<label for="layout-gallery" title="Gallery" id="label-gallery">Gallery</label>
+							<label for="layout-cards" title="Cards" id="label-cards">Cards</label>		
+							<label for="layout-tiles" title="Tiles" id="label-tiles">Tiles</label>		
+						 </div>
+					</nav>
+					<hr>
+					
+					<input type="radio" name="layout" id="layout-simple" aria-hidden="true" hidden checked>
+					<input type="radio" name="layout" id="layout-list" aria-hidden="true" hidden>
+					<input type="radio" name="layout" id="layout-table" aria-hidden="true" hidden>
+					<input type="radio" name="layout" id="layout-gallery" aria-hidden="true" hidden>
+					<input type="radio" name="layout" id="layout-cards" aria-hidden="true" hidden>
+					<input type="radio" name="layout" id="layout-tiles" aria-hidden="true" hidden>
+
+					<div id="layout-result">
+						
+						<article>
+							<h3>Monument al Doctor Robert</h3>
+							<strong>Article date & info</strong>
+							<div><img src="../src/img/picture-1.jpg" alt="Picture 1">El Monument al Doctor Robert és un conjunt escultòric avui dia a l'interior de la Plaça de Tetuan de Barcelona, al districte de l'Eixample. Està dedicat a Bartomeu Robert, metge i polític catalanista, alcalde de Barcelona entre març i octubre de 1899. És obra de Lluís Domènech i Montaner i Josep Llimona.</div>
+							<nav><a href="https://ca.wikipedia.org/wiki/Monument_al_Doctor_Robert" title="Wikipedia" target="blank">+</a></nav>
+						</article>
+						
+						<article>
+							<h3>l'Auditori</h3>
+							<strong>Article date & info</strong>
+							<div><img src="../src/img/picture-2.jpg" alt="Picture 2">L’Auditori, també L'Auditori de Barcelona, és un modern edifici de 42.000 metres quadrats dissenyat per l'arquitecte Rafael Moneo[1] que es va inaugurar el 22 de març del 1999 (les obres havien començat el 1990). El seu enginyer acústic és Higini Arau.</div>
+							<nav><a href="https://ca.wikipedia.org/wiki/L%27Auditori" title="Wikipedia" target="blank">+</a></nav>
+						</article>
+						
+						<article>
+							<h3>Laberint d'Horta</h3>
+							<strong>Article date & info</strong>
+							<div><img src="../src/img/picture-3.jpg" alt="Picture 3">El parc del Laberint d'Horta és un jardí històric situat en el districte d'Horta-Guinardó de Barcelona, el més antic que es conserva a la ciutat. Es troba en l'antiga finca de la família Desvalls, en una vessant de la serra de Collserola. Iniciat el 1794 i acabat en la seva primera fase el 1808, va ser obra de l'arquitecte italià Domenico Bagutti.</div>
+							<nav><a href="https://ca.wikipedia.org/wiki/Parc_del_Laberint_d%27Horta" title="Wikipedia" target="blank">+</a></nav>
+						</article>
+						
+						<article>
+							<h3>El Desconsol</h3>
+							<strong>Article date & info</strong>
+							<div><img src="../src/img/picture-4.jpg" alt="Picture 4">Desconsol és una escultura realitzada per Josep Llimona i actualment conservada al Museu Nacional d'Art de Catalunya. La primera versió, de guix, és del 1903. Va entrar a formar part de la col·lecció permanent del museu com una donació de Domènec Sanllehy, llavors alcalde de Barcelona, el 1909.</div>
+							<nav><a href="https://ca.wikipedia.org/wiki/Desconsol" title="Wikipedia" target="blank">+</a></nav>
+						</article>
+						
+						<article>
+							<h3>Charlie Rivel</h3>
+							<strong>Article date & info</strong>
+							<div><img src="../src/img/picture-5.jpg" alt="Picture 5">Charlie Rivel, nom artístic de Josep Andreu i Lasserre (Cubelles, 23 d'abril de 1896 - Sant Pere de Ribes, 26 de juliol de 1983), fou un pallasso català. Al Parc Joan Brossa de Montjuïc hi ha una escultura dedicada a ell. </div>
+							<nav><a href="https://ca.wikipedia.org/wiki/Charlie_Rivel" title="Wikipedia" target="blank">+</a></nav>
+						</article>
+						
+						<article>
+							<h3>Front Marítim del Poblenou</h3>
+							<strong>Article date & info</strong>
+							<div><img src="../src/img/picture-6.jpg" alt="Picture 6">Diagonal Mar i el Front Marítim del Poblenou, conegut com a Diagonal Mar, és un barri situat al nord-est de la ciutat de Barcelona, part del districte de Sant Martí. Aquest barri va néixer a la darreria dels anys 60 i la primera meitat dels anys 70 amb la construcció dels primers habitatges on abans hi havia camps de conreu i masies. Arran de l'acte del Fòrum Universal de les Cultures, celebrat a Barcelona l'any 2004, l'ajuntament de Barcelona, conjuntament amb diverses promotores immobiliàries va donar un gir al barri tot creant un centre comercial, un gran parc i un munt d'edificis d'alt nivell, millorant l'aspecte i la vida del barri. </div>
+							<nav><a href="https://ca.wikipedia.org/wiki/Diagonal_Mar_i_el_Front_Mar%C3%ADtim_del_Poblenou" title="Wikipedia" target="blank">+</a></nav>
+						</article>
+						
+						<article>
+							<h3>Central Tèrmica del Besòs</h3>
+							<strong>Article date & info</strong>
+							<div><img src="../src/img/picture-7.jpg" alt="Picture 7">La Central Tèrmica de Sant Adrià és una central termoelèctrica de cicle combinat propietat de FECSA-Endesa situada a la desembocadura del riu Besòs, entre els municipis de Sant Adrià del Besòs i Badalona, al nord de Barcelona, actualment inactiva. Actualment es troba fora de servei. </div>
+							<nav><a href="https://ca.wikipedia.org/wiki/Central_t%C3%A8rmica_de_Sant_Adri%C3%A0_de_Bes%C3%B2s" title="Wikipedia" target="blank">+</a></nav>
+						</article>
+						
+						<article>
+							<h3>Arc adrianenc</h3>
+							<strong>Article date & info</strong>
+							<div><img src="../src/img/picture-8.jpg" alt="Picture 8">La portada gòtica del convent del Carme, molt conegut actualment com a arc adrianenc és una portalada gòtica originària del convent del Carme de Barcelona. Enderrocat el 1874, de les restes del convent, la portada va acabar a la finca de cal Tano a Sant Adrià de Besòs. Actualment és considerat un símbol del municipi.</div>
+							<nav><a href="https://ca.wikipedia.org/wiki/Arc_adrianenc" title="Wikipedia" target="blank">Link</a></nav>
+						</article>
+						
+						<hr>
+						<div class="collapser sample">
+								<em><label for="sample-layouts">Code<mark></mark></label></em>
+								<input type="checkbox" id="sample-layouts" name="sample-layouts" hidden>
+								<div hidden>
+									<pre contentEditable="true">
+&lt;div id=&quot;layout&quot;&gt;
+	&lt;nav class=&quot;nav-scroll&quot;&gt;
+		&lt;div&gt;
+			&lt;label for=&quot;layout-simple&quot; title=&quot;Simple&quot; id=&quot;label-simple&quot;&gt;Simple&lt;/label&gt;
+			&lt;label for=&quot;layout-list&quot; title=&quot;List&quot; id=&quot;label-list&quot;&gt;List&lt;/label&gt;
+			&lt;label for=&quot;layout-table&quot; title=&quot;Table&quot; id=&quot;label-table&quot;&gt;Table&lt;/label&gt;
+			&lt;label for=&quot;layout-gallery&quot; title=&quot;Gallery&quot; id=&quot;label-gallery&quot;&gt;Gallery&lt;/label&gt;
+			&lt;label for=&quot;layout-cards&quot; title=&quot;Cards&quot; id=&quot;label-cards&quot;&gt;Cards&lt;/label&gt;
+			&lt;label for=&quot;layout-tiles&quot; title=&quot;Tiles&quot; id=&quot;label-tiles&quot;&gt;Tiles&lt;/label&gt;
+		 &lt;/div&gt;
+	&lt;/nav&gt;
+	&lt;hr&gt;
+	
+	&lt;input type=&quot;radio&quot; name=&quot;layout&quot; id=&quot;layout-simple&quot; aria-hidden=&quot;true&quot; hidden checked&gt;
+	&lt;input type=&quot;radio&quot; name=&quot;layout&quot; id=&quot;layout-list&quot; aria-hidden=&quot;true&quot; hidden&gt;
+	&lt;input type=&quot;radio&quot; name=&quot;layout&quot; id=&quot;layout-table&quot; aria-hidden=&quot;true&quot; hidden&gt;
+	&lt;input type=&quot;radio&quot; name=&quot;layout&quot; id=&quot;layout-gallery&quot; aria-hidden=&quot;true&quot; hidden&gt;
+	&lt;input type=&quot;radio&quot; name=&quot;layout&quot; id=&quot;layout-cards&quot; aria-hidden=&quot;true&quot; hidden&gt;
+	&lt;input type=&quot;radio&quot; name=&quot;layout&quot; id=&quot;layout-tiles&quot; aria-hidden=&quot;true&quot; hidden&gt;
+
+	&lt;div id=&quot;layout-result&quot;&gt;
+		
+		&lt;article&gt;
+			&lt;h3&gt;Monument al Doctor Robert&lt;/h3&gt;
+			&lt;strong&gt;Article date &amp; info&lt;/strong&gt;
+			&lt;div&gt;&lt;img src=&quot;../src/img/picture-1.jpg&quot; alt=&quot;Picture 1&quot;&gt;El Monument al Doctor Robert &eacute;s un conjunt escult&ograve;ric avui dia a l'interior de la Pla&ccedil;a de Tetuan de Barcelona, al districte de l'Eixample. Est&agrave; dedicat a Bartomeu Robert, metge i pol&iacute;tic catalanista, alcalde de Barcelona entre mar&ccedil; i octubre de 1899. &Eacute;s obra de Llu&iacute;s Dom&egrave;nech i Montaner i Josep Llimona.&lt;/div&gt;
+			&lt;nav&gt;&lt;a href=&quot;https://ca.wikipedia.org/wiki/Monument_al_Doctor_Robert&quot; title=&quot;Wikipedia&quot; target=&quot;blank&quot;&gt;Link&lt;/a&gt;&lt;/nav&gt;
+		&lt;/article&gt;
+		
+		&lt;article&gt;
+			&lt;h3&gt;l'Auditori&lt;/h3&gt;
+			&lt;strong&gt;Article date &amp; info&lt;/strong&gt;
+			&lt;div&gt;&lt;img src=&quot;../src/img/picture-2.jpg&quot; alt=&quot;Picture 2&quot;&gt;L&rsquo;Auditori, tamb&eacute; L'Auditori de Barcelona, &eacute;s un modern edifici de 42.000 metres quadrats dissenyat per l'arquitecte Rafael Moneo[1] que es va inaugurar el 22 de mar&ccedil; del 1999 (les obres havien comen&ccedil;at el 1990). El seu enginyer ac&uacute;stic &eacute;s Higini Arau.&lt;/div&gt;
+			&lt;nav&gt;&lt;a href=&quot;https://ca.wikipedia.org/wiki/L'Auditori&quot; title=&quot;Wikipedia&quot; target=&quot;blank&quot;&gt;Link&lt;/a&gt;&lt;/nav&gt;
+		&lt;/article&gt;
+	&lt;hr&gt;
+&lt;/div&gt;</pre>
+								</div>
+						</div>
+						<hr>
+					</div>
+					<hr>
+					
+					<section>					
+						<h2 id="section-staticviews"><u>Static views</u></h2>
+						<div class="collapser sample">
+								<em><label for="sample-tooltip">Code<mark></mark></label></em>
+								<input type="checkbox" id="sample-tooltip" name="sample-tooltip" hidden>
+								<div hidden>
+									<pre contentEditable="true">
+/* Simple layout */
+&lt;div class=&quot;simple&quot;&gt;
+	&lt;article&gt;
+		&lt;h3&gt;Monument al Doctor Robert&lt;/h3&gt;
+		&lt;strong&gt;Article date &amp; info&lt;/strong&gt;
+		&lt;div&gt;&lt;img src=&quot;../src/img/picture-1.jpg&quot; alt=&quot;Picture 1&quot;&gt;El Monument al Doctor Robert &eacute;s un conjunt escult&ograve;ric avui dia a l'interior de la Pla&ccedil;a de Tetuan de Barcelona, al districte de l'Eixample. Est&agrave; dedicat a Bartomeu Robert, metge i pol&iacute;tic catalanista, alcalde de Barcelona entre mar&ccedil; i octubre de 1899. &Eacute;s obra de Llu&iacute;s Dom&egrave;nech i Montaner i Josep Llimona.&lt;/div&gt;
+		&lt;nav&gt;&lt;a href=&quot;https://ca.wikipedia.org/wiki/Monument_al_Doctor_Robert&quot; title=&quot;Wikipedia&quot; target=&quot;blank&quot;&gt;Link&lt;/a&gt;&lt;/nav&gt;
+	&lt;/article&gt;
+	&lt;article&gt;
+		...
+	&lt;/article&gt;
+	...
+	&lt;hr&gt;
+&lt;/div&gt;
+/* List layout */
+&lt;div class=&quot;list&quot;&gt;
+	&lt;article&gt;
+		&lt;h3&gt;Monument al Doctor Robert&lt;/h3&gt;
+		&lt;strong&gt;Article date &amp; info&lt;/strong&gt;
+		&lt;div&gt;&lt;img src=&quot;../src/img/picture-1.jpg&quot; alt=&quot;Picture 1&quot;&gt;El Monument al Doctor Robert &eacute;s un conjunt escult&ograve;ric avui dia a l'interior de la Pla&ccedil;a de Tetuan de Barcelona, al districte de l'Eixample. Est&agrave; dedicat a Bartomeu Robert, metge i pol&iacute;tic catalanista, alcalde de Barcelona entre mar&ccedil; i octubre de 1899. &Eacute;s obra de Llu&iacute;s Dom&egrave;nech i Montaner i Josep Llimona.&lt;/div&gt;
+		&lt;nav&gt;&lt;a href=&quot;https://ca.wikipedia.org/wiki/Monument_al_Doctor_Robert&quot; title=&quot;Wikipedia&quot; target=&quot;blank&quot;&gt;Link&lt;/a&gt;&lt;/nav&gt;
+	&lt;/article&gt;
+	&lt;article&gt;
+		...
+	&lt;/article&gt;
+	...
+	&lt;hr&gt;
+&lt;/div&gt;
+/* Table layout */
+&lt;div class=&quot;table&quot;&gt;
+	&lt;article&gt;
+		&lt;h3&gt;Monument al Doctor Robert&lt;/h3&gt;
+		&lt;strong&gt;Article date &amp; info&lt;/strong&gt;
+		&lt;div&gt;&lt;img src=&quot;../src/img/picture-1.jpg&quot; alt=&quot;Picture 1&quot;&gt;El Monument al Doctor Robert &eacute;s un conjunt escult&ograve;ric avui dia a l'interior de la Pla&ccedil;a de Tetuan de Barcelona, al districte de l'Eixample. Est&agrave; dedicat a Bartomeu Robert, metge i pol&iacute;tic catalanista, alcalde de Barcelona entre mar&ccedil; i octubre de 1899. &Eacute;s obra de Llu&iacute;s Dom&egrave;nech i Montaner i Josep Llimona.&lt;/div&gt;
+		&lt;nav&gt;&lt;a href=&quot;https://ca.wikipedia.org/wiki/Monument_al_Doctor_Robert&quot; title=&quot;Wikipedia&quot; target=&quot;blank&quot;&gt;Link&lt;/a&gt;&lt;/nav&gt;
+	&lt;/article&gt;
+	&lt;article&gt;
+		...
+	&lt;/article&gt;
+	...
+	&lt;hr&gt;
+&lt;/div&gt;
+/* Gallery layout */
+&lt;div class=&quot;gallery&quot;&gt;
+	&lt;article&gt;
+		&lt;h3&gt;Monument al Doctor Robert&lt;/h3&gt;
+		&lt;strong&gt;Article date &amp; info&lt;/strong&gt;
+		&lt;div&gt;&lt;img src=&quot;../src/img/picture-1.jpg&quot; alt=&quot;Picture 1&quot;&gt;El Monument al Doctor Robert &eacute;s un conjunt escult&ograve;ric avui dia a l'interior de la Pla&ccedil;a de Tetuan de Barcelona, al districte de l'Eixample. Est&agrave; dedicat a Bartomeu Robert, metge i pol&iacute;tic catalanista, alcalde de Barcelona entre mar&ccedil; i octubre de 1899. &Eacute;s obra de Llu&iacute;s Dom&egrave;nech i Montaner i Josep Llimona.&lt;/div&gt;
+		&lt;nav&gt;&lt;a href=&quot;https://ca.wikipedia.org/wiki/Monument_al_Doctor_Robert&quot; title=&quot;Wikipedia&quot; target=&quot;blank&quot;&gt;Link&lt;/a&gt;&lt;/nav&gt;
+	&lt;/article&gt;
+	&lt;article&gt;
+		...
+	&lt;/article&gt;
+	...
+	&lt;hr&gt;
+&lt;/div&gt;
+/* Cards layout */
+&lt;div class=&quot;cards&quot;&gt;
+	&lt;article&gt;
+		&lt;h3&gt;Monument al Doctor Robert&lt;/h3&gt;
+		&lt;strong&gt;Article date &amp; info&lt;/strong&gt;
+		&lt;div&gt;&lt;img src=&quot;../src/img/picture-1.jpg&quot; alt=&quot;Picture 1&quot;&gt;El Monument al Doctor Robert &eacute;s un conjunt escult&ograve;ric avui dia a l'interior de la Pla&ccedil;a de Tetuan de Barcelona, al districte de l'Eixample. Est&agrave; dedicat a Bartomeu Robert, metge i pol&iacute;tic catalanista, alcalde de Barcelona entre mar&ccedil; i octubre de 1899. &Eacute;s obra de Llu&iacute;s Dom&egrave;nech i Montaner i Josep Llimona.&lt;/div&gt;
+		&lt;nav&gt;&lt;a href=&quot;https://ca.wikipedia.org/wiki/Monument_al_Doctor_Robert&quot; title=&quot;Wikipedia&quot; target=&quot;blank&quot;&gt;Link&lt;/a&gt;&lt;/nav&gt;
+	&lt;/article&gt;
+	&lt;article&gt;
+		...
+	&lt;/article&gt;
+	...
+	&lt;hr&gt;
+&lt;/div&gt;
+/* Tiles layout */
+&lt;div class=&quot;tiles&quot;&gt;
+	&lt;article&gt;
+		&lt;h3&gt;Monument al Doctor Robert&lt;/h3&gt;
+		&lt;strong&gt;Article date &amp; info&lt;/strong&gt;
+		&lt;div&gt;&lt;img src=&quot;../src/img/picture-1.jpg&quot; alt=&quot;Picture 1&quot;&gt;El Monument al Doctor Robert &eacute;s un conjunt escult&ograve;ric avui dia a l'interior de la Pla&ccedil;a de Tetuan de Barcelona, al districte de l'Eixample. Est&agrave; dedicat a Bartomeu Robert, metge i pol&iacute;tic catalanista, alcalde de Barcelona entre mar&ccedil; i octubre de 1899. &Eacute;s obra de Llu&iacute;s Dom&egrave;nech i Montaner i Josep Llimona.&lt;/div&gt;
+		&lt;nav&gt;&lt;a href=&quot;https://ca.wikipedia.org/wiki/Monument_al_Doctor_Robert&quot; title=&quot;Wikipedia&quot; target=&quot;blank&quot;&gt;Link&lt;/a&gt;&lt;/nav&gt;
+	&lt;/article&gt;
+	&lt;article&gt;
+		...
+	&lt;/article&gt;
+	...
+	&lt;hr&gt;
+&lt;/div&gt;</pre>
+								</div>
+						</div>
+						<hr>
+					</section>
+					
+				</div>
+			</main>
+			
+			<footer id="page-footer">
+				<div>
+				
+					<p><a href="http://KhotharCSS.github.io" title="KhotharCSS">KhotharCSS</a> by Acózar/Miralles, 2017. Distributed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC - This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. </p>
+					
+				</div>
+			</footer>
+			
+		</div><!-- /#page -->
+		  
+
+		<!-- Out of page
+		================================================== -->
+		
+		<!-- Tools switcher -->  		
+  		<div id="tools-switcher">
+  			<label for="tools-check" data-title="Tools" class="pophover">+</label>
+  		</div>
+		<!-- Tools nav -->
+		<input type="checkbox" id="tools-check" name="tools" aria-hidden="true" hidden>
+		<nav id="tools-nav">
+			<label for="tools-check" id="label-tools" data-title="Close" class="pophover">x</label>
+			<label for="theme-dark" id="label-dark" data-title="Dark theme" class="pophover"></label>
+			<label for="theme-soft" id="label-soft" data-title="Soft theme" class="pophover"></label>
+			<label for="theme-light" id="label-light" data-title="Light theme" class="pophover"></label>
+		</nav>	
+
+
+		<!-- Scripts
+		================================================== -->
+		<script src="../src/js/ga.js" type="text/javascript"></script>
+	</body>
+</html>
+							

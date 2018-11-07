@@ -1,0 +1,217 @@
+/* Blogger Hacks by acozar (gmail) */
+
+/* Headers */ 
+
+#page-section-article-header {
+	padding-top: 64px;
+	text-align: center;
+}
+#page-header,
+#page-nav {
+	text-align: center;
+}
+
+
+
+/* Blogger labels */
+
+.blogger-labels {
+	display: block;
+	clear: both;
+	font-size: 0;
+	margin: 12px 0 0;
+	text-align: center;
+}
+.blogger-labels:before {
+	border-bottom: 1px solid currentColor;
+	display: block;
+	content: 'Etiquetas';
+	font-size: 16px;
+	margin: 16px;
+}
+.blogger-labels a {
+	border: 4px solid currentColor;
+	border-radius: 1em;
+	font-size: 16px;
+	margin: 0 .25em;
+	padding: .25em 1em;
+	text-decoration: none !important;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	hyphens: none;
+}
+article .blogger-labels,
+article .blogger-labels,
+article .blogger-labels {
+	display: none;
+}
+#page-section-article-content figure .blogger-labels {
+	display: block;
+	clear: both;
+	font-size: 0;
+	margin: 12px auto 0;
+	text-align: center;
+	position: absolute;
+	bottom: 36px;
+	opacity: 0;
+}#page-section-article-content figure:hover .blogger-labels {
+	opacity: 1;
+}
+#page-section-article-content figure .blogger-labels:before {
+	border: none;
+	color: rgba(255,255,255,.8);
+	display: block;
+	float: left;
+	font-weight: bold;
+	content: 'Etiquetas';
+	font-size: 16px;
+	margin: 0 16px;
+}
+#page-section-article-content figure .blogger-labels a {
+	background-color: rgba(255,255,255,.8);
+}
+
+/* Twitter */
+
+.twitter-timeline,
+.twitter-tweet {
+	display: block;
+	margin: 0 auto;
+}
+.tw-tools {
+	padding: 6px;
+}
+
+/* Prev/next */
+
+.prev-next,
+.prev-next .blog-paging-control-container  {
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+.prev-next .blog-paging-control-container .blog-paging-control,
+.prev-next .blog-paging-control-container .blog-paging-control:after {
+	display: block;
+	height: 32px;
+	width: 32px;
+	position: absolute;
+	text-decoration: none;
+	top: -24px;
+	text-align: center;
+	z-index: 1;
+}
+.prev-next .blog-paging-control-container .blog-paging-control:nth-child(1),
+.prev-next .blog-paging-control-container .blog-paging-control:nth-child(2) {
+	visibility: hidden;
+}
+.prev-next .blog-paging-control-container .blog-paging-control:nth-child(1) {
+	left: 12px; right: auto;
+}
+.prev-next .blog-paging-control-container .blog-paging-control:nth-child(2),
+.prev-next .blog-paging-control-container .blog-paging-control:only-child {
+	right: 32px; left: auto;
+}
+.prev-next .blog-paging-control-container .blog-paging-control:nth-child(1):after,
+.prev-next .blog-paging-control-container .blog-paging-control:nth-child(2):after {
+	border: 4px solid currentColor;
+	border-radius: 50%;
+	color: inherit;
+	display: block;
+	font-weight: bold;
+	line-height: 32px;
+	height: 32px;
+	width: 32px;
+	visibility: visible;
+}
+.prev-next .blog-paging-control-container .blog-paging-control:nth-child(1):after {
+	content: '<';
+}
+.prev-next .blog-paging-control-container .blog-paging-control:nth-child(2):after,
+.prev-next .blog-paging-control-container .blog-paging-control:only-child:after {
+	content: '>';
+}
+
+/* Pagination */
+
+.pagination {
+	border: none;
+	display: block;
+	margin: 3em auto 1em;
+	text-align: center;
+}
+.pagination a {
+	visibility: hidden;
+}
+.pagination a:after {
+	border-radius: 2em;
+	font-weight: normal;
+	margin-left: -5em;
+	padding: 16px 32px;
+	visibility: visible;
+}
+.pagination a:nth-child(1):after {
+	content: '< Posterior';
+}
+.pagination a:nth-child(2):after,
+.pagination a:only-child:after {
+	content: ' Anterior >';
+}
+
+/* Colors */ 
+
+.blogger-labels a:hover,
+.pagination a:after {
+
+}
+.blogger-labels a,
+article div a,
+.pagination a:hover:after,
+.pagination a:visited:hover:after,
+.prev-next .blog-paging-control-container .blog-paging-control:hover:after {
+	background-color: rgba(0,0,0,.1);
+}
+article div a:visited,
+.blogger-labels a:visited:hover,
+.pagination a:visited:after,
+.pagination a:visited:hover:after,
+.prev-next .blog-paging-control-container .blog-paging-control:visited:hover:after {
+	background-color: rgba(0,0,0,.05);
+}
+.blogger-labels a:focus,
+.pagination a:focus {
+	background-color: rgba(255,255,255,.8);
+
+}
+.blogger-labels a:visited:focus,
+.pagination a:visited:focus {
+
+}
+
+/* Cookies info */
+
+#cookieChoiceInfo {
+	background-color: #fff !important;
+	background-color: rgba(255,255,255,0.8) !important;
+	top: auto !important;
+	bottom: 0px !important;
+}
+#cookieChoiceInfo .cookie-choices-text {
+	color: #000;
+	font-size: 14px !important;
+	line-height: 1em !important;
+}
+.cookie-choices-button {
+	border: thin solid #fff;
+	border-radius: 24px !important;
+	color: #3AB16C !important;
+	font-size: 10px !important;
+	padding: 12px 24px !important;
+}
+.cookie-choices-button:nth-child(2) {
+	background: #3AB16C;
+	color: #ffffff !important;
+}
+
+/* The End */
