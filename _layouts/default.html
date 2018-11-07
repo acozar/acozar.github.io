@@ -1,51 +1,121 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		
+		<!-- Metadata -->
+		    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="{{ site.description }}">
+		<meta name="keywords" content="CSS semantic component library">
+		<meta name="author" content="Acózar">
+		
+		<!-- Metadata: GeoTags -->
+		<meta name="geo.region" content="{{ site.region }}">
+		<meta name="geo.placename" content="{{ site.placename }}">
+		<meta name="geo.position" content="{{ site.position }}">
+		<meta name="ICBM" content="{{ site.ICBM }}">
+		
+		<!-- Screen styles -->
+		<link href="../src/styles/screen.css" rel="stylesheet" media="screen">
+		<link href="../src/styles/components.css" rel="stylesheet" media="screen">
+		<link href="../src/styles/helpers.css" rel="stylesheet" media="screen">
+		
+		<!-- Print styles -->
+		<link href="../src/styles/print.css" rel="stylesheet" media="print">
+		
+		<!-- If iexplorer :( -->
+		<!--[if lt IE 9]><script src="../src/styles/html5shiv.js"></script><![endif]-->
+		<!--[if IE]><link rel="stylesheet" type="text/css" href="../src/styles/iexplorer.css" /><![endif]-->
+	
+		<!-- No Script styles -->		
+		<noscript><link href="../src/styles/noscript.css" rel="stylesheet" media="screen"></noscript>
+		
+		<!-- Site Feed -->
+		<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+		
+		<!-- Page Icons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="../src/ics/apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="../src/ics/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="../src/ics/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="../src/ics/manifest.json">
+		<link rel="mask-icon" href="../src/ics/safari-pinned-tab.svg" color="#dd0000">
+		<link rel="shortcut icon" href="../src/ics/favicon.ico">
+		<meta name="msapplication-config" content="../src/ics/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+		
+	</head>
 
-    {% include meta.html %}
+	<body>
+				
+		<!-- Theme inputs (invisibles) -->		
+		<input type="radio" id="theme-light" name="theme" aria-hidden="true" hidden>
+		<input type="radio" id="theme-soft" name="theme" aria-hidden="true" hidden>
+		<input type="radio" id="theme-dark" name="theme" aria-hidden="true" hidden> 
+		
+		<!-- Page content -->		
+		<div id="page" class="page">
+		
+			<nav id="site-nav" class="nav-smart">
+				<div>
+					<a class="site-logo" href="http://acozar.com" title="www.acozar.com">
+						<img src="../src/ics/android-chrome-192x192.png" alt="Acózar logo">
+					</a>
+					<input type="checkbox" id="mobnav" name="mobnav" aria-hidden="true" hidden> 
+					<strong><label for="mobnav">Menú<mark></mark></label></strong>
+					<div hidden>
+						<a href="http://blog.acozar.com" title="el Quadern Blanc">Bloc</a>
+						<form action="http://www.google.com/cse"> 
+							<input type="hidden" name="cx" value="015039607627563776175:xu1qa2rwoki"> 
+							<input type="text" name="q" placeholder="cerca"> 
+							<input type="submit" name="sa" value="·"> 
+						</form>
+					</div>
+				 </div>
+			</nav>
+			
+			<header id="page-header">
+				<div>
+					<h1><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+					<p>{{ site.description }}</p>
+				</div>
+			</header>
+			
+			<main id="page-main">
+				<div>
+{{ content }}
+				</div>
+			</main>
+			
+			<footer id="page-footer">
+				<div>
+				
+					<p><a href="http://KhotharCSS.github.io" title="KhotharCSS">KhotharCSS</a> by Acózar, 2018. Distributed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC - This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. </p>
+					
+				</div>
+			</footer>
+		
+		</div><!-- /#page -->
+		  
+		<!-- Out of page
+		================================================== -->
+		
+		<!-- Tools switcher -->  		
+  		<div id="tools-switcher">
+  			<label for="tools-check" data-title="Tools" class="pophover">+</label>
+  		</div>
+		<!-- Tools nav -->
+		<input type="checkbox" id="tools-check" name="tools" aria-hidden="true" hidden>
+		<nav id="tools-nav">
+			<label for="tools-check" id="label-tools" data-title="Close" class="pophover">x</label>
+			<label for="theme-dark" id="label-dark" data-title="Dark theme" class="pophover"></label>
+			<label for="theme-soft" id="label-soft" data-title="Soft theme" class="pophover"></label>
+			<label for="theme-light" id="label-light" data-title="Light theme" class="pophover"></label>
+		</nav>	
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
-
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
-    </div>
-
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
-
-    {% include analytics.html %}
-  </body>
+		<!-- Scripts
+		================================================== -->
+		{% include analytics.html %}
+		
+	</body>
 </html>
