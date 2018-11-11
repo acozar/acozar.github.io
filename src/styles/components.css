@@ -1,7 +1,9 @@
 /* BarcelonaCSS: Grids, Layouts, Components & Skins */
 /* by Acozar/Miralles */
 
-/* ------------------------------------------------------------ Grids */
+/* ------------------------------------------------------------ Animation Keyframes */
+
+/* FadeIn */
 
 @-webkit-keyframes fadeIn {
 	from { opacity: 0; }
@@ -16,49 +18,83 @@
 	from { opacity: 0; }
 }
 
-@-webkit-keyframes moveFromTop {
-	from { -webkit-transform: translateY(-100%); }
+/* FadeOut */
+
+@-webkit-keyframes fadeOut {
+	to { opacity: 0; }
 }
-@-moz-keyframes moveFromTop {
-	from { -moz-transform: translateY(-100%); }
+@-moz-keyframes fadeOut {
+	to { opacity: 0; }
 }
-@-o-keyframes moveFromTop {
-	from { -moz-transform: translateY(-100%); }
+@-o-keyframes fadeOut {
+	to { opacity: 0; }
 }
-@keyframes moveFromTop {
-	from { transform: translateY(-100%); }
+@keyframes fadeOut {
+	to { opacity: 0; }
 }
 
-@-webkit-keyframes lightboxIn {
-	from { opacity: 0; }
+/* moveFromTopFade */
+
+@-webkit-keyframes moveFromTopFade {
+	from { opacity: 0; -webkit-transform: translateY(-100%); }
 }
-@-moz-keyframes fadeIn {
-	from { opacity: 0; }
+@-moz-keyframes moveFromTopFade {
+	from { opacity: 0; -moz-transform: translateY(-100%); }
 }
-@-o-keyframes fadeIn {
-	from { opacity: 0; }
+@-o-keyframes moveFromTopFade {
+	from { opacity: 0; -o-transform: translateY(-100%); }
 }
-@keyframes fadeIn {
-	from { opacity: 0; }
+@keyframes moveFromTopFade {
+	from { opacity: 0; transform: translateY(-100%); }
 }
 
-/* Basic animations */
+/* moveFromBottomFade */
 
-dialog {
-	-webkit-animation: moveFromTop .7s ease both;
-	-moz-animation: moveFromTop .7s ease both;
-	-o-animation: moveFromTop .7s ease both;
-	animation: moveFromTop .7s ease both;
+@-webkit-keyframes moveFromBottomFade {
+	from { opacity: 0; -webkit-transform: translateY(100%); }
 }
-.menu nav,
-.collapser div {
-	-webkit-animation: fadeIn .7s ease both;
-	-moz-animation: fadeIn .7s ease both;
-	-o-animation: fadeIn .7s ease both;
-	animation: fadeIn .7s ease both;
+@-moz-keyframes moveFromBottomFade {
+	from { opacity: 0; -moz-transform: translateY(100%); }
+}
+@-o-keyframes moveFromBottomFade {
+	from { opacity: 0; -o-transform: translateY(100%); }
+}
+@keyframes moveFromBottomFade {
+	from { opacity: 0; transform: translateY(100%); }
 }
 
-/* Flex-grid */
+/* moveFromLeftFade */
+
+@-webkit-keyframes moveFromLeftFade {
+	from { opacity: 0; -webkit-transform: translateX(-100%); }
+}
+@-moz-keyframes moveFromLeftFade {
+	from { opacity: 0; -moz-transform: translateX(-100%); }
+}
+@-o-keyframes moveFromLeftFade {
+	from { opacity: 0; -o-transform: translateX(-100%); }
+}
+@keyframes moveFromLeftFade {
+	from { opacity: 0; transform: translateX(-100%); }
+}
+
+/* moveFromRightFade */
+
+@-webkit-keyframes moveFromRightFade {
+	from { opacity: 0; -webkit-transform: translateX(100%); }
+}
+@-moz-keyframes moveFromRightFade {
+	from { opacity: 0; -moz-transform: translateX(100%); }
+}
+@-o-keyframes moveFromRightFade {
+	from { opacity: 0; -o-transform: translateX(100%); }
+}
+@keyframes moveFromRightFade {
+	from { opacity: 0; transform: translateX(100%); }
+}
+
+
+/* ------------------------------------------------------------ Flex-grid */
 
 .flex-grid,
 [class*='flex-grid'] {
@@ -420,22 +456,21 @@ article > div {
 }
 .gallery article nav a,
 #layout-gallery:checked ~ #layout-result article nav a {
-	color: transparent;
+	background-color: #ffffff;
+	background-color: rgba(255,255,255,.5);
+	border-radius: 50%;
 }
 .gallery article:hover nav a,
 #layout-gallery:checked ~ #layout-result article:hover nav a {
-	background-color: #fff;
-	color: #000;
+	background-color: rgba(255,255,255,1);
 }	
 
 /* Cards view */
 
 .cards article,
 #layout-cards:checked ~ #layout-result article {
-	border: none;
+	border: 1px solid rgba(0,0,0,.2);
 	border-radius: 2px;
-	box-shadow: 0 1px 2px rgba(0,0,0,.8);
-	color: #000;
 	clear: none;
 	display: block;
 	float: left;
@@ -446,7 +481,7 @@ article > div {
 }
 .cards article:hover,
 #layout-cards:checked ~ #layout-result article:hover {
-	box-shadow: 0 2px 6px rgba(0,0,0,.6);
+	box-shadow: 0 2px 6px rgba(0,0,0,.3);
 }
 .cards article h3,
 #layout-cards:checked ~ #layout-result article h3 {
@@ -483,6 +518,7 @@ article > div {
 .cards article nav a,
 #layout-cards:checked ~ #layout-result article nav a {
 	border-color: transparent;
+	border-radius: 50%;
 	height: 32px;
 	line-height: 32px;
 	padding: 0;
@@ -522,7 +558,6 @@ article > div {
 }
 .tiles article h3,
 #layout-tiles:checked ~ #layout-result article h3 {
-	background-color: rgba(255,255,255,.5);
 	font-size: 16px;
 	line-height: 16px;
 	height: 256px;
@@ -536,7 +571,7 @@ article > div {
 .tiles article nav,
 #layout-tiles:checked ~ #layout-result article nav {
 	z-index: 9;
-	opacity: 0;
+	color: rgba(255,255,255,.4);
 }
 .tiles article:hover h3,
 #layout-tiles:checked ~ #layout-result article:hover h3,
@@ -544,7 +579,7 @@ article > div {
 #layout-tiles:checked ~ #layout-result article:hover strong,
 .tiles article:hover nav,
 #layout-tiles:checked ~ #layout-result article:hover nav {
-	opacity: 1;
+	color: #ffffff;
 }
 .tiles article:hover nav,
 #layout-tiles:checked ~ #layout-result article:hover nav {
@@ -577,7 +612,9 @@ article > div {
 }
 .tiles article nav a,
 #layout-tiles:checked ~ #layout-result article nav a {
-	margin: 0 auto;
+	background-color: rgba(0,0,0,.5);
+	border-radius: 50%;
+	margin: 0 auto 6px;
 	width: 64px;
 }
 
@@ -618,12 +655,19 @@ article > div {
 /* Site logo */
 
 .site-logo {
+	border-radius: 50%;
 	position: absolute;
-	left: 0;
 	top: 0;
+	left: 0;
+	z-index: 11;
+}
+.site-logo:hover {
+	background-color: transparent !important;
+	box-shadow: inset 0 0 4px currentColor;
 }
 .site-logo img {
 	border-radius: 50%;
+	position: relative;
 }
 
 /* Smart navigation */
@@ -739,6 +783,10 @@ dialog {
 	right: 20%;
 	width: 60%;
 	z-index: 20;
+	-webkit-animation: moveFromTopFade .7s ease both;
+	-moz-animation: moveFromTopFade .7s ease both;
+	-o-animation: moveFromTopFade .7s ease both;
+	animation: moveFromTopFade .7s ease both;
 }
 @media (max-width: 767px) {
 	dialog {
@@ -780,9 +828,12 @@ dialog {
 	top: 3em; left: 0;
 	width: 100%;
 	z-index: 9;
+	-webkit-animation: fadeIn .7s ease both;
+	-moz-animation: fadeIn .7s ease both;
+	-o-animation: fadeIn .7s ease both;
+	animation: fadeIn .7s ease both;
 }
 .menu nav a {
-	border-color: transparent;
 	color: #333;
 }
 .collapser > div,
@@ -800,8 +851,8 @@ dialog {
 	position: relative;	
 	width: 100%;
 }
-.menu > ul,
-.menu > ul > li,
+.menu nav > ul,
+.menu nav > ul > li,
 .accordion > ul,
 .accordion > ul > li,
 .tabs > ul,
@@ -1070,9 +1121,10 @@ input:checked ~ .alert {
 	max-height: 80%;
 	max-width: 80%;
 	width: auto;
-	-webkit-animation: lightboxIn 1s ease both;
-	-moz-animation: lightboxIn 1s ease both;
-	animation: lightboxIn 1s ease both;
+	-webkit-animation: fadeIn 1s ease both;
+	-moz-animation: fadeIn 1s ease both;
+	-o-animation: fadeIn 1s ease both;
+	animation: fadeIn 1s ease both;
 }
 [id*='lightbox']:target + a + figcaption {
 	position: fixed;
@@ -1081,7 +1133,7 @@ input:checked ~ .alert {
 	z-index: 22;
 }
 
-/* Dismiss labels */
+/* Dismiss & Lightbox labels */
 
 dialog > label,
 .alert > label,
@@ -1105,6 +1157,27 @@ dialog > label,
 	position: absolute;
 	top: 16px;
 	right: 16px;
+}
+dialog > label:hover,
+.alert > label:hover,
+.flip article > label:hover,
+.flip aside > label:hover,
+[id*='lightbox']:target + a:hover,
+[id*='lightbox']:target ~ .previous:hover,
+[id*='lightbox']:target ~ .next:hover {
+	background-color: #333333;
+	color: #ffffff;
+}
+dialog > label:active,
+.alert > label:active,
+.flip article > label:active,
+.flip aside > label:active,
+[id*='lightbox']:target + a:active,
+[id*='lightbox']:target ~ .previous:active,
+[id*='lightbox']:target ~ .next:active {
+	background-color: #ffffff;
+	color: #333333;
+	box-shadow: inset 0 0 0 .05em currentColor, inset 0 0 .75em rgba(255,255,255,0.1);
 }
 [id*='lightbox']:target + a,
 [id*='lightbox']:target ~ .previous,
@@ -1193,9 +1266,6 @@ nav strong label mark {
 	}
 }
 
-
-
-
 /* Nav tools & Theme switcher */
 
 #tools-switcher,
@@ -1203,14 +1273,14 @@ nav strong label mark {
 	text-align: right;
 	position: fixed;
 	bottom: -2px; left: 0; right: 0;
-	z-index: 8;
+	z-index: 20;
 }
 #tools-nav {
 	background-color: rgba(0,0,0,.75);
 	color: #fff;
 	display: none;
 	padding: 16px 2px;
-	z-index: 9;
+	z-index: 21;
 }
 #tools-check:checked ~ #tools-nav {
 	display: block;
