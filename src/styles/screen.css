@@ -783,7 +783,7 @@ nav form {
 	text-align: right;
 	top: 16px;
 	right: 0;
-	width: 8em;
+	width: 320px;
 	z-index: 2;
 }
 nav li form {
@@ -808,14 +808,19 @@ nav form input[type=text]:focus {
 }
 nav form input[type=submit] {
 	display: none;
-	height: 42px; 	
-	line-height: 32px; 	
-	margin-left: -2.25em;
-	padding: 0 15px;
+	height: 32px; 
+	width: 32px;
+	line-height: 28px; 	
+	padding: 0;
+	position: absolute;
+	right: 0;
 	z-index: 10;
 }
 nav form input:focus ~ input[type=submit] {
-	display: inline-block;
+	display: inline;
+}
+nav form input:focus ~ not(nav form input) {
+	opacity: .1;
 }
 nav label {
 	cursor: pointer;
@@ -1037,7 +1042,8 @@ em button:active  {
 
 /* Light theme (default) */
 
-#page {
+#page,
+nav form input[type=text]:focus {
 	background: var(--color-white);
 	color: var(--color-black);
 }
