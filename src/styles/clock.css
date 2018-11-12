@@ -297,7 +297,7 @@ dialog {
   position: absolute;
   box-shadow: 8px 8px 8px rgba(0,0,0,.5);
 }
-
+/*
 .clock-zenit-hand {
   width: 12px;
   height: 100%;
@@ -318,6 +318,34 @@ dialog {
   bottom: 22%;
   position: absolute;
   box-shadow: 8px 8px 8px rgba(0,0,0,.5);
+} */
+
+.clock-zenit-hand {
+	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0; left: 0;
+	-webkit-animation: rotation 86400s infinite linear;
+	-moz-animation: rotation 86400s infinite linear;
+	-o-animation: rotation 86400s infinite linear;
+	animation: rotation 86400s infinite linear;
+}
+.clock-zenit-hand:before {
+	border: 6px solid currentColor;
+	border-radius: 50%;
+	color: #dd0000;
+	content: "\2609";
+	display: block;
+	font-size: 32px;
+	font-weight: bold;
+	text-align: center;
+	padding: 32px 0;
+	position: absolute;
+	bottom: 15%;
+	left: 44%;
+	width: 3em;
+	height: 1em;
 }
 
 .clock-nut {

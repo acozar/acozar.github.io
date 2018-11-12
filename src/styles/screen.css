@@ -371,6 +371,7 @@ select,
 textarea,
 [contenteditable="true"] {
 	background-color: transparent;
+	color: inherit;
 	font-size: 20px;
 	line-height: 32px;
 	position: relative;
@@ -385,7 +386,6 @@ textarea {
 
 input,
 select {
-	background-color: transparent;
 	border: 2px solid currentColor;
 	height: 32px;
 	outline: none;
@@ -449,21 +449,11 @@ meter::-moz-meter-bar {
 /* Select */
 
 select {
-	background-color: transparent;
-	border: 1px solid currentColor;
+	background-color: rgba(255,255,255,.2);
+	border: 2px solid currentColor;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 }
-select:after {
-	border: 1px solid currentColor;
-	color: inherit;
-	content: "+";
-	font-weight: bold;
-	display: inline;
-	margin-left: 1em;
-	padding: 0 .4em;
-}
-option {}
 optgroup {}
 textarea {
 	border: 1px solid currentColor;
@@ -517,7 +507,7 @@ strong input[type=radio] + label:before {
 	font-size: 32px;
 	font-weight: bold;
 	height: 30px;
-	margin: 0 1em 0 0;
+	margin: 0 1em 0;
 	width: 30px;
 }
 strong input {
@@ -558,21 +548,27 @@ strong input[type=radio]:checked + label:before {
 	content: '\2713';
 }
 strong select {
+	font-weight: bold;
 	height: 64px;
 	width: 100%;
 }
 
 /* Switcher */
 
+[data-mode=switcher] {
+	display: block;
+	padding: 0 1em;
+	width: 64px;
+}
 [data-mode=switcher] [type=checkbox] + label,
 [data-mode=switcher] [type=checkbox] + label span {
-	border: 1px solid currentColor;
+	border: 2px solid currentColor;
 	border-radius: 32px;
 	cursor: pointer;
 	display: block;
 	float: left;
 	height: 32px;
-	margin-right: 1em;
+	margin: -2px 1em 0 -2px;
 	padding: 0;
 	width: 64px;
 }
@@ -644,7 +640,6 @@ em a,
 em label,
 em button,
 em div a {
-	background: var(--color-translucentwhite);
 	border: 1px solid currentColor;
 	cursor: pointer;
 	display: inline;
@@ -723,7 +718,6 @@ strong em button {
 
 
 nav {
-	background-color: ;
 	border-bottom: 1px solid currentColor;
 	display: block;
 	line-height: 32px;
@@ -743,10 +737,6 @@ article > nav label,
 aside > nav a,
 aside > nav label {
 	border-color: currentColor;
-}
-nav a:hover,
-nav label:hover {
-	text-decoration: underline;
 }
 nav ul {
 	border: 1px solid transparent;
@@ -783,7 +773,7 @@ nav form {
 	text-align: right;
 	top: 16px;
 	right: 0;
-	width: 320px;
+	width: auto;
 	z-index: 2;
 }
 nav li form {
@@ -800,10 +790,12 @@ nav form input:focus {
 	text-align: center;
 }
 nav form input[type=text] {
-	width: 5em;
+	width: 96px;
 }
 nav form input[type=text]:focus {
-	width: 100%;
+	background-color: rgba(255,255,255,1);
+	color: #000000;
+	width: 320px;
 	z-index: 9;
 }
 nav form input[type=submit] {
@@ -882,7 +874,7 @@ article, aside {
 #page-footer > div,
 [id*='page-section'] > div {
 	margin: 0 auto;
-	padding: 0 16px;
+	padding: 0 0 0 32px;
 	position: relative;
 	width: 100%;
 	max-width: 1000px;
@@ -1009,7 +1001,8 @@ figure div iframe {
 
 /* Links */
 
-a:hover, a:active, a:visited {
+a:hover, a:active, a:visited, a:visited:hover {
+	border-color: currentColor;
 	text-decoration: underline;
 	-moz-opacity: 0.9;
 	opacity: 0.9;
@@ -1025,25 +1018,40 @@ a:before,
 nav a:not(:hover) {
 	text-decoration: none !important;
 }
-
+em a,
+em label,
+em button,
+nav a,
+nav label,
+.menu label,
+.tabs label {
+	box-shadow: inset 0 0px 0px rgba(0,0,0,.1);
+}
 em a:hover,
 em label:hover,
 em button:hover,
-em a:visited:hover {
-	box-shadow: inset 0 0 0 10em rgba(255,255,255,.25);
+em a:visited:hover,
+nav a:hover,
+nal label:hover,
+.menu label:hover,
+.tabs label:hover {
+	box-shadow: inset 0 0 0 5em rgba(255,255,255,.1);
 }
 em a:active,
 em label:active,
-em button:active  {
-	box-shadow: inset 0 0 0 .05em currentColor, inset 0 0 .75em rgba(255,255,255,0.1);
+em button:active,
+nav a:active,
+nav label:active,
+.menu label:active,
+.tabs label:active {
+	box-shadow: inset 0 0 0 .05em currentColor;
 }
 
 /* ------------------------------------------------------------ Skin */
 
 /* Light theme (default) */
 
-#page,
-nav form input[type=text]:focus {
+#page {
 	background: var(--color-white);
 	color: var(--color-black);
 }
@@ -1057,26 +1065,15 @@ em a:visited {
 a:visited svg {
 	fill: var(--color-grey);
 }
-nav label:hover,
 a:hover,
 a:visited:hover,
 em button:hover,
 em label:hover {
 	color: var(--color-softgreen);
 }
-a:hover svg {
-	fill: var(--color-blue);
-}
 a:active,
 a:visited:active {
-	color: var(--color-violet);
-}
-a:visited:active svg {
-	fill: var(--color-violet);
-}
-nav a:hover,
-nav label:hover {
-	box-shadow: inset 0px 1px 2px rgba(0,0,0,.2);
+	color: var(--color-turquoise);
 }
 
 /* Soft theme */
@@ -1100,24 +1097,15 @@ nav label:hover {
 #theme-soft:checked ~ #page em a:visited {
 	color: var(--color-softviolet);
 }
-#theme-soft:checked ~ #page a:visited svg {
-	fill: var(--color-softviolet);
-}
 #theme-soft:checked ~ #page label:hover,
 #theme-soft:checked ~ #page button:hover,
 #theme-soft:checked ~ #page a:hover,
 #theme-soft:checked ~ #page a:visited:hover {
 	color: var(--color-softblue);
 }
-#theme-soft:checked ~ #page a:hover svg {
-	fill: var(--color-softblue);
-}
 #theme-soft:checked ~ #page a:active,
 #theme-soft:checked ~ #page a:visited:active {
 	color: var(--color-violet);
-}
-#theme-soft:checked ~ #page a:visited:active svg {
-	fill: var(--color-violet);
 }
 #theme-soft:checked ~ #page nav a:hover,
 #theme-soft:checked ~ #page nav label:hover {
@@ -1129,7 +1117,7 @@ nav label:hover {
 #theme-dark:checked ~ #page,
 #theme-dark:checked ~ #site-nav,
 #theme-dark:checked ~ #page-nav {
-	background-color: var(--color-black);
+	background-color: var(--color-softblack);
 	color: var(--color-white);	
 }
 #theme-dark:checked ~ #page a {
@@ -1138,15 +1126,12 @@ nav label:hover {
 #theme-dark:checked ~ #page em a,
 #theme-dark:checked ~ #page em label,
 #theme-dark:checked ~ #page em button {
-	background-color: var(--color-softblack);
+	background-color: var(--color-black);
 	color: var(--color-softgrey);	
 }
 #theme-dark:checked ~ #page a:visited,
 #theme-dark:checked ~ #page em a:visited {
 	color: var(--color-grey);
-}
-#theme-dark:checked ~ #page a:visited svg {
-	fill: var(grey);
 }
 #theme-dark:checked ~ #page label:hover,
 #theme-dark:checked ~ #page button:hover,
@@ -1154,41 +1139,21 @@ nav label:hover {
 #theme-dark:checked ~ #page a:visited:hover {
 	color: var(--color-softgrey);
 }
-#theme-dark:checked ~ #page a:hover svg {
-	fill: var(--color-softgrey);
-}
 #theme-dark:checked ~ #page a:active,
 #theme-dark:checked ~ #page a:visited:active {
 	color: var(--color-grey);
-}
-#theme-dark:checked ~ #page a:visited:active svg {
-	fill: var(--color-violet);
 }
 #theme-dark:checked ~ #page nav a:hover,
 #theme-dark:checked ~ #page nav label:hover {
 	background-color: var(--color-translucentwhite);
 }
 
-/* Emphatic link colors (important reset) */
-
-em a,
-em label, 
-em button,
-em a:visited,
-nav a,
-nav label {
-	color: inherit;
-}
-
-
 /* Page grid 
-
 #page {
 	background-image: linear-gradient(to bottom, cyan 0, rgba(255, 255, 255, 0) 1px);
 	background-repeat: repeat-y;
 	background-size: 100% 16px;
 }
-
 */
 
 
@@ -1223,7 +1188,7 @@ nav label {
 	--color-softgrey: rgba(220,220,220,1);
 	--color-grey: rgba(150,150,150,1);
 	--color-hardgrey: rgba(90,90,90,1);
-	--color-softblack: rgba(50,50,50,1);
+	--color-softblack: rgba(30,30,30,1);
 	--color-black: rgba(0,0,0,1);
 	
 	/* Soft Theme */
@@ -1233,7 +1198,7 @@ nav label {
 	
 	/* Overlays */
 	--color-translucentblack: rgba(0,0,0,.5);
-	--color-translucentwhite: rgba(255,255,255,.5);
+	--color-translucentwhite: rgba(255,255,255,.2);
 		
 	/* Font stacks */
 	--font-default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;

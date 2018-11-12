@@ -418,7 +418,7 @@ article > div {
 	clear: none;
 	display: block;
 	float: left;
-	margin: 0 0.5% 64px;
+	margin: 0 0.5% 16px;
 	padding: 0;
 	overflow: hidden;
 	text-align: center;
@@ -434,12 +434,13 @@ article > div {
 }
 .gallery article div,
 #layout-gallery:checked ~ #layout-result article div {
-	height: 256px;
+	height: 320px;
 	overflow: hidden;
 }
 .gallery article div img,
 #layout-gallery:checked ~ #layout-result article div img {
 	height: 256px;
+	margin-bottom: 64px;
 	overflow: hidden;
 	object-fit: cover;
 	width: 100%;
@@ -450,14 +451,14 @@ article > div {
 	font-size: 16px;
 	line-height: 32px;
 	position: absolute;
-	bottom: 0; left: 35%;
+	bottom: 32px; left: 35%;
 	width: 30%;
 	z-index: 15;
 }
 .gallery article nav a,
 #layout-gallery:checked ~ #layout-result article nav a {
 	background-color: #ffffff;
-	background-color: rgba(255,255,255,.5);
+	background-color: rgba(255,255,255,.8);
 	border-radius: 50%;
 }
 .gallery article:hover nav a,
@@ -469,7 +470,7 @@ article > div {
 
 .cards article,
 #layout-cards:checked ~ #layout-result article {
-	border: 1px solid rgba(0,0,0,.2);
+	border: 1px solid currentColor;
 	border-radius: 2px;
 	clear: none;
 	display: block;
@@ -571,7 +572,7 @@ article > div {
 .tiles article nav,
 #layout-tiles:checked ~ #layout-result article nav {
 	z-index: 9;
-	color: rgba(255,255,255,.4);
+	color: rgba(255,255,255,.1);
 }
 .tiles article:hover h3,
 #layout-tiles:checked ~ #layout-result article:hover h3,
@@ -612,7 +613,6 @@ article > div {
 }
 .tiles article nav a,
 #layout-tiles:checked ~ #layout-result article nav a {
-	background-color: rgba(0,0,0,.5);
 	border-radius: 50%;
 	margin: 0 auto 6px;
 	width: 64px;
@@ -799,6 +799,7 @@ dialog {
 .overlay,
 .overlay-transparent {
 	background-color: rgba(0,0,0,.4);
+	box-shadow: none !important;
 	position: fixed;
 	top: 0; bottom: 0;
 	left: 0; right: 0;
@@ -834,6 +835,7 @@ dialog {
 	animation: fadeIn .7s ease both;
 }
 .menu nav a {
+	border-color: transparent;
 	color: #333;
 }
 .collapser > div,
@@ -844,6 +846,14 @@ dialog {
 	clear: both;
 	margin: 0;
 	padding: 14px 14px 15px;
+}
+.tabs label {
+	border: 1px solid currentColor;
+	border-bottom: none;
+	margin: 0 1px -1px;
+}
+.tabs ul li > div {
+	margin-top: 14px;
 }
 .collapser em label,
 .accordion em label {
@@ -860,13 +870,6 @@ dialog {
 	margin: 0px;
 	padding: 0px;
 	list-style: none;
-}
-.tabs > nav > label,
-.tabs > nav > label:hover {
-	border-bottom: none;
-	box-shadow: none;
-	color: inherit;
-	margin: 6px 1px;
 }
 input:checked ~ dialog,
 input:checked ~ .overlay,
@@ -888,7 +891,7 @@ input:checked ~ .overlay-transparent,
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
-		max-width: 18%;
+		max-width: 25%;
 	}
 }
 
@@ -1142,14 +1145,14 @@ dialog > label,
 [id*='lightbox']:target + a,
 [id*='lightbox']:target ~ .previous,
 [id*='lightbox']:target ~ .next {
-	border: 1px solid currentColor;
+	border: 2px solid currentColor;
 	border-radius: 50%;
 	cursor: pointer;
 	display: block;
 	font-size: 26px;
 	font-weight: bold;
 	height: 42px;
-	line-height: 32px;
+	line-height: 34px;
 	width: 42px;
 	text-align: center;
 	text-decoration: none;
@@ -1177,7 +1180,6 @@ dialog > label:active,
 [id*='lightbox']:target ~ .next:active {
 	background-color: #ffffff;
 	color: #333333;
-	box-shadow: inset 0 0 0 .05em currentColor, inset 0 0 .75em rgba(255,255,255,0.1);
 }
 [id*='lightbox']:target + a,
 [id*='lightbox']:target ~ .previous,
@@ -1288,7 +1290,7 @@ nav strong label mark {
 #tools-nav label,
 #tools-switcher label {
 	background-color: #fff;
-	border: 4px solid #666;
+	border: 2px solid currentColor;
 	border-radius: 50%;
 	color: #000;
 	cursor: pointer;
@@ -1298,7 +1300,7 @@ nav strong label mark {
 	padding: 0;
 	text-align: center;
 	text-decoration: none;
-	line-height: 40px;
+	line-height: 46px;
 	height: 48px;
 	width: 48px;
 }
