@@ -911,7 +911,7 @@ input:checked ~ .overlay-transparent,
 }
 .flip article,
 .flip aside {
-	background-color: #ffffff;
+	background-color: inherit;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -976,7 +976,18 @@ input:checked ~ .overlay-transparent,
 
 /* Alert */
 
+.alert,
+.alert + em label {
+	-webkit-animation: fadeIn 1s ease both;
+	-moz-animation: fadeIn 1s ease both;
+	-o-animation: fadeIn 1s ease both;
+	animation: fadeIn 1s ease both;
+}
 input:checked ~ .alert {
+	display: none;
+}
+input:not(:checked) ~ .alert + label,
+input:not(:checked) ~ .alert + em label {
 	display: none;
 }
 
@@ -1293,14 +1304,13 @@ nav strong label mark {
 	border: 2px solid currentColor;
 	border-radius: 50%;
 	color: #000;
-	cursor: pointer;
 	display: block;
 	float: right;
 	margin: 0 8px 8px;
 	padding: 0;
 	text-align: center;
 	text-decoration: none;
-	line-height: 46px;
+	line-height: 44px;
 	height: 48px;
 	width: 48px;
 }

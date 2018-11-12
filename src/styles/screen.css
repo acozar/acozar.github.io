@@ -85,7 +85,7 @@ svg,
 video {
 	max-width: 100%;
 }
-a, button, select, 
+a, button, select, label,
 input[type="submit"], 
 input[type="button"], 
 input[type="checkbox"], 

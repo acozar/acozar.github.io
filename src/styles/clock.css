@@ -148,7 +148,13 @@ dialog {
 	   	 -o-perspective: 1200px;
 			perspective: 1200px;
 }
+@media (orientation: portrait) {
 
+	.clock {
+		margin: 5vh auto 0;
+	}
+
+}
 
 .clock-case,
 .clock-case-back {
@@ -292,8 +298,8 @@ dialog {
   content: "";
   background-color: #333333;
   width: 100%;
-  height: 42%;
-  top: 16%;
+  height: 46%;
+  top: 14%;
   position: absolute;
   box-shadow: 8px 8px 8px rgba(0,0,0,.5);
 }
@@ -343,7 +349,7 @@ dialog {
 	padding: 32px 0;
 	position: absolute;
 	bottom: 15%;
-	left: 44%;
+	left: 45%;
 	width: 3em;
 	height: 1em;
 }
