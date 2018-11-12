@@ -338,7 +338,6 @@ dialog {
 	animation: rotation 86400s infinite linear;
 }
 .clock-zenit-hand:before {
-	border: 6px solid currentColor;
 	border-radius: 50%;
 	color: #dd0000;
 	content: "\2609";
@@ -346,12 +345,9 @@ dialog {
 	font-size: 32px;
 	font-weight: bold;
 	text-align: center;
-	padding: 32px 0;
 	position: absolute;
-	bottom: 15%;
+	bottom: 18%;
 	left: 45%;
-	width: 3em;
-	height: 1em;
 }
 
 .clock-nut {
