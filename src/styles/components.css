@@ -97,7 +97,9 @@
 /* ------------------------------------------------------------ Flex-grid */
 
 .flex-grid,
-[class*='flex-grid'] {
+[class*='flex-grid'],
+.flex-box,
+[class*='flex-box'] {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
@@ -105,8 +107,9 @@
 }
 
 .flex-grid > *,
-[class*='flex-grid'] > section {
-	margin-bottom: 1em;
+[class*='flex-grid'] > section,
+.flex-box > *,
+[class*='flex-box'] > section {
 	padding: 1em;
 }
 
@@ -114,34 +117,44 @@
 	border: 1px solid currentColor;
 }
 
-.flex-grid-1 > section {
+.flex-grid-1 > section,
+.flex-box-1 > section {
 	width: 99%;
 }
-.flex-grid-2 > section {
+.flex-grid-2 > section,
+.flex-box-2 > section {
 	width: 49.5%;
 }
-.flex-grid-3 > section {
+.flex-grid-3 > section,
+.flex-box-3 > section {
 	width: 33%;
 }
-.flex-grid-4 > section {
+.flex-grid-4 > section,
+.flex-box-4 > section {
 	width: 24.75%;
 }
-.flex-grid-5 > section {
+.flex-grid-5 > section,
+.flex-box-5 > section {
 	width: 19.75%;
 }
-.flex-grid-6 > section {
+.flex-grid-6 > section,
+.flex-box-6 > section {
 	width: 16.5%;
 }
-.flex-grid-8 > section {
+.flex-grid-8 > section,
+.flex-box-8 > section {
 	width: 12.35%;
 }
-.flex-grid-9 > section {
+.flex-grid-9 > section,
+.flex-box-9 > section {
 	width: 11%;
 }
-.flex-grid-10 > section {
+.flex-grid-10 > section,
+.flex-box-10 > section {
 	width: 9.9%;
 }
-.flex-grid-12 > section {
+.flex-grid-12 > section,
+.flex-box-12 > section {
 	width: 8.25%;
 }
 
@@ -656,8 +669,9 @@ article > div {
 
 .site-logo {
 	border-radius: 50%;
+	padding: 0;
 	position: absolute;
-	top: 0;
+	top: 16px;
 	left: 0;
 	z-index: 11;
 }
@@ -854,6 +868,10 @@ dialog {
 }
 .tabs ul li > div {
 	margin-top: 14px;
+	-webkit-animation: fadeIn .7s ease both;
+	-moz-animation: fadeIn .7s ease both;
+	-o-animation: fadeIn .7s ease both;
+	animation: fadeIn .7s ease both;
 }
 .collapser em label,
 .accordion em label {
@@ -1342,7 +1360,7 @@ nav strong label mark {
 /* Colors */
 
 [class*='txt-color'], [class*='txt-color'] * { background-color: inherit !important; }
-[class*='txt-color'] { border: 1px solid currentColor; }
+
 
 .txt-color-softyellow { color: var(--color-softyellow); }
 .txt-color-softorange { color: var(--color-softorange); }
@@ -1369,7 +1387,7 @@ nav strong label mark {
 .txt-color-softblack { color: var(--color-softblack); }
 .txt-color-black { color: var(--color-black); }
 
-[class*='bg-color'], [class*='bg-color'] * { background-color: inherit !important; color: var(--color-white); }
+[class*='bg-color'], [class*='bg-color'] * { background-color: inherit !important; border: none; color: var(--color-white); }
 
 .bg-color-softyellow { background-color: var(--color-softyellow) !important; }
 .bg-color-softorange { background-color: var(--color-softorange) !important; }
@@ -1396,5 +1414,12 @@ nav strong label mark {
 .bg-color-softblack { background-color: var(--color-softblack) !important; }
 .bg-color-black { background-color: var(--color-black) !important; }
 
+
+/* Text */
+
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+.text-justify { text-align: justify; }
 
 /* The end */
