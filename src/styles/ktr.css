@@ -1,0 +1,68 @@
+/* KTR by Acózar */
+
+/* KTR Slides */
+
+.ktr-slide {
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 40px;
+	margin: 60px auto;
+	text-align: center;
+	text-transform: uppercase;
+}
+.ktr-top,
+.ktr-left {
+	color: rgba(0,0,0,.4);
+	text-shadow: 0 -1px 2px #ffffff;
+}
+.ktr-right,
+.ktr-bottom {
+	color: rgba(0,0,0,.1);
+}
+.ktr-top,
+.ktr-left,
+.ktr-right,
+.ktr-bottom {
+	display: block;
+	padding: 10px 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.ktr-top,
+.ktr-left,
+.ktr-right,
+.ktr-bottom {
+	height: 60px;
+}
+.ktr-left,
+.ktr-right,
+.ktr-slide:hover .ktr-top,
+.ktr-slide:hover .ktr-bottom {
+	opacity: 0;
+	text-shadow: 0 0 32px rgba(0,0,0,.5);
+}
+.ktr-slide:hover .ktr-left,
+.ktr-slide:hover .ktr-right {
+	opacity: 1;
+	left: 0;
+	right: 0;
+	text-shadow: none;
+}
+.ktr-slide:hover .ktr-top {
+	top: -60px;
+}
+.ktr-slide:hover .ktr-bottom {
+	top: 120px;
+}
+.ktr-left {
+	left: -100%;
+}
+.ktr-right {
+	right: -100%;
+}
+.ktr-bottom,
+.ktr-right {
+	top: 60px;
+}

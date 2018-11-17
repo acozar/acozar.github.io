@@ -572,31 +572,41 @@ article > div {
 }
 .tiles article h3,
 #layout-tiles:checked ~ #layout-result article h3 {
+	color: rgba(255,255,255,.8);
 	font-size: 16px;
 	line-height: 16px;
 	height: 256px;
 	padding: 96px 16px;
 	text-decoration: none;
-}	
-.tiles article h3,
-#layout-tiles:checked ~ #layout-result article h3,
+	z-index: 9;
+}
+.tiles article nav,
+#layout-tiles:checked ~ #layout-result article nav {
+	bottom: -100%;
+}
 .tiles article strong,
 #layout-tiles:checked ~ #layout-result article strong,
 .tiles article nav,
-#layout-tiles:checked ~ #layout-result article nav {
+#layout-tiles:checked ~ #layout-result article nav,
+.tiles article a,
+#layout-tiles:checked ~ #layout-result article a {
 	z-index: 9;
-	color: rgba(255,255,255,.1);
+	color: rgba(255,255,255,0);
 }
 .tiles article:hover h3,
 #layout-tiles:checked ~ #layout-result article:hover h3,
 .tiles article:hover strong,
 #layout-tiles:checked ~ #layout-result article:hover strong,
 .tiles article:hover nav,
-#layout-tiles:checked ~ #layout-result article:hover nav {
+#layout-tiles:checked ~ #layout-result article:hover nav,
+.tiles article:hover a,
+#layout-tiles:checked ~ #layout-result article:hover a {
 	color: #ffffff;
+	color: rgba(255,255,255,1);
 }
 .tiles article:hover nav,
 #layout-tiles:checked ~ #layout-result article:hover nav {
+	bottom: 0;
 	z-index: 10;
 }
 .tiles article strong,
@@ -1118,11 +1128,11 @@ input:not(:checked) ~ .alert + em label {
 	border-radius: 4px;
 	box-shadow: 0 0 .25em rgba(0,0,0,.2);
 	color: #fff;
-	min-width: 5em;
+	min-width: 64px;
 	padding: 8px 0;
 	top: -64px;
-	left: -120%;
-	right: -120%;
+	left: -100%;
+	right: -100%;
 }
 
 /* Lightbox */
