@@ -6,8 +6,10 @@
 	text-align: center;
 }
 .ktr-button-logo,
-.ktr-button-tools {
+.ktr-button-tools,
+.ktr-button-moon-phase {
 	position: fixed;
+	z-index: 10;
 }
 
 /* KTR  logo */
@@ -18,12 +20,14 @@
 	left: calc(50% - 48px);
 	height: 96px;
 	width: 96px;
-	z-index: 10;
 }
 .ktr-button-tools {
 	top: 8px;
 	left: 8px;
-	z-index: 10;
+}
+.ktr-button-moon-phase {
+	top: 8px;
+	right: 8px;
 }
 
 /* KTR emphatic labels */
@@ -33,7 +37,9 @@
 .ktr-button-logo a,
 .ktr-button-logo label,
 .ktr-button-tools a,
-.ktr-button-tools label {
+.ktr-button-tools label,
+.ktr-button-moon-phase a,
+.ktr-button-moon-phase label {
 	background-color: #ffffff;
 	border-radius: 50%;
 	border-color: currentColor;
@@ -53,16 +59,24 @@
 	width: 64px;
 	height: 64px;
 }
+.ktr-button-moon-phase svg {
+	position: relative;
+	margin: 8px auto;
+	width: 64px;
+	height: 64px;
+}
 
 /* KTR Modals */
 
 .ktr-modal {
+	background--color: #ffffff;
 	color: #000;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
 	padding: 0;
+	text-align: center;
 	width: 100%;
 }
 
@@ -77,7 +91,7 @@
 	border-radius: 4px;
 	content: attr(data-title);
 	padding: 8px 0;
-	top: -136px;
+	bottom: -100%;
 	left: -20%;
 	right: -20%;
 	min-width: 128px;
@@ -332,17 +346,6 @@
 
 /* Moon */
 
-.moon-phase {
-	border-radius: 50%;
-	display: block;
-	padding: 12px;
-	position: fixed;
-	top: 8px;
-	right: 8px;
-	height: 96px;
-	width: 96px;
-}
-.moon-phase * {
-	pointer-events: none !important;
-}
+.moon { fill:#D6D5C0; }
+.moonback { fill:black;stroke:#fff;stroke-width:1px; }
 
