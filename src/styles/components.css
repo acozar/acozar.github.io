@@ -141,6 +141,10 @@
 .flex-box-6 > section {
 	width: 16.5%;
 }
+.flex-grid-7 > section,
+.flex-box-7 > section {
+	width: 14.2%;
+}
 .flex-grid-8 > section,
 .flex-box-8 > section {
 	width: 12.35%;
@@ -1268,9 +1272,9 @@ nav strong label mark {
 
 .banner,
 .cover {
-	background-position: top center;
+	background-position: center;
 	background-attachment: fixed;
-	background-size: cover;
+	background-size: 100%;
 	background-repeat: no-repeat;
 	border:none;
 	color: #fff;
@@ -1283,7 +1287,7 @@ nav strong label mark {
 	padding-top:180px;
 }
 .cover {
-	height: 90vh;
+	height: 768px;
 	padding-top: 320px;
 }
 .sticky-header {

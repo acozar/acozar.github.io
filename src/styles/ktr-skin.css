@@ -1,0 +1,348 @@
+/* KTR by Acózar */
+
+/* KTR recurrent elements */
+
+.page {
+	text-align: center;
+}
+.ktr-button-logo,
+.ktr-button-tools {
+	position: fixed;
+}
+
+/* KTR  logo */
+
+.ktr-button-logo {
+	top: 8px;
+	left: 45%;
+	left: calc(50% - 48px);
+	height: 96px;
+	width: 96px;
+	z-index: 10;
+}
+.ktr-button-tools {
+	top: 8px;
+	left: 8px;
+	z-index: 10;
+}
+
+/* KTR emphatic labels */
+
+.ktr-button a,
+.ktr-button label,
+.ktr-button-logo a,
+.ktr-button-logo label,
+.ktr-button-tools a,
+.ktr-button-tools label {
+	background-color: #ffffff;
+	border-radius: 50%;
+	border-color: currentColor;
+	font-size: 48px;
+	line-height: 64px;
+	width: 96px;
+	height: 96px;
+}
+.ktr-button a img,
+.ktr-button label img,
+.ktr-button-logo a img,
+.ktr-button-logo label img,
+.ktr-button-tools a img,
+.ktr-button-tools label img {
+	display: block;
+	margin: 0 auto;
+	width: 64px;
+	height: 64px;
+}
+
+/* KTR Modals */
+
+.ktr-modal {
+	color: #000;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 0;
+	width: 100%;
+}
+
+/* KTR tooltip */
+
+.ktr-tooltip {
+	position: relative;
+}
+.ktr-tooltip:hover:after {
+	background-color: inherit;
+	border: 2px solid currentColor;
+	border-radius: 4px;
+	content: attr(data-title);
+	padding: 8px 0;
+	top: -136px;
+	left: -20%;
+	right: -20%;
+	min-width: 128px;
+	position: absolute;
+	text-transform: uppercase;
+	z-index: 5;
+	-webkit-animation: fadeIn .3s ease both;
+	-moz-animation: fadeIn .3s ease both;
+	-o-animation: fadeIn .3s ease both;
+	animation: fadeIn .3s ease both;
+}
+@media screen and (max-width: 1024px) {
+	.ktr-tooltip:hover:after {
+		display: none;
+	}
+}
+
+/* KTR Clock */
+
+@-webkit-keyframes rotation {
+  from { -webkit-transform: rotate(0deg); }    
+  to { -webkit-transform: rotate(360deg); }
+}
+
+@-moz-keyframes rotation {
+  from { -moz-transform: rotate(0deg); }    
+  to { -moz-transform: rotate(360deg); }
+}
+
+@-o-keyframes rotation {
+  from { -o-transform: rotate(0deg); }    
+  to { -o-transform: rotate(360deg); }
+}
+
+@keyframes rotation {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.ktr-clock {	
+	border-bottom: 1px solid currentColor;	
+	height: 98vh;
+}
+
+.clock-case,
+.clock-case-back,
+.clock-dial,
+.clock-second-hand,
+.clock-minute-hand,
+.clock-hour-hand,
+.clock-zenit-hand,
+.clock-horizon,
+.clock-nut {
+	position: absolute;
+}
+
+.clock {
+	display: block;
+	margin: 15vh auto 0;
+	max-width: 65vh;
+	position: relative;
+
+ 	-webkit-animation-name: zoomInDown;
+ 	   -moz-animation-name: zoomInDown;
+ 	   	 -o-animation-name: zoomInDown;
+			animation-name: zoomInDown;
+			
+	-webkit-animation-delay: 1s;
+	   -moz-animation-delay: 1s;
+	     -o-animation-delay: 1s;
+			animation-delay: 1s;
+			
+	-webkit-animation-duration: 1s;
+	   -moz-animation-duration: 1s;
+	     -o-animation-duration: 1s;
+	        animation-duration: 1s;
+	        
+	-webkit-animation-fill-mode: both;
+	   -moz-animation-fill-mode: both;
+	     -o-animation-fill-mode: both;
+	        animation-fill-mode: both;
+	        
+	-webkit-perspective: 1200px;
+	   -moz-perspective: 1200px;
+	   	 -o-perspective: 1200px;
+			perspective: 1200px;
+}
+@media screen and (max-width: 767px) , screen and (max-height: 480px) {
+	.clock {
+		margin: 20vh auto 0;
+	}
+}
+.clock-case,
+.clock-case-back {
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+		
+	-webkit-transform-style: preserve-3d;
+	   -moz-transform-style: preserve-3d;
+		 -o-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+	
+	-webkit-backface-visibility: hidden;
+	   -moz-backface-visibility: hidden;
+	     -o-backface-visibility: hidden;
+			backface-visibility: hidden;
+
+	-webkit-transition: all .4s ease-in-out;
+	   -moz-transition: all .4s ease-in-out;
+		 -o-transition: all .4s ease-in-out;
+			transition: all .4s ease-in-out;
+}
+
+.clock-case {
+	padding: 1%;
+	z-index: 8;
+	-webkit-transform: rotateX(0deg) rotateY(0deg);
+	   -moz-transform: rotateX(0deg) rotateY(0deg);
+	     -o-transform: rotateX(0deg) rotateY(0deg);
+			transform: rotateX(0deg) rotateY(0deg);
+}
+.clock input:checked ~ .clock-case {
+	z-index: 8;
+	-webkit-transform: rotateY(-180deg);
+	    -moz-transform: rotateY(-180deg);
+		  -o-transform: rotateY(-180deg);
+			transform: rotateY(-180deg);
+}
+.clock-case-back {
+	padding: 1%;
+	z-index: 7;
+	-webkit-transform: rotateY(180deg);
+	   -moz-transform: rotateY(179deg);
+	   -o-transform: rotateY(179deg);
+			transform: rotateY(179deg);
+}
+.clock input:checked ~ .clock-case-back {
+	z-index: 9;
+	-webkit-transform: rotateX(0deg) rotateY(0deg);
+	-moz-transform: rotateX(0deg) rotateY(0deg);
+	transform: rotateX(0deg) rotateY(0deg);
+}
+
+.clock input:checked ~ .clock-case .clock-second-hand:before,
+.clock input:checked ~ .clock-case .clock-minute-hand:before,
+.clock input:checked ~ .clock-case .clock-hour-hand:before,
+.clock input:checked ~ .clock-case .clock-zenit-hand:before,
+.clock input:checked ~ .clock-case .clock-nut {
+	display: none;
+}
+
+
+.clock-dial {
+  position: relative;
+}
+
+.clock-ratio {
+  padding-bottom: 100%;
+  height: 0;
+  overflow: hidden;
+}
+
+.clock-second-hand,
+.clock-minute-hand,
+.clock-hour-hand,
+.clock-zenit-hand,
+.clock-horizon {
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	box-shadow: 1px 1px 5px rgba(0,0,0,.1);
+}
+.clock-second-hand {
+	background-image: url('../dials/seconds.png');
+	width: 100%;
+	height: 100%;
+	top: 0; left: 0;
+	-webkit-animation: rotation 60s infinite linear;
+	-moz-animation: rotation 60s infinite linear;
+	-o-animation: rotation 60s infinite linear;
+	animation: rotation 60s infinite linear;
+}
+
+.clock-minute-hand {
+	background-image: url('../dials/minutes.png');
+	width: 61%;
+	height: 61%;
+	left: 19.5%; top: 19.5%;
+	-webkit-animation: rotation 3600s infinite linear;
+	-moz-animation: rotation 3600s infinite linear;
+	-o-animation: rotation 3600s infinite linear;
+	animation: rotation 3600s infinite linear;
+}
+
+.clock-hour-hand {
+	background-image: url('../dials/hours.png');
+	width: 36%;
+	height: 36%;
+	left: 32%; top: 32%;
+	-webkit-animation: rotation 43200s infinite linear;
+	-moz-animation: rotation 43200s infinite linear;
+	-o-animation: rotation 43200s infinite linear;
+	animation: rotation 43200s infinite linear;
+}
+
+.clock-zenit-hand,
+.clock-horizon {
+	width: 22%;
+	height: 22%;
+	left: 39%; top: 39%;
+}
+.clock-zenit-hand {
+	background-image: url('../dials/zenit.png');
+	-webkit-animation: rotation 86400s infinite linear;
+	-moz-animation: rotation 86400s infinite linear;
+	-o-animation: rotation 86400s infinite linear;
+	animation: rotation 86400s infinite linear;}
+.clock-horizon {
+	background-image: url('../dials/horizon.png');
+}
+.clock-nut {
+	border: 1px solid #999;
+	top: 48%;
+	left: 48%;
+	width: 4%;
+	height: 4%;
+}
+
+.clock-back {
+	display: block;
+	padding: 50%;
+	position: relative;
+}
+
+.clock-data {
+	display: block;
+	position: absolute;
+	top:45%;
+	left: 0;
+	padding-top: 1em;
+	width: 100%;
+	text-align: center;
+}
+.clock * {
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+	     -o-border-radius: 50%;
+			border-radius: 50%;
+}
+
+/* Moon */
+
+.moon-phase {
+	border-radius: 50%;
+	display: block;
+	padding: 12px;
+	position: fixed;
+	top: 8px;
+	right: 8px;
+	height: 96px;
+	width: 96px;
+}
+.moon-phase * {
+	pointer-events: none !important;
+}
+

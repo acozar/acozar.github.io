@@ -2,6 +2,20 @@
 
 /* KTR Slides */
 
+#ktr-nav {
+	border-color: transparent;
+	padding-top: 16px;
+	text-align: center;
+	position: -webkit-sticky; 
+	position: sticky; 
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+#ktr-nav a {
+	background: #fff;
+	border-radius: 50%;
+}
 .ktr-slide {
 	font-size: 36px;
 	font-weight: bold;
