@@ -17,13 +17,25 @@ body {
 	height: 98vh;
 	min-height: 600px;
 }
+.ktr-footer {
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-image: url('../img/bgacozar.png');
+	padding-top: 800px;
+}
+@media screen and (max-width: 1024px) {
+	.ktr-footer {
+		background-size: 100%;
+	}
+}
 .ktr-box {
 	border-top: 1px solid currentColor;
 	border-bottom: 1px solid currentColor;
 	min-height: 120px;
 }
 
-/* KTR  Button */
+/* KTR  positions */
 
 .ktr-button-logo,
 .ktr-button-tools,
@@ -52,13 +64,19 @@ body {
 .ktr-button-clock-reverse {
 	display: block;
 	position: absolute;
-	bottom: 8vh;
-	right: 8vh;
+	top: 75vh;
+	right: 14px;
 	-webkit-animation: rotation 10s infinite linear;
 	-moz-animation: rotation 10s infinite linear;
 	-o-animation: rotation 10s infinite linear;
 	animation: rotation 10s infinite linear;
 	opacity: .5;
+}
+.ktr-button-solaris {
+	display: block;
+	position: absolute;
+	top: 50vh;
+	left: 14px;
 }
 
 
@@ -182,8 +200,10 @@ body {
 	display: block;
 	margin: 6vh auto 0;
 	max-width: 85vh;
+	min-height: 90vh;
+	height: auto;
 	position: relative;
-
+	overflow: hidden;
  	-webkit-animation-name: zoomInDown;
  	   -moz-animation-name: zoomInDown;
  	   	 -o-animation-name: zoomInDown;
@@ -272,6 +292,8 @@ body {
 	   -moz-transform: rotateY(180deg);
 	   -o-transform: rotateY(180deg);
 			transform: rotateY(180deg);
+	background-image: linear-gradient(37deg, #cccccc 4.55%, #ffffff 4.55%, #ffffff 50%, #cccccc 50%, #cccccc 54.55%, #ffffff 54.55%, #ffffff 100%);
+	background-size: 11.00px 8.29px;
 }
 .clock input:checked ~ .clock-case-back {
 	z-index: 8;
@@ -411,23 +433,47 @@ body {
 .solaris {
 	display: block;
 	margin: 0 auto;
+	padding-top: 120px;
 	text-align: center;
 }
 
 /* Solar System Styles */
 
+.system-legend {
+	visibility: hidden;
+	opacity: 0;
+	font-size: 24px;
+	line-height: 36px;
+    -webkit-transition: all 2s ease-in;
+    -moz-transition: all 2s ease-in;
+    -o-transition: all 2s ease-in;
+    transition: all 2s ease-in;
+}
+.system-legend span {
+	display: inline-block;
+	margin: 0 16px;
+}
 ul.solarsystem {
     display: block;
-    height: 800px;
-    width: 800px;
+    height: 700px;
+    width: 700px;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
     list-style: none;
-    -webkit-transition: all 0.09s ease-in;
-    -moz-transition: all 0.09s ease-in;
-    -o-transition: all 0.09s ease-in;
-    transition: all 0.09s ease-in;
+    -webkit-transition: all 2s ease-in;
+    -moz-transition: all 2s ease-in;
+    -o-transition: all 2s ease-in;
+    transition: all 2s ease-in;
+    perspective: 700px;
+    transform-style: preserve-3d;
+}
+.solaris input:checked ~ ul.solarsystem {
+	transform: rotateX(40deg);
+}
+.solaris input:checked ~ .system-legend {
+	visibility: visible;
+	opacity: 100;
 }
 @media screen and (max-width: 767px) , screen and (max-height: 600px) {
 	ul.solarsystem {
@@ -558,7 +604,7 @@ ul.solarsystem li.mars span {
 ul.solarsystem li.asteroids_meteorids {
     top: 27%;
     left: 27%;
-    background: url(http://neography.com/experiment/circles/solarsystem/asteroids_meteorids.png) no-repeat 0 0;
+    background: url('../img/asteroids_meteorids.png') no-repeat 0 0;
     background-size:100%;
     width: 46%;
     height: 46%;
@@ -575,6 +621,8 @@ ul.solarsystem li.jupiter span {
     background: #e0ae6f;
     top: 24%;
     left: 5%;
+    width: 4%;
+    height: 4%;
 }
 ul.solarsystem li.saturn {
     width: 60%;
@@ -625,8 +673,10 @@ ul.solarsystem li.pluto {
 }
 ul.solarsystem li.pluto span {
     background: #7c6a5c;
-    top: 24%;
+    top: 26%;
     left: 5%;
+    width: 1%;
+    height: 1%;
 }
 
 /* CSS3 Animations */
@@ -671,106 +721,138 @@ ul.solarsystem li.pluto {-webkit-animation-duration:120s; -moz-animation-duratio
 /* Atom */
 
 .atom {
-  -webkit-transform: scale(1.2, 1.2);
-          transform: scale(1.2, 1.2);
-  overflow: hidden;
-  height: 98vh;
-  width: 60%;
-  display: block;
-  margin: 0 auto;
+	border: 1px solid #333;
+	border-radius: 50%;
+	display: block;
+	height: 400px;
+	width: 400px;
+	margin: 0 auto;
+	overflow: hidden;
+	-webkit-transform: scale(1.2, 1.2);
+	-moz-transform: scale(1.2, 1.2);
+	-o-transform: scale(1.2, 1.2);
+	transform: scale(1.2, 1.2);
 	-webkit-animation: rotation 10s infinite linear;
 	-moz-animation: rotation 10s infinite linear;
 	-o-animation: rotation 10s infinite linear;
 	animation: rotation 10s infinite linear;
 }
 .atom > div {
-  border-radius: 50%;
-  border: 1px solid #666;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transform: rotateX(80deg) rotateY(20deg);
-          transform: rotateX(80deg) rotateY(20deg);
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: -100px;
-  margin-top: -100px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -100px;
+	margin-top: -100px;
+	border-radius: 50%;
+	border: 1px solid #333;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+		  transform-style: preserve-3d;
+	-webkit-transform: rotateX(80deg) rotateY(20deg);
+	-moz-transform: rotateX(80deg) rotateY(20deg);
+	-o-transform: rotateX(80deg) rotateY(20deg);
+		  transform: rotateX(80deg) rotateY(20deg);
 }
 .atom > div:first-of-type:after {
-  content: "";
-  position: absolute;
-  height: 30px;
-  width: 30px;
-  background: #666;
-  border-radius: 50%;
-  -webkit-transform: rotateX(-80deg) rotateY(0);
-          transform: rotateX(-80deg) rotateY(0);
-  box-shadow: 0 0 25px #666;
-  -webkit-animation: nucleus_ 2s infinite linear;
-          animation: nucleus_ 2s infinite linear;
-  left: 50%;
-  top: 50%;
-  margin-top: -15px;
-  margin-left: -15px;
+	content: "";
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	background: #333;
+	border-radius: 50%;
+	left: 50%;
+	top: 50%;
+	margin-top: -15px;
+	margin-left: -15px;
+	-webkit-transform: rotateX(-80deg) rotateY(0);
+	-moz-transform: rotateX(-80deg) rotateY(0);
+	-o-transform: rotateX(-80deg) rotateY(0);
+		  transform: rotateX(-80deg) rotateY(0);
+	box-shadow: 0 0 25px #333;
+	-webkit-animation: nucleus_ 2s infinite linear;
+	-moz-animation: nucleus_ 2s infinite linear;
+	-o-animation: nucleus_ 2s infinite linear;
+		  animation: nucleus_ 2s infinite linear;
 }
 .atom > div:nth-of-type(2) {
-  -webkit-transform: rotateX(-80deg) rotateY(20deg);
-          transform: rotateX(-80deg) rotateY(20deg);
+	-webkit-transform: rotateX(-80deg) rotateY(20deg);
+	-moz-transform: rotateX(-80deg) rotateY(20deg);
+	-o-transform: rotateX(-80deg) rotateY(20deg);
+		  transform: rotateX(-80deg) rotateY(20deg);
 }
 .atom > div:nth-of-type(2) > div,
 .atom > div:nth-of-type(2) > div:after {
-  -webkit-animation-delay: -.5s;
-          animation-delay: -.5s;
+	-webkit-animation-delay: -.5s;
+	-moz-animation-delay: -.5s;
+	-o-animation-delay: -.5s;
+		  animation-delay: -.5s;
 }
 .atom > div:nth-of-type(3) {
-  -webkit-transform: rotateX(-70deg) rotateY(60deg);
-          transform: rotateX(-70deg) rotateY(60deg);
+	-webkit-transform: rotateX(-70deg) rotateY(60deg);
+	-moz-transform: rotateX(-70deg) rotateY(60deg);
+	-o-transform: rotateX(-70deg) rotateY(60deg);
+		  transform: rotateX(-70deg) rotateY(60deg);
 }
 .atom > div:nth-of-type(3) > div,
 .atom > div:nth-of-type(3) > div:after {
-  -webkit-animation-delay: -1s;
-          animation-delay: -1s;
+	-webkit-animation-delay: -1s;
+	-moz-animation-delay: -1s;
+	-o-animation-delay: -1s;
+		  animation-delay: -1s;
 }
 .atom > div:nth-of-type(4) {
-  -webkit-transform: rotateX(70deg) rotateY(60deg);
-          transform: rotateX(70deg) rotateY(60deg);
+	-webkit-transform: rotateX(70deg) rotateY(60deg);
+	-moz-transform: rotateX(70deg) rotateY(60deg);
+	-o-transform: rotateX(70deg) rotateY(60deg);
+		  transform: rotateX(70deg) rotateY(60deg);
 }
 .atom > div:nth-of-type(4) > div,
 .atom > div:nth-of-type(4) > div:after {
-  -webkit-animation-delay: -1.5s;
-          animation-delay: -1.5s;
+	-webkit-animation-delay: -1.5s;
+	-moz-animation-delay: -1.5s;
+	-o-animation-delay: -1.5s;
+		  animation-delay: -1.5s;
 }
 .atom > div > div {
-  width: 200px;
-  height: 200px;
-  position: relative;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-animation: trail_ 2s infinite linear;
-          animation: trail_ 2s infinite linear;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+		  transform-style: preserve-3d;
+	-webkit-animation: trail_ 2s infinite linear;
+		  animation: trail_ 2s infinite linear;
 }
 .atom > div > div:after {
-  content: "";
-  position: absolute;
-  top: -5px;
-  box-shadow: 0 0 12px #ddd;
-  left: 50%;
-  margin-left: -5px;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background-color: #ddd;
-  -webkit-animation: particle_ 2s infinite linear;
-          animation: particle_ 2s infinite linear;
+	content: "";
+	position: absolute;
+	top: -5px;
+	box-shadow: 0 0 12px #ddd;
+	left: 50%;
+	margin-left: -5px;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background-color: #ddd;
+	-webkit-animation: particle_ 2s infinite linear;
+	-moz-animation: particle_ 2s infinite linear;
+	-o-animation: particle_ 2s infinite linear;
+		  animation: particle_ 2s infinite linear;
 }
 
 @-webkit-keyframes trail_ {
   from {
     -webkit-transform: rotateZ(0deg);
+    -moz-transform: rotateZ(0deg);
+    -o-transform: rotateZ(0deg);
             transform: rotateZ(0deg);
   }
   to {
     -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
             transform: rotateZ(360deg);
   }
 }
@@ -778,30 +860,42 @@ ul.solarsystem li.pluto {-webkit-animation-duration:120s; -moz-animation-duratio
 @keyframes trail_ {
   from {
     -webkit-transform: rotateZ(0deg);
+    -moz-transform: rotateZ(0deg);
+    -o-transform: rotateZ(0deg);
             transform: rotateZ(0deg);
   }
   to {
     -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
             transform: rotateZ(360deg);
   }
 }
 @-webkit-keyframes particle_ {
   from {
     -webkit-transform: rotateX(90deg) rotateY(0deg);
+    -moz-transform: rotateX(90deg) rotateY(0deg);
+    -o-transform: rotateX(90deg) rotateY(0deg);
             transform: rotateX(90deg) rotateY(0deg);
   }
   to {
     -webkit-transform: rotateX(90deg) rotateY(-360deg);
+    -moz-transform: rotateX(90deg) rotateY(-360deg);
+    -o-transform: rotateX(90deg) rotateY(-360deg);
             transform: rotateX(90deg) rotateY(-360deg);
   }
 }
 @keyframes particle_ {
   from {
     -webkit-transform: rotateX(90deg) rotateY(0deg);
+    -moz-transform: rotateX(90deg) rotateY(0deg);
+    -o-transform: rotateX(90deg) rotateY(0deg);
             transform: rotateX(90deg) rotateY(0deg);
   }
   to {
     -webkit-transform: rotateX(90deg) rotateY(-360deg);
+    -moz-transform: rotateX(90deg) rotateY(-360deg);
+    -o-transform: rotateX(90deg) rotateY(-360deg);
             transform: rotateX(90deg) rotateY(-360deg);
   }
 }
