@@ -47,6 +47,21 @@ body {
 
 /* KTR  positions */
 
+/* pulse */
+
+@-webkit-keyframes pulse {
+0% { -webkit-transform: scale(1); } 50% { -webkit-transform: scale(1.1); }    100% { -webkit-transform: scale(1); }
+}
+@-moz-keyframes pulse {
+0% { -moz-transform: scale(1); } 50% { -moz-transform: scale(1.1); }    100% { -moz-transform: scale(1); }
+}
+@-o-keyframes pulse {
+0% { -moz-transform: scale(1); } 50% { -moz-transform: scale(1.1); }    100% { -moz-transform: scale(1); }
+}
+@keyframes pulse {
+0% { transform: scale(1); } 50% { transform: scale(1.1); }    100% { transform: scale(1); }
+}
+
 .ktr-button-logo,
 .ktr-button-tools,
 .ktr-button-moon-phase {
@@ -87,6 +102,10 @@ body {
 	position: absolute;
 	bottom: 15vh;
 	right: 8px;
+	-webkit-animation: pulse 1s infinite linear;
+	-moz-animation: pulse 1s infinite linear;
+	-o-animation: pulse 1s infinite linear;
+	animation: pulse 1s infinite linear;
 }
 
 
