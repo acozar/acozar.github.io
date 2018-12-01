@@ -49,9 +49,10 @@
 	<body>
 				
 		<!-- Theme inputs (invisibles) -->		
-		<input type="radio" id="theme-light" name="theme" aria-hidden="true" hidden>
-		<input type="radio" id="theme-soft" name="theme" aria-hidden="true" hidden>
-		<input type="radio" id="theme-dark" name="theme" aria-hidden="true" hidden> 
+		<input type="radio" id="theme-aurora" name="theme" aria-hidden="true" hidden>
+		<input type="radio" id="theme-meridianus" name="theme" aria-hidden="true" hidden>
+		<input type="radio" id="theme-vesperum" name="theme" aria-hidden="true" hidden>
+		<input type="radio" id="theme-nox" name="theme" aria-hidden="true" hidden> 
 					
 		<!-- Page content -->		
 		<div id="page" class="page">
@@ -87,6 +88,46 @@
 			
 			<main id="page-main">
 				<div>
+					
+					<div class="ktr-screen" id="solar-system">
+
+						<div class="solaris">
+							<ul class="solarsystem">
+							  <li class="sun"><a href="#sun"><span>Sun</span></a></li>
+							  <li class="mercury"><a href="#mercury"><span>Mercury</span></a></li>
+							  <li class="venus"><a href="#venus"><span>Venus</span></a></li>
+							  <li class="earth"><a href="#earth"><span>Earth<span class="moon"> &amp; Moon</span></span></a></li>
+							  <li class="mars"><a href="#mars"><span>Mars</span></a></li>
+							  <li class="asteroids_meteorids"><span>Asteroids &amp; Meteorids</span></li>
+							  <li class="jupiter"><a href="#jupiter"><span>Jupiter</span></a></li>
+							  <li class="saturn"><a href="#saturn"><span>Saturn &amp; <span class="ring">Ring</span></span></a></li>
+							  <li class="uranus"><a href="#uranus"><span>Uranus</span></a></li>
+							  <li class="neptune"><a href="#neptune"><span>Neptune</span></a></li>
+							  <li class="pluto"><a href="#pluto"><span>Pluto</span></a></li>
+							</ul>
+						</div>
+						<h3>Spatium</h3>
+
+					</div>	
+
+					<div class="ktr-screen" id="atom">
+
+						<div class="atom">
+							<div>
+							  <div></div>
+							</div>
+							<div>
+							  <div></div>
+							</div>
+							<div>
+							  <div></div>
+							</div>
+							<div>
+							  <div></div>
+							</div>
+						</div>
+
+					</div>
 
 					<div class="ktr-box flex-box-7">
 					
@@ -115,44 +156,6 @@
 						
 					</div>
 					
-					<div class="ktr-screen" id="solar-system">
-
-						<div class="solaris">
-							<ul class="solarsystem">
-							  <li class="sun"><a href="#sun"><span>Sun</span></a></li>
-							  <li class="mercury"><a href="#mercury"><span>Mercury</span></a></li>
-							  <li class="venus"><a href="#venus"><span>Venus</span></a></li>
-							  <li class="earth"><a href="#earth"><span>Earth<span class="moon"> &amp; Moon</span></span></a></li>
-							  <li class="mars"><a href="#mars"><span>Mars</span></a></li>
-							  <li class="asteroids_meteorids"><span>Asteroids &amp; Meteorids</span></li>
-							  <li class="jupiter"><a href="#jupiter"><span>Jupiter</span></a></li>
-							  <li class="saturn"><a href="#saturn"><span>Saturn &amp; <span class="ring">Ring</span></span></a></li>
-							  <li class="uranus"><a href="#uranus"><span>Uranus</span></a></li>
-							  <li class="neptune"><a href="#neptune"><span>Neptune</span></a></li>
-							  <li class="pluto"><a href="#pluto"><span>Pluto</span></a></li>
-							</ul>
-						</div>
-
-					</div>	
-					
-					<div class="ktr-screen" id="atom">
-
-						<div class="atom">
-							<div>
-							  <div></div>
-							</div>
-							<div>
-							  <div></div>
-							</div>
-							<div>
-							  <div></div>
-							</div>
-							<div>
-							  <div></div>
-							</div>
-						</div>
-
-					</div>	
 				</div>
 			</main>
 			
@@ -169,7 +172,7 @@
 		<!-- Out of page
 		================================================== -->
 		<!-- Fixed navigation -->		
-		<span class="ktr-button-logo"><em><a href="http://www.acozar.com" title="Acózar"><img src="../src/ics/icon.gif" alt="A"></a></em></span>
+		<span class="ktr-button-logo"><em><label for="modal-one" title="Menú"><img src="../src/ics/icon.gif" alt="A"></label></em></span>
 		<span class="ktr-button-tools"><em><label for="modal-one" title="Menú">&#9788;</label></em></span>
 		<span class="ktr-button-moon-phase"><em><a href="http://www.acozar.com" title="Acózar"><svg id="moon" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" version="1.1"/></a></em></span>		
 
@@ -178,31 +181,31 @@
 			<input id="modal-one" type="checkbox" hidden>
 			<dialog class="ktr-modal">
 				<div>
-					<em class="ktr-button-tools"><label for="modal-one" title="Menú">&#215;</label></em>
+					<span class="ktr-button-logo"><em><label for="modal-one" title="Menú">&#215;</label></em></span>
 					<header>
-						<h1>Menú</h1>
+						<h1><img src="../src/ics/icon.gif" alt="A" style="display:inline;"> Acózar</h1>
 					</header>
-					<div class="flex-grid-7">
+					<div class="flex-box-7 flex-half">
 						<section>
-							<a href="" data-title="Meditationes" class="ktr-tooltip"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve"> <g id="circle"> <g> <path class="st1" d="M32,15.4c9.2,0,16.6,7.5,16.6,16.6S41.2,48.6,32,48.6S15.4,41.2,15.4,32S22.8,15.4,32,15.4 M32,14.4 c-9.7,0-17.6,7.9-17.6,17.6S22.3,49.6,32,49.6S49.6,41.7,49.6,32S41.7,14.4,32,14.4L32,14.4z"/> </g> </g> </svg></a>
+							<a href="" title="Meditationes" class="ktr-tooltip"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve"> <g id="circle"> <g> <path class="st1" d="M32,15.4c9.2,0,16.6,7.5,16.6,16.6S41.2,48.6,32,48.6S15.4,41.2,15.4,32S22.8,15.4,32,15.4 M32,14.4 c-9.7,0-17.6,7.9-17.6,17.6S22.3,49.6,32,49.6S49.6,41.7,49.6,32S41.7,14.4,32,14.4L32,14.4z"/></g></g></svg><span>Meditationes</span></a>
 						</section>
 						<section>
-							<a href="" data-title="Fabulae" class="ktr-tooltip"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve"> <g id="VESICULA"> <g> <g> <path class="st2" d="M23.1,15.4c9.2,0,16.6,7.5,16.6,16.6s-7.5,16.6-16.6,16.6S6.4,41.2,6.4,32S13.9,15.4,23.1,15.4 M23.1,14.4 c-9.7,0-17.6,7.9-17.6,17.6s7.9,17.6,17.6,17.6S40.7,41.7,40.7,32S32.8,14.4,23.1,14.4L23.1,14.4z"/> </g> <g> <path class="st2" d="M40.2,15.4c9.2,0,16.6,7.5,16.6,16.6s-7.5,16.6-16.6,16.6S23.6,41.2,23.6,32S31,15.4,40.2,15.4 M40.2,14.4 c-9.7,0-17.6,7.9-17.6,17.6s7.9,17.6,17.6,17.6S57.8,41.7,57.8,32S49.9,14.4,40.2,14.4L40.2,14.4z"/> </g> </g> </g> </svg></a>
+							<a href="" title="Fabulae" class="ktr-tooltip"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve"> <g id="VESICULA"> <g> <g> <path class="st2" d="M23.1,15.4c9.2,0,16.6,7.5,16.6,16.6s-7.5,16.6-16.6,16.6S6.4,41.2,6.4,32S13.9,15.4,23.1,15.4 M23.1,14.4 c-9.7,0-17.6,7.9-17.6,17.6s7.9,17.6,17.6,17.6S40.7,41.7,40.7,32S32.8,14.4,23.1,14.4L23.1,14.4z"/></g><g><path class="st2" d="M40.2,15.4c9.2,0,16.6,7.5,16.6,16.6s-7.5,16.6-16.6,16.6S23.6,41.2,23.6,32S31,15.4,40.2,15.4 M40.2,14.4 c-9.7,0-17.6,7.9-17.6,17.6s7.9,17.6,17.6,17.6S57.8,41.7,57.8,32S49.9,14.4,40.2,14.4L40.2,14.4z"/></g></g></g></svg><span>Fabulae</span></a>
 						</section>
 						<section>
-							<a href="" data-title="Numero" class="ktr-tooltip"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve"> <g id="triangle"> <g> <path class="st2" d="M32,17.5l17.3,30H14.7L32,17.5 M32,15.5l-19,33H51L32,15.5L32,15.5z"/> </g> </g> </svg></a>
+							<a href="" title="Numero" class="ktr-tooltip"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve"> <g id="triangle"> <g> <path class="st2" d="M32,17.5l17.3,30H14.7L32,17.5 M32,15.5l-19,33H51L32,15.5L32,15.5z"/></g></g></svg><span>Numero</span></a>
 						</section>
 						<section>
-							<a href="" data-title="Verbis" class="ktr-tooltip"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve"> <g id="square"> <g> <path class="st2" d="M47.2,16.8v30.3H16.8V16.8H47.2 M48.2,15.8H15.8v32.3h32.3V15.8L48.2,15.8z"/> </g> </g> </svg></a>
+							<a href="" title="Verbis" class="ktr-tooltip"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve"> <g id="square"> <g> <path class="st2" d="M47.2,16.8v30.3H16.8V16.8H47.2 M48.2,15.8H15.8v32.3h32.3V15.8L48.2,15.8z"/></g></g></svg><span>Verbis</span></a>
 						</section>
 						<section>
-							<a href="" data-title="Res Publica" class="ktr-tooltip"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve"> <g id="pentagon"> <g> <path class="st2" d="M32,16.1l16.8,12.2l-6.4,19.8H21.6l-6.4-19.8L32,16.1 M32,14.9L14,28l6.9,21.2h22.2L50,28L32,14.9L32,14.9z" /> </g> </g> </svg></a>
+							<a href="" title="Res Publica" class="ktr-tooltip"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve"> <g id="pentagon"> <g> <path class="st2" d="M32,16.1l16.8,12.2l-6.4,19.8H21.6l-6.4-19.8L32,16.1 M32,14.9L14,28l6.9,21.2h22.2L50,28L32,14.9L32,14.9z" /></g></g></svg><span>Res publica</span></a>
 						</section>
 						<section>
-							<a href="" data-title="Carmina" class="ktr-tooltip"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve"> <g id="hexagon"> <g> <path class="st2" d="M41.6,15.3L51.3,32l-9.6,16.7H22.4L12.7,32l9.6-16.7H41.6 M42.2,14.3H21.8L11.6,32l10.2,17.7h20.4L52.4,32 L42.2,14.3L42.2,14.3z"/> </g> </g> </svg></a>
+							<a href="" title="Carmina" class="ktr-tooltip"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve"> <g id="hexagon"> <g> <path class="st2" d="M41.6,15.3L51.3,32l-9.6,16.7H22.4L12.7,32l9.6-16.7H41.6 M42.2,14.3H21.8L11.6,32l10.2,17.7h20.4L52.4,32 L42.2,14.3L42.2,14.3z"/></g></g></svg><span>Carmina</span></a>
 						</section>
 						<section>
-							<a href="" data-title="Actum" class="ktr-tooltip"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve"> <style type="text/css"> .st3{fill:none;stroke:currentColor;stroke-width:0.9111;stroke-miterlimit:10;} </style> <g id="heptagon"> <polygon class="st3" points="32,12.5 15.1,20.2 11,37.6 22.6,51.5 41.4,51.5 53,37.6 48.9,20.2 	"/> </g> </svg></a>
+							<a href="" title="Actum" class="ktr-tooltip"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve"> <style type="text/css"> .st3{fill:none;stroke:currentColor;stroke-width:0.9111;stroke-miterlimit:10;} </style> <g id="heptagon"> <polygon class="st3" points="32,12.5 15.1,20.2 11,37.6 22.6,51.5 41.4,51.5 53,37.6 48.9,20.2"/></g></svg></a>
 						</section>
 					</div>
 				</div>

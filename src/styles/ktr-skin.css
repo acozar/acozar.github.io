@@ -1,5 +1,11 @@
 /* KTR - "Kotar Wa Hasis" CSS by Acózar 2018 */
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:100');
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
 /* KTR recurrent elements */
 
 .page {
@@ -9,12 +15,15 @@
 .ktr-screen {
 	border: none;
 	height: 98vh;
+	min-height: 600px;
 }
 .ktr-box {
 	border-top: 1px solid currentColor;
 	border-bottom: 1px solid currentColor;
 	min-height: 120px;
 }
+
+/* KTR  Button */
 
 .ktr-button-logo,
 .ktr-button-tools,
@@ -23,21 +32,18 @@
 	z-index: 10;
 }
 
-/* KTR  logo */
-
 .ktr-button-logo {
 	top: 8px;
-	left: 45%;
-	left: calc(50% - 48px);
+	left: 8px;
 	height: 96px;
 	width: 96px;
 }
 .ktr-button-tools {
-	top: 46%;
+	bottom: 8px;
 	left: 8px;
 }
 .ktr-button-moon-phase {
-	top: 46%;
+	top: 8px;
 	right: 8px;
 }
 .ktr-button-moon-phase em a {
@@ -46,13 +52,13 @@
 .ktr-button-clock-reverse {
 	display: block;
 	position: absolute;
-	bottom: 8px;
-	left: 45%;
-	left: calc(50% - 48px);
+	bottom: 8vh;
+	right: 8vh;
 	-webkit-animation: rotation 10s infinite linear;
 	-moz-animation: rotation 10s infinite linear;
 	-o-animation: rotation 10s infinite linear;
 	animation: rotation 10s infinite linear;
+	opacity: .5;
 }
 
 
@@ -62,7 +68,7 @@
 [class*='ktr-button'] label {
 	background-color: #ffffff;
 	border-radius: 50%;
-	border-color: currentColor;
+	border-color: currentColor;border: none;
 	font-size: 64px;
 	padding: 14px;
 	line-height: 64px;
@@ -110,6 +116,8 @@
 	padding: 0;
 	text-align: center;
 	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
 }
 
 /* KTR tooltip */
@@ -117,9 +125,8 @@
 .ktr-tooltip {
 	position: relative;
 }
-.ktr-tooltip:hover:after {
+.ktr-tooltip span {
 	background-color: inherit;
-	border: 2px solid currentColor;
 	border-radius: 4px;
 	content: attr(data-title);
 	padding: 8px 0;
@@ -135,11 +142,7 @@
 	-o-animation: fadeIn .3s ease both;
 	animation: fadeIn .3s ease both;
 }
-@media screen and (max-width: 1024px) {
-	.ktr-tooltip:hover:after {
-		display: none;
-	}
-}
+
 
 /* KTR Clock */
 
@@ -177,8 +180,8 @@
 
 .clock {
 	display: block;
-	margin: 15vh auto 0;
-	max-width: 65vh;
+	margin: 6vh auto 0;
+	max-width: 85vh;
 	position: relative;
 
  	-webkit-animation-name: zoomInDown;
@@ -208,7 +211,7 @@
 }
 @media screen and (max-width: 767px) , screen and (max-height: 480px) {
 	.clock {
-		margin: 20vh auto 0;
+		margin: 2vh auto 0;
 	}
 }
 
@@ -362,16 +365,28 @@
 .clock-data {
 	display: block;
 	position: absolute;
-	top:30%;
+	top: 40%;
 	left: 0;
 	padding-top: 1em;
 	width: 100%;
 }
 .clock-data h3 {
-	font-size: 1.5em;
+	font-size: 3em;
 	font-weight: 200;
 	letter-spacing: .1em;
 	text-align: center;	
+}
+@media screen and (max-width: 767px) , screen and (max-height: 600px) {
+	.clock-data {
+		top: 15%;
+	}
+	.clock-data h3 {
+		font-size: 1em;
+		margin: 0;
+	}
+	.clock-data p {
+		font-size: .8em;
+	}
 }
 .clock * {
 	-webkit-border-radius: 50%;
@@ -394,7 +409,8 @@
 /* Solaris (global position) */
 
 .solaris {
-	min-height: 720px;
+	display: block;
+	margin: 0 auto;
 	text-align: center;
 }
 
@@ -402,10 +418,8 @@
 
 ul.solarsystem {
     display: block;
-    height: 65vw;
-    width: 65vw;
-    max-width:65vh;
-    max-height: 65vh;
+    height: 800px;
+    width: 800px;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -414,6 +428,12 @@ ul.solarsystem {
     -moz-transition: all 0.09s ease-in;
     -o-transition: all 0.09s ease-in;
     transition: all 0.09s ease-in;
+}
+@media screen and (max-width: 767px) , screen and (max-height: 600px) {
+	ul.solarsystem {
+    	height: 480px;
+    	width: 480px;
+	}
 }
 ul.solarsystem li {
     text-indent: -9999px;
@@ -655,7 +675,9 @@ ul.solarsystem li.pluto {-webkit-animation-duration:120s; -moz-animation-duratio
           transform: scale(1.2, 1.2);
   overflow: hidden;
   height: 98vh;
-  width: 100%;
+  width: 60%;
+  display: block;
+  margin: 0 auto;
 	-webkit-animation: rotation 10s infinite linear;
 	-moz-animation: rotation 10s infinite linear;
 	-o-animation: rotation 10s infinite linear;

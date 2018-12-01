@@ -166,6 +166,9 @@
 @media (max-width: 767px) {
 	[class*='flex-grid'] { display: block; }
 	[class*='flex-grid'] > section { display: block; width: 100%; }
+	[class*='flex-box'].flex-half > section { width: 49.5%; }
+	[class*='flex-box'].flex-thirth > section { width: 33%; }
+	[class*='flex-box'].flex-fourth > section { width: 24.75%; }
 }
 
 /* ------------------------------------------------------------ Layouts */
@@ -1346,9 +1349,10 @@ nav strong label mark {
 	height: 48px;
 	width: 48px;
 }
-#tools-nav #label-light { background-color: #fff; }
-#tools-nav #label-soft { background-color: rgba(214,208,255,1); }
-#tools-nav #label-dark { background-color: #000; }
+#tools-nav #label-aurora { background-color: #fff; }
+#tools-nav #label-meridianus { background-color: rgba(255,245,238,1); }
+#tools-nav #label-vesperus { background-color: rgba(214,208,255,1); }
+#tools-nav #label-nox { background-color: #000; }
 #tools-nav label:hover {
 	border-color: #fff;
 }
