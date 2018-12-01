@@ -57,12 +57,11 @@
 		<!-- Page content -->		
 		<div id="page" class="page">
 			
-			<header class="ktr-screen">
-			
+			<section class="ktr-screen">
 				<div class="clock">
 					<input type="checkbox" id="clock-1" name="flip-clock" hidden>
 					<div class="clock-case">
-					  <div class="clock-dial">
+						<div class="clock-dial">
 							<div class="clock-second-hand"></div>
 							<div class="clock-minute-hand"></div>
 							<div class="clock-hour-hand"></div>
@@ -70,7 +69,7 @@
 							<div class="clock-horizon"></div>
 							<div class="clock-nut"></div>
 							<div class="clock-ratio"></div>
-					  </div>
+						</div>
 					</div>
 					<div class="clock-case-back">
 						<div class="clock-back">
@@ -84,17 +83,21 @@
 				<span class="ktr-button-clock-reverse"><em><label for="clock-1" title="Menú"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <circle cx="255" cy="151.615" r="34.461"/> <path d="M255,31C131.49,31,31,131.49,31,255s100.49,224,224,224s224-100.49,224-224S378.51,31,255,31z M255,392.846 c-19.04,0-34.462-15.421-34.462-34.461c0-19.039,15.422-34.461,34.462-34.461s34.461,15.422,34.461,34.461 C289.461,377.425,274.04,392.846,255,392.846z M65.462,255c0-104.503,85.034-189.539,189.538-189.539 c6.939,0,13.799,0.43,20.555,1.153c-2.481-0.067-4.703-0.396-7.236-0.396c56.951,6.184,81.335,51.954,81.335,94.012 c0,51.398-40.562,94.77-94.636,94.77c-52.349,0-94.769,42.42-94.769,94.77c0,49.075,37.254,89.409,85.051,94.29 C145.306,438.951,65.462,356.23,65.462,255z"/> </g> </svg></label></em></span>
 				</div>
 				<hr>
+			</section>
+			<hr>
+			<header>
 				<h1><a href="http://www.acozar.com" title="www.acozar.com">www.acozar.com</a></h1>
+				<p><a href="mailto:info@acozar.com">info@acozar.com</a></p>
 			</header>
 			<hr>
 			<main id="page-main">
 				<div>
 					
-					<div class="ktr-screen" id="solar-system">
-
-						<section class="solaris">
+					<section class="ktr-screen" id="solar-system">
+						<div class="solaris">
 							<input type="checkbox" id="solar-canvas" name="solar-canvas" hidden>
 							<div class="system-legend">
+								<h3>Orbis</h3>
 								<span class="txt-color-yellow">&#8857; Solis</span>
 								<span class="txt-color-grey">&#9790; Luna</span>
 								<span class="txt-color-red">&#9794; Mars</span>
@@ -121,31 +124,40 @@
 							</ul>
 							<span class="ktr-button-solaris"><em><label for="solar-canvas" title="3D">&#10036;</label></em></span>
 						</div>
-						<h3>Spatium</h3>
-
 					</section>	
-
-					<div class="ktr-screen" id="atom">
-
-						<div class="atom">
-							<div>
-							  <div></div>
-							</div>
-							<div>
-							  <div></div>
-							</div>
-							<div>
-							  <div></div>
-							</div>
-							<div>
-							  <div></div>
+					<hr>
+					<section class="ktr-screen" id="atom-system">
+						<div class="atomsystem">
+							<div class="atom">
+								<div>
+								  <div></div>
+								</div>
+								<div>
+								  <div></div>
+								</div>
+								<div>
+								  <div></div>
+								</div>
+								<div>
+								  <div></div>
+								</div>
 							</div>
 						</div>
-
-					</div>
-
+					</section>
+					<hr>
+					<section class="ktr-screen" id="compass-system">
+						<div class="compasssystem">
+							<div class="compass">
+								<div id="compass-alert">initializing</div>
+								<div id="compass">
+									<div class="north">N</div>
+									<div class="south"></div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<hr>
 					<div class="ktr-box flex-box-7">
-					
 						<section>
 							<a href="" data-title="Meditationes" class="ktr-tooltip"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve"> <g id="circle"> <g> <path class="st1" d="M32,15.4c9.2,0,16.6,7.5,16.6,16.6S41.2,48.6,32,48.6S15.4,41.2,15.4,32S22.8,15.4,32,15.4 M32,14.4 c-9.7,0-17.6,7.9-17.6,17.6S22.3,49.6,32,49.6S49.6,41.7,49.6,32S41.7,14.4,32,14.4L32,14.4z"/> </g> </g> </svg></a>
 						</section>
@@ -168,9 +180,8 @@
 							<a href="" data-title="Actum" class="ktr-tooltip"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve"> <style type="text/css"> .st3{fill:none;stroke:currentColor;stroke-width:0.9111;stroke-miterlimit:10;} </style> <g id="heptagon"> <polygon class="st3" points="32,12.5 15.1,20.2 11,37.6 22.6,51.5 41.4,51.5 53,37.6 48.9,20.2 	"/> </g> </svg></a>
 						</section>
 						<hr>
-						
 					</div>
-					
+					<hr>
 				</div>
 			</main>
 			
@@ -232,6 +243,8 @@
 		<script src="../src/scripts/jquery.js" type="text/javascript"></script>
 		<script src="../src/scripts/clock.js" type="text/javascript"></script>
 		<script src="../src/scripts/moon-phase.js" type="text/javascript"></script>
+		<script src="../src/scripts/compass.js" type="text/javascript"></script>
+		<script src="../src/scripts/compass.exe.js" type="text/javascript"></script>
 		<script src="../src/scripts/ga.js" type="text/javascript"></script>
 	</body>
 </html>

@@ -65,7 +65,7 @@ body {
 	display: block;
 	position: absolute;
 	top: 75vh;
-	right: 14px;
+	right: 8px;
 	-webkit-animation: rotation 10s infinite linear;
 	-moz-animation: rotation 10s infinite linear;
 	-o-animation: rotation 10s infinite linear;
@@ -75,8 +75,8 @@ body {
 .ktr-button-solaris {
 	display: block;
 	position: absolute;
-	top: 50vh;
-	left: 14px;
+	bottom: 15vh;
+	right: 8px;
 }
 
 
@@ -136,6 +136,8 @@ body {
 	width: 100%;
 	height: 100%;
 	overflow-y: scroll;
+	z-index: 100;
+	tranform: translate3D(0, 0, 600px);
 }
 
 /* KTR tooltip */
@@ -198,12 +200,11 @@ body {
 
 .clock {
 	display: block;
-	margin: 6vh auto 0;
-	max-width: 85vh;
-	min-height: 90vh;
+	margin: 2vh auto;
+	max-width: 80vh;
+	min-height: 80vh;
 	height: auto;
 	position: relative;
-	overflow: hidden;
  	-webkit-animation-name: zoomInDown;
  	   -moz-animation-name: zoomInDown;
  	   	 -o-animation-name: zoomInDown;
@@ -229,12 +230,10 @@ body {
 	   	 -o-perspective: 1200px;
 			perspective: 1200px;
 }
-@media screen and (max-width: 767px) , screen and (max-height: 480px) {
+@media screen and (max-width: 800px) {
 	.clock {
-		margin: 2vh auto 0;
 	}
 }
-
 .clock-case,
 .clock-case-back {
 	background-color: #ffffff;
@@ -432,9 +431,10 @@ body {
 
 .solaris {
 	display: block;
-	margin: 0 auto;
-	padding-top: 120px;
+	margin: 16px auto;
+	padding: 120px 0;
 	text-align: center;
+	z-index: 1;
 }
 
 /* Solar System Styles */
@@ -457,6 +457,8 @@ ul.solarsystem {
     display: block;
     height: 700px;
     width: 700px;
+	max-width: 80vh;
+	max-height: 80vh;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -466,10 +468,16 @@ ul.solarsystem {
     -o-transition: all 2s ease-in;
     transition: all 2s ease-in;
     perspective: 700px;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
 .solaris input:checked ~ ul.solarsystem {
-	transform: rotateX(40deg);
+	-webkit-transform: rotateX(50deg) translateZ(-200px) translateY(-200px);
+	-moz-transform: rotateX(50deg) translateZ(-200px) translateY(-200px);
+	-o-transform: rotateX(50deg) translateZ(-200px) translateY(-200px);
+	transform: rotateX(50deg) translateZ(-200px) translateY(-200px);
 }
 .solaris input:checked ~ .system-legend {
 	visibility: visible;
@@ -521,18 +529,10 @@ ul.solarsystem li.sun {
     width: 5%;
     height: 5%;
     background: #ffffff;
-    background-image: -webkit-gradient(
-        linear,
-        left bottom,
-        left top,
-        color-stop(0.22, rgb(204,153,0)),
-        color-stop(1, rgb(255,219,112))
-    );
-    background-image: -moz-linear-gradient(
-        center bottom,
-        rgb(204,153,0) 22%,
-        rgb(255,219,112) 100%
-    );
+	background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.22, rgb(204,153,0)), color-stop(1, rgb(255,219,112)) );
+	background-image: -moz-linear-gradient( center bottom, rgb(204,153,0) 22%, rgb(255,219,112) 100% );
+	background-image: -o-linear-gradient( center bottom, rgb(204,153,0) 22%, rgb(255,219,112) 100% );
+	background-image: linear-gradient( center bottom, rgb(204,153,0) 22%, rgb(255,219,112) 100% );
     top: 47%;
     left: 47.5%;
     border: none;
@@ -723,11 +723,13 @@ ul.solarsystem li.pluto {-webkit-animation-duration:120s; -moz-animation-duratio
 .atom {
 	border: 1px solid #333;
 	border-radius: 50%;
+	clear: both;
 	display: block;
 	height: 400px;
 	width: 400px;
-	margin: 0 auto;
+	margin: 120px auto;
 	overflow: hidden;
+	position: relative;
 	-webkit-transform: scale(1.2, 1.2);
 	-moz-transform: scale(1.2, 1.2);
 	-o-transform: scale(1.2, 1.2);
@@ -736,6 +738,13 @@ ul.solarsystem li.pluto {-webkit-animation-duration:120s; -moz-animation-duratio
 	-moz-animation: rotation 10s infinite linear;
 	-o-animation: rotation 10s infinite linear;
 	animation: rotation 10s infinite linear;
+}
+@media screen and (max-width: 767px) , screen and (max-height: 600px) {
+	.atom {
+		margin: 240px auto;
+		height: 220px;
+		width: 220px;
+	}
 }
 .atom > div {
 	position: absolute;
@@ -916,5 +925,37 @@ ul.solarsystem li.pluto {-webkit-animation-duration:120s; -moz-animation-duratio
   }
 }
 
+/* Compass */
 
-
+#compass-alert {
+	margin-top: 100px;
+	text-align: center;
+}
+#compass {
+	width: 200px;
+	height: 200px;
+	position: relative;
+	margin: 20px auto 0 auto;
+	border: 1px solid #ccc;
+	border-radius: 100px;
+}
+.north, .south {
+	position: absolute;
+	left: 94px;
+	width: 12px;
+	height: 100px;
+}
+.north {
+	top: 0;
+	background: red;
+	text-align: center;
+	font-size: 11px;
+}
+.south {
+	top: 100px;
+	background: black;
+}
+#compass-meta {
+	margin-top: 20px;
+	text-align: center;
+}
