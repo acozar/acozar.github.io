@@ -932,28 +932,32 @@ ul.solarsystem li.pluto {-webkit-animation-duration:120s; -moz-animation-duratio
 	text-align: center;
 }
 #compass {
-	width: 200px;
-	height: 200px;
+	background-image: url('../dials/bgcompass.png');
+	background-size: 100%;
+	border-radius: 50%;
+	display: block;
+	width: 800px;
+	height: 800px;
 	position: relative;
 	margin: 20px auto 0 auto;
-	border: 1px solid #ccc;
-	border-radius: 100px;
 }
-.north, .south {
-	position: absolute;
-	left: 94px;
-	width: 12px;
-	height: 100px;
+@media screen and (max-width: 767px) , screen and (max-height: 600px) {
+	#compass {
+    	height: 480px;
+    	width: 480px;
+	}
 }
 .north {
+	background-image: url('../dials/compass.png');
+	background-size: 100%;
+	position: absolute;
 	top: 0;
-	background: red;
-	text-align: center;
-	font-size: 11px;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 .south {
-	top: 100px;
-	background: black;
+	display: none;
 }
 #meta {
 	margin-top: 20px;
