@@ -483,10 +483,10 @@ ul.solarsystem {
 	visibility: visible;
 	opacity: 100;
 }
-@media screen and (max-width: 767px) , screen and (max-height: 600px) {
+@media screen and (max-width: 480px) , screen and (max-height: 600px) {
 	ul.solarsystem {
-    	height: 480px;
-    	width: 480px;
+    	height: 320px;
+    	width: 320px;
 	}
 }
 ul.solarsystem li {
