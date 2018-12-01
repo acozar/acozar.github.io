@@ -27,7 +27,7 @@
         text('text', 'need move');
       }).init(function (method) {
         if ( method == 'orientationAndGPS' ) {
-          text('compass-meta', 'GPS diff: ' + round(Compass._gpsDiff));
+          text('meta', 'GPS diff: ' + round(Compass._gpsDiff));
         }
       }).watch(function (heading) {
         text('text', round(heading));
