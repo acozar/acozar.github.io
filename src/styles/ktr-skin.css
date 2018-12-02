@@ -34,11 +34,6 @@ body {
 		background-size: 100%;
 	}
 }
-.ktr-box {
-	border-top: 1px solid currentColor;
-	border-bottom: 1px solid currentColor;
-	min-height: 120px;
-}
 
 /* KTR  positions */
 
@@ -57,8 +52,7 @@ body {
 0% { transform: scale(1); } 50% { transform: scale(1.1); }    100% { transform: scale(1); }
 }
 
-.ktr-button-logo,
-.ktr-button-tools {
+.ktr-button-logo {
 	position: fixed;
 	z-index: 10;
 }
@@ -68,10 +62,6 @@ body {
 	left: 8px;
 	height: 96px;
 	width: 96px;
-}
-.ktr-button-tools {
-	bottom: 8px;
-	left: 8px;
 }
 
 /* KTR bubble */
@@ -114,6 +104,33 @@ body {
 		 -o-transition: transform .5s ease;
 			transition: transform .5s ease;
 }
+.th-aurora:hover:after,
+.th-meridianus:hover:after,
+.th-vesperum:hover:after,
+.th-nox:hover:after {
+	background-color: rgba(0,0,0,.5);
+	border-radius: 16px;
+	color: #ffffff;
+	content: attr(data-title);
+	cursor: pointer;
+	position: absolute;
+	padding: 0;
+	font-size: 16px;
+	line-height: 48px;
+	height: 48px;
+	width: 120px;
+	left: -150%;
+	top: 20%;
+	z-index: 30;
+}
+@media screen and (max-width: 600px) {
+	.th-aurora:hover:after,
+	.th-meridianus:hover:after,
+	.th-vesperum:hover:after,
+	.th-nox:hover:after {
+		display: none;
+	}
+}
 .th-aurora {
 	background-color: #ffffff;
 }
@@ -128,16 +145,16 @@ body {
 	color: #ffffff !important;
 }
 .ktr-button-bubble input:checked ~ span .th-aurora {
-	transform: scale(1) translateX(-200%);
+	transform: scale(1) translateX(-290%);
 }
 .ktr-button-bubble input:checked ~ span .th-meridianus {
-	transform: scale(1) translateX(-180%) translateY(100%);
+	transform: scale(1) translateX(-200%) translateY(100%);
 }
 .ktr-button-bubble input:checked ~ span .th-vesperum {
-	transform: scale(1) translateX(-100%) translateY(180%);
+	transform: scale(1) translateX(-100%) translateY(200%);
 }
 .ktr-button-bubble input:checked ~ span .th-nox {
-	transform: scale(1) translateY(200%);
+	transform: scale(1) translateY(290%);
 
 }
 .ktr-button-clock-reverse {
@@ -224,27 +241,6 @@ body {
 
 /* KTR tooltip */
 
-.ktr-tooltip {
-	position: relative;
-}
-.ktr-tooltip span {
-	background-color: inherit;
-	border-radius: 4px;
-	content: attr(data-title);
-	padding: 8px 0;
-	bottom: -100%;
-	left: -20%;
-	right: -20%;
-	min-width: 128px;
-	position: absolute;
-	text-transform: uppercase;
-	z-index: 5;
-	-webkit-animation: fadeIn .3s ease both;
-	-moz-animation: fadeIn .3s ease both;
-	-o-animation: fadeIn .3s ease both;
-	animation: fadeIn .3s ease both;
-}
-
 
 /* KTR Clock */
 
@@ -281,6 +277,7 @@ body {
 }
 
 .clock {
+	border: 2px solid colorCurrent;
 	display: block;
 	margin: 2vh auto;
 	max-width: 80vh;
@@ -311,10 +308,6 @@ body {
 	   -moz-perspective: 1200px;
 	   	 -o-perspective: 1200px;
 			perspective: 1200px;
-}
-@media screen and (max-width: 800px) {
-	.clock {
-	}
 }
 .clock-case,
 .clock-case-back {
@@ -476,6 +469,7 @@ body {
 	width: 100%;
 }
 .clock-data h3 {
+	color: inherit;
 	font-size: 3em;
 	font-weight: 200;
 	letter-spacing: .1em;
@@ -523,7 +517,9 @@ body {
 	-ms-filter:invert(1);
 	-o-filter:invert(1);
 }
-
+#theme-nox:checked ~ #page .clock-case-back {
+	background-image: linear-gradient(37deg, #333333 4.55%, #000000 4.55%, #000000 50%, #333333 50%, #333333 54.55%, #000000 54.55%, #000000 100%);
+}
 
 /* Moon */
 

@@ -117,58 +117,58 @@
 	border: 1px solid currentColor;
 }
 
-.flex-grid-1 > section,
-.flex-box-1 > section {
+.flex-grid-1 > *,
+.flex-box-1 > * {
 	width: 99%;
 }
-.flex-grid-2 > section,
-.flex-box-2 > section {
+.flex-grid-2 > *,
+.flex-box-2 > * {
 	width: 49.5%;
 }
-.flex-grid-3 > section,
-.flex-box-3 > section {
+.flex-grid-3 > *,
+.flex-box-3 > * {
 	width: 33%;
 }
-.flex-grid-4 > section,
-.flex-box-4 > section {
+.flex-grid-4 > *,
+.flex-box-4 > * {
 	width: 24.75%;
 }
-.flex-grid-5 > section,
-.flex-box-5 > section {
+.flex-grid-5 > *,
+.flex-box-5 > * {
 	width: 19.75%;
 }
-.flex-grid-6 > section,
-.flex-box-6 > section {
+.flex-grid-6 > *,
+.flex-box-6 > * {
 	width: 16.5%;
 }
-.flex-grid-7 > section,
-.flex-box-7 > section {
+.flex-grid-7 > *,
+.flex-box-7 > * {
 	width: 14.2%;
 }
-.flex-grid-8 > section,
-.flex-box-8 > section {
+.flex-grid-8 > *,
+.flex-box-8 > * {
 	width: 12.35%;
 }
-.flex-grid-9 > section,
-.flex-box-9 > section {
+.flex-grid-9 > *,
+.flex-box-9 > * {
 	width: 11%;
 }
-.flex-grid-10 > section,
-.flex-box-10 > section {
+.flex-grid-10 > *,
+.flex-box-10 > * {
 	width: 9.9%;
 }
-.flex-grid-12 > section,
-.flex-box-12 > section {
+.flex-grid-12 > *,
+.flex-box-12 > * {
 	width: 8.25%;
 }
 
 
 @media (max-width: 767px) {
 	[class*='flex-grid'] { display: block; }
-	[class*='flex-grid'] > section { display: block; width: 100%; }
-	[class*='flex-box'].flex-half > section { width: 49.5%; }
-	[class*='flex-box'].flex-thirth > section { width: 33%; }
-	[class*='flex-box'].flex-fourth > section { width: 24.75%; }
+	[class*='flex-grid'] > * { display: block; width: 100%; }
+	[class*='flex-box'].flex-half > * { width: 49.5%; }
+	[class*='flex-box'].flex-thirth > * { width: 33%; }
+	[class*='flex-box'].flex-fourth > * { width: 24.75%; }
 }
 
 /* ------------------------------------------------------------ Layouts */
