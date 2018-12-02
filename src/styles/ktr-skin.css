@@ -499,7 +499,7 @@ body {
 	     -o-border-radius: 50%;
 			border-radius: 50%;
 }
-#theme-meridianus:checked ~ #page .clock {
+#theme-meridianus:checked ~ #page .clock-case {
 	/*Sepia */
 	filter:sepia(.2);
 	-webkit-filter:sepia(.2);
@@ -507,7 +507,7 @@ body {
 	-ms-filter:sepia(.2);
 	-o-filter:sepia(.2);
 }
-#theme-vesperum:checked ~ #page .clock {
+#theme-vesperum:checked ~ #page .clock-case {
 	/*Hue Rotate*/
 	filter:hue-rotate(250deg);
 	-webkit-filter:hue-rotate(250deg);
@@ -515,7 +515,7 @@ body {
 	-ms-filter:hue-rotate(250deg);
 	-o-filter:hue-rotate(250deg);
 }
-#theme-nox:checked ~ #page .clock {
+#theme-nox:checked ~ #page .clock-case {
 	/*Invert*/
 	filter:invert(1);
 	-webkit-filter:invert(1);
