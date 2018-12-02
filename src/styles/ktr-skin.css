@@ -225,8 +225,6 @@ body {
 /* KTR Modals */
 
 .ktr-modal {
-	background-color: #ffffff;
-	color: #000;
 	top: 0;
 	left: 0;
 	bottom: 0;
@@ -238,9 +236,6 @@ body {
 	z-index: 100;
 	tranform: translate3D(0, 0, 600px);
 }
-
-/* KTR tooltip */
-
 
 /* KTR Clock */
 

@@ -804,7 +804,7 @@ nav .menu nav {
 /* Dialog, menu, collapser, accordion and tabs */
 
 dialog {
-	background: #fff;
+	background: #ffffff;
 	border: 1px solid currentColor;
 	box-shadow: 0 0 12px rgba(0,0,0,.5);
 	display: none;
@@ -1351,7 +1351,7 @@ nav strong label mark {
 }
 #tools-nav #label-aurora { background-color: #fff; }
 #tools-nav #label-meridianus { background-color: rgba(255,245,238,1); }
-#tools-nav #label-vesperus { background-color: rgba(214,208,255,1); }
+#tools-nav #label-vesperum { background-color: rgba(214,208,255,1); }
 #tools-nav #label-nox { background-color: #000; }
 #tools-nav label:hover {
 	border-color: #fff;
