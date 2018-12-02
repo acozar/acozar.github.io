@@ -26,35 +26,37 @@ body * {
 /* KTR display */
 
 .ktr-display {
-	border-radius: 0 !important;
+	border-radius: 0px !important;
 	display: flex;
 	font-size: 24px;
 	height: 32px;
 	text-align: center;
-	padding: 0 16px;
+	padding: 0 32px;
 	position: absolute;
 	top: -48px;
 	left: 33%;
 	width: 33%;
 }
 .ktr-display p {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid black; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
+	border-radius: 0px !important;
+	overflow: hidden; 
+	border-right: .5em solid #111; 
+	white-space: nowrap; 
+	margin: 0 auto;
+	animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
 }
-/* The typing effect */
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
 }
-/* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50 { border-color: black }
+  50 { border-color: #111111: }
+}
+@media screen and (max-width: 1024px) {
+	.ktr-display {
+		display: none;
+	}
 }
 
 /* KTR footer */
