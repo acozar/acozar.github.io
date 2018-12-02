@@ -1,14 +1,15 @@
 /* KTR - "Kotar Wa Hasis" CSS by Acózar 2018 */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:100');
-
-body {
-	font-family: 'Roboto', sans-serif;
+body * {
+	font-family: "Helvetica Neue", "Segoe UI", "Roboto", HelveticaNeue, Helvetica, Arial, sans-serif;
+	font-weight: 200;
+	letter-spacing: .2em;
 }
 
 /* KTR recurrent elements */
 
 .page {
+	font-weight: 200;
 	text-align: center;
 }
 
@@ -21,6 +22,42 @@ body {
 		font-size: 16px;
 	}
 }
+
+/* KTR display */
+
+.ktr-display {
+	border-radius: 0 !important;
+	display: flex;
+	font-size: 24px;
+	height: 32px;
+	text-align: center;
+	padding: 0 16px;
+	position: absolute;
+	top: -48px;
+	left: 33%;
+	width: 33%;
+}
+.ktr-display p {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50 { border-color: black }
+}
+
+/* KTR footer */
 
 .ktr-footer {
 	background-position: center bottom;
@@ -274,7 +311,7 @@ body {
 .clock {
 	border: 2px solid colorCurrent;
 	display: block;
-	margin: 2vh auto;
+	margin: 6vh auto;
 	max-width: 80vh;
 	min-height: 80vh;
 	height: auto;
