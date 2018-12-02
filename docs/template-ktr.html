@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		
 		<!-- Metadata -->
-		<title>&#x263c; Acózar</title>
+		<title>Acózar</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Revolutionary CSS framework with no more classes!">
 		<meta name="keywords" content="CSS semantic component library">
@@ -57,7 +57,7 @@
 		<!-- Page content -->		
 		<div id="page" class="page">
 			
-			<section class="ktr-screen">
+			<header>
 				<div class="clock">
 					<input type="checkbox" id="clock-1" name="flip-clock" hidden>
 					<div class="clock-case">
@@ -85,7 +85,7 @@
 				<hr>
 			</section>
 			<hr>
-			<header  id="page-header">
+			<header id="page-header">
 				<div>
 					<h1><a href="http://www.acozar.com" title="www.acozar.com">www.acozar.com</a></h1>
 					<p><a href="mailto:info@acozar.com">info@acozar.com</a></p>
@@ -95,11 +95,12 @@
 			<main id="page-main">
 				<div>
 					
-					<section class="ktr-screen" id="solar-system">
+					<section id="solar-system">
 						<div class="solaris">
 							<input type="checkbox" id="solar-canvas" name="solar-canvas" hidden>
 							<div class="system-legend">
 								<h3>Orbis</h3>
+								<span class="txt-color-blue">&#9793; Terra</span>
 								<span class="txt-color-yellow">&#8857; Solis</span>
 								<span class="txt-color-grey">&#9790; Luna</span>
 								<span class="txt-color-red">&#9794; Mars</span>
@@ -108,27 +109,27 @@
 								<span class="txt-color-orange">&#9792; Venus</span>
 								<span class="txt-color-black">&#9796; Saturnus</span>
 								<span class="txt-color-softblue">&#9954; Uranus</span>
-								<span class="txt-color-blue">&#9798; Neptunium</span>
+								<span class="txt-color-violet">&#9798; Neptunium</span>
 								<span class="txt-color-softblack">&#9799; Pluto</span>
 							</div>
 							<ul class="solarsystem">
-							  <li class="sun"><a href="#sun"><span>Sun</span></a></li>
-							  <li class="mercury"><a href="#mercury"><span>Mercury</span></a></li>
-							  <li class="venus"><a href="#venus"><span>Venus</span></a></li>
-							  <li class="earth"><a href="#earth"><span>Earth<span class="moon"> &amp; Moon</span></span></a></li>
-							  <li class="mars"><a href="#mars"><span>Mars</span></a></li>
-							  <li class="asteroids_meteorids"><span>Asteroids &amp; Meteorids</span></li>
-							  <li class="jupiter"><a href="#jupiter"><span>Jupiter</span></a></li>
-							  <li class="saturn"><a href="#saturn"><span>Saturn &amp; <span class="ring">Ring</span></span></a></li>
-							  <li class="uranus"><a href="#uranus"><span>Uranus</span></a></li>
-							  <li class="neptune"><a href="#neptune"><span>Neptune</span></a></li>
-							  <li class="pluto"><a href="#pluto"><span>Pluto</span></a></li>
+							  <li class="sun"><a href="#sun"><span>&#8857;</span></a></li>
+							  <li class="mercury"><a href="#mercury"><span>&#9791;</span></a></li>
+							  <li class="venus"><a href="#venus"><span>&#9792;</span></a></li>
+							  <li class="earth"><a href="#earth"><span>&#9793;<span class="moon"> &amp; &#9790;</span></span></a></li>
+							  <li class="mars"><a href="#mars"><span>&#9794;</span></a></li>
+							  <li class="asteroids_meteorids"><span>.</span></li>
+							  <li class="jupiter"><a href="#jupiter"><span>&#9795;</span></a></li>
+							  <li class="saturn"><a href="#saturn"><span>&#9796; &amp; <span class="ring">O</span></span></a></li>
+							  <li class="uranus"><a href="#uranus"><span>&#9954;</span></a></li>
+							  <li class="neptune"><a href="#neptune"><span>&#9798;</span></a></li>
+							  <li class="pluto"><a href="#pluto"><span>&#9799;</span></a></li>
 							</ul>
 							<span class="ktr-button-solaris"><em><label for="solar-canvas" title="3D">&#10038;</label></em></span>
 						</div>
 					</section>	
 					<hr>
-					<section class="ktr-screen" id="atom-system">
+					<section id="atom-system">
 						<div class="atomsystem">
 							<div class="atom">
 								<div>
@@ -147,7 +148,7 @@
 						</div>
 					</section>
 					<hr>
-					<section class="ktr-screen" id="compass-system">
+					<section id="compass-system">
 						<div class="compasssystem">
 							<div class="center">
 								<h3>Ortus</h3>
@@ -215,9 +216,18 @@
 		<!-- Out of page
 		================================================== -->
 		<!-- Fixed navigation -->		
-		<span class="ktr-button-logo"><em><label for="modal-one" title="Menú"><img src="../src/ics/icon.gif" alt="A"></label></em></span>
-		<span class="ktr-button-tools"><em><label for="modal-one" title="Menú">&#9788;</label></em></span>
-		<span class="ktr-button-moon-phase"><em><a href="http://www.acozar.com" title="Acózar"><svg id="moon" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" version="1.1"/></a></em></span>		
+		<div class="ktr-button-logo"><em><label for="modal-one" title="Menú"><img src="../src/ics/icon.gif" alt="A"></label></em></div>
+		<div class="ktr-button-tools"><em><label for="modal-one" title="Menú">&#9788;</label></em></div>
+		<div class="ktr-button-bubble">
+			<input id="bubble" name="bubble" type="checkbox" hidden>
+			<span>
+				<em><label class="th-nox" for="theme-nox" data-title="Nox"></label></em>
+				<em><label class="th-vesperum" for="theme-vesperum" data-title="Vesperum"></label></em>
+				<em><label class="th-meridianus" for="theme-meridianus" data-title="Meridianus"></label></em>
+				<em><label class="th-aurora" for="theme-aurora" data-title="Aurora"></label></em>
+			</span>
+			<em><label class="th-switcher" for="bubble" title="Themes"><svg id="moon" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" version="1.1"/></label></em>
+		</div>		
 
 		<!-- Dialog -->		
 		<div>

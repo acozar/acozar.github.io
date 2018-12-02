@@ -22,11 +22,6 @@ body {
 	}
 }
 
-.ktr-screen {
-	border: none;
-	height: 98vh;
-	min-height: 600px;
-}
 .ktr-footer {
 	background-position: center bottom;
 	background-repeat: no-repeat;
@@ -63,8 +58,7 @@ body {
 }
 
 .ktr-button-logo,
-.ktr-button-tools,
-.ktr-button-moon-phase {
+.ktr-button-tools {
 	position: fixed;
 	z-index: 10;
 }
@@ -79,12 +73,72 @@ body {
 	bottom: 8px;
 	left: 8px;
 }
-.ktr-button-moon-phase {
+
+/* KTR bubble */
+
+
+.ktr-button-bubble {
+	position: fixed;
 	top: 8px;
 	right: 8px;
+	z-index: 10;
 }
-.ktr-button-moon-phase em a {
+.ktr-button-bubble span {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.ktr-button-bubble em label {
+	padding-top: 24px;
+}
+.ktr-button-bubble span .th-aurora,
+.ktr-button-bubble span .th-meridianus,
+.ktr-button-bubble span .th-vesperum,
+.ktr-button-bubble span .th-nox {
+	border: 2px solid rgba(0,0,0,.2);
+	font-size: 12px;
 	padding-top: 20px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: scale(0.1) translateX(0px) translateY(0px);
+	
+	-webkit-animation-delay: .5s;
+	   -moz-animation-delay: .5s;
+	     -o-animation-delay: .5s;
+			animation-delay: .5s;
+
+	-webkit-transition: transform .5s ease;
+	    -moz-transition: transform .5s ease;
+		-ms-transition: transform .5s ease;
+		 -o-transition: transform .5s ease;
+			transition: transform .5s ease;
+}
+.th-aurora {
+	background-color: #ffffff;
+}
+.th-meridianus {
+	background-color: rgba(255,245,238,1) !important;
+}
+.th-vesperum {
+	background-color: rgba(247,246,255,1) !important;
+}
+.th-nox {
+	background-color: #000000 !important;
+	color: #ffffff !important;
+}
+.ktr-button-bubble input:checked ~ span .th-aurora {
+	transform: scale(1) translateX(-200%);
+}
+.ktr-button-bubble input:checked ~ span .th-meridianus {
+	transform: scale(1) translateX(-180%) translateY(100%);
+}
+.ktr-button-bubble input:checked ~ span .th-vesperum {
+	transform: scale(1) translateX(-100%) translateY(180%);
+}
+.ktr-button-bubble input:checked ~ span .th-nox {
+	transform: scale(1) translateY(200%);
+
 }
 .ktr-button-clock-reverse {
 	display: block;
@@ -113,9 +167,8 @@ body {
 
 [class*='ktr-button'] a,
 [class*='ktr-button'] label {
-	background-color: #ffffff;
 	border-radius: 50%;
-	border-color: currentColor;border: none;
+	border: none;
 	font-size: 64px;
 	padding: 14px;
 	line-height: 64px;
@@ -147,7 +200,7 @@ body {
 		width: 52px;
 		height: 52px;
 	}
-	.ktr-button-moon-phase em a {
+	.ktr-button-bubble em label {
 		padding-top: 12px;
 	}
 }
@@ -265,7 +318,6 @@ body {
 }
 .clock-case,
 .clock-case-back {
-	background-color: #ffffff;
 	border: 1px solid #ddd;
 	display: block;
 	top: 0;
@@ -294,6 +346,7 @@ body {
 }
 
 .clock-case {
+	background-color: inherit;
 	padding: 1%;
 	z-index: 8;
 	-webkit-transform: rotateX(0deg) rotateY(0deg);
@@ -302,6 +355,7 @@ body {
 			transform: rotateX(0deg) rotateY(0deg);
 }
 .clock input:checked ~ .clock-case {
+	background-color: #ffffff;
 	z-index: 7;
 	-webkit-transform: rotateY(-180deg);
 	    -moz-transform: rotateY(-180deg);
@@ -345,6 +399,7 @@ body {
 .clock-hour-hand,
 .clock-zenit-hand,
 .clock-horizon {
+	background-color: inherit;
 	background-position: center;
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -444,7 +499,30 @@ body {
 	     -o-border-radius: 50%;
 			border-radius: 50%;
 }
-
+#theme-meridianus:checked ~ #page .clock {
+	/*Sepia */
+	filter:sepia(.2);
+	-webkit-filter:sepia(.2);
+	-moz-filter:sepia(.2);
+	-ms-filter:sepia(.2);
+	-o-filter:sepia(.2);
+}
+#theme-vesperum:checked ~ #page .clock {
+	/*Hue Rotate*/
+	filter:hue-rotate(250deg);
+	-webkit-filter:hue-rotate(250deg);
+	-moz-filter:hue-rotate(250deg);
+	-ms-filter:hue-rotate(250deg);
+	-o-filter:hue-rotate(250deg);
+}
+#theme-nox:checked ~ #page .clock {
+	/*Invert*/
+	filter:invert(1);
+	-webkit-filter:invert(1);
+	-moz-filter:invert(1);
+	-ms-filter:invert(1);
+	-o-filter:invert(1);
+}
 
 
 /* Moon */
@@ -512,7 +590,7 @@ ul.solarsystem {
 	visibility: visible;
 	opacity: 100;
 }
-@media screen and (max-width: 480px) , screen and (max-height: 600px) {
+@media screen (max-height: 700px), (max-width: 700px) {
 	ul.solarsystem {
     	height: 320px;
     	width: 320px;
