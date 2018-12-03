@@ -73,7 +73,7 @@ a:active, label:active, button:active {
 		font-size: 10px;
 		padding: 0 8px;
 		top: -48px;
-		width: 66%;
+		width: 75%;
 	}
 }
 
@@ -259,7 +259,6 @@ a:active, label:active, button:active {
 @media screen and (max-width: 1024px) {
 	[class*='ktr-button'] a,
 	[class*='ktr-button'] label {
-		padding: 7px 4px;
 		line-height: 46px;
 		width: 64px;
 		height: 64px;
