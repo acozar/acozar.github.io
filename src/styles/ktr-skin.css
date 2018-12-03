@@ -600,7 +600,7 @@ a:active, label:active, button:active {
 
 /* Solar System Styles */
 
-.system-legend {
+.solar-system-legend {
 	visibility: hidden;
 	opacity: 0;
 	font-size: 24px;
@@ -610,11 +610,11 @@ a:active, label:active, button:active {
     -o-transition: all 2s ease-in;
     transition: all 2s ease-in;
 }
-.system-legend span {
+.solar-system-legend span {
 	display: inline-block;
 	margin: 0 16px;
 }
-ul.solarsystem {
+ul.solar-system {
     display: block;
     height: 700px;
     width: 700px;
@@ -634,7 +634,7 @@ ul.solarsystem {
     -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
-.solaris input:checked ~ ul.solarsystem {
+.solaris input:checked ~ ul.solar-system {
 	-webkit-transform: rotateX(50deg) translateZ(-200px) translateY(-200px);
 	-moz-transform: rotateX(50deg) translateZ(-200px) translateY(-200px);
 	-o-transform: rotateX(50deg) translateZ(-200px) translateY(-200px);
@@ -645,12 +645,12 @@ ul.solarsystem {
 	opacity: 100;
 }
 @media screen (max-height: 700px), (max-width: 700px) {
-	ul.solarsystem {
+	ul.solar-system {
     	height: 320px;
     	width: 320px;
 	}
 }
-ul.solarsystem li {
+ul.solar-system li {
     text-indent: -9999px;
     display: block;
     position: absolute;
@@ -660,7 +660,7 @@ ul.solarsystem li {
     -moz-border-radius: 50%;
     border-radius: 50%;
 }
-ul.solarsystem li span {
+ul.solar-system li span {
     display: block;
     position: absolute;
     width: 3%;
@@ -669,24 +669,24 @@ ul.solarsystem li span {
     -moz-border-radius: 50%;
     border-radius: 50%;
 }
-ul.solarsystem li.active {
+ul.solar-system li.active {
     border-color: #999;
 }
-ul.solarsystem li.active.sun,
-ul.solarsystem li.active span {
+ul.solar-system li.active.sun,
+ul.solar-system li.active span {
     -webkit-transform: scale(1.3);
     -moz-transform: scale(1.3);
     -o-transform: scale(1.3);
     transform: scale(1.3);
 }
-ul.solarsystem li.active.sun span,
-ul.solarsystem li.active.earth .moon {
+ul.solar-system li.active.sun span,
+ul.solar-system li.active.earth .moon {
     border: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
 }
-ul.solarsystem li.sun {
+ul.solar-system li.sun {
     width: 5%;
     height: 5%;
     background: #ffffff;
@@ -705,64 +705,64 @@ ul.solarsystem li.sun {
     -o-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
 }
-ul.solarsystem li.sun span {
+ul.solar-system li.sun span {
     width: 10%;
     height: 10%; 
 }
-ul.solarsystem li.mercury {
+ul.solar-system li.mercury {
     width: 16%;
     height: 16%;
     top: 42%;
     left: 42%;
 }
-ul.solarsystem li.mercury span {
+ul.solar-system li.mercury span {
     background: #b6bac5;
     top: 20%;
     left: 7%;
 }
-ul.solarsystem li.venus {
+ul.solar-system li.venus {
     width: 20%;
     height: 20%;
     top: 40%;
     left: 40%;
 }
-ul.solarsystem li.venus span {
+ul.solar-system li.venus span {
     background: #bf8639;
     top: 28%;
     left: 2%;
 }
-ul.solarsystem li.earth {
+ul.solar-system li.earth {
     width: 30%;
     height: 30%;
     top: 35%;
     left: 35%;
 }
-ul.solarsystem li.earth span {
+ul.solar-system li.earth span {
     background: #06c;
     top:30%;
     left: 2%;
     width: 4%;
     height: 4%;
 }
-ul.solarsystem li.earth span.moon {
+ul.solar-system li.earth span.moon {
     width: 90%;
     height: 90%;
     background: #ccc;
     top: 110%;
     left: 110%;
 }
-ul.solarsystem li.mars {
+ul.solar-system li.mars {
     width: 36%;
     height: 36%;
     top: 32%;
     left: 32%;
 }
-ul.solarsystem li.mars span {
+ul.solar-system li.mars span {
     background: #aa4200;
     top: 0px;
     left: 35%;
 }
-ul.solarsystem li.asteroids_meteorids {
+ul.solar-system li.asteroids_meteorids {
     top: 27%;
     left: 27%;
     background: url('../img/asteroids_meteorids.png') no-repeat 0 0;
@@ -772,31 +772,31 @@ ul.solarsystem li.asteroids_meteorids {
     border: none;
     opacity: 0.1;
 }
-ul.solarsystem li.jupiter {
+ul.solar-system li.jupiter {
     width: 50%;
     height: 50%;
     top: 25%;
     left: 25%;
 }
-ul.solarsystem li.jupiter span {
+ul.solar-system li.jupiter span {
     background: #e0ae6f;
     top: 24%;
     left: 5%;
     width: 4%;
     height: 4%;
 }
-ul.solarsystem li.saturn {
+ul.solar-system li.saturn {
     width: 60%;
     height: 60%;
     top: 20%;
     left: 20%;
 }
-ul.solarsystem li.saturn span {
+ul.solar-system li.saturn span {
     background: #dfd3a9;
     top: 4%;
     left: 25%;
 }
-ul.solarsystem li.saturn span.ring {
+ul.solar-system li.saturn span.ring {
     width: 180%;
     height: 180%;
     background: none;
@@ -804,35 +804,35 @@ ul.solarsystem li.saturn span.ring {
     left: -42%;
     top: -42%;
 }
-ul.solarsystem li.uranus {
+ul.solar-system li.uranus {
     width: 70%;
     height: 70%;
     top: 15%;
     left: 15%;
 }
-ul.solarsystem li.uranus span {
+ul.solar-system li.uranus span {
     background: #82b3d1;
     top: 1%;
     left: 32%;
 }
-ul.solarsystem li.neptune {
+ul.solar-system li.neptune {
     width: 80%;
     height: 80%;
     top: 10%;
     left: 10%;
 }
-ul.solarsystem li.neptune span {
+ul.solar-system li.neptune span {
     background: #77c2ec;
     top: 14%;
     left: 12%;
 }
-ul.solarsystem li.pluto {
+ul.solar-system li.pluto {
     width: 90%;
     height: 90%;
     top: 5%;
     left: 5%;
 }
-ul.solarsystem li.pluto span {
+ul.solar-system li.pluto span {
     background: #7c6a5c;
     top: 26%;
     left: 5%;
@@ -841,7 +841,7 @@ ul.solarsystem li.pluto span {
 }
 
 /* CSS3 Animations */
-ul.solarsystem li {
+ul.solar-system li {
     -webkit-animation-iteration-count:infinite;
     -webkit-animation-timing-function:linear;
     -webkit-animation-name:orbit;
@@ -850,7 +850,7 @@ ul.solarsystem li {
     -moz-animation-timing-function:linear;
     -moz-animation-name:orbit;
 }
-ul.solarsystem li.earth span {
+ul.solar-system li.earth span {
     -webkit-animation-iteration-count:infinite;
     -webkit-animation-timing-function:linear;
     -webkit-animation-name:moon;
@@ -859,17 +859,17 @@ ul.solarsystem li.earth span {
     -moz-animation-timing-function:linear;
     -moz-animation-name:moon;
 }
-ul.solarsystem li.mercury {-webkit-animation-duration:5s; -moz-animation-duration:5s;}
-ul.solarsystem li.venus {-webkit-animation-duration:8s; -moz-animation-duration:8s;}
-ul.solarsystem li.earth {-webkit-animation-duration:12s; -moz-animation-duration:12s;}
-ul.solarsystem li.earth span {-webkit-animation-duration:2s; -moz-animation-duration:2s;}
-ul.solarsystem li.mars {-webkit-animation-duration:20s; -moz-animation-duration:20s;}
-ul.solarsystem li.asteroids_meteorids {-webkit-animation-duration:50s; -moz-animation-duration:50s;}
-ul.solarsystem li.jupiter {-webkit-animation-duration:30s; -moz-animation-duration:30s;}
-ul.solarsystem li.saturn {-webkit-animation-duration:60s; -moz-animation-duration:60s;}
-ul.solarsystem li.uranus {-webkit-animation-duration:70s; -moz-animation-duration:70s;}
-ul.solarsystem li.neptune {-webkit-animation-duration:100s; -moz-animation-duration:100s;}
-ul.solarsystem li.pluto {-webkit-animation-duration:120s; -moz-animation-duration:120s;}
+ul.solar-system li.mercury {-webkit-animation-duration:5s; -moz-animation-duration:5s;}
+ul.solar-system li.venus {-webkit-animation-duration:8s; -moz-animation-duration:8s;}
+ul.solar-system li.earth {-webkit-animation-duration:12s; -moz-animation-duration:12s;}
+ul.solar-system li.earth span {-webkit-animation-duration:2s; -moz-animation-duration:2s;}
+ul.solar-system li.mars {-webkit-animation-duration:20s; -moz-animation-duration:20s;}
+ul.solar-system li.asteroids_meteorids {-webkit-animation-duration:50s; -moz-animation-duration:50s;}
+ul.solar-system li.jupiter {-webkit-animation-duration:30s; -moz-animation-duration:30s;}
+ul.solar-system li.saturn {-webkit-animation-duration:60s; -moz-animation-duration:60s;}
+ul.solar-system li.uranus {-webkit-animation-duration:70s; -moz-animation-duration:70s;}
+ul.solar-system li.neptune {-webkit-animation-duration:100s; -moz-animation-duration:100s;}
+ul.solar-system li.pluto {-webkit-animation-duration:120s; -moz-animation-duration:120s;}
 
 @-webkit-keyframes orbit { from { -webkit-transform:rotate(0deg) } to { -webkit-transform:rotate(360deg) } }
 @-webkit-keyframes moon { from { -webkit-transform:rotate(0deg) } to { -webkit-transform:rotate(360deg) } }
@@ -877,7 +877,7 @@ ul.solarsystem li.pluto {-webkit-animation-duration:120s; -moz-animation-duratio
 @-moz-keyframes orbit { from { -moz-transform:rotate(0deg) } to { -moz-transform:rotate(360deg) } }
 @-moz-keyframes moon { from { -moz-transform:rotate(0deg) } to { -moz-transform:rotate(360deg) } }
 
-/*ul.solarsystem:hover li {-webkit-animation-play-state: paused;} */
+/*ul.solar-system:hover li {-webkit-animation-play-state: paused;} */
 
 /* Atom */
 
