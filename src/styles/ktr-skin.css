@@ -1141,8 +1141,8 @@ h1 .compass {
 	top:0;
 	left:0;
 	margin:auto;
-	width:80vh;
-	height:80vh;
+	width:80vw;
+	height:80vw;
 	max-width:80vh;
 	max-height:80vh;
 }
