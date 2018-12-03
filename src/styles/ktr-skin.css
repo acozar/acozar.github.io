@@ -1137,6 +1137,7 @@ h1 .compass, .demo .compass-icon {
 }
 .demo .circle {
 	background-image:url('../img/compass-bg.svg');
+	background-size:100% 100%;
 	border-radius:50%;
 	border:1px solid currentColor;
 	margin-top: 64px;
@@ -1157,12 +1158,12 @@ h1 .compass, .demo .compass-icon {
 	font-weight:bold;
 	text-align:center;
 	width:100%;
-	margin-top: -30px;
+	margin-top: -16px;
 	position:relative;
 }
 .demo .degrees{
 	font-weight:600;
-	margin-top: 32px;
+	margin-top: 16px;
 }
 .demo .mark {
 	position:absolute;
@@ -1182,19 +1183,19 @@ h1 .compass, .demo .compass-icon {
 .demo.enable { 
 	height:150px;
 }
-.demo.unanimated .notice,.demo.unanimated .compass{
+.demo.unanimated .notice,.demo.unanimated .compass {
 	display:none;
 }
 .demo.unanimated.init-step .init,.demo.unanimated.disable .no-support,.demo.unanimated.gps-step .gps,.demo.unanimated.move-step .move,.demo.unanimated.enable .compass { 
 	display:block;
 }
-.demo.animated{
+.demo.animated {
 	-webkit-transition:height 600ms;
 	-moz-transition:height 600ms;
 	-o-transition:height 600ms;
 	transition:height 600ms;
 }
-.demo.animated .notice,.demo.animated .compass{
+.demo.animated .notice,.demo.animated .compass {
 	-webkit-transform:rotateX(90deg);
 	-moz-transform:rotateX(90deg);
 	-ms-transform:rotateX(90deg);
@@ -1281,7 +1282,6 @@ h1 .compass, .demo .compass-icon {
 		transform:scale(0.8, 0.8);
 	}
 	.meta .github {
-		margin-left:18px;
 	}
 	.demo {}
 	.demo .notice-wrap {
@@ -1293,6 +1293,5 @@ h1 .compass, .demo .compass-icon {
 		left:-35px;
 	}
 	.demo .compass {
-		margin-top:-60px;
 	}
 }
