@@ -72,7 +72,7 @@ a:active, label:active, button:active {
 	.ktr-display {
 		font-size: 10px;
 		padding: 0 8px;
-		top: -32px;
+		top: -48px;
 		width: 66%;
 	}
 }
@@ -1149,6 +1149,7 @@ h1 .compass, .demo .compass-icon {
 	-webkit-box-sizing:	border-box;
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
+	opacity: .8;
 }
 .demo .arrow {
 	background-image:url('../img/compass.svg');
@@ -1161,7 +1162,7 @@ h1 .compass, .demo .compass-icon {
 	font-weight:bold;
 	text-align:center;
 	width:100%;
-	margin-top: -16px;
+	margin-top: 0px;
 	position:relative;
 }
 .demo .degrees{
