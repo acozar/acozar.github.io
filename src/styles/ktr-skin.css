@@ -68,7 +68,7 @@ a:active, label:active, button:active {
 }
 @media screen and (max-width: 1024px) {
 	.ktr-display {
-		display: none;
+		font-size: 12px;
 	}
 }
 
