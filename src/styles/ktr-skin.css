@@ -68,9 +68,11 @@ a:active, label:active, button:active {
   from, to { border-color: transparent }
   50 { border-color: #111111: }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
 	.ktr-display {
-		font-size: 12px;
+		font-size: 10px;
+		padding: 0 8px;
+		top: 0;
 		width: 66%;
 	}
 }
@@ -1129,6 +1131,8 @@ h1 .compass, .demo .compass-icon {
 
 }
 .demo .compass {
+	background-image:url('../img/compass-bg.svg');
+	background-size:100% 100%;
 	margin-top: 64px;
 	width:75vw;
 	height:75vw;
@@ -1136,8 +1140,6 @@ h1 .compass, .demo .compass-icon {
 	max-height:75vh;
 }
 .demo .circle {
-	background-image:url('../img/compass-bg.svg');
-	background-size:100% 100%;
 	border-radius:50%;
 	border:1px solid currentColor;
 	margin-top: 64px;
