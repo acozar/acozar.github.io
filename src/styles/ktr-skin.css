@@ -234,7 +234,7 @@ a:active, label:active, button:active {
 [class*='ktr-button'] a,
 [class*='ktr-button'] label {
 	border-radius: 50%;
-	border: 1px solid #333;
+	border: none;
 	font-size: 48px;
 	padding: 7px 0px;
 	line-height: 64px;
@@ -256,7 +256,6 @@ a:active, label:active, button:active {
 @media screen and (max-width: 1024px) {
 	[class*='ktr-button'] a,
 	[class*='ktr-button'] label {
-		font-size: 64px;
 		padding: 7px 4px;
 		line-height: 46px;
 		width: 64px;
