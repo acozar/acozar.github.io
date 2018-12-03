@@ -236,8 +236,8 @@ a:active, label:active, button:active {
 	border-radius: 50%;
 	border: none;
 	font-size: 48px;
-	padding: 7px 0px;
-	line-height: 64px;
+	padding: 5px 0px;
+	line-height: 78px;
 	text-align: center;
 	width: 96px;
 	height: 96px;
@@ -252,6 +252,9 @@ a:active, label:active, button:active {
 }
 [class*='ktr-button'] svg {
     margin: 0 auto;
+}
+[class*='ktr-button'] span {
+    margin-left: 8px;
 }
 @media screen and (max-width: 1024px) {
 	[class*='ktr-button'] a,
@@ -272,6 +275,12 @@ a:active, label:active, button:active {
 	.ktr-button-bubble em label {
 		padding-top: 12px;
 	}
+}
+.clock .ktr-button-section em label {
+	-webkit-animation: rotation 10s infinite linear;
+	-moz-animation: rotation 10s infinite linear;
+	-o-animation: rotation 10s infinite linear;
+	animation: rotation 10s infinite linear;
 }
 
 /* KTR Modals */
