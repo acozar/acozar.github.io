@@ -72,7 +72,7 @@ a:active, label:active, button:active {
 	.ktr-display {
 		font-size: 10px;
 		padding: 0 8px;
-		top: 0;
+		top: -32px;
 		width: 66%;
 	}
 }
@@ -1131,8 +1131,6 @@ h1 .compass, .demo .compass-icon {
 
 }
 .demo .compass {
-	background-image:url('../img/compass-bg.svg');
-	background-size:100% 100%;
 	margin-top: 64px;
 	width:75vw;
 	height:75vw;
@@ -1140,6 +1138,9 @@ h1 .compass, .demo .compass-icon {
 	max-height:75vh;
 }
 .demo .circle {
+	background-image:url('../img/compass-bg.svg');
+	background-size:100%;
+	background-position: center;
 	border-radius:50%;
 	border:1px solid currentColor;
 	margin-top: 64px;
