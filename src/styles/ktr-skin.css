@@ -1121,6 +1121,7 @@ h1 .compass, .demo .compass-icon {
 .demo .circle,
 .demo .arrow {
 	display:block;
+	margin-top: 64px;
 	position:absolute;
 	top:0;
 	left:0;
@@ -1129,7 +1130,6 @@ h1 .compass, .demo .compass-icon {
 
 }
 .demo .compass {
-	margin-top: 64px;
 	width:75vw;
 	height:75vw;
 	max-width:75vh;
