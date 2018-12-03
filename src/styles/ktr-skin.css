@@ -223,7 +223,7 @@ a:active, label:active, button:active {
 	animation: rotation 10s infinite linear;
 	opacity: .5;
 }
-.ktr-button-solaris {
+.ktr-button-solar-system-canvas {
 	display: block;
 	position: absolute;
 	bottom: 5vh;
@@ -257,7 +257,7 @@ a:active, label:active, button:active {
 	width: 64px;
 	height: 64px;
 }
-.ktr-button-solaris label {
+.ktr-button-solar-system-canvas label {
     padding-left: 12px;
 }
 @media screen and (max-width: 1024px) {
@@ -280,7 +280,7 @@ a:active, label:active, button:active {
 	.ktr-button-bubble em label {
 		padding-top: 12px;
 	}
-    .ktr-button-solaris label {
+    .ktr-button-solar-system-canvas label {
     	padding-left: 8px;
 	}
 }
@@ -586,11 +586,11 @@ a:active, label:active, button:active {
 
 
 
-/* Solaris, the solar system  */
+/* solar-system-canvas, the solar system  */
 
-/* Solaris (global position) */
+/* solar-system-canvas (global position) */
 
-.solaris {
+.solar-system-canvas {
 	display: block;
 	margin: 16px auto;
 	padding: 120px 0;
@@ -634,13 +634,13 @@ ul.solar-system {
     -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
-.solaris input:checked ~ ul.solar-system {
+.solar-system-canvas input:checked ~ ul.solar-system {
 	-webkit-transform: rotateX(50deg) translateZ(-200px) translateY(-200px);
 	-moz-transform: rotateX(50deg) translateZ(-200px) translateY(-200px);
 	-o-transform: rotateX(50deg) translateZ(-200px) translateY(-200px);
 	transform: rotateX(50deg) translateZ(-200px) translateY(-200px);
 }
-.solaris input:checked ~ .system-legend {
+.solar-system-canvas input:checked ~ .solar-system-legend {
 	visibility: visible;
 	opacity: 100;
 }
