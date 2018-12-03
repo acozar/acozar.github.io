@@ -210,22 +210,14 @@ a:active, label:active, button:active {
 	transform: scale(1) translateY(290%);
 
 }
-.ktr-button-clock-reverse {
+.ktr-button-section {
 	display: block;
 	position: absolute;
-	top: 80vh;
+	bottom: -10vh;
 	left: 0;
 	right: 0;
 	margin: auto;
 	opacity: .5;
-}
-.ktr-button-solar-system-canvas {
-	display: block;
-	position: absolute;
-	bottom: 5vh;
-	left: 0;
-	right: 0;
-	margin: auto;
 	-webkit-animation: pulse 1s infinite linear;
 	-moz-animation: pulse 1s infinite linear;
 	-o-animation: pulse 1s infinite linear;
@@ -881,7 +873,7 @@ ul.solar-system li.pluto {-webkit-animation-duration:120s; -moz-animation-durati
 	display: block;
 	height: 400px;
 	width: 400px;
-	margin: 120px auto;
+	margin: 64px auto 0;
 	overflow: hidden;
 	position: relative;
 	-webkit-transform: scale(1.2, 1.2);
@@ -895,7 +887,6 @@ ul.solar-system li.pluto {-webkit-animation-duration:120s; -moz-animation-durati
 }
 @media screen and (max-width: 767px) , screen and (max-height: 600px) {
 	.atom {
-		margin: 240px auto;
 		height: 220px;
 		width: 220px;
 	}
