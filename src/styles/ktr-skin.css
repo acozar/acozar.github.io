@@ -896,6 +896,11 @@ ul.solar-system li.pluto {-webkit-animation-duration:120s; -moz-animation-durati
 	-moz-animation: rotation 10s infinite linear;
 	-o-animation: rotation 10s infinite linear;
 	animation: rotation 10s infinite linear;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
 }
 @media screen and (max-width: 767px) , screen and (max-height: 600px) {
 	.atom {
@@ -1080,6 +1085,21 @@ ul.solar-system li.pluto {-webkit-animation-duration:120s; -moz-animation-durati
   50% {
     box-shadow: 0 0 25px #ddd;
   }
+}
+
+.atom-system input:checked ~ .atom {
+	-webkit-transform: scale(3);
+	-moz-transform: scale(3);
+	-o-transform: scale(3);
+	transform: scale(3);
+	opacity: 0;
+}
+.atom-system input:checked ~ . {
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	transform: scale(0);
+	opacity: 0;
 }
 
 /* Compass */
