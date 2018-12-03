@@ -243,9 +243,9 @@ a:active, label:active, button:active {
 	border-radius: 50%;
 	border: none;
 	font-size: 96px;
-	padding: 14px 7px;
+	padding: 7px 15px;
 	line-height: 64px;
-	text-align: right;
+	text-align: center;
 	width: 96px;
 	height: 96px;
 }
@@ -253,12 +253,12 @@ a:active, label:active, button:active {
 [class*='ktr-button'] svg {
 	display: block;
 	position: relative;
-	margin: 0 auto;
+	margin: 7px auto 0;
 	width: 64px;
 	height: 64px;
 }
-.ktr-button-solar-system-canvas label {
-    padding-left: 12px;
+[class*='ktr-button'] svg {
+    margin: 0 auto;
 }
 @media screen and (max-width: 1024px) {
 	[class*='ktr-button'] a,
@@ -279,9 +279,6 @@ a:active, label:active, button:active {
 	}
 	.ktr-button-bubble em label {
 		padding-top: 12px;
-	}
-    .ktr-button-solar-system-canvas label {
-    	padding-left: 8px;
 	}
 }
 
