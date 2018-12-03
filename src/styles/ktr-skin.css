@@ -234,9 +234,9 @@ a:active, label:active, button:active {
 [class*='ktr-button'] a,
 [class*='ktr-button'] label {
 	border-radius: 50%;
-	border: none;
-	font-size: 96px;
-	padding: 7px 15px;
+	border: 1px solid #333;
+	font-size: 48px;
+	padding: 7px 0px;
 	line-height: 64px;
 	text-align: center;
 	width: 96px;
