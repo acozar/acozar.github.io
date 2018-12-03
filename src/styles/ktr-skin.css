@@ -1138,6 +1138,7 @@ h1 .compass, .demo .compass-icon {
 .demo .circle {
 	border-radius:50%;
 	border:1px solid currentColor;
+	margin-top: 64px;
 	width:100%;
 	height:100%;
 	-webkit-box-sizing:	border-box;
