@@ -6,10 +6,10 @@ body * {
 	letter-spacing: .2em;
 }
 #page {
-	cursor: url('../ics/cursor.png'), auto !important;
+	cursor: url('http://acozar.github.io/src/ics/cursor.png'), auto !important;
 }
 a, label, button {
-	cursor: url('../ics/cursorpointer.svg'), auto !important;
+	cursor: url('http://acozar.github.io/src/ics/cursorpointer.svg'), auto !important;
 }
 a:active, label:active, button:active {
 	cursor: pointer;
