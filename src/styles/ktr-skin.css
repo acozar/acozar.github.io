@@ -6,12 +6,13 @@ body * {
 	letter-spacing: .2em;
 }
 #page {
-	cursor: url('../ics/cursor.svg'), auto !important;
+	cursor: url('../ics/cursor.png'), auto !important;
 }
 a, label, button {
 	cursor: url('../ics/cursorpointer.svg'), auto !important;
 }
 a:active, label:active, button:active {
+	cursor: pointer;
 	cursor: url('../ics/cursorpointerred.svg'), auto !important;
 }
 
