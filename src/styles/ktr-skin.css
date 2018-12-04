@@ -5,7 +5,7 @@ body * {
 	font-weight: 200;
 	letter-spacing: .2em;
 }
-#page {
+#page, dialog {
 	cursor: url('http://acozar.github.io/src/cursors/cursor.png'), auto !important;
 }
 a, label, button {
