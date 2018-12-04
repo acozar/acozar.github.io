@@ -78,6 +78,29 @@ a:active, label:active, button:active {
 	}
 }
 
+/* KTR menu */
+
+.ktr-menu figure {
+    border-top: 1px solid currentColor;
+    display:block;
+    height: 128px;
+    margin: 0;
+    width: 100%;
+}
+.ktr-menu figure svg {
+    display:inline;
+	float: left;
+    margin: 0;
+    width: 28%;
+}
+.ktr-menu figure figcaption {
+    display:block;
+    margin-left: 30%;
+     height: 128px;
+    line-height: 128px;
+    width: 70%;
+}
+
 /* KTR footer */
 
 .ktr-footer {
