@@ -6,14 +6,14 @@ body * {
 	letter-spacing: .2em;
 }
 #page {
-	cursor: url('http://acozar.github.io/src/ics/cursor.png'), auto !important;
+	cursor: url('http://acozar.github.io/src/cursors/cursor.png'), auto !important;
 }
 a, label, button {
-	cursor: url('http://acozar.github.io/src/ics/cursorpointer.svg'), auto !important;
+	cursor: url('http://acozar.github.io/src/cursors/cursorpointer.png'), auto !important;
 }
 a:active, label:active, button:active {
 	cursor: pointer;
-	cursor: url('../ics/cursorpointerred.svg'), auto !important;
+	cursor: url('http://acozar.github.io/src/cursors/cursorpointerred.png'), auto !important;
 }
 
 /* KTR recurrent elements */
