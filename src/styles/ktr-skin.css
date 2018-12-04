@@ -80,25 +80,34 @@ a:active, label:active, button:active {
 
 /* KTR menu */
 
-.ktr-menu figure {
-    border-top: 1px solid currentColor;
-    display:block;
-    height: 128px;
-    margin: 0;
-    width: 100%;
-}
-.ktr-menu figure svg {
-    display:inline;
-	float: left;
-    margin: 0;
-    width: 28%;
-}
-.ktr-menu figure figcaption {
-    display:block;
-    margin-left: 30%;
-     height: 128px;
-    line-height: 128px;
-    width: 70%;
+@media screen and (max-width: 1024px) {
+    .ktr-menu * {
+        text-align: left;
+    }
+    .ktr-menu header {
+    	border-bottom: 1px solid currentColor;
+    }
+	.ktr-menu figure {
+		border-bottom: 1px solid currentColor;
+		display:block;
+		height: 128px;
+		margin: 0;
+		width: 100%;
+	}
+	.ktr-menu figure svg {
+		display: block;
+		float: left;
+		margin: 0;
+        height: 128px;
+		width: 128px;
+	}
+	.ktr-menu figure figcaption {
+		display:block;
+		margin-left: 30%;
+		height: 128px;
+		line-height: 128px;
+		width: 70%;
+	}
 }
 
 /* KTR footer */
@@ -902,6 +911,9 @@ ul.solar-system li.pluto {-webkit-animation-duration:120s; -moz-animation-durati
 
 /* Atom */
 
+.atom-system {
+	margin-bottom: 128px;
+}
 .atom {
 	border: 1px solid #333;
 	border-radius: 50%;
