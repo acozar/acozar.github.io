@@ -39,42 +39,43 @@ a:active, label:active, button:active {
 	border-radius: 0px !important;
 	display: flex;
 	font-size: 24px;
-	height: 32px;
+	height: 48px;
+	line-height: 24px;
 	text-align: center;
-	padding: 0 32px;
+	padding: 4px 32px;
 	position: absolute;
 	top: -64px;
 	left: 0;
 	right: 0;
 	margin: auto;
-	width: 33%;
+	width: 75%;
 }
 .ktr-display p {
 	border-radius: 0px !important;
+	border-right: 4px solid transparent;
 	overflow: hidden; 
-	border-right: .1em solid #111; 
 	white-space: nowrap; 
 	margin: 0 auto;
+	text-transform: uppercase;
 	animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
 	-webkit-animation-delay: 1s;
 	   -moz-animation-delay: 1s;
 	     -o-animation-delay: 1s;
 			animation-delay: 1s;
 }
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50 { border-color: #111111: }
-}
+@-webkit-keyframes typing { from { width: 0 } to { width: 100% } }
+@-moz-keyframes typing { from { width: 0 } to { width: 100% } }
+@-o-keyframes typing { from { width: 0 } to { width: 100% } }
+@keyframes typing { from { width: 0 } to { width: 100% } }
+@-webkit-keyframes blink-caret { from { border-color: transparent } to { border-color: #dd0000: } }
+@-moz-keyframes blink-caret { from { border-color: transparent } to { border-color: #dd0000: } }
+@-o-keyframes blink-caret { from { border-color: transparent } to { border-color: #dd0000: } }
+@keyframes blink-caret { from { border-color: transparent } to { border-color: #dd0000: } }
 @media screen and (max-width: 768px) {
 	.ktr-display {
 		font-size: 10px;
 		padding: 0 8px;
 		top: -48px;
-		width: 75%;
 	}
 }
 
@@ -1201,7 +1202,7 @@ h1 .compass, .demo .compass-icon {
 	max-height:75vh;
 }
 .demo .circle {
-	background-image:url('../img/compass-bg.svg');
+	background-image:url('../img/compass-bg.png');
 	background-size:100%;
 	background-position: center;
 	border-radius:50%;
@@ -1215,7 +1216,7 @@ h1 .compass, .demo .compass-icon {
 	opacity: .8;
 }
 .demo .arrow {
-	background-image:url('../img/compass.svg');
+	background-image:url('../img/compass.png');
 	background-size:100% 100%;
 	margin-top: 64px;
 	width:100%;
