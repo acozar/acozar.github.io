@@ -52,6 +52,7 @@ header, footer {
 }
 #acozar-symbol {
 	height: 48px;
+	margin-bottom: 48px;
 	width: 48px;
 }
 
@@ -562,11 +563,11 @@ header, footer {
 	visibility: hidden;
 }
 .prev-next .blog-paging-control-container .blog-paging-control:nth-child(1) {
-	left: 0px; right: auto;
+	left: 32px; right: auto;
 }
 .prev-next .blog-paging-control-container .blog-paging-control:nth-child(2),
 .prev-next .blog-paging-control-container .blog-paging-control:only-child {
-	right: 0; left: auto;
+	right: 32px; left: auto;
 }
 .prev-next .blog-paging-control-container .blog-paging-control:nth-child(1):after,
 .prev-next .blog-paging-control-container .blog-paging-control:nth-child(2):after {
