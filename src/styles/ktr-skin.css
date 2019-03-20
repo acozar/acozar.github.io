@@ -499,6 +499,39 @@ header, footer {
 
 /* Blogger Hacks */
 
+/* Blogger labels */
+
+.blogger-labels {
+	display: block;
+	clear: both;
+	font-size: 0;
+	margin: 12px 0 0;
+	text-align: center;
+}
+.blogger-labels:before {
+	border-bottom: 1px solid currentColor;
+	display: block;
+	content: 'Etiquetes';
+	font-size: 16px;
+	margin: 16px;
+}
+.blogger-labels a {
+	border: thin solid currentColor;
+	border-radius: 1em;
+	font-size: 16px;
+	margin: 0 .25em;
+	padding: .25em 1em;
+	text-decoration: none !important;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	hyphens: none;
+}
+.archive article .blogger-labels,
+.gallery article .blogger-labels,
+.news article .blogger-labels {
+	display: none;
+}
+
 /* Prev/next */
 
 .prev-next,
