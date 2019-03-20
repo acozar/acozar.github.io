@@ -1,11 +1,13 @@
 ---
 layout: post
-title: You're up and running!
-image: http://acozar.github.io/src/img/picture-1.jpg
+title: BCN CSS
+image: http://acozar.github.io/src/img/ktr-icons-9.jpg
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+BCN CSS és un marc de treball lliure per a la creació de pàgines i components web.
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+Es fonamenta en els següents principis:
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+- Només una classe per component
+- HTML veritablement semàntic
+- Zero Javascript per a disseny
