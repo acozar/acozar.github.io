@@ -28,7 +28,6 @@
 body * {
 	font-family: 'IM Fell Double Pica', Georgia, Times, serif;
 	font-weight: 200;
-	letter-spacing: .2em;
 }
 #page, dialog {
 	cursor: url('http://acozar.github.io/src/cursors/cursor.png'), auto !important;
