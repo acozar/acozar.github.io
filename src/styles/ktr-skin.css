@@ -186,42 +186,42 @@ header, footer {
 
 /* KTR bubble Menu */
 
-.ktr-button-sun-bubble {
+.ktr-button-moon-bubble {
 	position: fixed;
 	top: 8px;
 	left: 8px;
 	z-index: 10;
 }
-.ktr-button-moon-bubble {
+.ktr-button-sun-bubble {
 	position: fixed;
 	top: 8px;
 	right: 8px;
 	z-index: 10;
 }
-.ktr-button-sun-bubble span {
+.ktr-button-moon-bubble span {
 	position: absolute;
 	top: 0;
 	left: 0;
 }
-.ktr-button-moon-bubble span {
+.ktr-button-sun-bubble span {
 	position: absolute;
 	top: 0;
 	right: 0;
 }
-.ktr-button-sun-bubble em label {
+.ktr-button-moon-bubble em label {
 	padding-top: 16px;
 }
-.ktr-button-moon-bubble em label {
+.ktr-button-sun-bubble em label {
 	padding-top: 24px;
 }
-.ktr-button-sun-bubble span .th-home,
-.ktr-button-sun-bubble span .th-blog,
-.ktr-button-sun-bubble span .th-services,
-.ktr-button-sun-bubble span .th-contact,
-.ktr-button-moon-bubble span .th-aurora,
-.ktr-button-moon-bubble span .th-meridianus,
-.ktr-button-moon-bubble span .th-vesperum,
-.ktr-button-moon-bubble span .th-nox {
+.ktr-button-moon-bubble span .th-home,
+.ktr-button-moon-bubble span .th-blog,
+.ktr-button-moon-bubble span .th-services,
+.ktr-button-moon-bubble span .th-contact,
+.ktr-button-sun-bubble span .th-aurora,
+.ktr-button-sun-bubble span .th-meridianus,
+.ktr-button-sun-bubble span .th-vesperum,
+.ktr-button-sun-bubble span .th-nox {
 	background-color: rgba(255,255,255,.7);
 	border: 2px solid rgba(0,0,0,.2);
 	font-size: 12px;
@@ -242,10 +242,10 @@ header, footer {
 		 -o-transition: transform .5s ease;
 			transition: transform .5s ease;
 }
-.ktr-button-sun-bubble span .th-home,
-.ktr-button-sun-bubble span .th-blog,
-.ktr-button-sun-bubble span .th-services,
-.ktr-button-sun-bubble span .th-contact {
+.ktr-button-moon-bubble span .th-home,
+.ktr-button-moon-bubble span .th-blog,
+.ktr-button-moon-bubble span .th-services,
+.ktr-button-moon-bubble span .th-contact {
 	right: auto;
 	left: 0;
 }
@@ -337,28 +337,28 @@ header, footer {
 	background-color: #000000 !important;
 	color: #ffffff !important;
 }
-.ktr-button-sun-bubble input:checked ~ span .th-home {
+.ktr-button-moon-bubble input:checked ~ span .th-home {
 	transform: scale(1) translateX(290%);
 }
-.ktr-button-sun-bubble input:checked ~ span .th-blog {
+.ktr-button-moon-bubble input:checked ~ span .th-blog {
 	transform: scale(1) translateX(200%) translateY(100%);
 }
-.ktr-button-sun-bubble input:checked ~ span .th-services {
+.ktr-button-moon-bubble input:checked ~ span .th-services {
 	transform: scale(1) translateX(100%) translateY(200%);
 }
-.ktr-button-sun-bubble input:checked ~ span .th-contact {
+.ktr-button-moon-bubble input:checked ~ span .th-contact {
 	transform: scale(1) translateY(290%);
 }
-.ktr-button-moon-bubble input:checked ~ span .th-aurora {
+.ktr-button-sun-bubble input:checked ~ span .th-aurora {
 	transform: scale(1) translateX(-290%);
 }
-.ktr-button-moon-bubble input:checked ~ span .th-meridianus {
+.ktr-button-sun-bubble input:checked ~ span .th-meridianus {
 	transform: scale(1) translateX(-200%) translateY(100%);
 }
-.ktr-button-moon-bubble input:checked ~ span .th-vesperum {
+.ktr-button-sun-bubble input:checked ~ span .th-vesperum {
 	transform: scale(1) translateX(-100%) translateY(200%);
 }
-.ktr-button-moon-bubble input:checked ~ span .th-nox {
+.ktr-button-sun-bubble input:checked ~ span .th-nox {
 	transform: scale(1) translateY(290%);
 }
 .ktr-button-section {
