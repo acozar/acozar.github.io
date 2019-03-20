@@ -134,6 +134,7 @@ header, footer {
 }
 .ktr-gallery article h3 {
 	font-size: 16px;
+	line-height: 1.2em;
 	margin: 0;
 	text-transform: uppercase;
   	-webkit-hyphens: none;
