@@ -100,6 +100,10 @@ header, footer {
 .ktr-list article h3 {
 	margin: 0;
 	text-transform: uppercase;
+  	-webkit-hyphens: none;
+  	   -moz-hyphens: none;
+  		-ms-hyphens: none;
+  			hyphens: none;
 }
 .ktr-list article strong {
 	font-size: 12px;;
