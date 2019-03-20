@@ -1211,7 +1211,7 @@ a:visited:active {
 	--color-softorange: rgba(248,228,211,1);
 	--color-softred: rgba(238,213,213,1);
 	--color-softmagenta: rgba(224,204,216,1);
-	--color-softviolet: rgba(228,220,238,1);
+	--color-softviolet: rgba(228,238,238,1);
 	--color-softblue: rgba(209,234,249,1);
 	--color-softturquoise: rgba(154,251,232,1);
 	--color-softgreen: rgba(220,244,228,1);
@@ -1223,7 +1223,7 @@ a:visited:active {
 	--color-magenta: rgba(102,2,60,1);
 	--color-violet: rgba(120,81,169,1);
 	--color-blue: rgba(23,148,227,1);
-	--color-turquoise: rgba(0,175,139,1);
+	--color-turquoise: rgba(122,172,172,1);
 	--color-green: rgba(80,200,120,1);
 
 	/* B & W */
