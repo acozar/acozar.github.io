@@ -209,10 +209,10 @@ header, footer {
 	right: 0;
 }
 .ktr-button-moon-bubble em label {
-	padding-top: 16px;
+	padding-top: 24px;
 }
 .ktr-button-sun-bubble em label {
-	padding-top: 24px;
+	padding-top: 16px;
 }
 .ktr-button-moon-bubble span .th-home,
 .ktr-button-moon-bubble span .th-blog,
