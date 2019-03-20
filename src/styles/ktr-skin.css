@@ -541,11 +541,11 @@ header, footer {
 	visibility: hidden;
 }
 .prev-next .blog-paging-control-container .blog-paging-control:nth-child(1) {
-	left: 76px; right: auto;
+	left: 96px; right: auto;
 }
 .prev-next .blog-paging-control-container .blog-paging-control:nth-child(2),
 .prev-next .blog-paging-control-container .blog-paging-control:only-child {
-	right: 84px; left: auto;
+	right: 104px; left: auto;
 }
 .prev-next .blog-paging-control-container .blog-paging-control:nth-child(1):after,
 .prev-next .blog-paging-control-container .blog-paging-control:nth-child(2):after {
