@@ -1235,14 +1235,14 @@ a:visited:active {
 	--color-black: rgba(0,0,0,1);
 	
 	/* Meridianus Theme */
-	--color-bgmeridianus: rgba(238,213,213,1);
-	--color-textmeridianus: rgba(168,47,47,1);
-	--color-starredmeridianus: rgba(102,2,60,1);
+	--color-bgmeridianus: rgba(248,228,211,1);
+	--color-textmeridianus: rgba(204,119,34,1);
+	--color-starredmeridianus: rgba(168,47,47,1);
 	
 	/* vesperum Theme */
-	--color-bgvesperum: rgba(209,234,249,1);
-	--color-textvesperum: rgba(23,148,227,1);
-	--color-starredvesperum: rgba(120,81,169,1);
+	--color-bgvesperum: rgba(228,220,238,1);
+	--color-textvesperum: rgba(120,81,169,1);
+	--color-starredvesperum: rgba(23,148,227,1);
 	
 	/* Overlays */
 	--color-translucentblack: rgba(0,0,0,.5);
