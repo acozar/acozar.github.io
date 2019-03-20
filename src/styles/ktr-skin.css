@@ -62,7 +62,10 @@ header, footer {
 	margin: 0;
 	padding: 0;
 	text-transform: uppercase;
-	hyphens: none;
+  	-webkit-hyphens: none;
+  	   -moz-hyphens: none;
+  		-ms-hyphens: none;
+  			hyphens: none;
 }
 .ktr-header h1 a {
 	text-decoration: none;
