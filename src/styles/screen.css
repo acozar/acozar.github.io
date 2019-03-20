@@ -1211,9 +1211,9 @@ a:visited:active {
 	--color-softorange: rgba(248,228,211,1);
 	--color-softred: rgba(238,213,213,1);
 	--color-softmagenta: rgba(224,204,216,1);
-	--color-softviolet: rgba(228,238,238,1);
+	--color-softviolet: rgba(228,220,238,1);
 	--color-softblue: rgba(209,234,249,1);
-	--color-softturquoise: rgba(154,251,232,1);
+	--color-softturquoise: rgba(228,238,238,1);
 	--color-softgreen: rgba(220,244,228,1);
 	
 	/* Colors */
