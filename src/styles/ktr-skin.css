@@ -555,7 +555,7 @@ header, footer {
 	width: 2em;
 	position: absolute;
 	text-decoration: none;
-	top: -.25em;
+	top: -1em;
 	z-index: 1;
 }
 .prev-next .blog-paging-control-container .blog-paging-control:nth-child(1),
