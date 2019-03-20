@@ -288,6 +288,8 @@ header, footer {
 .th-services svg,
 .th-contact svg {
 	margin-top: 0px !important;
+	object-fit: cover;
+	object-position: center;	
 }
 @media screen and (max-width: 600px) {
 	.th-home:hover:after,
