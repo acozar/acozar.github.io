@@ -287,7 +287,7 @@ header, footer {
 .th-blog svg,
 .th-services svg,
 .th-contact svg {
-	margin-top: -16px !important;
+	margin-top: 0px !important;
 }
 @media screen and (max-width: 600px) {
 	.th-home:hover:after,
