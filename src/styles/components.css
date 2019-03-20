@@ -1280,7 +1280,7 @@ nav strong label mark {
 
 .banner,
 .cover {
-	background-position: center center;
+	background-position: top center;
 	background-attachment: fixed;
 	background-size: 100%;
 	background-repeat: no-repeat;
