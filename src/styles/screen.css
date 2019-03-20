@@ -1207,24 +1207,24 @@ a:visited:active {
 	--page-size: 1200px;
 	
 	/* Soft Colors */
-	--color-softyellow: rgba(255,238,153,1);
-	--color-softorange: rgba(232,126,4,1);
-	--color-softred: rgba(234,102,102,1);
-	--color-softmagenta: rgba(255,119,252,1);
-	--color-softviolet: rgba(164,109,187,1);
-	--color-softblue: rgba(64,142,190,1);
-	--color-softturquoise: rgba(52,195,167,1);
-	--color-softgreen: rgba(101,195,142,1);
+	--color-softyellow: rgba(253,242,208,1);
+	--color-softorange: rgba(248,228,211,1);
+	--color-softred: rgba(238,213,213,1);
+	--color-softmagenta: rgba(224,204,216,1);
+	--color-softviolet: rgba(228,220,238,1);
+	--color-softblue: rgba(209,234,249,1);
+	--color-softturquoise: rgba(154,251,232,1);
+	--color-softgreen: rgba(220,244,228,1);
 	
 	/* Colors */
 	--color-yellow: rgba(244,192,21,1);
-	--color-orange: rgba(244,82,15,1);
-	--color-red: rgba(221,0,0,1);
-	--color-magenta: rgba(255,0,255,1);
-	--color-violet: rgba(115,44,147,1);
-	--color-blue: rgba(50,122,174,1);
+	--color-orange: rgba(204,119,34,1);
+	--color-red: rgba(168,47,47,1);
+	--color-magenta: rgba(102,2,60,1);
+	--color-violet: rgba(120,81,169,1);
+	--color-blue: rgba(23,148,227,1);
 	--color-turquoise: rgba(0,175,139,1);
-	--color-green: rgba(50,164,89,1);
+	--color-green: rgba(80,200,120,1);
 
 	/* B & W */
 	--color-white: rgba(255,255,255,1);
@@ -1235,14 +1235,14 @@ a:visited:active {
 	--color-black: rgba(0,0,0,1);
 	
 	/* Meridianus Theme */
-	--color-bgmeridianus: rgba(255,245,238,1);
-	--color-textmeridianus: rgba(71,17,5,1);
-	--color-starredmeridianus: rgba(238,169,144,1);
+	--color-bgmeridianus: rgba(238,213,213,1);
+	--color-textmeridianus: rgba(168,47,47,1);
+	--color-starredmeridianus: rgba(102,2,60,1);
 	
 	/* vesperum Theme */
-	--color-bgvesperum: rgba(247,246,255,1);
-	--color-textvesperum: rgba(89,81,147,1);
-	--color-starredvesperum: rgba(187,179,245,1);
+	--color-bgvesperum: rgba(209,234,249,1);
+	--color-textvesperum: rgba(23,148,227,1);
+	--color-starredvesperum: rgba(120,81,169,1);
 	
 	/* Overlays */
 	--color-translucentblack: rgba(0,0,0,.5);
