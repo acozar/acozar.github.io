@@ -62,7 +62,7 @@ header, footer {
 	margin: 0;
 	padding: 0;
 	text-transform: uppercase;
-	word-break: break-all;
+	hyphens: none;
 }
 .ktr-header h1 a {
 	text-decoration: none;
