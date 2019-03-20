@@ -1,0 +1,238 @@
+/* KTR Atom CSS by Acózar (www.acozar.com) */
+
+/* Version 1.0 */
+/* General MIT License (MIT) */
+/* Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: */
+/* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. */
+/* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. */
+
+/* The Atom */
+
+.atom-system {
+	margin-bottom: 128px;
+}
+.atom {
+	border: 1px solid #333;
+	border-radius: 50%;
+	clear: both;
+	display: block;
+	height: 400px;
+	width: 400px;
+	margin: 64px auto 0;
+	overflow: hidden;
+	position: relative;
+	-webkit-transform: scale(1.2, 1.2);
+	-moz-transform: scale(1.2, 1.2);
+	-o-transform: scale(1.2, 1.2);
+	transform: scale(1.2, 1.2);
+	-webkit-animation: rotation 10s infinite linear;
+	-moz-animation: rotation 10s infinite linear;
+	-o-animation: rotation 10s infinite linear;
+	animation: rotation 10s infinite linear;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+@media screen and (max-width: 767px) , screen and (max-height: 600px) {
+	.atom {
+		height: 220px;
+		width: 220px;
+	}
+}
+.atom > div {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -100px;
+	margin-top: -100px;
+	border-radius: 50%;
+	border: 1px solid #333;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+		  transform-style: preserve-3d;
+	-webkit-transform: rotateX(80deg) rotateY(20deg);
+	-moz-transform: rotateX(80deg) rotateY(20deg);
+	-o-transform: rotateX(80deg) rotateY(20deg);
+		  transform: rotateX(80deg) rotateY(20deg);
+}
+.atom > div:first-of-type:after {
+	content: "";
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	background: #333;
+	border-radius: 50%;
+	left: 50%;
+	top: 50%;
+	margin-top: -15px;
+	margin-left: -15px;
+	-webkit-transform: rotateX(-80deg) rotateY(0);
+	-moz-transform: rotateX(-80deg) rotateY(0);
+	-o-transform: rotateX(-80deg) rotateY(0);
+		  transform: rotateX(-80deg) rotateY(0);
+	box-shadow: 0 0 25px #333;
+	-webkit-animation: nucleus_ 2s infinite linear;
+	-moz-animation: nucleus_ 2s infinite linear;
+	-o-animation: nucleus_ 2s infinite linear;
+		  animation: nucleus_ 2s infinite linear;
+}
+.atom > div:nth-of-type(2) {
+	-webkit-transform: rotateX(-80deg) rotateY(20deg);
+	-moz-transform: rotateX(-80deg) rotateY(20deg);
+	-o-transform: rotateX(-80deg) rotateY(20deg);
+		  transform: rotateX(-80deg) rotateY(20deg);
+}
+.atom > div:nth-of-type(2) > div,
+.atom > div:nth-of-type(2) > div:after {
+	-webkit-animation-delay: -.5s;
+	-moz-animation-delay: -.5s;
+	-o-animation-delay: -.5s;
+		  animation-delay: -.5s;
+}
+.atom > div:nth-of-type(3) {
+	-webkit-transform: rotateX(-70deg) rotateY(60deg);
+	-moz-transform: rotateX(-70deg) rotateY(60deg);
+	-o-transform: rotateX(-70deg) rotateY(60deg);
+		  transform: rotateX(-70deg) rotateY(60deg);
+}
+.atom > div:nth-of-type(3) > div,
+.atom > div:nth-of-type(3) > div:after {
+	-webkit-animation-delay: -1s;
+	-moz-animation-delay: -1s;
+	-o-animation-delay: -1s;
+		  animation-delay: -1s;
+}
+.atom > div:nth-of-type(4) {
+	-webkit-transform: rotateX(70deg) rotateY(60deg);
+	-moz-transform: rotateX(70deg) rotateY(60deg);
+	-o-transform: rotateX(70deg) rotateY(60deg);
+		  transform: rotateX(70deg) rotateY(60deg);
+}
+.atom > div:nth-of-type(4) > div,
+.atom > div:nth-of-type(4) > div:after {
+	-webkit-animation-delay: -1.5s;
+	-moz-animation-delay: -1.5s;
+	-o-animation-delay: -1.5s;
+		  animation-delay: -1.5s;
+}
+.atom > div > div {
+	width: 200px;
+	height: 200px;
+	position: relative;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+		  transform-style: preserve-3d;
+	-webkit-animation: trail_ 2s infinite linear;
+		  animation: trail_ 2s infinite linear;
+}
+.atom > div > div:after {
+	content: "";
+	position: absolute;
+	top: -5px;
+	box-shadow: 0 0 12px #ddd;
+	left: 50%;
+	margin-left: -5px;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background-color: #ddd;
+	-webkit-animation: particle_ 2s infinite linear;
+	-moz-animation: particle_ 2s infinite linear;
+	-o-animation: particle_ 2s infinite linear;
+		  animation: particle_ 2s infinite linear;
+}
+
+@-webkit-keyframes trail_ {
+  from {
+    -webkit-transform: rotateZ(0deg);
+    -moz-transform: rotateZ(0deg);
+    -o-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes trail_ {
+  from {
+    -webkit-transform: rotateZ(0deg);
+    -moz-transform: rotateZ(0deg);
+    -o-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+@-webkit-keyframes particle_ {
+  from {
+    -webkit-transform: rotateX(90deg) rotateY(0deg);
+    -moz-transform: rotateX(90deg) rotateY(0deg);
+    -o-transform: rotateX(90deg) rotateY(0deg);
+            transform: rotateX(90deg) rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateX(90deg) rotateY(-360deg);
+    -moz-transform: rotateX(90deg) rotateY(-360deg);
+    -o-transform: rotateX(90deg) rotateY(-360deg);
+            transform: rotateX(90deg) rotateY(-360deg);
+  }
+}
+@keyframes particle_ {
+  from {
+    -webkit-transform: rotateX(90deg) rotateY(0deg);
+    -moz-transform: rotateX(90deg) rotateY(0deg);
+    -o-transform: rotateX(90deg) rotateY(0deg);
+            transform: rotateX(90deg) rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateX(90deg) rotateY(-360deg);
+    -moz-transform: rotateX(90deg) rotateY(-360deg);
+    -o-transform: rotateX(90deg) rotateY(-360deg);
+            transform: rotateX(90deg) rotateY(-360deg);
+  }
+}
+@-webkit-keyframes nucleus_ {
+  0%, 100% {
+    box-shadow: 0 0 0 transparent;
+  }
+  50% {
+    box-shadow: 0 0 25px #ddd;
+  }
+}
+@keyframes nucleus_ {
+  0%, 100% {
+    box-shadow: 0 0 0 transparent;
+  }
+  50% {
+    box-shadow: 0 0 25px #ddd;
+  }
+}
+
+.atom-system input:checked ~ .atom {
+	-webkit-transform: scale(3);
+	-moz-transform: scale(3);
+	-o-transform: scale(3);
+	transform: scale(3);
+	opacity: 0;
+}
+.atom-system input:checked ~ . {
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	transform: scale(0);
+	opacity: 0;
+}
+
+/* The end */

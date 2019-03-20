@@ -1,7 +1,14 @@
 /* KTR - "Kotar Wa Hasis" CSS by Acózar 2018 */
 
+/* Version 1.0 */
+/* General MIT License (MIT) */
+/* Copyright (c) 2014 by Acozar (hipertextos.net) */
+/* Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: */
+/* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. */
+/* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. */
+
 body * {
-	font-family: "Helvetica Neue", "Segoe UI", "Roboto", HelveticaNeue, Helvetica, Arial, sans-serif;
+	font-family: 'IM Fell Double Pica', Georgia, Times, serif;
 	font-weight: 200;
 	letter-spacing: .2em;
 }
@@ -16,14 +23,13 @@ a:active, label:active, button:active {
 	cursor: url('http://acozar.github.io/src/cursors/cursorpointerred.png'), auto !important;
 }
 
-/* KTR recurrent elements */
+/* KTR header */
 
-.page {
-	font-weight: 200;
+header, footer {
 	text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
 	#page-header h1 {
 		font-size: 24px;
 		margin: 0px;
@@ -31,6 +37,56 @@ a:active, label:active, button:active {
 	#page-header p {
 		font-size: 16px;
 	}
+}
+
+.ktr-header,
+.ktr-header h1 {
+	border-color: transparent;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+.ktr-header h1 a {
+	text-decoration: none;
+}
+#acozar-symbol {
+	height: 48px;
+	width: 48px;
+}
+
+/* KTR article list */
+
+.ktr-list {
+	margin: 64px auto;
+	width: 80%;
+}
+.ktr-list article {
+	border-color: transparent;
+	text-align: center;
+}
+.ktr-list article img {
+	border: 1px solid rgba(0,0,0,.5);
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto;
+	object-fit: cover;
+	object-position: center;
+	height: 128px;
+	width: 128px;
+}
+.ktr-list article h3 {
+	margin: 0;
+}
+.ktr-list article strong {
+	font-size: 12px;;
+}
+
+/* KTR article post */
+
+.article-image {
+	display: block;
+	margin: 0 auto;
+	
 }
 
 /* KTR display */
@@ -117,16 +173,20 @@ a:active, label:active, button:active {
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-image: url('../img/bgacozar.png');
-	padding-top: 800px;
+	background-image: url('../ics/isotype.png');
+	background-size: 512px;
+	padding-bottom: 400px;
 }
 @media screen and (max-width: 1024px) {
 	.ktr-footer {
-		background-size: 100%;
+		background-size: 256px;
 	}
 }
+#page-footer {
+	padding: 8px;
+}
 
-/* KTR  positions */
+/* KTR  animations */
 
 /* pulse */
 
@@ -155,34 +215,52 @@ a:active, label:active, button:active {
 	width: 96px;
 }
 
-/* KTR bubble */
+/* KTR bubble Menu */
 
-
-.ktr-button-bubble {
+.ktr-button-sun-bubble {
+	position: fixed;
+	top: 8px;
+	left: 8px;
+	z-index: 10;
+}
+.ktr-button-moon-bubble {
 	position: fixed;
 	top: 8px;
 	right: 8px;
 	z-index: 10;
 }
-.ktr-button-bubble span {
+.ktr-button-sun-bubble span {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.ktr-button-moon-bubble span {
 	position: absolute;
 	top: 0;
 	right: 0;
 }
-.ktr-button-bubble em label {
+.ktr-button-sun-bubble em label {
+	padding-top: 16px;
+}
+.ktr-button-moon-bubble em label {
 	padding-top: 24px;
 }
-.ktr-button-bubble span .th-aurora,
-.ktr-button-bubble span .th-meridianus,
-.ktr-button-bubble span .th-vesperum,
-.ktr-button-bubble span .th-nox {
+.ktr-button-sun-bubble span .th-home,
+.ktr-button-sun-bubble span .th-blog,
+.ktr-button-sun-bubble span .th-services,
+.ktr-button-sun-bubble span .th-contact,
+.ktr-button-moon-bubble span .th-aurora,
+.ktr-button-moon-bubble span .th-meridianus,
+.ktr-button-moon-bubble span .th-vesperum,
+.ktr-button-moon-bubble span .th-nox {
 	border: 2px solid rgba(0,0,0,.2);
 	font-size: 12px;
 	padding-top: 20px;
 	position: absolute;
 	top: 0;
 	right: 0;
-	transform: scale(0.1) translateX(0px) translateY(0px);
+	left: auto;
+	transform: scale(0.01) translateX(0px) translateY(0px);
 	
 	-webkit-animation-delay: .5s;
 	   -moz-animation-delay: .5s;
@@ -195,13 +273,25 @@ a:active, label:active, button:active {
 		 -o-transition: transform .5s ease;
 			transition: transform .5s ease;
 }
+.ktr-button-sun-bubble span .th-home,
+.ktr-button-sun-bubble span .th-blog,
+.ktr-button-sun-bubble span .th-services,
+.ktr-button-sun-bubble span .th-contact {
+	right: auto;
+	left: 0;
+}
+.th-home:hover:after,
+.th-blog:hover:after,
+.th-services:hover:after,
+.th-contact:hover:after,
 .th-aurora:hover:after,
 .th-meridianus:hover:after,
 .th-vesperum:hover:after,
 .th-nox:hover:after {
-	background-color: rgba(0,0,0,.5);
-	border-radius: 16px;
-	color: #ffffff;
+	background-color: rgba(255,255,255,.9);
+	border: 1px solid rgba(0,0,0,.9);
+	border-radius: 32px;
+	color: #000000;
 	content: attr(data-title);
 	cursor: pointer;
 	position: absolute;
@@ -209,13 +299,32 @@ a:active, label:active, button:active {
 	font-size: 16px;
 	line-height: 48px;
 	height: 48px;
-	width: 120px;
+	min-width: 120px;
 	text-align: center;
-	left: -180%;
+	text-transform: uppercase;
+	left: -190%;
+	right: auto;
 	top: 20%;
 	z-index: 30;
 }
+.th-home:hover:after,
+.th-blog:hover:after,
+.th-services:hover:after,
+.th-contact:hover:after {
+	right: -190%;
+	left: auto;
+}
+.th-home img,
+.th-blog svg,
+.th-services svg,
+.th-contact svg {
+	margin-top: -6px !important;
+}
 @media screen and (max-width: 600px) {
+	.th-home:hover:after,
+	.th-blog:hover:after,
+	.th-services:hover:after,
+	.th-contact:hover:after,
 	.th-aurora:hover:after,
 	.th-meridianus:hover:after,
 	.th-vesperum:hover:after,
@@ -223,6 +332,43 @@ a:active, label:active, button:active {
 		display: none;
 	}
 }
+@media screen and (max-width: 1024px) {
+	.th-home:hover:after,
+	.th-blog:hover:after,
+	.th-services:hover:after,
+	.th-contact:hover:after {
+		top: 10%;
+		right: -300%;
+	}
+	.th-aurora:hover:after,
+	.th-meridianus:hover:after,
+	.th-vesperum:hover:after,
+	.th-nox:hover:after {
+		top: 10%;
+		left: -300%;
+	}
+	.th-home,
+	.th-blog,
+	.th-services,
+	.th-contact {
+		padding-top: 6px;
+	}
+	.th-home img,
+	.th-blog svg,
+	.th-services svg,
+	.th-contact svg {
+		margin-top: -16px !important;
+		max-height: 48px;
+		max-width: 48px;	
+	}
+	.ktr-button-sun-bubble em label {
+		padding-top: 6px;
+	}
+}
+.th-home,
+.th-blog,
+.th-services,
+.th-contact,
 .th-aurora {
 	background-color: #ffffff;
 }
@@ -236,18 +382,29 @@ a:active, label:active, button:active {
 	background-color: #000000 !important;
 	color: #ffffff !important;
 }
-.ktr-button-bubble input:checked ~ span .th-aurora {
+.ktr-button-sun-bubble input:checked ~ span .th-home {
+	transform: scale(1) translateX(290%);
+}
+.ktr-button-sun-bubble input:checked ~ span .th-blog {
+	transform: scale(1) translateX(200%) translateY(100%);
+}
+.ktr-button-sun-bubble input:checked ~ span .th-services {
+	transform: scale(1) translateX(100%) translateY(200%);
+}
+.ktr-button-sun-bubble input:checked ~ span .th-contact {
+	transform: scale(1) translateY(290%);
+}
+.ktr-button-moon-bubble input:checked ~ span .th-aurora {
 	transform: scale(1) translateX(-290%);
 }
-.ktr-button-bubble input:checked ~ span .th-meridianus {
+.ktr-button-moon-bubble input:checked ~ span .th-meridianus {
 	transform: scale(1) translateX(-200%) translateY(100%);
 }
-.ktr-button-bubble input:checked ~ span .th-vesperum {
+.ktr-button-moon-bubble input:checked ~ span .th-vesperum {
 	transform: scale(1) translateX(-100%) translateY(200%);
 }
-.ktr-button-bubble input:checked ~ span .th-nox {
+.ktr-button-moon-bubble input:checked ~ span .th-nox {
 	transform: scale(1) translateY(290%);
-
 }
 .ktr-button-section {
 	display: block;
@@ -305,7 +462,7 @@ a:active, label:active, button:active {
 		width: 52px;
 		height: 52px;
 	}
-	.ktr-button-bubble em label {
+	.ktr-button-moon-bubble em label {
 		padding-top: 12px;
 	}
 }
@@ -331,1035 +488,10 @@ a:active, label:active, button:active {
 	tranform: translate3D(0, 0, 600px);
 }
 
-/* KTR Clock */
-
-@-webkit-keyframes rotation {
-  from { -webkit-transform: rotate(0deg); }    
-  to { -webkit-transform: rotate(360deg); }
-}
-
-@-moz-keyframes rotation {
-  from { -moz-transform: rotate(0deg); }    
-  to { -moz-transform: rotate(360deg); }
-}
-
-@-o-keyframes rotation {
-  from { -o-transform: rotate(0deg); }    
-  to { -o-transform: rotate(360deg); }
-}
-
-@keyframes rotation {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-.clock-case,
-.clock-case-back,
-.clock-dial,
-.clock-second-hand,
-.clock-minute-hand,
-.clock-hour-hand,
-.clock-zenit-hand,
-.clock-horizon,
-.clock-nut {
-	position: absolute;
-}
-
-.clock {
-	border: 2px solid colorCurrent;
-	display: block;
-	margin: 6vh auto;
-	max-width: 80vh;
-	min-height: 80vh;
-	height: auto;
-	position: relative;
- 	-webkit-animation-name: fadeIn;
- 	   -moz-animation-name: fadeIn;
- 	   	 -o-animation-name: fadeIn;
-			animation-name: fadeIn;
-			
-	-webkit-animation-delay: 1s;
-	   -moz-animation-delay: 1s;
-	     -o-animation-delay: 1s;
-			animation-delay: 1s;
-			
-	-webkit-animation-duration: 3s;
-	   -moz-animation-duration: 3s;
-	     -o-animation-duration: 3s;
-	        animation-duration: 3s;
-	        
-	-webkit-animation-fill-mode: both;
-	   -moz-animation-fill-mode: both;
-	     -o-animation-fill-mode: both;
-	        animation-fill-mode: both;
-	        
-	-webkit-perspective: 1200px;
-	   -moz-perspective: 1200px;
-	   	 -o-perspective: 1200px;
-			perspective: 1200px;
-}
-.clock-case,
-.clock-case-back {
-	border: 1px solid #ddd;
-	display: block;
-	top: 0;
-	left: 0;
-	width: 100%;
-	
-	-webkit-animation: fadeIn .25s ease both;
-	-moz-animation: fadeIn .25s ease both;
-	-o-animation: fadeIn .25s ease both;
-	animation: fadeIn .25s ease both;
-		
-	-webkit-transform-style: preserve-3d;
-	   -moz-transform-style: preserve-3d;
-		 -o-transform-style: preserve-3d;
-			transform-style: preserve-3d;
-	
-	-webkit-backface-visibility: hidden;
-	   -moz-backface-visibility: hidden;
-	     -o-backface-visibility: hidden;
-			backface-visibility: hidden;
-
-	-webkit-transition: all .3s ease-in-out;
-	   -moz-transition: all .3s ease-in-out;
-		 -o-transition: all .3s ease-in-out;
-			transition: all .3s ease-in-out;
-}
-
-.clock-case {
-	background-color: inherit;
-	padding: 1%;
-	z-index: 8;
-	-webkit-transform: rotateX(0deg) rotateY(0deg);
-	   -moz-transform: rotateX(0deg) rotateY(0deg);
-	     -o-transform: rotateX(0deg) rotateY(0deg);
-			transform: rotateX(0deg) rotateY(0deg);
-}
-.clock input:checked ~ .clock-case {
-	background-color: #ffffff;
-	z-index: 7;
-	-webkit-transform: rotateY(-180deg);
-	    -moz-transform: rotateY(-180deg);
-		  -o-transform: rotateY(-180deg);
-			transform: rotateY(-180deg);
-			
-	-webkit-animation: fadeOut .25s ease both;
-	-moz-animation: fadeOut .25s ease both;
-	-o-animation: fadeOut .25s ease both;
-	animation: fadeOut .25s ease both;
-}
-.clock-case-back {
-	padding: 1%;
-	z-index: 7;
-	-webkit-transform: rotateY(180deg);
-	   -moz-transform: rotateY(180deg);
-	   -o-transform: rotateY(180deg);
-			transform: rotateY(180deg);
-	background-image: linear-gradient(37deg, #cccccc 4.55%, #ffffff 4.55%, #ffffff 50%, #cccccc 50%, #cccccc 54.55%, #ffffff 54.55%, #ffffff 100%);
-	background-size: 11.00px 8.29px;
-}
-.clock input:checked ~ .clock-case-back {
-	z-index: 8;
-	-webkit-transform: rotateX(0deg) rotateY(0deg);
-	-moz-transform: rotateX(0deg) rotateY(0deg);
-	transform: rotateX(0deg) rotateY(0deg);
-}
-
-.clock-dial {
-  position: relative;
-}
-
-.clock-ratio {
-  padding-bottom: 100%;
-  height: 0;
-  overflow: hidden;
-}
-
-.clock-second-hand,
-.clock-minute-hand,
-.clock-hour-hand,
-.clock-zenit-hand,
-.clock-horizon {
-	background-color: inherit;
-	background-position: center;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	box-shadow: 1px 1px 5px rgba(0,0,0,.1);
-}
-.clock-second-hand {
-	background-image: url('../dials/seconds.png');
-	width: 100%;
-	height: 100%;
-	top: 0; left: 0;
-	-webkit-animation: rotation 60s infinite linear;
-	-moz-animation: rotation 60s infinite linear;
-	-o-animation: rotation 60s infinite linear;
-	animation: rotation 60s infinite linear;
-}
-
-.clock-minute-hand {
-	background-image: url('../dials/minutes.png');
-	width: 61%;
-	height: 61%;
-	left: 19.5%; top: 19.5%;
-	-webkit-animation: rotation 3600s infinite linear;
-	-moz-animation: rotation 3600s infinite linear;
-	-o-animation: rotation 3600s infinite linear;
-	animation: rotation 3600s infinite linear;
-}
-
-.clock-hour-hand {
-	background-image: url('../dials/hours.png');
-	width: 36%;
-	height: 36%;
-	left: 32%; top: 32%;
-	-webkit-animation: rotation 43200s infinite linear;
-	-moz-animation: rotation 43200s infinite linear;
-	-o-animation: rotation 43200s infinite linear;
-	animation: rotation 43200s infinite linear;
-}
-.clock-zenit-hand,
-.clock-horizon {
-	width: 22%;
-	height: 22%;
-	left: 39%; top: 39%;
-}
-.clock-zenit-hand {
-	background-image: url('../dials/zenit.png');
-	-webkit-animation: rotation 86400s infinite linear;
-	-moz-animation: rotation 86400s infinite linear;
-	-o-animation: rotation 86400s infinite linear;
-	animation: rotation 86400s infinite linear;
-}
-.clock-horizon {
-	background-image: url('../dials/horizon.png');
-}
-.clock-nut {
-	border: 2px solid #ddd;
-	top: 48%;
-	left: 48%;
-	width: 4%;
-	height: 4%;
-}
-
-.clock-back {
-	display: block;
-	padding: 50%;
-	position: relative;
-}
-
-.clock-data {
-	display: block;
-	position: absolute;
-	top: 40%;
-	left: 0;
-	padding-top: 1em;
-	width: 100%;
-}
-.clock-data h3 {
-	color: inherit;
-	font-size: 3em;
-	font-weight: 200;
-	letter-spacing: .1em;
-	text-align: center;	
-}
-@media screen and (max-width: 767px) , screen and (max-height: 600px) {
-	.clock-data {
-		top: 15%;
-	}
-	.clock-data h3 {
-		font-size: 1em;
-		margin: 0;
-	}
-	.clock-data p {
-		font-size: .8em;
-	}
-}
-.clock * {
-	-webkit-border-radius: 50%;
-	   -moz-border-radius: 50%;
-	     -o-border-radius: 50%;
-			border-radius: 50%;
-}
-#theme-meridianus:checked ~ #page .clock-case {
-	/*Sepia */
-	filter:sepia(.2);
-	-webkit-filter:sepia(.2);
-	-moz-filter:sepia(.2);
-	-ms-filter:sepia(.2);
-	-o-filter:sepia(.2);
-}
-#theme-vesperum:checked ~ #page .clock-case {
-	/*Hue Rotate*/
-	filter:hue-rotate(250deg);
-	-webkit-filter:hue-rotate(250deg);
-	-moz-filter:hue-rotate(250deg);
-	-ms-filter:hue-rotate(250deg);
-	-o-filter:hue-rotate(250deg);
-}
-#theme-nox:checked ~ #page .clock-case {
-	/*Invert*/
-	filter:invert(1);
-	-webkit-filter:invert(1);
-	-moz-filter:invert(1);
-	-ms-filter:invert(1);
-	-o-filter:invert(1);
-}
-#theme-nox:checked ~ #page .clock-case-back {
-	background-image: linear-gradient(37deg, #333333 4.55%, #000000 4.55%, #000000 50%, #333333 50%, #333333 54.55%, #000000 54.55%, #000000 100%);
-}
-
 /* Moon */
 
 .moon { fill:#D6D5C0; }
 .moonback { fill:black;stroke:#fff;stroke-width:1px; }
 
 
-
-/* solar-system-canvas, the solar system  */
-
-/* solar-system-canvas (global position) */
-
-.solar-system-canvas {
-	display: block;
-	margin: 16px auto;
-	padding: 120px 0;
-	text-align: center;
-	z-index: 1;
-}
-
-/* Solar System Styles */
-
-.solar-system-legend {
-	visibility: hidden;
-	opacity: 0;
-	font-size: 24px;
-	line-height: 36px;
-    -webkit-transition: all 2s ease-in;
-    -moz-transition: all 2s ease-in;
-    -o-transition: all 2s ease-in;
-    transition: all 2s ease-in;
-}
-.solar-system-legend span {
-	display: inline-block;
-	margin: 0 16px;
-}
-ul.solar-system {
-    display: block;
-    height: 700px;
-    width: 700px;
-	max-width: 80vh;
-	max-height: 80vh;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-    list-style: none;
-    -webkit-transition: all 2s ease-in;
-    -moz-transition: all 2s ease-in;
-    -o-transition: all 2s ease-in;
-    transition: all 2s ease-in;
-    perspective: 700px;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-}
-.solar-system-canvas input:checked ~ ul.solar-system {
-	-webkit-transform: rotateX(50deg) translateZ(-200px) translateY(-200px);
-	-moz-transform: rotateX(50deg) translateZ(-200px) translateY(-200px);
-	-o-transform: rotateX(50deg) translateZ(-200px) translateY(-200px);
-	transform: rotateX(50deg) translateZ(-200px) translateY(-200px);
-}
-.solar-system-canvas input:checked ~ .solar-system-legend {
-	visibility: visible;
-	opacity: 100;
-}
-@media screen (max-height: 700px), (max-width: 700px) {
-	ul.solar-system {
-    	height: 320px;
-    	width: 320px;
-	}
-}
-ul.solar-system li {
-    text-indent: -9999px;
-    display: block;
-    position: absolute;
-    border: 2px solid #dddddd;
-    opacity: 0.7;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-}
-ul.solar-system li span {
-    display: block;
-    position: absolute;
-    width: 3%;
-    height: 3%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-}
-ul.solar-system li.active {
-    border-color: #999;
-}
-ul.solar-system li.active.sun,
-ul.solar-system li.active span {
-    -webkit-transform: scale(1.3);
-    -moz-transform: scale(1.3);
-    -o-transform: scale(1.3);
-    transform: scale(1.3);
-}
-ul.solar-system li.active.sun span,
-ul.solar-system li.active.earth .moon {
-    border: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-}
-ul.solar-system li.sun {
-    width: 5%;
-    height: 5%;
-    background: #ffffff;
-	background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.22, rgb(204,153,0)), color-stop(1, rgb(255,219,112)) );
-	background-image: -moz-linear-gradient( center bottom, rgb(204,153,0) 22%, rgb(255,219,112) 100% );
-	background-image: -o-linear-gradient( center bottom, rgb(204,153,0) 22%, rgb(255,219,112) 100% );
-	background-image: linear-gradient( center bottom, rgb(204,153,0) 22%, rgb(255,219,112) 100% );
-    top: 47%;
-    left: 47.5%;
-    border: none;
-    -webkit-box-shadow: 0 0 30px #c90;
-    -moz-box-shadow: 0 0 30px #c90;
-    box-shadow: 0 0 30px #c90;
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-}
-ul.solar-system li.sun span {
-    width: 10%;
-    height: 10%; 
-}
-ul.solar-system li.mercury {
-    width: 16%;
-    height: 16%;
-    top: 42%;
-    left: 42%;
-}
-ul.solar-system li.mercury span {
-    background: #b6bac5;
-    top: 20%;
-    left: 7%;
-}
-ul.solar-system li.venus {
-    width: 20%;
-    height: 20%;
-    top: 40%;
-    left: 40%;
-}
-ul.solar-system li.venus span {
-    background: #bf8639;
-    top: 28%;
-    left: 2%;
-}
-ul.solar-system li.earth {
-    width: 30%;
-    height: 30%;
-    top: 35%;
-    left: 35%;
-}
-ul.solar-system li.earth span {
-    background: #06c;
-    top:30%;
-    left: 2%;
-    width: 4%;
-    height: 4%;
-}
-ul.solar-system li.earth span.moon {
-    width: 90%;
-    height: 90%;
-    background: #ccc;
-    top: 110%;
-    left: 110%;
-}
-ul.solar-system li.mars {
-    width: 36%;
-    height: 36%;
-    top: 32%;
-    left: 32%;
-}
-ul.solar-system li.mars span {
-    background: #aa4200;
-    top: 0px;
-    left: 35%;
-}
-ul.solar-system li.asteroids_meteorids {
-    top: 27%;
-    left: 27%;
-    background: url('../img/asteroids_meteorids.png') no-repeat 0 0;
-    background-size:100%;
-    width: 46%;
-    height: 46%;
-    border: none;
-    opacity: 0.1;
-}
-ul.solar-system li.jupiter {
-    width: 50%;
-    height: 50%;
-    top: 25%;
-    left: 25%;
-}
-ul.solar-system li.jupiter span {
-    background: #e0ae6f;
-    top: 24%;
-    left: 5%;
-    width: 4%;
-    height: 4%;
-}
-ul.solar-system li.saturn {
-    width: 60%;
-    height: 60%;
-    top: 20%;
-    left: 20%;
-}
-ul.solar-system li.saturn span {
-    background: #dfd3a9;
-    top: 4%;
-    left: 25%;
-}
-ul.solar-system li.saturn span.ring {
-    width: 180%;
-    height: 180%;
-    background: none;
-    border: 2px solid #5a4e34;
-    left: -42%;
-    top: -42%;
-}
-ul.solar-system li.uranus {
-    width: 70%;
-    height: 70%;
-    top: 15%;
-    left: 15%;
-}
-ul.solar-system li.uranus span {
-    background: #82b3d1;
-    top: 1%;
-    left: 32%;
-}
-ul.solar-system li.neptune {
-    width: 80%;
-    height: 80%;
-    top: 10%;
-    left: 10%;
-}
-ul.solar-system li.neptune span {
-    background: #77c2ec;
-    top: 14%;
-    left: 12%;
-}
-ul.solar-system li.pluto {
-    width: 90%;
-    height: 90%;
-    top: 5%;
-    left: 5%;
-}
-ul.solar-system li.pluto span {
-    background: #7c6a5c;
-    top: 26%;
-    left: 5%;
-    width: 1%;
-    height: 1%;
-}
-
-/* CSS3 Animations */
-ul.solar-system li {
-    -webkit-animation-iteration-count:infinite;
-    -webkit-animation-timing-function:linear;
-    -webkit-animation-name:orbit;
-    
-    -moz-animation-iteration-count:infinite;
-    -moz-animation-timing-function:linear;
-    -moz-animation-name:orbit;
-}
-ul.solar-system li.earth span {
-    -webkit-animation-iteration-count:infinite;
-    -webkit-animation-timing-function:linear;
-    -webkit-animation-name:moon;
-    
-    -moz-animation-iteration-count:infinite;
-    -moz-animation-timing-function:linear;
-    -moz-animation-name:moon;
-}
-ul.solar-system li.mercury {-webkit-animation-duration:5s; -moz-animation-duration:5s;}
-ul.solar-system li.venus {-webkit-animation-duration:8s; -moz-animation-duration:8s;}
-ul.solar-system li.earth {-webkit-animation-duration:12s; -moz-animation-duration:12s;}
-ul.solar-system li.earth span {-webkit-animation-duration:2s; -moz-animation-duration:2s;}
-ul.solar-system li.mars {-webkit-animation-duration:20s; -moz-animation-duration:20s;}
-ul.solar-system li.asteroids_meteorids {-webkit-animation-duration:50s; -moz-animation-duration:50s;}
-ul.solar-system li.jupiter {-webkit-animation-duration:30s; -moz-animation-duration:30s;}
-ul.solar-system li.saturn {-webkit-animation-duration:60s; -moz-animation-duration:60s;}
-ul.solar-system li.uranus {-webkit-animation-duration:70s; -moz-animation-duration:70s;}
-ul.solar-system li.neptune {-webkit-animation-duration:100s; -moz-animation-duration:100s;}
-ul.solar-system li.pluto {-webkit-animation-duration:120s; -moz-animation-duration:120s;}
-
-@-webkit-keyframes orbit { from { -webkit-transform:rotate(0deg) } to { -webkit-transform:rotate(360deg) } }
-@-webkit-keyframes moon { from { -webkit-transform:rotate(0deg) } to { -webkit-transform:rotate(360deg) } }
-
-@-moz-keyframes orbit { from { -moz-transform:rotate(0deg) } to { -moz-transform:rotate(360deg) } }
-@-moz-keyframes moon { from { -moz-transform:rotate(0deg) } to { -moz-transform:rotate(360deg) } }
-
-/*ul.solar-system:hover li {-webkit-animation-play-state: paused;} */
-
-/* Atom */
-
-.atom-system {
-	margin-bottom: 128px;
-}
-.atom {
-	border: 1px solid #333;
-	border-radius: 50%;
-	clear: both;
-	display: block;
-	height: 400px;
-	width: 400px;
-	margin: 64px auto 0;
-	overflow: hidden;
-	position: relative;
-	-webkit-transform: scale(1.2, 1.2);
-	-moz-transform: scale(1.2, 1.2);
-	-o-transform: scale(1.2, 1.2);
-	transform: scale(1.2, 1.2);
-	-webkit-animation: rotation 10s infinite linear;
-	-moz-animation: rotation 10s infinite linear;
-	-o-animation: rotation 10s infinite linear;
-	animation: rotation 10s infinite linear;
-	-webkit-transform: scale(1);
-	-moz-transform: scale(1);
-	-o-transform: scale(1);
-	transform: scale(1);
-	opacity: 1;
-}
-@media screen and (max-width: 767px) , screen and (max-height: 600px) {
-	.atom {
-		height: 220px;
-		width: 220px;
-	}
-}
-.atom > div {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	margin-left: -100px;
-	margin-top: -100px;
-	border-radius: 50%;
-	border: 1px solid #333;
-	-webkit-transform-style: preserve-3d;
-	-moz-transform-style: preserve-3d;
-	-o-transform-style: preserve-3d;
-		  transform-style: preserve-3d;
-	-webkit-transform: rotateX(80deg) rotateY(20deg);
-	-moz-transform: rotateX(80deg) rotateY(20deg);
-	-o-transform: rotateX(80deg) rotateY(20deg);
-		  transform: rotateX(80deg) rotateY(20deg);
-}
-.atom > div:first-of-type:after {
-	content: "";
-	position: absolute;
-	height: 30px;
-	width: 30px;
-	background: #333;
-	border-radius: 50%;
-	left: 50%;
-	top: 50%;
-	margin-top: -15px;
-	margin-left: -15px;
-	-webkit-transform: rotateX(-80deg) rotateY(0);
-	-moz-transform: rotateX(-80deg) rotateY(0);
-	-o-transform: rotateX(-80deg) rotateY(0);
-		  transform: rotateX(-80deg) rotateY(0);
-	box-shadow: 0 0 25px #333;
-	-webkit-animation: nucleus_ 2s infinite linear;
-	-moz-animation: nucleus_ 2s infinite linear;
-	-o-animation: nucleus_ 2s infinite linear;
-		  animation: nucleus_ 2s infinite linear;
-}
-.atom > div:nth-of-type(2) {
-	-webkit-transform: rotateX(-80deg) rotateY(20deg);
-	-moz-transform: rotateX(-80deg) rotateY(20deg);
-	-o-transform: rotateX(-80deg) rotateY(20deg);
-		  transform: rotateX(-80deg) rotateY(20deg);
-}
-.atom > div:nth-of-type(2) > div,
-.atom > div:nth-of-type(2) > div:after {
-	-webkit-animation-delay: -.5s;
-	-moz-animation-delay: -.5s;
-	-o-animation-delay: -.5s;
-		  animation-delay: -.5s;
-}
-.atom > div:nth-of-type(3) {
-	-webkit-transform: rotateX(-70deg) rotateY(60deg);
-	-moz-transform: rotateX(-70deg) rotateY(60deg);
-	-o-transform: rotateX(-70deg) rotateY(60deg);
-		  transform: rotateX(-70deg) rotateY(60deg);
-}
-.atom > div:nth-of-type(3) > div,
-.atom > div:nth-of-type(3) > div:after {
-	-webkit-animation-delay: -1s;
-	-moz-animation-delay: -1s;
-	-o-animation-delay: -1s;
-		  animation-delay: -1s;
-}
-.atom > div:nth-of-type(4) {
-	-webkit-transform: rotateX(70deg) rotateY(60deg);
-	-moz-transform: rotateX(70deg) rotateY(60deg);
-	-o-transform: rotateX(70deg) rotateY(60deg);
-		  transform: rotateX(70deg) rotateY(60deg);
-}
-.atom > div:nth-of-type(4) > div,
-.atom > div:nth-of-type(4) > div:after {
-	-webkit-animation-delay: -1.5s;
-	-moz-animation-delay: -1.5s;
-	-o-animation-delay: -1.5s;
-		  animation-delay: -1.5s;
-}
-.atom > div > div {
-	width: 200px;
-	height: 200px;
-	position: relative;
-	-webkit-transform-style: preserve-3d;
-	-moz-transform-style: preserve-3d;
-	-o-transform-style: preserve-3d;
-		  transform-style: preserve-3d;
-	-webkit-animation: trail_ 2s infinite linear;
-		  animation: trail_ 2s infinite linear;
-}
-.atom > div > div:after {
-	content: "";
-	position: absolute;
-	top: -5px;
-	box-shadow: 0 0 12px #ddd;
-	left: 50%;
-	margin-left: -5px;
-	width: 5px;
-	height: 5px;
-	border-radius: 50%;
-	background-color: #ddd;
-	-webkit-animation: particle_ 2s infinite linear;
-	-moz-animation: particle_ 2s infinite linear;
-	-o-animation: particle_ 2s infinite linear;
-		  animation: particle_ 2s infinite linear;
-}
-
-@-webkit-keyframes trail_ {
-  from {
-    -webkit-transform: rotateZ(0deg);
-    -moz-transform: rotateZ(0deg);
-    -o-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
-  }
-  to {
-    -webkit-transform: rotateZ(360deg);
-    -moz-transform: rotateZ(360deg);
-    -o-transform: rotateZ(360deg);
-            transform: rotateZ(360deg);
-  }
-}
-
-@keyframes trail_ {
-  from {
-    -webkit-transform: rotateZ(0deg);
-    -moz-transform: rotateZ(0deg);
-    -o-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
-  }
-  to {
-    -webkit-transform: rotateZ(360deg);
-    -moz-transform: rotateZ(360deg);
-    -o-transform: rotateZ(360deg);
-            transform: rotateZ(360deg);
-  }
-}
-@-webkit-keyframes particle_ {
-  from {
-    -webkit-transform: rotateX(90deg) rotateY(0deg);
-    -moz-transform: rotateX(90deg) rotateY(0deg);
-    -o-transform: rotateX(90deg) rotateY(0deg);
-            transform: rotateX(90deg) rotateY(0deg);
-  }
-  to {
-    -webkit-transform: rotateX(90deg) rotateY(-360deg);
-    -moz-transform: rotateX(90deg) rotateY(-360deg);
-    -o-transform: rotateX(90deg) rotateY(-360deg);
-            transform: rotateX(90deg) rotateY(-360deg);
-  }
-}
-@keyframes particle_ {
-  from {
-    -webkit-transform: rotateX(90deg) rotateY(0deg);
-    -moz-transform: rotateX(90deg) rotateY(0deg);
-    -o-transform: rotateX(90deg) rotateY(0deg);
-            transform: rotateX(90deg) rotateY(0deg);
-  }
-  to {
-    -webkit-transform: rotateX(90deg) rotateY(-360deg);
-    -moz-transform: rotateX(90deg) rotateY(-360deg);
-    -o-transform: rotateX(90deg) rotateY(-360deg);
-            transform: rotateX(90deg) rotateY(-360deg);
-  }
-}
-@-webkit-keyframes nucleus_ {
-  0%, 100% {
-    box-shadow: 0 0 0 transparent;
-  }
-  50% {
-    box-shadow: 0 0 25px #ddd;
-  }
-}
-@keyframes nucleus_ {
-  0%, 100% {
-    box-shadow: 0 0 0 transparent;
-  }
-  50% {
-    box-shadow: 0 0 25px #ddd;
-  }
-}
-
-.atom-system input:checked ~ .atom {
-	-webkit-transform: scale(3);
-	-moz-transform: scale(3);
-	-o-transform: scale(3);
-	transform: scale(3);
-	opacity: 0;
-}
-.atom-system input:checked ~ . {
-	-webkit-transform: scale(0);
-	-moz-transform: scale(0);
-	-o-transform: scale(0);
-	transform: scale(0);
-	opacity: 0;
-}
-
-/* Compass */
-
-@media (pointer: fine) {
-	#compass-system {
-		display: none;
-	}
-}
-
-#compass-system {
-	text-align:center;
-}
-h1 .compass, .demo .compass-icon {
-	background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAABw0lEQVQYGV3BTUjTARzH4e+2msUEwdaLmnQLCzJ6gaBD1Ckh7R2MIIIuiQhirWGYhJRh2AvGICgrsgLBk1Bgas0gSINY6K5CUIe5Q2IkUeTv0/9l5tzzCAzf/PTE2If0DB7DQGA4JvvaztUfqT184kzz7eQPMAxkBmSGLuwOK6fi1OOpX2CGcGS7ogHlWXVsDJeAbGOZlovUvABDkOkuU4E18brJP5jgdbkKXONR9OIXEOlLQeULJGZhqzYkQTzdpTzRGBjjkm5+Q7SGtOQ6LotIOjmM5s5qUSAxi2dYju29aOq4ckKG4amSY20XenNIOQ8M33O5VrShlweVQzsLgLFFnhgaqpGvu18dLADj8rWi93XyrKdK6gAsIs/qq2i6Xp4rb+VoxEblq7yDrEGukBVLirbYWIV8+/oRnaVyPByRAp2kSrTo/EfEq1o5KFfi9+A2/RfunUPM3AtLt0Ya7F21lqzc8RkTfNpftA5SJcq36dl3TPBzcM/lvmotUxHPGCYz6NlbrHzBjbEUGMI1ejSiJcHN97/ikhkwnx6IHagskqN05+meiewCGAgMg7/pgbvtLU3N8RtPklnAcAiXUcBw/QO6SlWy+4JOZAAAAABJRU5ErkJggg==')
-}
-.demo {
-	position:relative;
-}
-.demo .notice {
-	position:absolute;
-	top:50%;
-	margin-top:-12px;
-	left:0; 
-	right:0;
-}
-.demo .compass-icon {
-	display:inline-block;
-	height:22px;
-	width:22px;
-	border:2px solid currentColor;
-	border-radius:50%;
-	background-size:90% 90%;
-	background-repeat:no-repeat;
-	background-position:1px 1px;
-	margin:0 7px -7px 1px;
-	opacity:0.4;
-	-webkit-animation:rotating 1.3s infinite linear;
-	-moz-animation:rotating 1.3s infinite linear;
-	-o-animation:rotating 1.3s infinite linear;
-	animation:rotating 1.3s infinite linear;
-	-webkit-animation-play-state:paused;
-	-moz-animation-play-state:paused;
-	-o-animation-play-state:paused;
-	animation-play-state:paused;
-}
-.demo .compass,
-.demo .circle,
-.demo .arrow {
-	display:block;
-	position:absolute;
-	top:0;
-	left:0;
-	right:0;
-	margin:auto;
-
-}
-.demo .compass {
-	margin-top: 64px;
-	width:75vw;
-	height:75vw;
-	max-width:75vh;
-	max-height:75vh;
-}
-.demo .circle {
-	background-image:url('../img/compass-bg.png');
-	background-size:100%;
-	background-position: center;
-	border-radius:50%;
-	border:1px solid currentColor;
-	margin-top: 64px;
-	width:100%;
-	height:100%;
-	-webkit-box-sizing:	border-box;
-	-moz-box-sizing:border-box;
-	box-sizing:border-box;
-	opacity: .8;
-}
-.demo .arrow {
-	background-image:url('../img/compass.png');
-	background-size:100% 100%;
-	margin-top: 64px;
-	width:100%;
-	height:100%;
-}
-.demo .letter{
-	font-weight:bold;
-	text-align:center;
-	width:100%;
-	margin-top: 0px;
-	position:relative;
-}
-.demo .degrees{
-	font-weight:600;
-	margin-top: 16px;
-}
-.demo .mark {
-	position:absolute;
-}
-.demo.init-step .init .compass-icon,.demo.gps-step .gps .compass-icon,.demo.move-step .move .compass-icon {
-	-webkit-animation-play-state:running;
-	-moz-animation-play-state:running;
-	-o-animation-play-state:running;
-	animation-play-state:running;
-}
-.demo.disable .no-support .compass-icon {
-	-webkit-animation:none;
-	-moz-animation:none;
-	-o-animation:none;
-	animation:none;
-} 
-.demo.enable { 
-	height:150px;
-}
-.demo.unanimated .notice,.demo.unanimated .compass {
-	display:none;
-}
-.demo.unanimated.init-step .init,.demo.unanimated.disable .no-support,.demo.unanimated.gps-step .gps,.demo.unanimated.move-step .move,.demo.unanimated.enable .compass { 
-	display:block;
-}
-.demo.animated {
-	-webkit-transition:height 600ms;
-	-moz-transition:height 600ms;
-	-o-transition:height 600ms;
-	transition:height 600ms;
-}
-.demo.animated .notice,.demo.animated .compass {
-	-webkit-transform:rotateX(90deg);
-	-moz-transform:rotateX(90deg);
-	-ms-transform:rotateX(90deg);
-	-o-transform:rotateX(90deg);
-	transform:rotateX(90deg);
-	opacity:0;
-	-webkit-transition:all 600ms;
-	-moz-transition:all 600ms;
-	-o-transition:all 600ms;
-	transition:all 600ms;
-}
-.demo.animated.init-step .init,.demo.animated.disable .no-support,.demo.animated.gps-step .gps,.demo.animated.move-step .move,.demo.animated.enable .compass {
-	-webkit-transform:rotateX(0);
-	-moz-transform:rotateX(0);
-	-ms-transform:rotateX(0);
-	-o-transform:rotateX(0);
-	transform:rotateX(0);
-	opacity:1; 
-}
-@-moz-keyframes rotating{0%{-moz-transform:rotate(0);transform:rotate(0)}100%{-moz-transform:rotate(360deg);transform:rotate(360deg); } }
-@-webkit-keyframes rotating { 0% { -webkit-transform:rotate(0); transform:rotate(0); } 100% { -webkit-transform:rotate(360deg); transform:rotate(360deg); } }
-@-o-keyframes rotating { 0% { -o-transform:rotate(0); transform:rotate(0); } 100%{ -o-transform:rotate(360deg); transform:rotate(360deg); } }
-@keyframes rotating{ 0% { transform:rotate(0); } 100% { transform:rotate(360deg);} } 
-.meta {}
-.meta a {
-	position:relative;
-	padding-right:10px;
-	-webkit-transition:none;
-	-moz-transition:none;
-	-o-transition:none;
-	transition:none;
-	-webkit-tap-highlight-color:white(0);
-}
-.meta .text {
-	display:inline-block;
-	border-bottom:1px solid currentColor;
-	-webkit-transition:border 200ms;
-	-moz-transition:border 200ms;
-	-o-transition:border 200ms;
-	transition:border 200ms;
-}
-.meta .icon {
-	position:absolute;
-	top:4px;
-	left:8px;
-	opacity:0.8;
-	-webkit-transition:opacity 200ms;
-	-moz-transition:opacity 200ms;
-	-o-transition:opacity 200ms;
-	transition:opacity 200ms;
-}
-.meta a:hover .text {
-	border-color:#000;
-}
-.meta a:hover .icon {
-	opacity:1;
-}
-.meta a:active,.meta a.tapped {
-	box-shadow:inset 0 0 7px rgba(0,0,0,0.4);
-	background:#eaeaea;
-	-webkit-tap-highlight-color:rgba(0,0,0,0);
-}
-.meta .github {}
-.meta .github .icon {
-	top:5px;
-	width:21px;
-	height:26px;
-	background-size:100% 100%;
-}
-.meta .evil{
-	padding-left:57px;
-}
-.meta .evil .icon {
-	width:39px;
-	height:28px;
-	background-size:100% 100%;
-}
-@media (max-width: 490px){
-	h1 .compass {
-		-webkit-transform:scale(0.8, 0.8);
-		-moz-transform:scale(0.8, 0.8);
-		-ms-transform:scale(0.8, 0.8);
-		-o-transform:scale(0.8, 0.8);
-		transform:scale(0.8, 0.8);
-	}
-	.meta .github {
-	}
-	.demo {}
-	.demo .notice-wrap {
-		position:relative;
-	}
-	.demo .compass-icon {
-		position:absolute;
-		top:-2px;
-		left:-35px;
-	}
-	.demo .compass {
-	}
-}
+/* The end */
