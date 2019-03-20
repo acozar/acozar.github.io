@@ -222,7 +222,7 @@ header, footer {
 .ktr-button-sun-bubble span .th-meridianus,
 .ktr-button-sun-bubble span .th-vesperum,
 .ktr-button-sun-bubble span .th-nox {
-	background-color: rgba(255,255,255,.7);
+	background-color: rgba(255,255,255,.9);
 	border: 2px solid rgba(0,0,0,.2);
 	font-size: 12px;
 	position: absolute;
@@ -257,8 +257,8 @@ header, footer {
 .th-meridianus:hover:after,
 .th-vesperum:hover:after,
 .th-nox:hover:after {
-	background-color: rgba(0,0,0,.7);
-	border: 1px solid rgba(0,0,0,.9);
+	background-color: rgba(0,0,0,.9);
+	border: 1px solid rgba(255,255,255,.9);
 	border-radius: 8px;
 	color: #ffffff;
 	content: attr(data-title);
