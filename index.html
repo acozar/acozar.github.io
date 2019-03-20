@@ -16,7 +16,7 @@ layout: default
 		<div class="ktr-gallery">
 			{% for post in site.posts %}
 				<article>
-					<a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ post.thumb }}" alt="{{ post.title }}"></a>
+					<a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ post.image }}" alt="{{ post.title }}"></a>
 					<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 					<strong>{{ post.date | date: "%B %e, %Y" }}</strong>
 				</article>
