@@ -108,6 +108,43 @@ header, footer {
 	font-size: 12px;;
 }
 
+/* KTR article gallery */
+
+.ktr-gallery {
+	margin: 64px auto;
+	width: 80%;
+}
+.ktr-gallery article {
+	border-color: transparent;
+	float: left;
+	height: 256px;
+	margin: 0 0 64px 1%;
+	text-align: center;
+	width: 48%;
+}
+.ktr-gallery article img {
+	border: 1px solid rgba(0,0,0,.5);
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto;
+	object-fit: cover;
+	object-position: center;
+	height: 128px;
+	width: 128px;
+}
+.ktr-gallery article h3 {
+	font-size: 16px;
+	margin: 0;
+	text-transform: uppercase;
+  	-webkit-hyphens: none;
+  	   -moz-hyphens: none;
+  		-ms-hyphens: none;
+  			hyphens: none;
+}
+.ktr-gallery article strong {
+	font-size: 12px;;
+}
+
 /* KTR article post */
 
 .article-image {
