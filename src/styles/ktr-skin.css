@@ -287,7 +287,7 @@ header, footer {
 .th-blog svg,
 .th-services svg,
 .th-contact svg {
-	margin-top: 0px !important;
+	margin-top: -6px !important;
 	object-fit: cover;
 	object-position: center;	
 }
