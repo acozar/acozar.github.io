@@ -42,6 +42,7 @@ header, footer {
 .ktr-header,
 .ktr-header h1 {
 	border-color: transparent;
+	line-height: 1.2em;
 	margin: 0;
 	padding: 0;
 	text-transform: uppercase;
@@ -63,6 +64,7 @@ header, footer {
 .ktr-list article {
 	border-color: transparent;
 	text-align: center;
+	margin: 0 auto 64px;
 }
 .ktr-list article img {
 	border: 1px solid rgba(0,0,0,.5);
