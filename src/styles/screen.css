@@ -1073,11 +1073,11 @@ a:hover,
 a:visited:hover,
 em button:hover,
 em label:hover {
-	color: var(--color-softgreen);
+	color: var(--color-grey);
 }
 a:active,
 a:visited:active {
-	color: var(--color-turquoise);
+	color: var(--color-black);
 }
 
 /* Meridianus theme */
