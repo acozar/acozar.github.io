@@ -1095,22 +1095,22 @@ a:visited:active {
 #theme-meridianus:checked ~ #page em a,
 #theme-meridianus:checked ~ #page em label,
 #theme-meridianus:checked ~ #page em button {
-	background-color: var(--color-starredmeridianus);
+	background-color: var(--color-textmeridianus);
 	color: var(--color-textmeridianus);	
 }
 #theme-meridianus:checked ~ #page a:visited,
 #theme-meridianus:checked ~ #page em a:visited {
-	color: var(--color-softorange);
+	color: var(--color-bgmeridianus);
 }
 #theme-meridianus:checked ~ #page label:hover,
 #theme-meridianus:checked ~ #page button:hover,
 #theme-meridianus:checked ~ #page a:hover,
 #theme-meridianus:checked ~ #page a:visited:hover {
-	color: var(--color-softred);
+	color: var(--color-starredmeridianus);
 }
 #theme-meridianus:checked ~ #page a:active,
 #theme-meridianus:checked ~ #page a:visited:active {
-	color: var(--color-orange);
+	color: var(--color-starredmeridianus);
 }
 #theme-meridianus:checked ~ #page nav a:hover,
 #theme-meridianus:checked ~ #page nav label:hover {
@@ -1127,27 +1127,27 @@ a:visited:active {
 	color: var(--color-textvesperum);	
 }
 #theme-vesperum:checked ~ #page a {
-	color: var(--color-blue);	
+	color: var(--color-starredvesperum);	
 }
 #theme-vesperum:checked ~ #page em a,
 #theme-vesperum:checked ~ #page em label,
 #theme-vesperum:checked ~ #page em button {
-	background-color: var(--color-starredvesperum);
-	color: var(--color-textvesperum);	
+	background-color: var(--color-textvesperum);
+	color: var(--color-bgvesperum);	
 }
 #theme-vesperum:checked ~ #page a:visited,
 #theme-vesperum:checked ~ #page em a:visited {
-	color: var(--color-softviolet);
+	color: var(--color-textvesperum);
 }
 #theme-vesperum:checked ~ #page label:hover,
 #theme-vesperum:checked ~ #page button:hover,
 #theme-vesperum:checked ~ #page a:hover,
 #theme-vesperum:checked ~ #page a:visited:hover {
-	color: var(--color-softblue);
+	color: var(--color-starredvesperum);
 }
 #theme-vesperum:checked ~ #page a:active,
 #theme-vesperum:checked ~ #page a:visited:active {
-	color: var(--color-violet);
+	color: var(--color-starredvesperum);
 }
 #theme-vesperum:checked ~ #page nav a:hover,
 #theme-vesperum:checked ~ #page nav label:hover {
