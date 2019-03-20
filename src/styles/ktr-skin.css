@@ -222,9 +222,9 @@ header, footer {
 .ktr-button-moon-bubble span .th-meridianus,
 .ktr-button-moon-bubble span .th-vesperum,
 .ktr-button-moon-bubble span .th-nox {
+	background-color: rgba(255,255,255,.7);
 	border: 2px solid rgba(0,0,0,.2);
 	font-size: 12px;
-	padding-top: 20px;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -257,10 +257,10 @@ header, footer {
 .th-meridianus:hover:after,
 .th-vesperum:hover:after,
 .th-nox:hover:after {
-	background-color: rgba(255,255,255,.9);
+	background-color: rgba(0,0,0,.7);
 	border: 1px solid rgba(0,0,0,.9);
-	border-radius: 32px;
-	color: #000000;
+	border-radius: 8px;
+	color: #ffffff;
 	content: attr(data-title);
 	cursor: pointer;
 	position: absolute;
@@ -282,14 +282,6 @@ header, footer {
 .th-contact:hover:after {
 	right: -190%;
 	left: auto;
-}
-.th-home img,
-.th-blog svg,
-.th-services svg,
-.th-contact svg {
-	margin-top: -6px !important;
-	object-fit: cover;
-	object-position: center;	
 }
 @media screen and (max-width: 600px) {
 	.th-home:hover:after,
@@ -323,14 +315,6 @@ header, footer {
 	.th-services,
 	.th-contact {
 		padding-top: 6px;
-	}
-	.th-home img,
-	.th-blog svg,
-	.th-services svg,
-	.th-contact svg {
-		margin-top: -16px !important;
-		max-height: 48px;
-		max-width: 48px;	
 	}
 	.ktr-button-sun-bubble em label {
 		padding-top: 6px;
