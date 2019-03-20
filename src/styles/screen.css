@@ -1096,11 +1096,11 @@ a:visited:active {
 #theme-meridianus:checked ~ #page em label,
 #theme-meridianus:checked ~ #page em button {
 	background-color: var(--color-textmeridianus);
-	color: var(--color-textmeridianus);	
+	color: var(--color-bgmeridianus);	
 }
 #theme-meridianus:checked ~ #page a:visited,
 #theme-meridianus:checked ~ #page em a:visited {
-	color: var(--color-bgmeridianus);
+	color: var(--color-textmeridianus);
 }
 #theme-meridianus:checked ~ #page label:hover,
 #theme-meridianus:checked ~ #page button:hover,
