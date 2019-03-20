@@ -1,17 +1,10 @@
-/* Blogger Hacks by acozar (gmail) */
+/* BCN CSS Blogger-Hacks by Acózar 2019 (www.acozar.com) */
 
-/* Headers */ 
-
-#page-section-article-header {
-	padding-top: 64px;
-	text-align: center;
-}
-#page-header,
-#page-nav {
-	text-align: center;
-}
-
-
+/* Version 1.0 */
+/* General MIT License (MIT) */
+/* Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: */
+/* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. */
+/* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. */
 
 /* Blogger labels */
 
@@ -25,12 +18,12 @@
 .blogger-labels:before {
 	border-bottom: 1px solid currentColor;
 	display: block;
-	content: 'Etiquetas';
+	content: 'Etiquetes';
 	font-size: 16px;
 	margin: 16px;
 }
 .blogger-labels a {
-	border: 4px solid currentColor;
+	border: thin solid currentColor;
 	border-radius: 1em;
 	font-size: 16px;
 	margin: 0 .25em;
@@ -40,49 +33,13 @@
 	-moz-hyphens: none;
 	hyphens: none;
 }
-article .blogger-labels,
-article .blogger-labels,
-article .blogger-labels {
+.archive article .blogger-labels,
+.gallery article .blogger-labels,
+.news article .blogger-labels {
 	display: none;
 }
-#page-section-article-content figure .blogger-labels {
-	display: block;
-	clear: both;
-	font-size: 0;
-	margin: 12px auto 0;
-	text-align: center;
-	position: absolute;
-	bottom: 36px;
-	opacity: 0;
-}#page-section-article-content figure:hover .blogger-labels {
-	opacity: 1;
-}
-#page-section-article-content figure .blogger-labels:before {
-	border: none;
-	color: rgba(255,255,255,.8);
-	display: block;
-	float: left;
-	font-weight: bold;
-	content: 'Etiquetas';
-	font-size: 16px;
-	margin: 0 16px;
-}
-#page-section-article-content figure .blogger-labels a {
-	background-color: rgba(255,255,255,.8);
-}
 
-/* Twitter */
-
-.twitter-timeline,
-.twitter-tweet {
-	display: block;
-	margin: 0 auto;
-}
-.tw-tools {
-	padding: 6px;
-}
-
-/* Prev/next */
+/* Blogger Prev/next */
 
 .prev-next,
 .prev-next .blog-paging-control-container  {
@@ -94,12 +51,11 @@ article .blogger-labels {
 .prev-next .blog-paging-control-container .blog-paging-control,
 .prev-next .blog-paging-control-container .blog-paging-control:after {
 	display: block;
-	height: 32px;
-	width: 32px;
+	height: 2em;
+	width: 2em;
 	position: absolute;
 	text-decoration: none;
-	top: -24px;
-	text-align: center;
+	top: -1.5em;
 	z-index: 1;
 }
 .prev-next .blog-paging-control-container .blog-paging-control:nth-child(1),
@@ -107,22 +63,23 @@ article .blogger-labels {
 	visibility: hidden;
 }
 .prev-next .blog-paging-control-container .blog-paging-control:nth-child(1) {
-	left: 12px; right: auto;
+	left: 96px; right: auto;
 }
 .prev-next .blog-paging-control-container .blog-paging-control:nth-child(2),
 .prev-next .blog-paging-control-container .blog-paging-control:only-child {
-	right: 32px; left: auto;
+	right: 104px; left: auto;
 }
 .prev-next .blog-paging-control-container .blog-paging-control:nth-child(1):after,
 .prev-next .blog-paging-control-container .blog-paging-control:nth-child(2):after {
-	border: 4px solid currentColor;
+	border: thin solid currentColor;
 	border-radius: 50%;
-	color: inherit;
+	color: #aaa;
 	display: block;
-	font-weight: bold;
-	line-height: 32px;
-	height: 32px;
-	width: 32px;
+	font-size: 1.2em;
+	font-weight: normal;
+	line-height: 1.8em;
+	height: 2em;
+	width: 2em;
 	visibility: visible;
 }
 .prev-next .blog-paging-control-container .blog-paging-control:nth-child(1):after {
@@ -133,13 +90,10 @@ article .blogger-labels {
 	content: '>';
 }
 
-/* Pagination */
+/* Blogger Pagination */
 
 .pagination {
-	border: none;
-	display: block;
 	margin: 3em auto 1em;
-	text-align: center;
 }
 .pagination a {
 	visibility: hidden;
@@ -148,7 +102,7 @@ article .blogger-labels {
 	border-radius: 2em;
 	font-weight: normal;
 	margin-left: -5em;
-	padding: 16px 32px;
+	padding: .75em 1em;
 	visibility: visible;
 }
 .pagination a:nth-child(1):after {
@@ -159,37 +113,7 @@ article .blogger-labels {
 	content: ' Anterior >';
 }
 
-/* Colors */ 
-
-.blogger-labels a:hover,
-.pagination a:after {
-
-}
-.blogger-labels a,
-article div a,
-.pagination a:hover:after,
-.pagination a:visited:hover:after,
-.prev-next .blog-paging-control-container .blog-paging-control:hover:after {
-	background-color: rgba(0,0,0,.1);
-}
-article div a:visited,
-.blogger-labels a:visited:hover,
-.pagination a:visited:after,
-.pagination a:visited:hover:after,
-.prev-next .blog-paging-control-container .blog-paging-control:visited:hover:after {
-	background-color: rgba(0,0,0,.05);
-}
-.blogger-labels a:focus,
-.pagination a:focus {
-	background-color: rgba(255,255,255,.8);
-
-}
-.blogger-labels a:visited:focus,
-.pagination a:visited:focus {
-
-}
-
-/* Cookies info */
+/* Blogger Cookies info */
 
 #cookieChoiceInfo {
 	background-color: #fff !important;
@@ -214,4 +138,4 @@ article div a:visited,
 	color: #ffffff !important;
 }
 
-/* The End */
+/* The end */

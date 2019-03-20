@@ -6,23 +6,6 @@
 /* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. */
 /* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. */
 
-/* KTR  animations */
-
-/* pulse */
-
-@-webkit-keyframes pulse {
-0% { -webkit-transform: scale(1); } 50% { -webkit-transform: scale(1.1); } 100% { -webkit-transform: scale(1); }
-}
-@-moz-keyframes pulse {
-0% { -moz-transform: scale(1); } 50% { -moz-transform: scale(1.1); } 100% { -moz-transform: scale(1); }
-}
-@-o-keyframes pulse {
-0% { -moz-transform: scale(1); } 50% { -moz-transform: scale(1.1); } 100% { -moz-transform: scale(1); }
-}
-@keyframes pulse {
-0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); }
-}
-
 /* KTR Body */
 
 body * {
@@ -479,8 +462,6 @@ header, footer {
 
 .moon { fill:#D6D5C0; }
 .moonback { fill:black;stroke:#fff;stroke-width:1px; }
-
-
 
 /* Blogger Hacks */
 
