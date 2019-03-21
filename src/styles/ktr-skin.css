@@ -148,7 +148,7 @@ header, footer {
 	}
 	.article-image {
 		margin: 0 auto 64px !important;
-		width: 104%;
+		width: 100% !important;
 	}
 }
 
