@@ -112,11 +112,11 @@ header, footer {
 	margin: 0 auto;
 	object-fit: cover;
 	object-position: center;
-	height: 128px;
-	width: 128px;
+	height: 160px;
+	width: 160px;
 }
 .ktr-gallery article h3 {
-	font-size: 16px;
+	font-size: 24px;
 	line-height: 1.2em;
 	margin: 32px 0 0;
 	text-transform: uppercase;
@@ -131,6 +131,13 @@ header, footer {
 @media (max-width: 1024px) {
 	.ktr-gallery article {
 		width: 48%;
+	}
+	.ktr-gallery article img {
+		height: 128px;
+		width: 128px;
+	}
+	.ktr-gallery article h3 {
+		font-size: 16px;
 	}
 }
 
