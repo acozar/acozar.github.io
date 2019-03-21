@@ -136,9 +136,9 @@ header, footer {
 	margin: 0 auto 64px;
 }
 .article-image {
-	margin: 0 -10% 64px;
-	min-width: 120%;
-	max-width: 120%;
+	margin: 0 -5% 64px !important;
+	min-width: 110%;
+	max-width: 110%;
 }
 @media (max-width: 1024px) {
 	.article-body {
