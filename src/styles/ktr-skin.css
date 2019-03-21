@@ -149,7 +149,7 @@ header, footer {
 	}
 	.article-image {
 		margin: 0 -2% 64px -2%;
-		min-width: 104%;
+		width: 104%;
 	}
 }
 
