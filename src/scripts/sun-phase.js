@@ -30,14 +30,20 @@ $(document).ready(function() {
    		themessage = morning;
    		$('.sun-phase').replaceWith(themessage);
    });
+});
+$(document).ready(function() {
    $('.th-meridianus').click(function() {
    		themessage = afternoon;
    		$('.sun-phase').replaceWith(themessage);
    });
+});
+$(document).ready(function() {
    $('.th-vesperus').click(function() {
    		themessage = evening;
    		$('.sun-phase').replaceWith(themessage);
    });
+});
+$(document).ready(function() {
    $('.th-nox').click(function() {
    		themessage = night;
    		$('.sun-phase').replaceWith(themessage);
