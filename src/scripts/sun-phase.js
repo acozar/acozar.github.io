@@ -28,21 +28,21 @@ $('.sun-phase').append(themessage);
 $(function() {
 	$('.th-aurora').click(function() {
     	themessage = morning;
-    	$('.sun-phase').replace(themessage);
+    	$('.sun-phase').replaceWith(themessage);
 	});
 
 	$('.th-meridianus').click(function() {
     	themessage = afternoon;
-    	$('.sun-phase').replace(themessage);
+    	$('.sun-phase').replaceWith(themessage);
 	});
 
 	$('.th-vesperus').click(function() {
     	themessage = evening;
-    	$('.sun-phase').replace(themessage);
+    	$('.sun-phase').replaceWith(themessage);
 	});
 
 	$('.th-nox').click(function() {
     	themessage = night;
-    	$('.sun-phase').replace(themessage);
+    	$('.sun-phase').replaceWith(themessage);
 	});
 });
