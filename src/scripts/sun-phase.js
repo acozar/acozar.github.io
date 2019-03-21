@@ -27,32 +27,26 @@ $('.sun-phase').append(themessage);
 $(document).ready(function(){  
         if($("#theme-aurora").is(':checked')) {  
             themessage = morning;
+            $('.sun-phase').append(themessage);
         } else {  
           
-        }    
-        $('.sun-phase').append(themessage);
-}); 	
-$(document).ready(function(){  
+        }     
         if($("#theme-meridianus").is(':checked')) {  
             themessage = afternoon;
+            $('.sun-phase').append(themessage);
         } else {  
           
-        }    
-        $('.sun-phase').append(themessage);
-}); 
-$(document).ready(function(){  
+        }     
         if($("#theme-vesperus").is(':checked')) {  
             themessage = evening;
+            $('.sun-phase').append(themessage);
         } else {  
           
         }    
-        $('.sun-phase').append(themessage);
-}); 
-$(document).ready(function(){  
         if($("#theme-nox").is(':checked')) {  
             themessage = night;
+            $('.sun-phase').append(themessage);
         } else {  
           
         }    
-        $('.sun-phase').append(themessage);
 });  
