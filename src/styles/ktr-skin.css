@@ -140,7 +140,7 @@ header, footer {
 	min-width: 120%;
 	max-width: 120%;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 	.article-body {
 		display: block;
 		margin: 0 auto;
