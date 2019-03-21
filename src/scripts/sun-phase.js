@@ -8,19 +8,23 @@ var thehours = new Date().getHours();
 
 	if (thehours >= 0 && thehours < 6) {
 		themessage = night; 
-		$( "#theme-vesperum" ).prop('checked', true );
+		$( "#theme-nox" ).prop('checked', true );
 
 	} else if (thehours >= 6 && thehours < 12) {
 		themessage = morning;
+		$( "#theme-aurora" ).prop('checked', true );
 
 	} else if (thehours >= 12 && thehours < 18) {
 		themessage = afternoon;
+		$( "#theme-meridianus" ).prop('checked', true );
 		
 	} else if (thehours >= 18 && thehours < 20) {
 		themessage = evening;
+		$( "#theme-vesperum" ).prop('checked', true );
 		
 	} else if (thehours >= 20 && thehours < 24) {
 		themessage = night;
+		$( "#theme-nox" ).prop('checked', true );
 		
 	}
 	
