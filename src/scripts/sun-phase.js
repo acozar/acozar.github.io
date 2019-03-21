@@ -24,7 +24,7 @@ var thehours = new Date().getHours();
 
 $('.sun-phase').append(themessage);
 	
-$(document).ready(function(){  
+$(function() {
         if($("#theme-aurora").is(':checked')) {  
             themessage = morning;
             $('.sun-phase').append(themessage);
@@ -49,4 +49,4 @@ $(document).ready(function(){
         } else {  
           
         }    
-});  
+}); 
