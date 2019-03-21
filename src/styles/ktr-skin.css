@@ -552,12 +552,15 @@ header, footer {
 /* Blogger Pagination */
 
 .pagination {
+	border-color: transparent;
 	margin: 3em auto 1em;
+	text-align: center;
 }
 .pagination a {
 	visibility: hidden;
 }
 .pagination a:after {
+	border: 1px solid currentColor;
 	border-radius: 2em;
 	font-weight: normal;
 	margin-left: -5em;
@@ -570,6 +573,13 @@ header, footer {
 .pagination a:nth-child(2):after,
 .pagination a:only-child:after {
 	content: ' Anterior >';
+}
+
+/* Blogger Prev/Next & Pagination colors */
+
+.pagination a:after:hover,
+.prev-next .blog-paging-control-container .blog-paging-control:after:hover {
+	color: rgba(0,0,0,.8);
 }
 
 /* Blogger Cookies info */
