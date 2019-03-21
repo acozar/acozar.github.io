@@ -24,14 +24,13 @@ var thehours = new Date().getHours();
 		themessage = morning;
 		
 	} else if ($("#theme-meridianus").is(':checked')) {
-		themessage = night;
+		themessage = afternoon;
 		
 	} else if ($("#theme-vesperus").is(':checked')) {
-		themessage = night;
+		themessage = evening;
 		
 	} else if ($("#theme-nox").is(':checked')) {
 		themessage = night;
 		
 	}
-
 $('.sun-phase').append(themessage);
