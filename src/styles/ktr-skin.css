@@ -138,6 +138,7 @@ header, footer {
 .article-image {
 	margin: 0 -10% 64px;
 	min-width: 120%;
+	max-width: 120%;
 }
 @media (max-width: 768px) {
 	.article-body {
@@ -148,6 +149,7 @@ header, footer {
 	.article-image {
 		margin: 0 0 64px;
 		min-width: 100%;
+		max-width: 100%;
 	}
 }
 
