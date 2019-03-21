@@ -1101,7 +1101,6 @@ a:visited:active {
 #theme-meridianus:checked ~ #page a:visited,
 #theme-meridianus:checked ~ #page em a:visited {
 	color: var(--color-textmeridianus);
-	opacity: 0.9;
 }
 #theme-meridianus:checked ~ #page label:hover,
 #theme-meridianus:checked ~ #page button:hover,
@@ -1139,7 +1138,6 @@ a:visited:active {
 #theme-vesperum:checked ~ #page a:visited,
 #theme-vesperum:checked ~ #page em a:visited {
 	color: var(--color-textvesperum);
-	opacity: 0.9;
 }
 #theme-vesperum:checked ~ #page label:hover,
 #theme-vesperum:checked ~ #page button:hover,
@@ -1244,7 +1242,7 @@ a:visited:active {
 	/* vesperum Theme */
 	--color-bgvesperum: rgba(228,220,238,1);
 	--color-textvesperum: rgba(120,81,169,1);
-	--color-starredvesperum: rgba(23,148,227,1);
+	--color-starredvesperum: rgba(102,2,60,1);
 	
 	/* Overlays */
 	--color-translucentblack: rgba(0,0,0,.5);
