@@ -14,8 +14,11 @@ var thehours = new Date().getHours();
 	} else if (thehours >= 12 && thehours < 18) {
 		themessage = afternoon;
 		
-	} else if (thehours >= 18 && thehours < 24) {
+	} else if (thehours >= 18 && thehours < 20) {
 		themessage = evening;
+		
+	} else if (thehours >= 20 && thehours < 24) {
+		themessage = night;
 		
 	}
 
