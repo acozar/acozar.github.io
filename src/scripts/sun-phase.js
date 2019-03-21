@@ -28,24 +28,24 @@ $('.sun-phase').append(themessage);
 $(function() {
 	$('.th-aurora').click(function() {
     	themessage = morning;
-    	$('.sun-phase').append(themessage);
+    	$('.sun-phase').replaceWith(themessage);
 	});
 });
 $(function() {
 	$('.th-meridianus').click(function() {
     	themessage = afternoon;
-    	$('.sun-phase').append(themessage);
+    	$('.sun-phase').replaceWith(themessage);
 	});
 });
 $(function() {
 	$('.th-vesperus').click(function() {
     	themessage = evening;
-    	$('.sun-phase').append(themessage);
+    	$('.sun-phase').replaceWith(themessage);
 	});
 });
 $(function() {
 	$('.th-nox').click(function() {
     	themessage = night;
-    	$('.sun-phase').append(themessage);
+    	$('.sun-phase').replaceWith(themessage);
 	});
 });
