@@ -107,7 +107,7 @@ header, footer {
 }
 .ktr-gallery article:first-child {
 	float: none;
-	height: 320px;
+	height: 384px;
 	width: 99%;
 }
 .ktr-gallery article img {
@@ -121,8 +121,8 @@ header, footer {
 	width: 160px;
 }
 .ktr-gallery article:first-child img {
-	height: 192px;
-	width: 192px;
+	height: 256px;
+	width: 256px;
 }
 .ktr-gallery article h3 {
 	font-size: 20px;
