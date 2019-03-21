@@ -27,15 +27,16 @@ $('.sun-phase').append(themessage);
 
 $(document).ready(function() {
    $('.th-aurora').click(function() {
-   		themessage='morning';
+   		themessage = morning;
    });
    $('.th-meridianus').click(function() {
-   		themessage='afternoon';
+   		themessage = afternoon;
    });
    $('.th-vesperus').click(function() {
-   		themessage='evening';
+   		themessage = evening;
    });
    $('.th-nox').click(function() {
-   		themessage='night';
+   		themessage = night;
    });
+   $('.sun-phase').replaceWith(themessage);
 });
