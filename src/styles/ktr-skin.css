@@ -530,9 +530,9 @@ header, footer {
 }
 .prev-next .blog-paging-control-container .blog-paging-control:nth-child(1):after,
 .prev-next .blog-paging-control-container .blog-paging-control:nth-child(2):after {
-	border: thin solid currentColor;
+	border: 1px solid currentColor;
 	border-radius: 50%;
-	color: #aaa;
+	color: inherit;
 	display: block;
 	font-size: 1.2em;
 	font-weight: normal;
@@ -562,6 +562,7 @@ header, footer {
 .pagination a:after {
 	border: 1px solid currentColor;
 	border-radius: 2em;
+	color: inherit;
 	font-weight: normal;
 	margin-left: -5em;
 	padding: .75em 1em;
