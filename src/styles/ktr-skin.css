@@ -147,7 +147,7 @@ header, footer {
 		width: 96%;
 	}
 	.article-image {
-		margin: 0 -2% 64px -2% !important;
+		margin: 0 auto 64px !important;
 		width: 104%;
 	}
 }
