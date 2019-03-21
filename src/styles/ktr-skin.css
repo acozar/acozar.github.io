@@ -95,6 +95,7 @@ header, footer {
 
 .ktr-gallery {
 	margin: 64px auto;
+	text-align: center;
 	width: 80%;
 }
 .ktr-gallery article {
@@ -102,7 +103,6 @@ header, footer {
 	float: left;
 	height: 256px;
 	margin: 0 0 64px 1%;
-	text-align: center;
 	width: 24%;
 }
 .ktr-gallery article img {
