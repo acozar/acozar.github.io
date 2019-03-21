@@ -1,10 +1,10 @@
 var thehours = new Date().getHours();
 
 	var themessage;
-	var night = ('<img src="https://acozar.github.io/src/img/sun-night.gif">');
-	var morning = ('<img src="https://acozar.github.io/src/img/sun-morning.gif">');
-	var afternoon = ('<img src="https://acozar.github.io/src/img/sun-afternoon.gif">');
-	var evening = ('<img src="https://acozar.github.io/src/img/sun-evening.gif">');
+	var night = ('<img id="sun-phase" src="https://acozar.github.io/src/img/sun-night.gif">');
+	var morning = ('<img id="sun-phase" src="https://acozar.github.io/src/img/sun-morning.gif">');
+	var afternoon = ('<img id="sun-phase" src="https://acozar.github.io/src/img/sun-afternoon.gif">');
+	var evening = ('<img id="sun-phase" src="https://acozar.github.io/src/img/sun-evening.gif">');
 
 	if (thehours >= 0 && thehours < 6) {
 		themessage = night; 
@@ -25,20 +25,20 @@ var thehours = new Date().getHours();
 	
 $('#sun-phase').append(themessage);
 
-$(document).ready(function() {
+$(function() {
    $('.th-aurora').click(function() {
-   		$('#sun-phase').replaceWith('<img src="https://acozar.github.io/src/img/sun-morning.gif">');
+   		$('#sun-phase').html('<img id="sun-phase" src="https://acozar.github.io/src/img/sun-morning.gif">');
    });
 
    $('.th-meridianus').click(function() {
-   		$('#sun-phase').replaceWith('<img src="https://acozar.github.io/src/img/sun-afternoon.gif">');
+   		$('#sun-phase').html('<img id="sun-phase" src="https://acozar.github.io/src/img/sun-afternoon.gif">');
    });
 
    $('.th-vesperum').click(function() {
-   		$('#sun-phase').replaceWith('<img src="https://acozar.github.io/src/img/sun-evening.gif">');
+   		$('#sun-phase').html('<img id="sun-phase" src="https://acozar.github.io/src/img/sun-evening.gif">');
    });
 
    $('.th-nox').click(function() {
-   		$('#sun-phase').replaceWith('<img src="https://acozar.github.io/src/img/sun-night.gif">');
+   		$('#sun-phase').html('<img id="sun-phase" src="https://acozar.github.io/src/img/sun-night.gif">');
    });
 });
