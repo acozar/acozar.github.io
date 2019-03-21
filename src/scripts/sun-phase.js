@@ -23,7 +23,7 @@ var thehours = new Date().getHours();
 		
 	}
 	
-$('#sun-phase').append(themessage);
+$('#sun-phase').html(themessage);
 
 $(function() {
    $('.th-aurora').click(function() {
