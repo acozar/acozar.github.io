@@ -29,18 +29,15 @@ $(document).ready(function() {
    $('.th-aurora').click(function() {
    		$('#sun-phase').replaceWith('<img src="https://acozar.github.io/src/img/sun-morning.gif">');
    });
-});
-$(document).ready(function() {
+
    $('.th-meridianus').click(function() {
    		$('#sun-phase').replaceWith('<img src="https://acozar.github.io/src/img/sun-afternoon.gif">');
    });
-});
-$(document).ready(function() {
-   $('.th-vesperus').click(function() {
+
+   $('.th-vesperum').click(function() {
    		$('#sun-phase').replaceWith('<img src="https://acozar.github.io/src/img/sun-evening.gif">');
    });
-});
-$(document).ready(function() {
+
    $('.th-nox').click(function() {
    		$('#sun-phase').replaceWith('<img src="https://acozar.github.io/src/img/sun-night.gif">');
    });
