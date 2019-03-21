@@ -137,7 +137,7 @@ header, footer {
 }
 .article-image {
 	display: block;
-	margin: 0 -10% 64px !important;
+	margin: 0 -10% 64px;
 	min-width: 120%;	
 }
 @media (max-width: 768px) {
@@ -147,8 +147,8 @@ header, footer {
 		width: 96%;
 	}
 	.article-image {
-		margin: 0 auto 64px !important;
-		width: 100% !important;
+		margin: 0 0 64px;
+		min-width: 100%;
 	}
 }
 
