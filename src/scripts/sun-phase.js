@@ -27,25 +27,21 @@ $('#sun-phase').append(themessage);
 
 $(document).ready(function() {
    $('.th-aurora').click(function() {
-   		themessage = morning;
-   		$('#sun-phase').replaceWith(themessage);
+   		$('#sun-phase').replaceWith('<img src="https://acozar.github.io/src/img/sun-morning.gif">');
    });
 });
 $(document).ready(function() {
    $('.th-meridianus').click(function() {
-   		themessage = afternoon;
-   		$('#sun-phase').replaceWith(themessage);
+   		$('#sun-phase').replaceWith('<img src="https://acozar.github.io/src/img/sun-afternoon.gif">');
    });
 });
 $(document).ready(function() {
    $('.th-vesperus').click(function() {
-   		themessage = evening;
-   		$('#sun-phase').replaceWith(themessage);
+   		$('#sun-phase').replaceWith('<img src="https://acozar.github.io/src/img/sun-evening.gif">');
    });
 });
 $(document).ready(function() {
    $('.th-nox').click(function() {
-   		themessage = night;
-   		$('#sun-phase').replaceWith(themessage);
+   		$('#sun-phase').replaceWith('<img src="https://acozar.github.io/src/img/sun-night.gif">');
    });
 });
