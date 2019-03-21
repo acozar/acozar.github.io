@@ -1106,7 +1106,7 @@ a:visited:active {
 #theme-meridianus:checked ~ #page button:hover,
 #theme-meridianus:checked ~ #page a:hover,
 #theme-meridianus:checked ~ #page a:visited:hover {
-	color: var(--color-translucentwhite);
+	color: var(--color-translucentblack);
 }
 #theme-meridianus:checked ~ #page a:active,
 #theme-meridianus:checked ~ #page a:visited:active {
@@ -1137,7 +1137,7 @@ a:visited:active {
 }
 #theme-vesperum:checked ~ #page a:visited,
 #theme-vesperum:checked ~ #page em a:visited {
-	color: var(--color-translucentwhite);
+	color: var(--color-translucentblack);
 }
 #theme-vesperum:checked ~ #page label:hover,
 #theme-vesperum:checked ~ #page button:hover,
