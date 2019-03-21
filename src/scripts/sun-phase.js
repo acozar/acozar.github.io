@@ -31,9 +31,7 @@ $(document).ready(function(){
         } else {  
           
         }    
-}); 
-$('.sun-phase').append(themessage);
-	
+}); 	
 $(document).ready(function(){  
         if($("#th-meridianus").is(':checked')) {  
             themessage = afternoon;
