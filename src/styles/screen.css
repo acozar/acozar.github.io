@@ -1100,7 +1100,8 @@ a:visited:active {
 }
 #theme-meridianus:checked ~ #page a:visited,
 #theme-meridianus:checked ~ #page em a:visited {
-	color: var(--color-translucentblack);
+	color: var(--color-textmeridianus);
+	opacitiy: .9;
 }
 #theme-meridianus:checked ~ #page label:hover,
 #theme-meridianus:checked ~ #page button:hover,
@@ -1137,7 +1138,8 @@ a:visited:active {
 }
 #theme-vesperum:checked ~ #page a:visited,
 #theme-vesperum:checked ~ #page em a:visited {
-	color: var(--color-translucentblack);
+	color: var(--color-textvesperum);
+	opacitiy: .9;
 }
 #theme-vesperum:checked ~ #page label:hover,
 #theme-vesperum:checked ~ #page button:hover,
