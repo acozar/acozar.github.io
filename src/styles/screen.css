@@ -1100,13 +1100,13 @@ a:visited:active {
 }
 #theme-meridianus:checked ~ #page a:visited,
 #theme-meridianus:checked ~ #page em a:visited {
-	color: var(--color-white);
+	color: var(--color-translucentblack);
 }
 #theme-meridianus:checked ~ #page label:hover,
 #theme-meridianus:checked ~ #page button:hover,
 #theme-meridianus:checked ~ #page a:hover,
 #theme-meridianus:checked ~ #page a:visited:hover {
-	color: var(--color-translucentblack);
+	color: var(--color-starredmeridianus);
 }
 #theme-meridianus:checked ~ #page a:active,
 #theme-meridianus:checked ~ #page a:visited:active {
