@@ -25,7 +25,7 @@ var thehours = new Date().getHours();
 $('.sun-phase').append(themessage);
 	
 $(document).ready(function(){  
-        if($("#th-aurora").is(':checked')) {  
+        if($("#theme-aurora").is(':checked')) {  
             themessage = morning;
             $('.sun-phase').append(themessage);
         } else {  
@@ -33,7 +33,7 @@ $(document).ready(function(){
         }    
 }); 	
 $(document).ready(function(){  
-        if($("#th-meridianus").is(':checked')) {  
+        if($("#theme-meridianus").is(':checked')) {  
             themessage = afternoon;
             $('.sun-phase').append(themessage);
         } else {  
@@ -41,7 +41,7 @@ $(document).ready(function(){
         }    
 }); 
 $(document).ready(function(){  
-        if($("#th-vesperus").is(':checked')) {  
+        if($("#theme-vesperus").is(':checked')) {  
             themessage = evening;
             $('.sun-phase').append(themessage);
         } else {  
@@ -49,7 +49,7 @@ $(document).ready(function(){
         }    
 }); 
 $(document).ready(function(){  
-        if($("#th-nox").is(':checked')) {  
+        if($("#theme-nox").is(':checked')) {  
             themessage = night;
             $('.sun-phase').append(themessage);
         } else {  
