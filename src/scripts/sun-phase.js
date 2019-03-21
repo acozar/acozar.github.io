@@ -8,6 +8,7 @@ var thehours = new Date().getHours();
 
 	if (thehours >= 0 && thehours < 6) {
 		themessage = night; 
+		$( "#theme-vesperum" ).prop('checked', true );
 
 	} else if (thehours >= 6 && thehours < 12) {
 		themessage = morning;
