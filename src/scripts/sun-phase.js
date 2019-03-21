@@ -25,22 +25,17 @@ var thehours = new Date().getHours();
 	
 $('.sun-phase').append(themessage);
 
-	$('.th-aurora').click(function() {
-    	themessage = morning;
-    	$('.sun-phase').replaceWith(themessage);
-	});
-
-	$('.th-meridianus').click(function() {
-    	themessage = afternoon;
-    	$('.sun-phase').replaceWith(themessage);
-	});
-
-	$('.th-vesperus').click(function() {
-    	themessage = evening;
-    	$('.sun-phase').replaceWith(themessage);
-	});
-
-	$('.th-nox').click(function() {
-    	themessage = night;
-    	$('.sun-phase').replaceWith(themessage);
-	});
+$(document).ready(function() {
+   $('.th-aurora').click(function() {
+   		themessage='morning';
+   });
+   $('.th-meridianus').click(function() {
+   		themessage='afternoon';
+   });
+   $('.th-vesperus').click(function() {
+   		themessage='evening';
+   });
+   $('.th-nox').click(function() {
+   		themessage='night';
+   });
+});
