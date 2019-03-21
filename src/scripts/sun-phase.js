@@ -22,4 +22,39 @@ var thehours = new Date().getHours();
 		
 	}
 
-	$('.sun-phase').append(themessage);
+$('.sun-phase').append(themessage);
+	
+$(document).ready(function(){  
+        if($("#th-aurora").is(':checked')) {  
+            themessage = morning;
+            $('.sun-phase').append(themessage);
+        } else {  
+          
+        }    
+}); 
+$('.sun-phase').append(themessage);
+	
+$(document).ready(function(){  
+        if($("#th-meridianus").is(':checked')) {  
+            themessage = afternoon;
+            $('.sun-phase').append(themessage);
+        } else {  
+          
+        }    
+}); 
+$(document).ready(function(){  
+        if($("#th-vesperus").is(':checked')) {  
+            themessage = evening;
+            $('.sun-phase').append(themessage);
+        } else {  
+          
+        }    
+}); 
+$(document).ready(function(){  
+        if($("#th-nox").is(':checked')) {  
+            themessage = night;
+            $('.sun-phase').append(themessage);
+        } else {  
+          
+        }    
+});  
