@@ -20,33 +20,18 @@ var thehours = new Date().getHours();
 	} else if (thehours >= 20 && thehours < 24) {
 		themessage = night;
 		
+	} else if ($("#theme-aurora").is(':checked')) {
+		themessage = morning;
+		
+	} else if ($("#theme-meridianus").is(':checked')) {
+		themessage = night;
+		
+	} else if ($("#theme-vesperus").is(':checked')) {
+		themessage = night;
+		
+	} else if ($("#theme-nox").is(':checked')) {
+		themessage = night;
+		
 	}
 
 $('.sun-phase').append(themessage);
-	
-$(function() {
-        if($("#theme-aurora").is(':checked')) {  
-            themessage = morning;
-            $('.sun-phase').append(themessage);
-        } else {  
-          
-        }     
-        if($("#theme-meridianus").is(':checked')) {  
-            themessage = afternoon;
-            $('.sun-phase').append(themessage);
-        } else {  
-          
-        }     
-        if($("#theme-vesperus").is(':checked')) {  
-            themessage = evening;
-            $('.sun-phase').append(themessage);
-        } else {  
-          
-        }    
-        if($("#theme-nox").is(':checked')) {  
-            themessage = night;
-            $('.sun-phase').append(themessage);
-        } else {  
-          
-        }    
-}); 
