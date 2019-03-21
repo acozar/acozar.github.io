@@ -579,6 +579,7 @@ header, footer {
 
 .pagination a:after:hover,
 .prev-next .blog-paging-control-container .blog-paging-control:after:hover {
+	border: 1px solid currentColor;
 	color: rgba(0,0,0,.8);
 }
 
