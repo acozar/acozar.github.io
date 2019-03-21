@@ -1096,7 +1096,7 @@ a:visited:active {
 #theme-meridianus:checked ~ #page em label,
 #theme-meridianus:checked ~ #page em button {
 	background-color: var(--color-textmeridianus);
-	color: var(--color-bgmeridianus);	
+	color: var(--color-white);	
 }
 #theme-meridianus:checked ~ #page a:visited,
 #theme-meridianus:checked ~ #page em a:visited {
@@ -1133,7 +1133,7 @@ a:visited:active {
 #theme-vesperum:checked ~ #page em label,
 #theme-vesperum:checked ~ #page em button {
 	background-color: var(--color-textvesperum);
-	color: var(--color-bgvesperum);	
+	color: var(--color-white);	
 }
 #theme-vesperum:checked ~ #page a:visited,
 #theme-vesperum:checked ~ #page em a:visited {
