@@ -103,7 +103,7 @@ header, footer {
 	height: 256px;
 	margin: 0 0 64px 1%;
 	text-align: center;
-	width: 48%;
+	width: 33%;
 }
 .ktr-gallery article img {
 	border: 1px solid rgba(0,0,0,.5);
@@ -127,6 +127,11 @@ header, footer {
 }
 .ktr-gallery article strong {
 	font-size: 12px;;
+}
+@media (max-width: 1024px) {
+	.ktr-gallery article {
+		width: 48%;
+	}
 }
 
 /* KTR article post */
