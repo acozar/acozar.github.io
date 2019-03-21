@@ -105,6 +105,10 @@ header, footer {
 	margin: 0 0 64px 1%;
 	width: 24%;
 }
+.ktr-gallery article:first-child {
+	float: none;
+	width: 99%;
+}
 .ktr-gallery article img {
 	border: 1px solid rgba(0,0,0,.5);
 	border-radius: 50%;
