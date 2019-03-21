@@ -1,4 +1,5 @@
 var thehours = new Date().getHours();
+
 	var themessage;
 	var night = ('<img src="http://acozar.github.io/src/img/sun-night.gif">');
 	var morning = ('<img src="http://acozar.github.io/src/img/sun-morning.gif">');
@@ -20,17 +21,31 @@ var thehours = new Date().getHours();
 	} else if (thehours >= 20 && thehours < 24) {
 		themessage = night;
 		
-	} else if ($("#theme-aurora").is(':checked')) {
-		themessage = morning;
-		
-	} else if ($("#theme-meridianus").is(':checked')) {
-		themessage = afternoon;
-		
-	} else if ($("#theme-vesperus").is(':checked')) {
-		themessage = evening;
-		
-	} else if ($("#theme-nox").is(':checked')) {
-		themessage = night;
-		
 	}
+	
 $('.sun-phase').append(themessage);
+
+$(function() {
+	$('.th-aurora').click(function() {
+    	themessage = morning;
+    	$('.sun-phase').append(themessage);
+	});
+});
+$(function() {
+	$('.th-meridianus').click(function() {
+    	themessage = afternoon;
+    	$('.sun-phase').append(themessage);
+	});
+});
+$(function() {
+	$('.th-vesperus').click(function() {
+    	themessage = evening;
+    	$('.sun-phase').append(themessage);
+	});
+});
+$(function() {
+	$('.th-nox').click(function() {
+    	themessage = night;
+    	$('.sun-phase').append(themessage);
+	});
+});
