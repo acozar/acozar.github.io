@@ -1,10 +1,10 @@
 var thehours = new Date().getHours();
 
 	var themessage;
-	var night = ('<img src="http://acozar.github.io/src/img/sun-night.gif">');
-	var morning = ('<img src="http://acozar.github.io/src/img/sun-morning.gif">');
-	var afternoon = ('<img src="http://acozar.github.io/src/img/sun-afternoon.gif">');
-	var evening = ('<img src="http://acozar.github.io/src/img/sun-evening.gif">');
+	var night = ('<img src="https://acozar.github.io/src/img/sun-night.gif">');
+	var morning = ('<img src="https://acozar.github.io/src/img/sun-morning.gif">');
+	var afternoon = ('<img src="https://acozar.github.io/src/img/sun-afternoon.gif">');
+	var evening = ('<img src="https://acozar.github.io/src/img/sun-evening.gif">');
 
 	if (thehours >= 0 && thehours < 6) {
 		themessage = night; 
@@ -25,7 +25,6 @@ var thehours = new Date().getHours();
 	
 $('.sun-phase').append(themessage);
 
-$(function() {
 	$('.th-aurora').click(function() {
     	themessage = morning;
     	$('.sun-phase').replaceWith(themessage);
@@ -45,4 +44,3 @@ $(function() {
     	themessage = night;
     	$('.sun-phase').replaceWith(themessage);
 	});
-});
