@@ -53,7 +53,7 @@ ul.solar-system {
     transform-style: preserve-3d;
 }
 .solar-system-canvas input:checked ~ ul.solar-system li {
-    border: 2px solid transparent;
+    border-color: transparent;
 }
 .solar-system-canvas input:checked ~ .solar-system-legend {
 	visibility: visible;
@@ -207,7 +207,7 @@ ul.solar-system li.saturn {
     left: 20%;
 }
 ul.solar-system li.saturn span {
-    background: #dfd3a9;
+    background: #777777;
     top: 4%;
     left: 25%;
 }
@@ -215,7 +215,7 @@ ul.solar-system li.saturn span.ring {
     width: 180%;
     height: 180%;
     background: none;
-    border: 2px solid #5a4e34;
+    border: 2px solid #aaaaaa;
     left: -42%;
     top: -42%;
 }
