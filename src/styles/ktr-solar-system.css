@@ -180,7 +180,7 @@ ul.solar-system li.mars span {
 ul.solar-system li.asteroids_meteorids {
     top: 27%;
     left: 27%;
-    background: url('https://acozar.github.io/img/asteroids_meteorids.png') no-repeat 0 0;
+    background: url('https://acozar.github.io/src/img/asteroids_meteorids.png') no-repeat 0 0;
     background-size:100%;
     width: 46%;
     height: 46%;
