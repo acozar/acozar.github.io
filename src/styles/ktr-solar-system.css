@@ -54,10 +54,7 @@ ul.solar-system {
     transform-style: preserve-3d;
 }
 .solar-system-canvas input:checked ~ ul.solar-system li {
-	-webkit-transform: rotateX(50deg) translateZ(-200px) translateY(-200px);
-	-moz-transform: rotateX(50deg) translateZ(-200px) translateY(-200px);
-	-o-transform: rotateX(50deg) translateZ(-200px) translateY(-200px);
-	transform: rotateX(50deg) translateZ(-200px) translateY(-200px);
+    border: 2px solid transparent;
 }
 .solar-system-canvas input:checked ~ .solar-system-legend {
 	visibility: visible;
