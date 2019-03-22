@@ -341,10 +341,10 @@ header, footer {
 	background-color: #ffffff;
 }
 .th-meridianus {
-	background-color: rgba(255,245,238,1) !important;
+	background-color: rgba(248,228,211,1) !important;
 }
 .th-vesperum {
-	background-color: rgba(247,246,255,1) !important;
+	background-color: rgba(228,220,238,1) !important;
 }
 .th-nox {
 	background-color: #000000 !important;
