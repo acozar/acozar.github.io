@@ -154,7 +154,7 @@ ul.solar-system li.earth {
 }
 ul.solar-system li.earth span {
     background: #06c;
-    top:30%;
+    top:29.5%;
     left: 2%;
     width: 4%;
     height: 4%;
@@ -190,7 +190,7 @@ ul.solar-system li.asteroids_meteorids {
 ul.solar-system li.jupiter {
     width: 50%;
     height: 50%;
-    top: 25%;
+    top: 24.5%;
     left: 25%;
 }
 ul.solar-system li.jupiter span {
