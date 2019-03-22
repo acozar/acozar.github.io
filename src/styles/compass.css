@@ -3,6 +3,7 @@
 @media (pointer: fine) {
 	#compass-system {
 		display: none;
+		text-align: center;
 	}
 }
 
