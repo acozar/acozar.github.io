@@ -227,10 +227,10 @@ header, footer {
 .ktr-button-sun-bubble em label {
 	padding-top: 8px;
 }
-.ktr-button-moon-bubble span .th-home,
-.ktr-button-moon-bubble span .th-blog,
-.ktr-button-moon-bubble span .th-services,
-.ktr-button-moon-bubble span .th-contact,
+.ktr-button-moon-bubble span .th-tesis,
+.ktr-button-moon-bubble span .th-antitesis,
+.ktr-button-moon-bubble span .th-sintesis,
+.ktr-button-moon-bubble span .th-dialectica,
 .ktr-button-sun-bubble span .th-aurora,
 .ktr-button-sun-bubble span .th-meridianus,
 .ktr-button-sun-bubble span .th-vesperum,
@@ -255,17 +255,17 @@ header, footer {
 		 -o-transition: transform .5s ease;
 			transition: transform .5s ease;
 }
-.ktr-button-moon-bubble span .th-home,
-.ktr-button-moon-bubble span .th-blog,
-.ktr-button-moon-bubble span .th-services,
-.ktr-button-moon-bubble span .th-contact {
+.ktr-button-moon-bubble span .th-tesis,
+.ktr-button-moon-bubble span .th-antitesis,
+.ktr-button-moon-bubble span .th-sintesis,
+.ktr-button-moon-bubble span .th-dialectica {
 	right: auto;
 	left: 0;
 }
-.th-home:hover:after,
-.th-blog:hover:after,
-.th-services:hover:after,
-.th-contact:hover:after,
+.th-tesis:hover:after,
+.th-antitesis:hover:after,
+.th-sintesis:hover:after,
+.th-dialectica:hover:after,
 .th-aurora:hover:after,
 .th-meridianus:hover:after,
 .th-vesperum:hover:after,
@@ -289,18 +289,18 @@ header, footer {
 	top: 20%;
 	z-index: 30;
 }
-.th-home:hover:after,
-.th-blog:hover:after,
-.th-services:hover:after,
-.th-contact:hover:after {
+.th-tesis:hover:after,
+.th-antitesis:hover:after,
+.th-sintesis:hover:after,
+.th-dialectica:hover:after {
 	right: -190%;
 	left: auto;
 }
 @media screen and (max-width: 600px) {
-	.th-home:hover:after,
-	.th-blog:hover:after,
-	.th-services:hover:after,
-	.th-contact:hover:after,
+	.th-tesis:hover:after,
+	.th-antitesis:hover:after,
+	.th-sintesis:hover:after,
+	.th-dialectica:hover:after,
 	.th-aurora:hover:after,
 	.th-meridianus:hover:after,
 	.th-vesperum:hover:after,
@@ -309,10 +309,10 @@ header, footer {
 	}
 }
 @media screen and (max-width: 1024px) {
-	.th-home:hover:after,
-	.th-blog:hover:after,
-	.th-services:hover:after,
-	.th-contact:hover:after {
+	.th-tesis:hover:after,
+	.th-antitesis:hover:after,
+	.th-sintesis:hover:after,
+	.th-dialectica:hover:after {
 		top: 10%;
 		right: -300%;
 	}
@@ -323,20 +323,20 @@ header, footer {
 		top: 10%;
 		left: -300%;
 	}
-	.th-home,
-	.th-blog,
-	.th-services,
-	.th-contact {
+	.th-tesis,
+	.th-antitesis,
+	.th-sintesis,
+	.th-dialectica {
 		padding-top: 6px;
 	}
 	.ktr-button-sun-bubble em label {
 		padding-top: 6px;
 	}
 }
-.th-home,
-.th-blog,
-.th-services,
-.th-contact,
+.th-tesis,
+.th-antitesis,
+.th-sintesis,
+.th-dialectica,
 .th-aurora {
 	background-color: #ffffff;
 }
@@ -350,16 +350,16 @@ header, footer {
 	background-color: #000000 !important;
 	color: #ffffff !important;
 }
-.ktr-button-moon-bubble input:checked ~ span .th-home {
+.ktr-button-moon-bubble input:checked ~ span .th-tesis {
 	transform: scale(1) translateX(290%);
 }
-.ktr-button-moon-bubble input:checked ~ span .th-blog {
+.ktr-button-moon-bubble input:checked ~ span .th-antitesis {
 	transform: scale(1) translateX(200%) translateY(100%);
 }
-.ktr-button-moon-bubble input:checked ~ span .th-services {
+.ktr-button-moon-bubble input:checked ~ span .th-sintesis {
 	transform: scale(1) translateX(100%) translateY(200%);
 }
-.ktr-button-moon-bubble input:checked ~ span .th-contact {
+.ktr-button-moon-bubble input:checked ~ span .th-dialectica {
 	transform: scale(1) translateY(290%);
 }
 .ktr-button-sun-bubble input:checked ~ span .th-aurora {
