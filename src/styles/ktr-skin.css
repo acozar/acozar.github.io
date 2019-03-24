@@ -83,7 +83,7 @@ header, footer {
 .ktr-form ul,
 .ktr-form li {
 	list-style: none;
-	padding: 0;
+	padding: 16px 0;
 }
 .ktr-form label {
 	margin: 16px 0;
