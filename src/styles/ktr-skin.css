@@ -191,6 +191,7 @@ header, footer {
 @media screen and (max-width: 1024px) {
 	.ktr-footer {
 		background-size: 256px;
+		padding-bottom: 360px;
 	}
 }
 #page-footer {
