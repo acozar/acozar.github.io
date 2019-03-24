@@ -74,6 +74,28 @@ header, footer {
 	width: 48px;
 }
 
+/* KTR Form */
+
+.ktr-form header {
+	border-top: 1px solid currentColor;
+	border-bottom: 1px solid currentColor;
+}
+.ktr-form ul,
+.ktr-form li {
+	list-style: none;
+	padding: 0;
+}
+.ktr-form label {
+	margin: 16px 0;
+}
+.ktr-form label span {
+	color: #ff0000;
+}
+.ktr-form input {
+	border-radius: 16px;
+	border: 1px solid currentColor;
+}
+
 /* KTR article list */
 
 .ktr-list {
