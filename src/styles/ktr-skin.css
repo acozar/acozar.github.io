@@ -89,7 +89,7 @@ header, footer {
 	margin: 16px 0;
 }
 .ktr-form label span {
-	color: #ff0000;
+	color: rgba(168,47,47,1);
 }
 .ktr-form input {
 	border-radius: 16px;
