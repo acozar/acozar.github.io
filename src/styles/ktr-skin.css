@@ -23,6 +23,28 @@ a:active, label:active, button:active {
 	cursor: url('http://acozar.github.io/src/cursors/cursorpointerred.png'), auto !important;
 }
 
+/* Blockquote */
+
+blockquote {
+	border: none;
+	padding: 16px;
+	text-align: center;
+}
+blockquote:before,
+blockquote:after {
+	border-top: 2px currentColor;
+	display: block;
+	height: 2px;
+	margin: 0 auto;
+	width: 50%;
+}
+blockquote:before {
+	
+}
+blockquote:after {
+	
+}
+
 /* KTR header */
 
 header, footer {
