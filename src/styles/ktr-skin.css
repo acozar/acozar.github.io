@@ -178,6 +178,12 @@ header, footer {
 	}
 }
 
+/* KTR landing */
+
+.ktr-landing-presentation {
+	text-align: center;
+}
+
 /* KTR footer */
 
 .ktr-footer {
