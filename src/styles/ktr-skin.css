@@ -27,7 +27,7 @@ a:active, label:active, button:active {
 
 blockquote {
 	border: none;
-	padding: 16px;
+	padding: 32px 16px;
 	text-align: center;
 }
 blockquote:before,
