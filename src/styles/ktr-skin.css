@@ -95,7 +95,7 @@ header, footer {
 	border-radius: 16px;
 	border: 1px solid currentColor;
 }
-.ktr-form imput[type=text] {
+.ktr-form imput[type=submit] {
 	padding: 16px;
 	width: 50%;
 }
