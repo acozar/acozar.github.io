@@ -33,6 +33,7 @@ blockquote {
 blockquote:before,
 blockquote:after {
 	border-top: 2px currentColor;
+	content:' ';
 	display: block;
 	height: 2px;
 	margin: 0 auto;
