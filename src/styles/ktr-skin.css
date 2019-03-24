@@ -186,7 +186,7 @@ header, footer {
 	background-attachment: fixed;
 	background-image: url('../ics/isotype.png');
 	background-size: 512px;
-	padding-bottom: 400px;
+	padding-bottom: 512px;
 }
 @media screen and (max-width: 1024px) {
 	.ktr-footer {
