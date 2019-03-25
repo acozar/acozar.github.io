@@ -135,12 +135,14 @@ header, footer {
 
 /* KTR article gallery */
 
-.ktr-gallery {
+.ktr-gallery,
+.ktr-media {
 	margin: 64px auto;
 	text-align: center;
 	width: 80%;
 }
-.ktr-gallery article {
+.ktr-gallery article,
+.ktr-media article {
 	border-color: transparent;
 	float: left;
 	height: 256px;
@@ -160,13 +162,22 @@ header, footer {
 	object-fit: cover;
 	object-position: center;
 	height: 160px;
+	width: 284px;
+}
+.ktr-media article img {
+	display: block;
+	margin: 0 auto;
+	object-fit: cover;
+	object-position: center;
+	height: 160px;
 	width: 160px;
 }
 .ktr-gallery article:first-child img {
 	height: 256px;
 	width: 256px;
 }
-.ktr-gallery article h3 {
+.ktr-gallery article h3,
+.ktr-media article h3 {
 	font-size: 20px;
 	line-height: 1.2em;
 	margin: 32px 0 0;
