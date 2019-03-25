@@ -224,18 +224,20 @@ header, footer {
 .article-thumb {
 	text-align: center;
 }
-.article-thumb img {
+.article-thumb a img {
 	border: 8px solid #ffffff;
 	box-shadow: 0 0 2px 2px rgba(0,0,0,.25);
 	width: 20%;
 }
-.article-thumb img:after {
+.article-thumb a img:after {
 	content: 'Descarrega';
 	display: block;
+	height: 64px;
 	position: absolute;
 	top: 20px;
 	left: 0;
 	right: 0;
+	width: 100%;
 }
 @media (max-width: 1024px) {
 	.article-body {
