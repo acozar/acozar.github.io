@@ -230,9 +230,11 @@ header, footer {
 	width: 20%;
 }
 .article-thumb a img:after {
+	color: #ffffff;
 	content: 'Descarrega';
 	display: block;
 	height: 64px;
+	padding: 16px;
 	position: absolute;
 	bottom: 20px;
 	left: 0;
