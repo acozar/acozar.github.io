@@ -234,10 +234,11 @@ header, footer {
 	display: block;
 	height: 64px;
 	position: absolute;
-	top: 20px;
+	bottom: 20px;
 	left: 0;
 	right: 0;
 	width: 100%;
+	z-index: 10;
 }
 @media (max-width: 1024px) {
 	.article-body {
