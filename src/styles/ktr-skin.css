@@ -234,10 +234,12 @@ header, footer {
 	background-color: rgba(0,0,0,.8);
 	border: 1px solid currentColor;
 	content: 'Descarrega';
-	min-width: 128px;
+	margin: 0 auto;
+	width: 128px;
 	padding: 8px 0;
 	position: absolute;
-	bottom: 0px;
+	top: 25%; 
+	left: 0;
 	z-index: 5;
 }
 @media (max-width: 1024px) {
