@@ -162,7 +162,7 @@ header, footer {
 	object-fit: cover;
 	object-position: center;
 	height: 160px;
-	width: 284px;
+	width: 160px;
 }
 .ktr-media article img {
 	display: block;
@@ -170,7 +170,7 @@ header, footer {
 	object-fit: cover;
 	object-position: center;
 	height: 160px;
-	width: 160px;
+	width: 284px;
 }
 .ktr-gallery article:first-child img {
 	height: 256px;
@@ -190,14 +190,17 @@ header, footer {
 .ktr-gallery article:first-child h3 {
 	font-size: 32px;
 }
-.ktr-gallery article strong {
+.ktr-gallery article strong,
+.ktr-media article strong {
 	font-size: 12px;;
 }
 @media (max-width: 1024px) {
-	.ktr-gallery article {
+	.ktr-gallery article,
+	.ktr-media article {
 		width: 48%;
 	}
-	.ktr-gallery article img {
+	.ktr-gallery article img,
+	.ktr-media article img {
 		height: 128px;
 		width: 128px;
 	}
