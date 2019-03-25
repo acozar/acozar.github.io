@@ -224,12 +224,12 @@ header, footer {
 .article-thumb {
 	text-align: center;
 }
-.article-thumb a img {
+.article-thumb img {
 	border: 8px solid #ffffff;
 	box-shadow: 0 0 2px 2px rgba(0,0,0,.25);
 	width: 20%;
 }
-.article-thumb a img:after {
+.article-thumb img:after {
 	content: 'Descarrega';
 	position: absolute;
 	z-index: 5;
