@@ -229,6 +229,10 @@ header, footer {
 	box-shadow: 0 0 2px 2px rgba(0,0,0,.25);
 	width: 20%;
 }
+.article-thumb img:after {
+	content: 'Descarrega';
+	display: block;
+}
 @media (max-width: 1024px) {
 	.article-body {
 		display: block;
