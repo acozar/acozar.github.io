@@ -221,17 +221,13 @@ header, footer {
 	min-width: 102%;
 	max-width: 102%;
 }
+.article-thumb {
+	text-align: center;
+}
 .article-thumb img {
 	border: 8px solid #ffffff;
 	box-shadow: 0 0 2px 2px rgba(0,0,0,.5);
-	text-align: center;
 	width: 40%;
-}
-.article-thumb img:hover:after {
-	content: attr('Amplia');
-	position: absolute;
-	top: 40%;
-	
 }
 @media (max-width: 1024px) {
 	.article-body {
