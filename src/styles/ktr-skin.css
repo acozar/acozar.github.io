@@ -255,7 +255,6 @@ header, footer {
 }
 .text-slider div {
 	display: inline;
-	text-indent: 8px;
 }
 .text-slider span {
 	-webkit-animation: textSliding 7.5s linear infinite 0s;
