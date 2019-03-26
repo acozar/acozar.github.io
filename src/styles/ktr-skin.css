@@ -255,6 +255,7 @@ header, footer {
 .text-slider h2 {
 	font-size: 96px;
 	line-height: 96px;
+	margin: 0 auto 64px;
 	text-transform: uppercase;
 }
 .text-slider div {
