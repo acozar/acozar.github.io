@@ -290,6 +290,11 @@ header, footer {
 .text-slider p {
 	font-size: 48px;
 }
+@media screen and (max-width: 1024px) {
+	.text-slider h2 {
+		font-size: 64px;
+	}
+}
 @-webkit-keyframes textSliding{
 	0% { opacity: 0; }
 	5% { opacity: 0; -webkit-transform: translateY(-50px); }
