@@ -247,6 +247,7 @@ header, footer {
 
 .text-slider {
 	display: block;
+	padding: 32px;
 	position: relative;
 	text-align: center;
 }
