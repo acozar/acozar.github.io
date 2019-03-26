@@ -253,6 +253,7 @@ header, footer {
 	text-align: center;
 }
 .text-slider h2 {
+	font-size: 48px;
 	text-transform: uppercase;
 }
 .text-slider div {
