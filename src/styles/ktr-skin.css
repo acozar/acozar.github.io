@@ -265,6 +265,8 @@ header, footer {
 	opacity: 0;
 	overflow: hidden;
 	position: absolute;
+	left: 0;
+	right: 0;
 }
 .text-slider span:nth-child(2){
 	animation-delay: 2.5s;
