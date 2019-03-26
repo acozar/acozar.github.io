@@ -255,13 +255,12 @@ header, footer {
 }
 .text-slider div {
 	display: inline;
-	padding: 32px;
 	text-indent: 8px;
 }
 .text-slider span {
-	-webkit-animation: textSliding 12.5s linear infinite 0s;
-		-ms-animation: textSliding 12.5s linear infinite 0s;
-			animation: textSliding 12.5s linear infinite 0s;
+	-webkit-animation: textSliding 7.5s linear infinite 0s;
+		-ms-animation: textSliding 7.5s linear infinite 0s;
+			animation: textSliding 7.5s linear infinite 0s;
 	opacity: 0;
 	overflow: hidden;
 	position: absolute;
