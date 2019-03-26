@@ -247,13 +247,14 @@ header, footer {
 
 .text-slider {
 	display: block;
-	margin: 0 auto 32px;
+	margin: 0 auto 64px;
 	padding: 32px 0;
 	position: relative;
 	text-align: center;
 }
 .text-slider h2 {
 	font-size: 96px;
+	line-height: 96px;
 	text-transform: uppercase;
 }
 .text-slider div {
