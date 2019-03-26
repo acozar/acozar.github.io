@@ -250,6 +250,9 @@ header, footer {
 	position: relative;
 	text-align: center;
 }
+.text-slider h2 {
+	text-transform: uppercase;
+}
 .text-slider div {
 	display: inline;
 	text-indent: 8px;
