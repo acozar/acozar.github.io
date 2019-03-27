@@ -267,11 +267,11 @@ header, footer {
 	position: absolute;
 	left: 0;
 	right: 0;
-	-webkit-animation: textSliding 14s ease infinite 0s;
-	   -moz-animation: textSliding 14s ease infinite 0s;
-		-ms-animation: textSliding 14s ease infinite 0s;
-		-o-animation: textSliding 14s ease infinite 0s;
-			animation: textSliding 14s ease infinite 0s;
+	-webkit-animation: textSliding 11s ease infinite 0s;
+	   -moz-animation: textSliding 11s ease infinite 0s;
+		-ms-animation: textSliding 11s ease infinite 0s;
+		-o-animation: textSliding 11s ease infinite 0s;
+			animation: textSliding 11s ease infinite 0s;
 }
 .text-slider span:nth-child(2){
 	-webkit-animation-delay: 4s;
