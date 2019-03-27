@@ -274,18 +274,23 @@ header, footer {
 			animation: textSliding 7.5s ease infinite 0s;
 }
 .text-slider span:nth-child(2){
-	-webkit-animation-delay: 2.5s;
-	   -moz-animation-delay: 2.5s;
-		-ms-animation-delay: 2.5s;
-		-o-animation-delay: 2.5s;
-			animation-delay: 2.5s;
+	-webkit-animation-delay: 2.75s;
+	   -moz-animation-delay: 2.75s;
+		-ms-animation-delay: 2.75s;
+		-o-animation-delay: 2.75s;
+			animation-delay: 2.75s;
 }
 .text-slider span:nth-child(3){
-	-webkit-animation-delay: 5s;
-	   -moz-animation-delay: 5s;
-		-ms-animation-delay: 5s;
-		 -o-animation-delay: 5s;
-			animation-delay: 5s;
+	-webkit-animation-delay: 5.25s;
+	   -moz-animation-delay: 5.25s;
+		-ms-animation-delay: 5.25s;
+		 -o-animation-delay: 5.25s;
+			animation-delay: 5.25s;
+	-webkit-animation: textSliding 8s ease infinite 0s;
+	   -moz-animation: textSliding 8s ease infinite 0s;
+		-ms-animation: textSliding 8s ease infinite 0s;
+		-o-animation: textSliding 8s ease infinite 0s;
+			animation: textSliding 8s ease infinite 0s;
 }
 .text-slider p {
 	font-size: 48px;
