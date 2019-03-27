@@ -292,7 +292,7 @@ header, footer {
 }
 @media screen and (max-width: 1024px) {
 	.text-slider h2 {
-		font-size: 64px;
+		font-size: 48px;
 	}
 }
 @-webkit-keyframes textSliding{
