@@ -23,6 +23,23 @@ a:active, label:active, button:active {
 	cursor: url('http://acozar.github.io/src/cursors/cursorpointerred.png'), auto !important;
 }
 
+/* Responsive hacks */
+
+.mobile {
+	display: none;
+}
+.desktop {
+	display: block;
+}
+@media screen and (max-width: 1024px) {
+	.mobile {
+		display: block;
+	}
+	.desktop {
+		display: none;
+	}
+}
+
 /* Blockquote */
 
 blockquote {
