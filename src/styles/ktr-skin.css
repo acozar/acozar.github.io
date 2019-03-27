@@ -593,9 +593,11 @@ header, footer {
 /* The Raven */
 
 .ktr-raven {
+	border-radius: 50%;
 	display: block;
+	height: 320px;
 	margin: 0 auto;
-	width: 50%;
+	width: 320px;
 	-webkit-animation: moveFromBottomFade .7s ease both;
 	-moz-animation: moveFromBottomFade .7s ease both;
 	-o-animation: moveFromBottomFade .7s ease both;
