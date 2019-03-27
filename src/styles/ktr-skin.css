@@ -262,11 +262,11 @@ header, footer {
 	display: inline;
 }
 .text-slider span {
-	-webkit-animation: textSliding 15s linear infinite 0s;
-	   -moz-animation: textSliding 15s linear infinite 0s;
-		-ms-animation: textSliding 15s linear infinite 0s;
-		-o-animation: textSliding 15s linear infinite 0s;
-			animation: textSliding 15s linear infinite 0s;
+	-webkit-animation: textSliding 15s ease infinite 0s;
+	   -moz-animation: textSliding 15s ease infinite 0s;
+		-ms-animation: textSliding 15s ease infinite 0s;
+		-o-animation: textSliding 15s ease infinite 0s;
+			animation: textSliding 15s ease infinite 0s;
 	opacity: 0;
 	overflow: hidden;
 	position: absolute;
