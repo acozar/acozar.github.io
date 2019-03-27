@@ -342,6 +342,9 @@ header, footer {
 }
 
 .ktr-landing-first {
+	display: block;
+	margin: 0 auto 64px;
+	width: 80%;
 	text-align: center;
 }
 
