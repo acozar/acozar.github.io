@@ -597,6 +597,8 @@ header, footer {
 	display: block;
 	height: 240px;
 	margin: 0 auto 64px;
+	object-fit: cover;
+	object-position: center;
 	width: 240px;
 	-webkit-animation: moveFromBottomFade .7s ease both;
 	-moz-animation: moveFromBottomFade .7s ease both;
