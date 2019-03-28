@@ -133,13 +133,13 @@
 	content: "";
 	position: absolute;
 	top: -5px;
-	box-shadow: 0 0 12px #aaa;
+	box-shadow: 0 0 12px #999;
 	left: 50%;
 	margin-left: -5px;
 	width: 5px;
 	height: 5px;
 	border-radius: 50%;
-	background-color: #ddd;
+	background-color: #777;
 	-webkit-animation: particle_ 2s infinite linear;
 	-moz-animation: particle_ 2s infinite linear;
 	-o-animation: particle_ 2s infinite linear;
@@ -208,7 +208,7 @@
     box-shadow: 0 0 0 transparent;
   }
   50% {
-    box-shadow: 0 0 25px #ddd;
+    box-shadow: 0 0 25px #777;
   }
 }
 @keyframes nucleus_ {
@@ -216,7 +216,7 @@
     box-shadow: 0 0 0 transparent;
   }
   50% {
-    box-shadow: 0 0 25px #ddd;
+    box-shadow: 0 0 25px #777;
   }
 }
 
