@@ -28,8 +28,10 @@
 
 .atom-system {
 	margin-bottom: 64px;
+	position: relative;
 }
-.atom {
+.atom,
+.yin-yang {
 	border: 1px solid #666;
 	border-radius: 50%;
 	clear: both;
@@ -52,6 +54,11 @@
 	-o-transform: scale(1);
 	transform: scale(1);
 	opacity: 1;
+}
+.yin-yang {
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 @media screen and (max-width: 767px) , screen and (max-height: 600px) {
 	.atom {
