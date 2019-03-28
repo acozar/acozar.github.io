@@ -30,8 +30,7 @@
 	margin-bottom: 64px;
 	position: relative;
 }
-.atom,
-.yin-yang {
+.atom {
 	border: 1px solid #666;
 	border-radius: 50%;
 	clear: both;
@@ -59,6 +58,13 @@
 	position: absolute;
 	top: 0;
 	left: 0;
+	text-align: center;
+}
+.yin-yang img {
+	-webkit-animation: loopRotate 10s infinite linear;
+	-moz-animation: loopRotate 10s infinite linear;
+	-o-animation: loopRotate 10s infinite linear;
+	animation: loopRotate 10s infinite linear;
 }
 @media screen and (max-width: 767px) , screen and (max-height: 600px) {
 	.atom {
