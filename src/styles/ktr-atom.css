@@ -58,9 +58,19 @@
 	position: absolute;
 	top: 0;
 	left: 0;
+	right: 0;
 	text-align: center;
+	-webkit-transform: scale(3);
+	-moz-transform: scale(3);
+	-o-transform: scale(3);
+	transform: scale(3);
+	opacity: 0;
 }
 .yin-yang img {
+	display: block;
+	margin: 120px auto;
+	height: 200px;
+	width: 200px;
 	-webkit-animation: loopRotate 10s infinite linear;
 	-moz-animation: loopRotate 10s infinite linear;
 	-o-animation: loopRotate 10s infinite linear;
@@ -258,12 +268,12 @@
 	transform: scale(3);
 	opacity: 0;
 }
-.atom-system input:checked ~ . {
+.atom-system input:checked ~ .yin-yang {
 	-webkit-transform: scale(0);
 	-moz-transform: scale(0);
 	-o-transform: scale(0);
 	transform: scale(0);
-	opacity: 0;
+	opacity: 1;
 }
 
 /* The end */
