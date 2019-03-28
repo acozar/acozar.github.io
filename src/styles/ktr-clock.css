@@ -30,19 +30,13 @@
 
 /* Clock */
 
-.clock-case,
-.clock-case-back,
-.clock-dial,
-.clock-second-hand,
-.clock-minute-hand,
-.clock-hour-hand,
-.clock-zenit-hand,
-.clock-horizon,
-.clock-nut {
-	position: absolute;
+.clock {
+	display: block;
+	overflow: hidden;
+	width: 100%;
 }
 
-.clock {
+.clock-model {
 	border: 2px solid colorCurrent;
 	display: block;
 	margin: 6vh auto;
@@ -74,6 +68,17 @@
 	   -moz-perspective: 1200px;
 	   	 -o-perspective: 1200px;
 			perspective: 1200px;
+}
+.clock-case,
+.clock-case-back,
+.clock-dial,
+.clock-second-hand,
+.clock-minute-hand,
+.clock-hour-hand,
+.clock-zenit-hand,
+.clock-horizon,
+.clock-nut {
+	position: absolute;
 }
 .clock-case,
 .clock-case-back {
