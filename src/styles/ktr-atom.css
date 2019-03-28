@@ -80,6 +80,9 @@
 	animation: loopRotate 10s infinite linear;
 }
 @media screen and (max-height: 600px) {
+	.atom-system {
+		width: 320px;
+	}
 	.atom {
 		height: 220px;
 		width: 220px;
