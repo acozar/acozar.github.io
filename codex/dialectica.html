@@ -24,6 +24,7 @@
 		<link href="https://acozar.github.io/src/styles/ktr-skin.css" rel="stylesheet" media="screen">
 		<link href="https://acozar.github.io/src/styles/ktr-atom.css" rel="stylesheet" media="screen">
 		<link href="https://acozar.github.io/src/styles/ktr-solar-system.css" rel="stylesheet" media="screen">
+		<link href="https://acozar.github.io/src/styles/ktr-clock.css" rel="stylesheet" media="screen">
 		<link href="https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica" rel="stylesheet">
 		<!-- Print styles -->
 		<link href="https://acozar.github.io/src/styles/print.css" rel="stylesheet" media="print">
@@ -168,6 +169,34 @@
 						<p>que engendra la realitat.</p>
 					</div>
 					<hr>
+					
+					<div class="clock">
+						<input type="checkbox" id="clock-1" name="flip-clock" hidden>
+						<div class="clock-case">
+							<div class="clock-dial">
+								<div class="clock-second-hand"></div>
+								<div class="clock-minute-hand"></div>
+								<div class="clock-hour-hand"></div>
+								<div class="clock-zenit-hand"></div>
+								<div class="clock-horizon"></div>
+								<div class="clock-nut"></div>
+								<div class="clock-ratio"></div>
+							</div>
+						</div>
+						<div class="clock-case-back">
+							<div class="clock-back">
+								<div class="clock-data">
+									<h3><a href="http://www.acozar.com" title="www.acozar.com">www.acozar.com</a></h3>
+									<p><a href="mailto:info@acozar.com">info@acozar.com</a></p>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<span class="ktr-button-section"><em><label for="clock-1" title="Info"><span>&#4042;</span></label></em></span>
+					</div>
+					<hr>
+
+					
 					<div class="ktr-verse">
 						<p>Positiu i negatiu.
 						Àcid i bàsic.
@@ -316,6 +345,7 @@
 		<script src="https://acozar.github.io/src/scripts/jquery.js" type="text/javascript"></script>
 		<script src="https://acozar.github.io/src/scripts/moon-phase.js" type="text/javascript"></script>
 		<script src="https://acozar.github.io/src/scripts/sun-phase.js" type="text/javascript"></script>
+		<script src="https://acozar.github.io/src/scripts/clock.js" type="text/javascript"></script>
 		<script src="https://acozar.github.io/src/scripts/ga.js" type="text/javascript"></script>
 	</body>
 </html>

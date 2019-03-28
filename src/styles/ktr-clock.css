@@ -46,8 +46,8 @@
 	border: 2px solid colorCurrent;
 	display: block;
 	margin: 6vh auto;
-	max-width: 80vh;
-	min-height: 80vh;
+	max-width: 50vh;
+	min-height: 50vh;
 	height: auto;
 	position: relative;
  	-webkit-animation-name: fadeIn;
