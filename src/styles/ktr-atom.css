@@ -27,8 +27,11 @@
 }
 
 .atom-system {
+	display: block;
 	margin-bottom: 64px;
+	overflow: hidden;
 	position: relative;
+	max-width: 100%;
 }
 .atom {
 	border: 1px solid #666;
