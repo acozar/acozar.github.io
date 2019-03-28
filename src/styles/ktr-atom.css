@@ -28,7 +28,7 @@
 
 .atom-system {
 	display: block;
-	margin-bottom: 64px;
+	margin: 0 auto 64px;
 	overflow: hidden;
 	position: relative;
 	width: 420px;
