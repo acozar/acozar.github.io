@@ -28,10 +28,6 @@
 
 .atom-system {
 	margin-bottom: 64px;
-	-webkit-animation: loopRotate 10s infinite linear;
-	-moz-animation: loopRotate 10s infinite linear;
-	-o-animation: loopRotate 10s infinite linear;
-	animation: loopRotate 10s infinite linear;
 }
 .atom {
 	border: 1px solid #666;
@@ -47,10 +43,10 @@
 	-moz-transform: scale(1.2, 1.2);
 	-o-transform: scale(1.2, 1.2);
 	transform: scale(1.2, 1.2);
-	-webkit-animation: rotation 10s infinite linear;
-	-moz-animation: rotation 10s infinite linear;
-	-o-animation: rotation 10s infinite linear;
-	animation: rotation 10s infinite linear;
+	-webkit-animation: loopRotate 10s infinite linear;
+	-moz-animation: loopRotate 10s infinite linear;
+	-o-animation: loopRotate 10s infinite linear;
+	animation: loopRotate 10s infinite linear;
 	-webkit-transform: scale(1);
 	-moz-transform: scale(1);
 	-o-transform: scale(1);
