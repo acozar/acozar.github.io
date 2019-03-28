@@ -358,11 +358,18 @@ header, footer {
 	100% { opacity: 0; }
 }
 
-.ktr-landing-first {
+.ktr-landing-first,
+.ktr-verse {
 	display: block;
 	margin: 0 auto 64px;
 	width: 80%;
 	text-align: center;
+}
+.ktr-verse p {
+	-webkit-animation: fadeIn .7s ease both;
+	-moz-animation: fadeIn .7s ease both;
+	-o-animation: fadeIn .7s ease both;
+	animation: fadeIn .7s ease both;
 }
 
 /* KTR footer */

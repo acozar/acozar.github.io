@@ -163,9 +163,9 @@
 	border-radius: 50%;
 	background-color: #444;
 	-webkit-animation: particle_ 2s infinite linear;
-	-moz-animation: particle_ 2s infinite linear;
-	-o-animation: particle_ 2s infinite linear;
-		  animation: particle_ 2s infinite linear;
+	   -moz-animation: particle_ 2s infinite linear;
+		 -o-animation: particle_ 2s infinite linear;
+			animation: particle_ 2s infinite linear;
 }
 
 @-webkit-keyframes trail_ {
