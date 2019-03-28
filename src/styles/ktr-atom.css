@@ -68,7 +68,7 @@
 }
 .yin-yang img {
 	display: block;
-	margin: 160px auto;
+	margin: 100px auto;
 	height: 200px;
 	width: 200px;
 	-webkit-animation: loopRotate 10s infinite linear;
@@ -76,7 +76,7 @@
 	-o-animation: loopRotate 10s infinite linear;
 	animation: loopRotate 10s infinite linear;
 }
-@media screen and (max-width: 767px) , screen and (max-height: 600px) {
+@media screen and (max-height: 600px) {
 	.atom {
 		height: 220px;
 		width: 220px;
