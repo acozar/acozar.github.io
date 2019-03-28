@@ -371,10 +371,6 @@ header, footer {
 	-o-animation: fadeIn .7s ease both;
 	animation: fadeIn .7s ease both;
 }
-.ktr-button em label {
-	padding: 0;
-	text-indent: -1;
-}
 
 /* KTR footer */
 
