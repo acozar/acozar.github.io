@@ -373,6 +373,7 @@ header, footer {
 }
 .ktr-button em label {
 	padding: 0;
+	text-indent: -1;
 }
 
 /* KTR footer */
