@@ -9,7 +9,7 @@
 /* The Atom */
 
 .atom-system {
-	margin-bottom: 128px;
+	margin-bottom: 64px;
 }
 .atom {
 	border: 1px solid #666;
@@ -18,7 +18,7 @@
 	display: block;
 	height: 400px;
 	width: 400px;
-	margin: 64px auto 0;
+	margin: 32px auto 0;
 	overflow: hidden;
 	position: relative;
 	-webkit-transform: scale(1.2, 1.2);
@@ -73,7 +73,7 @@
 	-moz-transform: rotateX(-80deg) rotateY(0);
 	-o-transform: rotateX(-80deg) rotateY(0);
 		  transform: rotateX(-80deg) rotateY(0);
-	box-shadow: 0 0 25px #333;
+	box-shadow: 0 0 25px #666;
 	-webkit-animation: nucleus_ 2s infinite linear;
 	-moz-animation: nucleus_ 2s infinite linear;
 	-o-animation: nucleus_ 2s infinite linear;
