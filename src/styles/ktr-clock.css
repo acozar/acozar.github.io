@@ -39,9 +39,9 @@
 .clock-model {
 	border: 2px solid colorCurrent;
 	display: block;
-	margin: 6vh auto;
-	max-width: 50vh;
-	min-height: 50vh;
+	margin: 32px auto 64px;
+	max-width: 70vh;
+	min-height: 70vh;
 	height: auto;
 	position: relative;
  	-webkit-animation-name: fadeIn;
