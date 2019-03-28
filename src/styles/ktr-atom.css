@@ -8,8 +8,30 @@
 
 /* The Atom */
 
+
+@-webkit-keyframes loopRotate {
+  from { -webkit-transform:  rotateZ(0deg); }
+  to { -webkit-transform:  rotateZ(360deg); }
+}
+@-moz-keyframes loopRotate {
+  from { -moz-transform:  rotateZ(0deg); }
+  to { -moz-transform:  rotateZ(360deg); }
+}
+@-o-keyframes loopRotate {
+  from { -moz-transform:  rotateZ(0deg); }
+  to { -moz-transform:  rotateZ(360deg); }
+}
+@keyframes loopRotate {
+  from { transform:  rotateZ(0deg); }
+  to { transform:  rotateZ(360deg); }
+}
+
 .atom-system {
 	margin-bottom: 64px;
+	-webkit-animation: loopRotate 10s infinite linear;
+	-moz-animation: loopRotate 10s infinite linear;
+	-o-animation: loopRotate 10s infinite linear;
+	animation: loopRotate 10s infinite linear;
 }
 .atom {
 	border: 1px solid #666;
@@ -133,13 +155,13 @@
 	content: "";
 	position: absolute;
 	top: -5px;
-	box-shadow: 0 0 12px #999;
+	box-shadow: 0 0 12px #555;
 	left: 50%;
 	margin-left: -5px;
 	width: 5px;
 	height: 5px;
 	border-radius: 50%;
-	background-color: #777;
+	background-color: #444;
 	-webkit-animation: particle_ 2s infinite linear;
 	-moz-animation: particle_ 2s infinite linear;
 	-o-animation: particle_ 2s infinite linear;
