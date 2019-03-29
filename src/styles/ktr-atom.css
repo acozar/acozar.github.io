@@ -87,6 +87,9 @@
 		height: 220px;
 		width: 220px;
 	}
+	.yin-yang img {
+		margin: 50px auto;
+	}
 }
 .atom > div {
 	position: absolute;
