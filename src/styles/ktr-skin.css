@@ -359,11 +359,15 @@ header, footer {
 }
 
 .ktr-landing-first,
-.ktr-verse {
+.ktr-verse,
+.ktr-prose {
 	display: block;
 	margin: 0 auto 64px;
 	width: 80%;
 	text-align: center;
+}
+.ktr-prose {
+	text-align: left;
 }
 .ktr-verse p {
 	-webkit-animation: fadeIn .7s ease both;
