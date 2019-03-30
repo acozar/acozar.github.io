@@ -33,6 +33,7 @@
 .clock {
 	display: block;
 	overflow: hidden;
+	padding-bottom: 32px;
 	text-align: center;
 	width: 100%;
 }
