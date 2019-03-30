@@ -8,7 +8,8 @@
 
 /* Inspired in ~sanitize.css - http://nicolasgallagher.com/micro-clearfix-hack/ */
 
-.dna-box {
+.dna-box,
+.dna {
 	display: block;
 	margin: 0 auto 64px;
 	text-align: center;
