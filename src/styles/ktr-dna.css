@@ -19,6 +19,8 @@
   width: 150px;
   height: 400px;
   -webkit-perspective: 2500px;
+  -moz-perspective: 2500px;
+  -o-perspective: 2500px;
           perspective: 2500px;
 }
 
@@ -26,8 +28,12 @@
   width: 180px;
   height: 15px;
   -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-transform-origin: center center 0;
+  -moz-transform-origin: center center 0;
+  -o-transform-origin: center center 0;
           transform-origin: center center 0;
   animation: spin 4000ms reverse linear infinite;
   background-size: 100% 3px;
@@ -41,208 +47,310 @@
   height: 10px;
   border-radius: 50%;
   -webkit-animation: spin 4000ms linear infinite;
+  -moz-animation: spin 4000ms linear infinite;
+  -o-animation: spin 4000ms linear infinite;
           animation: spin 4000ms linear infinite;
   content: '';
 }
 .bases:before {
   -webkit-transform: translate(-5px, -5px);
+  -moz-transform: translate(-5px, -5px);
+  -o-transform: translate(-5px, -5px);
           transform: translate(-5px, -5px);
 }
 .bases:after {
   float: right;
   -webkit-transform: translate(5px, 3px);
+  -moz-transform: translate(5px, 3px);
+  -o-transform: translate(5px, 3px);
           transform: translate(5px, 3px);
 }
 .bases:nth-of-type(0) {
   -webkit-animation-delay: 0ms;
+  -moz-animation-delay: 0ms;
+  -o-animation-delay: 0ms;
           animation-delay: 0ms;
 }
 .bases:nth-of-type(0):before, .bases:nth-of-type(0):after {
   -webkit-animation-delay: 0ms;
+  -moz-animation-delay: 0ms;
+  -o-animation-delay: 0ms;
           animation-delay: 0ms;
 }
 .bases:nth-of-type(1) {
   -webkit-animation-delay: -173.9130434783ms;
+  -moz-animation-delay: -173.9130434783ms;
+  -o-animation-delay: -173.9130434783ms;
           animation-delay: -173.9130434783ms;
 }
 .bases:nth-of-type(1):before, .bases:nth-of-type(1):after {
   -webkit-animation-delay: -173.9130434783ms;
+  -moz-animation-delay: -173.9130434783ms;
+  -o-animation-delay: -173.9130434783ms;
           animation-delay: -173.9130434783ms;
 }
 .bases:nth-of-type(2) {
   -webkit-animation-delay: -347.8260869565ms;
+  -moz-animation-delay: -347.8260869565ms;
+  -o-animation-delay: -347.8260869565ms;
           animation-delay: -347.8260869565ms;
 }
 .bases:nth-of-type(2):before, .bases:nth-of-type(2):after {
   -webkit-animation-delay: -347.8260869565ms;
+  -moz-animation-delay: -347.8260869565ms;
+  -o-animation-delay: -347.8260869565ms;
           animation-delay: -347.8260869565ms;
 }
 .bases:nth-of-type(3) {
   -webkit-animation-delay: -521.7391304348ms;
+  -moz-animation-delay: -521.7391304348ms;
+  -o-animation-delay: -521.7391304348ms;
           animation-delay: -521.7391304348ms;
 }
 .bases:nth-of-type(3):before, .bases:nth-of-type(3):after {
   -webkit-animation-delay: -521.7391304348ms;
+  -moz-animation-delay: -521.7391304348ms;
+  -o-animation-delay: -521.7391304348ms;
           animation-delay: -521.7391304348ms;
 }
 .bases:nth-of-type(4) {
   -webkit-animation-delay: -695.652173913ms;
+  -moz-animation-delay: -695.652173913ms;
+  -o-animation-delay: -695.652173913ms;
           animation-delay: -695.652173913ms;
 }
 .bases:nth-of-type(4):before, .bases:nth-of-type(4):after {
   -webkit-animation-delay: -695.652173913ms;
+  -moz-animation-delay: -695.652173913ms;
+  -o-animation-delay: -695.652173913ms;
           animation-delay: -695.652173913ms;
 }
 .bases:nth-of-type(5) {
   -webkit-animation-delay: -869.5652173913ms;
+  -moz-animation-delay: -869.5652173913ms;
+  -o-animation-delay: -869.5652173913ms;
           animation-delay: -869.5652173913ms;
 }
 .bases:nth-of-type(5):before, .bases:nth-of-type(5):after {
   -webkit-animation-delay: -869.5652173913ms;
+  -moz-animation-delay: -869.5652173913ms;
+  -o-animation-delay: -869.5652173913ms;
           animation-delay: -869.5652173913ms;
 }
 .bases:nth-of-type(6) {
   -webkit-animation-delay: -1043.4782608696ms;
+  -moz-animation-delay: -1043.4782608696ms;
+  -o-animation-delay: -1043.4782608696ms;
           animation-delay: -1043.4782608696ms;
 }
 .bases:nth-of-type(6):before, .bases:nth-of-type(6):after {
   -webkit-animation-delay: -1043.4782608696ms;
+  -moz-animation-delay: -1043.4782608696ms;
+  -o-animation-delay: -1043.4782608696ms;
           animation-delay: -1043.4782608696ms;
 }
 .bases:nth-of-type(7) {
   -webkit-animation-delay: -1217.3913043478ms;
+  -moz-animation-delay: -1217.3913043478ms;
+  -o-animation-delay: -1217.3913043478ms;
           animation-delay: -1217.3913043478ms;
 }
 .bases:nth-of-type(7):before, .bases:nth-of-type(7):after {
   -webkit-animation-delay: -1217.3913043478ms;
+  -moz-animation-delay: -1217.3913043478ms;
+  -o-animation-delay: -1217.3913043478ms;
           animation-delay: -1217.3913043478ms;
 }
 .bases:nth-of-type(8) {
   -webkit-animation-delay: -1391.3043478261ms;
+  -moz-animation-delay: -1391.3043478261ms;
+  -o-animation-delay: -1391.3043478261ms;
           animation-delay: -1391.3043478261ms;
 }
 .bases:nth-of-type(8):before, .bases:nth-of-type(8):after {
   -webkit-animation-delay: -1391.3043478261ms;
+  -moz-animation-delay: -1391.3043478261ms;
+  -o-animation-delay: -1391.3043478261ms;
           animation-delay: -1391.3043478261ms;
 }
 .bases:nth-of-type(9) {
   -webkit-animation-delay: -1565.2173913043ms;
+  -moz-animation-delay: -1565.2173913043ms;
+  -o-animation-delay: -1565.2173913043ms;
           animation-delay: -1565.2173913043ms;
 }
 .bases:nth-of-type(9):before, .bases:nth-of-type(9):after {
   -webkit-animation-delay: -1565.2173913043ms;
+  -moz-animation-delay: -1565.2173913043ms;
+  -o-animation-delay: -1565.2173913043ms;
           animation-delay: -1565.2173913043ms;
 }
 .bases:nth-of-type(10) {
   -webkit-animation-delay: -1739.1304347826ms;
+  -moz-animation-delay: -1739.1304347826ms;
+  -o-animation-delay: -1739.1304347826ms;
           animation-delay: -1739.1304347826ms;
 }
 .bases:nth-of-type(10):before, .bases:nth-of-type(10):after {
   -webkit-animation-delay: -1739.1304347826ms;
+  -moz-animation-delay: -1739.1304347826ms;
+  -o-animation-delay: -1739.1304347826ms;
           animation-delay: -1739.1304347826ms;
 }
 .bases:nth-of-type(11) {
   -webkit-animation-delay: -1913.0434782609ms;
+  -moz-animation-delay: -1913.0434782609ms;
+  -o-animation-delay: -1913.0434782609ms;
           animation-delay: -1913.0434782609ms;
 }
 .bases:nth-of-type(11):before, .bases:nth-of-type(11):after {
   -webkit-animation-delay: -1913.0434782609ms;
+  -moz-animation-delay: -1913.0434782609ms;
+  -o-animation-delay: -1913.0434782609ms;
           animation-delay: -1913.0434782609ms;
 }
 .bases:nth-of-type(12) {
   -webkit-animation-delay: -2086.9565217391ms;
+  -moz-animation-delay: -2086.9565217391ms;
+  -o-animation-delay: -2086.9565217391ms;
           animation-delay: -2086.9565217391ms;
 }
 .bases:nth-of-type(12):before, .bases:nth-of-type(12):after {
   -webkit-animation-delay: -2086.9565217391ms;
+  -moz-animation-delay: -2086.9565217391ms;
+  -o-animation-delay: -2086.9565217391ms;
           animation-delay: -2086.9565217391ms;
 }
 .bases:nth-of-type(13) {
   -webkit-animation-delay: -2260.8695652174ms;
+  -moz-animation-delay: -2260.8695652174ms;
+  -o-animation-delay: -2260.8695652174ms;
           animation-delay: -2260.8695652174ms;
 }
 .bases:nth-of-type(13):before, .bases:nth-of-type(13):after {
   -webkit-animation-delay: -2260.8695652174ms;
+  -moz-animation-delay: -2260.8695652174ms;
+  -o-animation-delay: -2260.8695652174ms;
           animation-delay: -2260.8695652174ms;
 }
 .bases:nth-of-type(14) {
   -webkit-animation-delay: -2434.7826086957ms;
+  -moz-animation-delay: -2434.7826086957ms;
+  -o-animation-delay: -2434.7826086957ms;
           animation-delay: -2434.7826086957ms;
 }
 .bases:nth-of-type(14):before, .bases:nth-of-type(14):after {
   -webkit-animation-delay: -2434.7826086957ms;
+  -moz-animation-delay: -2434.7826086957ms;
+  -o-animation-delay: -2434.7826086957ms;
           animation-delay: -2434.7826086957ms;
 }
 .bases:nth-of-type(15) {
   -webkit-animation-delay: -2608.6956521739ms;
+  -moz-animation-delay: -2608.6956521739ms;
+  -o-animation-delay: -2608.6956521739ms;
           animation-delay: -2608.6956521739ms;
 }
 .bases:nth-of-type(15):before, .bases:nth-of-type(15):after {
   -webkit-animation-delay: -2608.6956521739ms;
+  -moz-animation-delay: -2608.6956521739ms;
+  -o-animation-delay: -2608.6956521739ms;
           animation-delay: -2608.6956521739ms;
 }
 .bases:nth-of-type(16) {
   -webkit-animation-delay: -2782.6086956522ms;
+  -moz-animation-delay: -2782.6086956522ms;
+  -o-animation-delay: -2782.6086956522ms;
           animation-delay: -2782.6086956522ms;
 }
 .bases:nth-of-type(16):before, .bases:nth-of-type(16):after {
   -webkit-animation-delay: -2782.6086956522ms;
+  -moz-animation-delay: -2782.6086956522ms;
+  -o-animation-delay: -2782.6086956522ms;
           animation-delay: -2782.6086956522ms;
 }
 .bases:nth-of-type(17) {
   -webkit-animation-delay: -2956.5217391304ms;
+  -moz-animation-delay: -2956.5217391304ms;
+  -o-animation-delay: -2956.5217391304ms;
           animation-delay: -2956.5217391304ms;
 }
 .bases:nth-of-type(17):before, .bases:nth-of-type(17):after {
   -webkit-animation-delay: -2956.5217391304ms;
+  -moz-animation-delay: -2956.5217391304ms;
+  -o-animation-delay: -2956.5217391304ms;
           animation-delay: -2956.5217391304ms;
 }
 .bases:nth-of-type(18) {
   -webkit-animation-delay: -3130.4347826087ms;
+  -moz-animation-delay: -3130.4347826087ms;
+  -o-animation-delay: -3130.4347826087ms;
           animation-delay: -3130.4347826087ms;
 }
 .bases:nth-of-type(18):before, .bases:nth-of-type(18):after {
   -webkit-animation-delay: -3130.4347826087ms;
+  -moz-animation-delay: -3130.4347826087ms;
+  -o-animation-delay: -3130.4347826087ms;
           animation-delay: -3130.4347826087ms;
 }
 .bases:nth-of-type(19) {
   -webkit-animation-delay: -3304.347826087ms;
+  -moz-animation-delay: -3304.347826087ms;
+  -o-animation-delay: -3304.347826087ms;
           animation-delay: -3304.347826087ms;
 }
 .bases:nth-of-type(19):before, .bases:nth-of-type(19):after {
   -webkit-animation-delay: -3304.347826087ms;
+  -moz-animation-delay: -3304.347826087ms;
+  -o-animation-delay: -3304.347826087ms;
           animation-delay: -3304.347826087ms;
 }
 .bases:nth-of-type(20) {
   -webkit-animation-delay: -3478.2608695652ms;
+  -moz-animation-delay: -3478.2608695652ms;
+  -o-animation-delay: -3478.2608695652ms;
           animation-delay: -3478.2608695652ms;
 }
 .bases:nth-of-type(20):before, .bases:nth-of-type(20):after {
   -webkit-animation-delay: -3478.2608695652ms;
+  -moz-animation-delay: -3478.2608695652ms;
+  -o-animation-delay: -3478.2608695652ms;
           animation-delay: -3478.2608695652ms;
 }
 .bases:nth-of-type(21) {
   -webkit-animation-delay: -3652.1739130435ms;
+  -moz-animation-delay: -3652.1739130435ms;
+  -o-animation-delay: -3652.1739130435ms;
           animation-delay: -3652.1739130435ms;
 }
 .bases:nth-of-type(21):before, .bases:nth-of-type(21):after {
   -webkit-animation-delay: -3652.1739130435ms;
+  -moz-animation-delay: -3652.1739130435ms;
+  -o-animation-delay: -3652.1739130435ms;
           animation-delay: -3652.1739130435ms;
 }
 .bases:nth-of-type(22) {
   -webkit-animation-delay: -3826.0869565217ms;
+  -moz-animation-delay: -3826.0869565217ms;
+  -o-animation-delay: -3826.0869565217ms;
           animation-delay: -3826.0869565217ms;
 }
 .bases:nth-of-type(22):before, .bases:nth-of-type(22):after {
   -webkit-animation-delay: -3826.0869565217ms;
+  -moz-animation-delay: -3826.0869565217ms;
+  -o-animation-delay: -3826.0869565217ms;
           animation-delay: -3826.0869565217ms;
 }
 .bases:nth-of-type(23) {
   -webkit-animation-delay: -4000ms;
+  -moz-animation-delay: -4000ms;
+  -o-animation-delay: -4000ms;
           animation-delay: -4000ms;
 }
 .bases:nth-of-type(23):before, .bases:nth-of-type(23):after {
   -webkit-animation-delay: -4000ms;
+  -moz-animation-delay: -4000ms;
+  -o-animation-delay: -4000ms;
           animation-delay: -4000ms;
 }
 .bases.at {
@@ -267,10 +375,14 @@
 @-webkit-keyframes spin {
   from {
     -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
             transform: rotateY(360deg);
   }
   to {
     -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
             transform: rotateY(0deg);
   }
 }
@@ -278,10 +390,14 @@
 @keyframes spin {
   from {
     -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
             transform: rotateY(360deg);
   }
   to {
     -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
             transform: rotateY(0deg);
   }
 }
