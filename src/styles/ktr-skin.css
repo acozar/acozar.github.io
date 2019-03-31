@@ -246,8 +246,16 @@ header, footer {
 	border: 8px solid #ffffff;
 	box-shadow: 0 0 2px 2px rgba(0,0,0,.25);
 	-webkit-clip-path: polygon(40% 10%, 60% 10%, 60% 50%, 80% 50%, 50% 90%, 20% 50%, 40% 50%);
+	-moz-clip-path: polygon(40% 10%, 60% 10%, 60% 50%, 80% 50%, 50% 90%, 20% 50%, 40% 50%);
+	-o-clip-path: polygon(40% 10%, 60% 10%, 60% 50%, 80% 50%, 50% 90%, 20% 50%, 40% 50%);
 	clip-path: polygon(40% 10%, 60% 10%, 60% 50%, 80% 50%, 50% 90%, 20% 50%, 40% 50%);
 	width: 20%;
+}
+.article-thumb img:hover {
+	-webkit-clip-path: none;
+	-moz-clip-path: none;
+	-o-clip-path: none;
+	clip-path: none;
 }
 @media (max-width: 1024px) {
 	.article-body {
