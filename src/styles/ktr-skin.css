@@ -243,10 +243,14 @@ header, footer {
 	text-align: center;
 }
 .article-thumb figure {
-	-webkit-clip-path: polygon(40% 10%, 60% 10%, 60% 50%, 80% 50%, 50% 90%, 20% 50%, 40% 50%);
-	-moz-clip-path: polygon(40% 10%, 60% 10%, 60% 50%, 80% 50%, 50% 90%, 20% 50%, 40% 50%);
-	-o-clip-path: polygon(40% 10%, 60% 10%, 60% 50%, 80% 50%, 50% 90%, 20% 50%, 40% 50%);
-	clip-path: polygon(40% 10%, 60% 10%, 60% 50%, 80% 50%, 50% 90%, 20% 50%, 40% 50%);
+	display: block;
+	margin: 0 auto;
+	object-fit: cover;
+	object-position: center;
+	-webkit-clip-path: polygon(40% 10%, 60% 10%, 60% 30%, 80% 50%, 50% 90%, 20% 50%, 40% 30%);
+	-moz-clip-path: polygon(40% 10%, 60% 10%, 60% 30%, 80% 50%, 50% 90%, 20% 50%, 40% 30%);
+	-o-clip-path: polygon(40% 10%, 60% 10%, 60% 30%, 80% 50%, 50% 90%, 20% 50%, 40% 30%);
+	clip-path: polygon(40% 10%, 60% 10%, 60% 30%, 80% 50%, 50% 90%, 20% 50%, 40% 30%);
 	width: 20%;
 }
 .article-thumb figure:hover {
