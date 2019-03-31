@@ -245,10 +245,10 @@ header, footer {
 .article-thumb figure {
 	display: block;
 	margin: 0 auto;
-	-webkit-clip-path: polygon(40% 10%, 60% 10%, 60% 30%, 80% 30%, 50% 80%, 20% 30%, 40% 30%);
-	-moz-clip-path: polygon(40% 10%, 60% 10%, 60% 30%, 80% 30%, 50% 80%, 20% 30%, 40% 30%);
-	-o-clip-path: polygon(40% 10%, 60% 10%, 60% 30%, 80% 30%, 50% 80%, 20% 30%, 40% 30%);
-	clip-path: polygon(40% 10%, 60% 10%, 60% 30%, 80% 30%, 50% 80%, 20% 30%, 40% 30%);
+	-webkit-clip-path: polygon(40% 10%, 60% 10%, 60% 30%, 80% 30%, 50% 70%, 20% 30%, 40% 30%);
+	-moz-clip-path: polygon(40% 10%, 60% 10%, 60% 30%, 80% 30%, 50% 70%, 20% 30%, 40% 30%);
+	-o-clip-path: polygon(40% 10%, 60% 10%, 60% 30%, 80% 30%, 50% 70%, 20% 30%, 40% 30%);
+	clip-path: polygon(40% 10%, 60% 10%, 60% 30%, 80% 30%, 50% 70%, 20% 30%, 40% 30%);
 	width: 20%;
 }
 .article-thumb figure:hover {
