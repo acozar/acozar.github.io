@@ -247,10 +247,10 @@ header, footer {
 	margin: 0 auto;
 	object-fit: cover;
 	object-position: center;
-	-webkit-clip-path: polygon(40% 10%, 60% 10%, 60% 30%, 80% 50%, 50% 90%, 20% 50%, 40% 30%);
-	-moz-clip-path: polygon(40% 10%, 60% 10%, 60% 30%, 80% 50%, 50% 90%, 20% 50%, 40% 30%);
-	-o-clip-path: polygon(40% 10%, 60% 10%, 60% 30%, 80% 50%, 50% 90%, 20% 50%, 40% 30%);
-	clip-path: polygon(40% 10%, 60% 10%, 60% 30%, 80% 50%, 50% 90%, 20% 50%, 40% 30%);
+	-webkit-clip-path: polygon(40% 10%, 60% 10%, 60% 30%, 80% 50%, 50% 80%, 20% 50%, 40% 30%);
+	-moz-clip-path: polygon(40% 10%, 60% 10%, 60% 30%, 80% 50%, 50% 80%, 20% 50%, 40% 30%);
+	-o-clip-path: polygon(40% 10%, 60% 10%, 60% 30%, 80% 50%, 50% 80%, 20% 50%, 40% 30%);
+	clip-path: polygon(40% 10%, 60% 10%, 60% 30%, 80% 50%, 50% 8 0%, 20% 50%, 40% 30%);
 	width: 20%;
 }
 .article-thumb figure:hover {
