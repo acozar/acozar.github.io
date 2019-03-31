@@ -245,8 +245,8 @@ header, footer {
 .article-thumb img {
 	border: 8px solid #ffffff;
 	box-shadow: 0 0 2px 2px rgba(0,0,0,.25);
-	-webkit-clip-path: polygon(30% 0%, 70% 0%, 70% 50%, 90% 50%, 50% 100%, 10% 50%, 30% 50%);
-	clip-path: polygon(30% 0%, 70% 0%, 70% 50%, 90% 50%, 50% 100%, 10% 50%, 30% 50%) ;
+	-webkit-clip-path: polygon(40% 10%, 60% 10%, 60% 50%, 90% 50%, 50% 90%, 10% 50%, 40% 50%);
+	clip-path: polygon(40% 10%, 60% 10%, 60% 50%, 90% 50%, 50% 90%, 10% 50%, 40% 50%);
 	width: 20%;
 }
 @media (max-width: 1024px) {
