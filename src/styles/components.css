@@ -1149,6 +1149,9 @@ input:not(:checked) ~ .alert + em label {
 
 /* Lightbox */
 
+[id*='lightbox'] + .overlay-transparent {
+	display: none;
+}
 [id*='lightbox']:hover,
 [id*='lightbox']:visited,
 [id*='lightbox']:active,
