@@ -1282,7 +1282,7 @@ nav strong label mark {
 .cover {
 	background-position: top center;
 	background-attachment: fixed;
-	background-size: 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
 	border:none;
 	color: #fff;

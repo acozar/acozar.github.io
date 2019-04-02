@@ -86,20 +86,16 @@
 				</div>
 			</header>
 			
-			<header class="sticky-header">
-				<div>
-					<h2>BCNCSS: presentation</h2>
-				</div>
-			</header>
-			
 			<main id="page-main">
 				<div>
+				
 					<pre contentEditable="true">
 &lt;link href=&quot;../styles/screen.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
 &lt;link href=&quot;../styles/components.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
 &lt;link href=&quot;../src/styles/your-skin.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
 					</pre>
 					<hr>
+					
 					<div class="flex-grid-2 text-center">
 						<section>
 							<h4>Examine</h4>
@@ -112,83 +108,125 @@
 						<hr>
 					</div>
 					<hr>
-					<h3><u>Philosophy</u></h3>
-					<div class="flex-grid-2 text-center">
-						<section class="bg-color-green">
-							<h4>HTML = &lt;Content&gt;</h4>
-							<b>No more dirty HTML!</b>
-							<p>Transportable from Markdown</p>
+
+					<h3><u>CSS PURISM</u></h3>
+					<div class="flex-grid-2">
+						<section class="text-center">
+							<h4>Simple CSS?</h4>
+							<p>· Layouts<br>
+							· Grids<br>
+							· Dialogs<br> 
+							· Collapsers<br> 
+							· Accordions<br> 
+							· Tabs<br> 
+							· Alerts<br> 
+							· Menus<br> 
+							· Tooltips<br> 
+							· Sliders<br> 
+							· Flips<br> 
+							· Navs<br> 
+							· Lightboxes<br> 
+							...</p>
+							<br><br>
 						</section>
-						<section class="bg-color-yellow">
-							<h4>CSS = { Design }</h4>
-							<b>No more massive libraries!</b>
-							<p>Just 2000 lines of CSS (uncompressed)</p>
-						</section>
-						<section class="bg-color-violet">
-							<h4>Javascript: none</h4>
-							<strong>No more dependencies!</strong>
-							<p>All features.</p>
-						</section>
-						<section class="bg-color-red">
-							<h4>Just one class!</h4>
-							<strong>1 Class = 1 Component</strong>
-							<p>No more needed.</p>
+						<section class="text-center">
+							<h4>Yes, with Barcelona CSS</h4>
+							<p>Barcelona CSS (or BCN CSS) <br class="desktop">is an open source CSS framework:<br>
+							· Semantic HTML<br>
+							· Simple CSS<br>
+							· Transportable from Markdown<br>
+							· Zero Javascript<br>
+							· No dependencies<br>
+							· No massive libraries<br>
+							· No divitis<br>
+							· 1 component = 1 class<br>
+							· All features<br>
+							· Responsive<br>
+							· 4 Themes<br>
+							· Extremely light</p>
+							<br><br>
 						</section>
 						<hr>
 					</div>
+					<hr>
+					<h3><u> Ingenious HTML </u></h3>
+					<div class="flex-grid-2">
+						<section>
+							<h4>No more fake buttons</h4>
+							<pre class="txt-color-red">
+&lt;a class=&quot;button&quot;&gt;&lt;/a&gt;
+							</pre>
+						</section>
+						<section>
+							<h4>Meet the emphatic links</h4>
+							<pre class="txt-color-green">
+&lt;em&gt;&lt;a&gt;&lt;/a&gt;&lt;/em&gt;
+							</pre>
+						</section>
+						<section>
+							<h4>Bye, bye events</h4>
+							<pre class="txt-color-red">
+&lt;a class=&quot;trigger&quot;&gt;&lt;/a&gt;
+&lt;script&gt;
+...
+&lt;/script&gt;
+							</pre>
+						</section>
+						<section>
+							<h4>Hello checkbox states</h4>
+							<pre class="txt-color-green">
+&lt;input id="modal-one" type="checkbox" hidden&gt;
+&lt;label for="modal-one"&gt;&lt;/label&gt;
+							</pre>
+						</section>
+					</div>
+					<hr>
+
+					<h3><u>BCNCSS: stylesheets</u></h3>
+					<section id="page-section-1">
+						<div>
+							<h4><u>2 combinable stylesheets + your customizable skin</u></h4>
+							<pre contentEditable="true">
+	&lt;!-- Screen styles --&gt;
+	&lt;link href=&quot;../src/styles/screen.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
+	&lt;link href=&quot;../src/styles/components.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
+	&lt;link href=&quot;../src/styles/your-skin.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
+							</pre>
+							<hr>
+						</div>
+					</section>	
+					<hr>
+
+					<h3><u>BCNCSS: builds</u></h3>
+					<section id="page-section-2">
+						<div>
+							<h4><u>CSS base</u></h4>
+							<pre contentEditable="true">
+	&lt;link href=&quot;../src/styles/screen.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
+							</pre>
+							<hr>
+							<h4><u>CSS base + components</u></h4>
+							<pre contentEditable="true">
+	&lt;link href=&quot;../src/styles/screen.components.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
+							</pre>
+							<hr>
+							<h4><u>CSS base (min)</u></h4>
+							<pre contentEditable="true">
+	&lt;link href=&quot;../src/styles/screen.min.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
+							</pre>
+							<hr>
+							<h4><u>CSS base + components (min)</u></h4>
+							<pre contentEditable="true">
+	&lt;link href=&quot;../src/styles/screen.components.min.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
+							</pre>
+							<hr>
+						</div>
+					</section>
+					<hr>
+					
 				</div>
 			</main>			
 			
-			<header class="sticky-header">
-				<div>
-					<h2>BCNcss: stylesheets</h2>
-				</div>
-			</header>
-			<hr>
-			<section id="page-section-1">
-				<div>
-					<h4><u>2 combinable stylesheets + your customizable skin</u></h4>
-					<pre contentEditable="true">
-&lt;!-- Screen styles --&gt;
-&lt;link href=&quot;../src/styles/screen.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
-&lt;link href=&quot;../src/styles/components.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
-&lt;link href=&quot;../src/styles/your-skin.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
-					</pre>
-					<hr>
-				</div>
-			</section>	
-			<hr>
-			<header class="sticky-header">
-				<div>
-					<h2>BCNCSS: builds</h2>
-				</div>
-			</header>
-			<hr>
-			<section id="page-section-2">
-				<div>
-					<h4><u>CSS base</u></h4>
-					<pre contentEditable="true">
-&lt;link href=&quot;../src/styles/screen.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
-					</pre>
-					<hr>
-					<h4><u>CSS base + components</u></h4>
-					<pre contentEditable="true">
-&lt;link href=&quot;../src/styles/screen.components.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
-					</pre>
-					<hr>
-					<h4><u>CSS base (min)</u></h4>
-					<pre contentEditable="true">
-&lt;link href=&quot;../src/styles/screen.min.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
-					</pre>
-					<hr>
-					<h4><u>CSS base + components (min)</u></h4>
-					<pre contentEditable="true">
-&lt;link href=&quot;../src/styles/screen.components.min.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
-					</pre>
-					<hr>
-				</div>
-			</section>		
-
 			<footer id="page-footer">
 				<div>
 					<p>© <a href="http://acozar.com" title="Acózar">Acózar</a> 2018. <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. </p>
