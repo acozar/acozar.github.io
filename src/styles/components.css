@@ -1149,9 +1149,6 @@ input:not(:checked) ~ .alert + em label {
 
 /* Lightbox */
 
-[id*='lightbox'] + .overlay-transparent {
-	display: none;
-}
 [id*='lightbox']:hover,
 [id*='lightbox']:visited,
 [id*='lightbox']:active,
@@ -1188,9 +1185,6 @@ input:not(:checked) ~ .alert + em label {
 	bottom: 0; left: 0; right: 0;
 	height: 64px;
 	z-index: 22;
-}
-[id*='lightbox']:target + .overlay-transparent {
-	display: block;
 }
 
 /* Dismiss & Lightbox labels */
