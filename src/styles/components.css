@@ -1186,6 +1186,9 @@ input:not(:checked) ~ .alert + em label {
 	height: 64px;
 	z-index: 22;
 }
+[id*='lightbox']:target a[hidden] {
+	display: block;
+}
 
 /* Dismiss & Lightbox labels */
 
