@@ -1158,13 +1158,12 @@ input:not(:checked) ~ .alert + em label {
 	opacity: 1;
 }
 [id*='lightbox']:target {
-	background-color: rgba(0,0,0,.8);
 	display: block;
 	text-align: center;
 	position: fixed;
 	top: 0; bottom: 0;
 	left: 0; right: 0;
-	z-index: 22;
+	z-index: 18;
 }
 [id*='lightbox']:target img {
 	display: block;
@@ -1184,10 +1183,7 @@ input:not(:checked) ~ .alert + em label {
 	position: fixed;
 	bottom: 0; left: 0; right: 0;
 	height: 64px;
-	z-index: 22;
-}
-[id*='lightbox']:target a[hidden] {
-	display: block;
+	z-index: 20;
 }
 
 /* Dismiss & Lightbox labels */
@@ -1210,7 +1206,7 @@ dialog > label,
 	width: 42px;
 	text-align: center;
 	text-decoration: none;
-	z-index: 2;
+	z-index: 20;
 	position: absolute;
 	top: 16px;
 	right: 16px;
@@ -1255,6 +1251,10 @@ dialog > label:active,
 }
 [id*='lightbox']:target ~ .previous {
 	left: 16px; right: auto;
+}
+[id*='lightbox']:target .overlay[hidden] {
+	display: block;
+	visibility: visible;
 }
 
 /* Mark */
