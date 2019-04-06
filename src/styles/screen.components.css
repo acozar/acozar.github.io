@@ -2027,12 +2027,12 @@ article > div {
 
 /* Scroll navigation */
 
-.nav-scroll div {
+.nav-scroll div { 
 	height: 64px;
 	overflow-x: auto;
 	white-space: nowrap;
 	-webkit-overflow-scrolling: touch;
-	-ms-ocerflow-style: -ms-autohiding-scrollbar;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
 }
 @media (max-width: 767px) {
 	.nav-scroll form {
@@ -2443,7 +2443,7 @@ input:not(:checked) ~ .alert + em label {
 	position: fixed;
 	top: 0; bottom: 0;
 	left: 0; right: 0;
-	z-index: 22;
+	z-index: 19;
 }
 [id*='lightbox']:target img {
 	display: block;
@@ -2464,7 +2464,7 @@ input:not(:checked) ~ .alert + em label {
 	position: fixed;
 	bottom: 0; left: 0; right: 0;
 	height: 64px;
-	z-index: 22;
+	z-index: 20;
 }
 
 /* Dismiss & Lightbox labels */
@@ -2521,7 +2521,7 @@ dialog > label:active,
 	visibility: visible;
 	position: fixed;
 	top: 16px; right: 16px;
-	z-index: 23;
+	z-index: 20;
 }
 [id*='lightbox']:target + a {
 	top:32px; right:32px;
