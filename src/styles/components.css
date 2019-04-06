@@ -98,6 +98,30 @@
 	from { opacity: 0; transform: translateX(100%); }
 }
 
+/* ------------------------------------------------------------ Basic animations */
+
+#site-nav {
+	-webkit-animation: moveFromLeftFade .7s ease both;
+	-moz-animation: moveFromLeftFade .7s ease both;
+	-o-animation: moveFromLeftFade .7s ease both;
+	animation: moveFromLeftFade .7s ease both;
+}
+#site-header > div,
+#page-header > div,
+#page-main > div,
+#page-nav > div,
+#page-section > div,
+#page-footer > div,
+[id*='page-section'] > div,
+dialog > div {
+	-webkit-animation: fadeIn .7s ease both;
+	-moz-animation: fadeIn .7s ease both;
+	-o-animation: fadeIn .7s ease both;
+	animation: fadeIn .7s ease both;
+	-webkit-animation-delay: .6s;
+	-moz-animation-delay: .6s;
+	animation-delay: .6s;
+}
 
 /* ------------------------------------------------------------ Flex-grid */
 
