@@ -98,6 +98,31 @@
 	from { opacity: 0; transform: translateX(100%); }
 }
 
+/* ------------------------------------------------------------ Basic animations */
+
+#site-nav {
+	-webkit-animation: moveFromLeftFade .7s ease both;
+	-moz-animation: moveFromLeftFade .7s ease both;
+	-o-animation: moveFromLeftFade .7s ease both;
+	animation: moveFromLeftFade .7s ease both;
+}
+#site-nav > div,
+#site-header,
+#page-header,
+#page-main,
+#page-nav,
+#page-section,
+#page-footer,
+[id*='page-section'],
+dialog {
+	-webkit-animation: fadeIn .7s ease both;
+	-moz-animation: fadeIn .7s ease both;
+	-o-animation: fadeIn .7s ease both;
+	animation: fadeIn .7s ease both;
+	-webkit-animation-delay: .7s;
+	-moz-animation-delay: .7s;
+	animation-delay: .7s;
+}
 
 /* ------------------------------------------------------------ Flex-grid */
 
@@ -168,7 +193,7 @@
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
 	[class*='flex-grid'] { display: block; }
 	[class*='flex-grid'] > * { display: block; width: 100%; }
 	[class*='flex-box'].flex-half > * { width: 49.5%; }
@@ -393,7 +418,7 @@ article > div {
 	margin: 16px;
 	padding: 6px;
 }
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
 	.table article,
 	#layout-table:checked ~ #layout-result article {
 		height: auto;
@@ -708,9 +733,6 @@ article > div {
 
 /* Smart navigation */
 
-.nav-smart {
-	position: sticky; 
-}
 .nav-smart div div[hidden] {
 	display: block;
 	padding: 0 2em;
@@ -724,11 +746,7 @@ article > div {
 
 /* Sticky navigation */
 
-.nav-sticky,
-#site-nav.nav-smart,
-#site-nav.nav-scroll,
-#page-nav.nav-smart,
-#page-nav.nav-scroll {
+.nav-sticky {
 	background-color: inherit;
 	position: -webkit-sticky; 
 	position: sticky; 
@@ -736,26 +754,22 @@ article > div {
 	left: 0;
 	z-index: 10;
 }
-@media (max-width: 767px) {
-	.nav-sticky,
-	#site-nav.nav-smart,
-	#site-nav.nav-scroll,
-	#page-nav.nav-smart,
-	#page-nav.nav-scroll {
+@media (max-width: 1024px) {
+	.nav-sticky {
 		position: relative; 
 	}
 }
 
 /* Scroll navigation */
 
-.nav-scroll div {
+.nav-scroll div { 
 	height: 64px;
 	overflow-x: auto;
 	white-space: nowrap;
 	-webkit-overflow-scrolling: touch;
-	-ms-ocerflow-style: -ms-autohiding-scrollbar;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
 }
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
 	.nav-scroll form {
 		display: inline-block;
 		position: relative;
@@ -779,7 +793,7 @@ nav .menu nav {
 
 /* Small devices navigation */
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
 	.nav-smart,
 	nav .menu nav {
 		position: relative;
@@ -824,7 +838,7 @@ dialog {
 	-o-animation: moveFromTopFade .7s ease both;
 	animation: moveFromTopFade .7s ease both;
 }
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
 	dialog {
 		top: 16px;
 		left: 5%;
@@ -924,7 +938,7 @@ input:checked ~ .overlay-transparent,
 	display: none;
 	visibility: hidden;
 }
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
 	.tabs nav a,
 	.tabs nav label {
 		display: inline-block;
@@ -1164,7 +1178,7 @@ input:not(:checked) ~ .alert + em label {
 	position: fixed;
 	top: 0; bottom: 0;
 	left: 0; right: 0;
-	z-index: 22;
+	z-index: 24;
 }
 [id*='lightbox']:target img {
 	display: block;
@@ -1181,10 +1195,11 @@ input:not(:checked) ~ .alert + em label {
 	animation: fadeIn 1s ease both;
 }
 [id*='lightbox']:target + a + figcaption {
+	color: #ffffff;
 	position: fixed;
 	bottom: 0; left: 0; right: 0;
 	height: 64px;
-	z-index: 22;
+	z-index: 25;
 }
 
 /* Dismiss & Lightbox labels */
@@ -1207,7 +1222,7 @@ dialog > label,
 	width: 42px;
 	text-align: center;
 	text-decoration: none;
-	z-index: 2;
+	z-index: 25;
 	position: absolute;
 	top: 16px;
 	right: 16px;
@@ -1241,7 +1256,7 @@ dialog > label:active,
 	visibility: visible;
 	position: fixed;
 	top: 16px; right: 16px;
-	z-index: 23;
+	z-index: 25;
 }
 [id*='lightbox']:target + a {
 	top:32px; right:32px;
@@ -1312,10 +1327,11 @@ nav strong label mark {
 	font-size: 24px;
 	margin: 0;
 }
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
 	.banner {
+		background-size: 100%;
 		height: 320px;
-		padding-top: 128px;
+		padding-top: 96px;
 	}
 }
 
@@ -1378,6 +1394,23 @@ nav strong label mark {
 .sample pre {
 	background-color: rgba(255,255,255,.8);
 	color: rgba(0,0,0,.9);
+}
+
+/* Responsive helpers */
+
+.mobile {
+	display: none;
+}
+.desktop {
+	display: block;
+}
+@media screen and (max-width: 1024px) {
+	.mobile {
+		display: block;
+	}
+	.desktop {
+		display: none;
+	}
 }
 
 /* Colors */
