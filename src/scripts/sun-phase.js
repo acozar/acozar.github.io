@@ -22,7 +22,7 @@ var thehours = new Date().getHours();
 		themessage = evening;
 		$( "#theme-vesperum" ).prop('checked', true );
 		
-	} else if (thehours >= 22 && thehours < 24) {
+	} else if (thehours >= 20 && thehours < 24) {
 		themessage = night;
 		$( "#theme-nox" ).prop('checked', true );
 		
