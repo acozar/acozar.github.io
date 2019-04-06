@@ -1181,7 +1181,6 @@ input:not(:checked) ~ .alert + em label {
 	animation: fadeIn 1s ease both;
 }
 [id*='lightbox']:target + a + figcaption {
-	color: #ffffff;
 	position: fixed;
 	bottom: 0; left: 0; right: 0;
 	height: 64px;
