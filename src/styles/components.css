@@ -168,7 +168,7 @@
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 767px) {
 	[class*='flex-grid'] { display: block; }
 	[class*='flex-grid'] > * { display: block; width: 100%; }
 	[class*='flex-box'].flex-half > * { width: 49.5%; }
