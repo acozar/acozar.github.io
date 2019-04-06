@@ -726,6 +726,7 @@ nav {
 	border-bottom: 1px solid currentColor;
 	display: block;
 	line-height: 32px;
+	margin-bottom: -15px;
 	position: relative;
 }
 nav a,
