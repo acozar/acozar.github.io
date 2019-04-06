@@ -861,6 +861,11 @@ section > div {
 	padding: 30px 0 15px;
 	position: relative;
 }
+dialog > div {
+	margin: 0 auto;
+	max-width: 1000px;
+	max-width: var(--page-size);
+}
 header {
 	border-bottom: thin solid currentColor;
 }
@@ -877,12 +882,11 @@ article, aside {
 #page-nav > div,
 #page-section > div,
 #page-footer > div,
-[id*='page-section'] > div,
-dialog > div {
+[id*='page-section'] > div {
 	margin: 0 auto;
 	position: relative;
 	width: 100%;
-	max-width: 1024px;
+	max-width: 1000px;
 	max-width: var(--page-size);
 }
 dialog header,
