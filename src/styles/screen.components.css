@@ -726,6 +726,7 @@ nav {
 	border-bottom: 1px solid currentColor;
 	display: block;
 	line-height: 32px;
+	margin-bottom: -15px;
 	position: relative;
 }
 nav a,
@@ -2647,23 +2648,6 @@ nav strong label mark {
 .sample pre {
 	background-color: rgba(255,255,255,.8);
 	color: rgba(0,0,0,.9);
-}
-
-/* Responsive helpers */
-
-.mobile {
-	display: none;
-}
-.desktop {
-	display: block;
-}
-@media screen and (max-width: 1024px) {
-	.mobile {
-		display: block;
-	}
-	.desktop {
-		display: none;
-	}
 }
 
 /* Colors */
