@@ -100,29 +100,7 @@
 
 /* ------------------------------------------------------------ Basic animations */
 
-#site-nav {
-	-webkit-animation: moveFromLeftFade .7s ease both;
-	-moz-animation: moveFromLeftFade .7s ease both;
-	-o-animation: moveFromLeftFade .7s ease both;
-	animation: moveFromLeftFade .7s ease both;
-}
-#site-nav > div,
-#site-header,
-#page-header,
-#page-main,
-#page-nav,
-#page-section,
-#page-footer,
-[id*='page-section'],
-dialog {
-	-webkit-animation: fadeIn .7s ease both;
-	-moz-animation: fadeIn .7s ease both;
-	-o-animation: fadeIn .7s ease both;
-	animation: fadeIn .7s ease both;
-	-webkit-animation-delay: .7s;
-	-moz-animation-delay: .7s;
-	animation-delay: .7s;
-}
+
 
 /* ------------------------------------------------------------ Flex-grid */
 
@@ -733,6 +711,9 @@ article > div {
 
 /* Smart navigation */
 
+.nav-smart {
+	position: sticky; 
+}
 .nav-smart div div[hidden] {
 	display: block;
 	padding: 0 2em;
@@ -746,16 +727,24 @@ article > div {
 
 /* Sticky navigation */
 
-.nav-sticky {
+.nav-sticky,
+#site-nav.nav-smart,
+#site-nav.nav-scroll,
+#page-nav.nav-smart,
+#page-nav.nav-scroll {
 	background-color: inherit;
 	position: -webkit-sticky; 
 	position: sticky; 
 	top: 0;
 	left: 0;
-	z-index: 10;
+	z-index: 11;
 }
 @media (max-width: 1024px) {
-	.nav-sticky {
+	.nav-sticky,
+	#site-nav.nav-smart,
+	#site-nav.nav-scroll,
+	#page-nav.nav-smart,
+	#page-nav.nav-scroll {
 		position: relative; 
 	}
 }
