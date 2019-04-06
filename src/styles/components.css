@@ -1315,7 +1315,6 @@ nav strong label mark {
 }
 @media (max-width: 767px) {
 	.banner {
-		background-size: 100%;
 		height: 320px;
 		padding-top: 96px;
 	}
