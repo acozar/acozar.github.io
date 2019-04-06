@@ -98,31 +98,7 @@
 	from { opacity: 0; transform: translateX(100%); }
 }
 
-/* ------------------------------------------------------------ Basic animations */
 
-#site-nav {
-	-webkit-animation: moveFromLeftFade .7s ease both;
-	-moz-animation: moveFromLeftFade .7s ease both;
-	-o-animation: moveFromLeftFade .7s ease both;
-	animation: moveFromLeftFade .7s ease both;
-}
-#site-nav > div,
-#site-header,
-#page-header,
-#page-main,
-#page-nav,
-#page-section,
-#page-footer,
-[id*='page-section'],
-dialog {
-	-webkit-animation: fadeIn .7s ease both;
-	-moz-animation: fadeIn .7s ease both;
-	-o-animation: fadeIn .7s ease both;
-	animation: fadeIn .7s ease both;
-	-webkit-animation-delay: .7s;
-	-moz-animation-delay: .7s;
-	animation-delay: .7s;
-}
 
 /* ------------------------------------------------------------ Flex-grid */
 
