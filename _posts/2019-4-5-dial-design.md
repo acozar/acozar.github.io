@@ -5,13 +5,13 @@ image: https://acozar.github.io/src/dials/watches-kothar.png
 ---
 
 <div class="ktr-landing-first">
-	<div class="flex-grid-1">
+	<div class="flex-box-1">
 		<section>
 			<h4><a href="https://acozar.github.io/watches/kothar-watch.html" title="Kothar Watch">Kothar Watch</a></h4>
 			<a href="https://acozar.github.io/watches/kothar-watch.html" title="Kothar Watch"><img src="https://acozar.github.io/src/dials/watches-kothar.png" alt="Watch"></a>
 		</section>
 	</div>
-	<div class="flex-grid-2">
+	<div class="flex-box-2">
 		<section>
 			<h4><a href="https://acozar.github.io/watches/dia-watch.html" title="Dia Watch">Dia Watch</a></h4>
 			<a href="https://acozar.github.io/watches/dia-watch.html" title="Dia Watch"><img src="https://acozar.github.io/src/dials/watches-dia.png" alt="Watch"></a>
@@ -21,7 +21,7 @@ image: https://acozar.github.io/src/dials/watches-kothar.png
 			<a href="https://acozar.github.io/watches/nox-watch.html" title="Nox Watch"><img src="https://acozar.github.io/src/dials/watches-nox.png" alt="Watch"></a>
 		</section>
 	</div>
-	<div class="flex-grid-2">
+	<div class="flex-box-2">
 		<section>
 			<h4><a href="https://acozar.github.io/watches/lenin-watch.html" title="Lenin Watch">Lenin Watch</a></h4>
 			<a href="https://acozar.github.io/watches/lenin-watch.html" title="Lenin Watch"><img src="https://acozar.github.io/src/dials/watches-lenin.png" alt="Watch"></a>
