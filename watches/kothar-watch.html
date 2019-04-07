@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<!-- Metadata -->
-		<title>Acózar Watches: Lenin</title>
+		<title>Acózar Watches: Kothar</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Revolutionary CSS framework with no more classes!">
 		<meta name="keywords" content="CSS semantic components library">
@@ -14,10 +14,8 @@
 		<meta name="geo.position" content="PageLangitudeLongitude">
 		<meta name="ICBM" content="PageLangitudeLongitude">
 		<!-- Screen styles -->
-		<link href="../src/styles/screen.css" rel="stylesheet" media="screen">
-		<link href="../src/styles/components.css" rel="stylesheet" media="screen">
-		<link href="../src/styles/helpers.css" rel="stylesheet" media="screen">
-		<link href="../src/styles/clock.css" rel="stylesheet" media="screen">
+		<link href="../src/styles/screen.components.min.css" rel="stylesheet" media="screen">
+		<link href="../src/styles/clock-kothar.css" rel="stylesheet" media="screen">
 		<!-- Print styles -->
 		<link href="../src/styles/print.css" rel="stylesheet" media="print">
 		<!-- If iexplorer :( -->
@@ -47,7 +45,9 @@
 				<label for="modal-one" title="More watches">X</label>
 				<div>
 					<h2>Watches</h2>
-					<a href="" title="">Lenin</a>
+					<a href="kothar-watch.html" title="Kothar Watch">Kothar</a><br>
+					<a href="lenin-watch.html" title="Lenin Watch">Lenin</a><br>
+					<a href="lenin-black-watch.html" title="Lenin black Watch">Lenin black</a><br>
 				</div>
 			</dialog>
 		</div>
@@ -66,32 +66,42 @@
 			
 			<header class="header-watch">
 				<div>
-					<h1><small>Lenin Watch</small></h1>
+					<h1><small>Kothar Watch</small></h1>
 					<p><small>© Acózar 2018</small></p>
 				</div>
 			</header>
 			
 			<main id="" class="">
-				<div class="clock">
-					<input type="checkbox" id="clock-1" name="flip-clock" hidden>
-					<div class="clock-case">
-					  <div class="clock-dial">
-						<div class="clock-zenit-hand"></div>
-						<div class="clock-hour-hand"></div>
-						<div class="clock-minute-hand"></div>
-						<div class="clock-second-hand"></div>
-						<div class="clock-nut"></div>
-						<div class="clock-ratio"></div>
-					  </div>
-					</div>
-					<div class="clock-case-back">
-						<div class="clock-back">
-							<div class="clock-data">
-								<h3>Acózar</h3>
+					<div class="clock">
+						<div class="clock-model clock-ktr">
+							<input type="checkbox" id="clock-1" name="flip-clock" hidden>
+							<div class="clock-case">
+								<div class="clock-dial">
+									<div class="clock-second-hand"></div>
+									<div class="clock-minute-hand"></div>
+									<div class="clock-hour-hand"></div>
+									<div class="clock-zenit-hand"></div>
+									<div class="clock-horizon"></div>
+									<div class="clock-nut"></div>
+									<div class="clock-ratio"></div>
+								</div>
 							</div>
+							<div class="clock-case-back">
+								<div class="clock-back">
+									<div class="clock-data">
+										<h3><a href="http://www.acozar.com" title="www.acozar.com">Tempus</a></h3>
+										<p>L'univers sencer<br>
+										és un gran torrent<br>
+										de llum abocada <br>
+										sense cap descans<br>
+										al pou del futur.</p>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<span class="ktr-button-section"><em><label for="clock-1" title="Info">&#4042;</label></em></span>
 						</div>
 					</div>
-				</div>
 			</main>
 				    
 		</div><!-- /#page -->

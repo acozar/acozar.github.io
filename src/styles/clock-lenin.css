@@ -76,7 +76,7 @@ body {
 	left:0;
 	bottom: 0;
 	text-align: center;
-	
+	z-index: 10;
 	-webkit-animation: moveFromBottomFade .7s ease both;
 	   -moz-animation: moveFromBottomFade .7s ease both;
 		-o-animation: moveFromBottomFade .7s ease both;
@@ -97,6 +97,7 @@ body {
 	position: fixed;
 	top: 1em;
 	width: 200px;
+	z-index: 10;
 }
 
 .nav-watch {
@@ -119,7 +120,7 @@ dialog {
 
 .clock {
 	display: block;
-	margin: 5vh auto 0;
+	margin: 10vh auto 0;
 	max-width: 75vh;
 	position: relative;
 
