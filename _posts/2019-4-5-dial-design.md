@@ -6,6 +6,7 @@ image: https://acozar.github.io/src/dials/dial.png
 
 <div class="ktr-landing-first">
 	<p>I am a fan of watchmaking and I am dedicated to the design of clock dials. Below you can find a selection of dials designs, fully operational as web watches.</p>
+	<br><br>
 	<div class="flex-box-1">
 		<section>
 			<h4><a href="https://acozar.github.io/watches/kothar-watch.html" title="Kothar Watch">Kothar Watch</a></h4>
