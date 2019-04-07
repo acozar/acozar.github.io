@@ -25,7 +25,7 @@ image: https://acozar.github.io/src/dials/icon-dial.png
 	</div>
 	<div class="flex-box-2">
 		<section>
-			<h4><a href="https://acozar.github.io/watches/lenin-watch.html" title="Lenin Watch">Lenin Watch</a></h4>
+			<h4><a href="https://acozar.github.io/watches/lenin-watch.html" title="Lenin Watch">Lenin White Watch</a></h4>
 			<a href="https://acozar.github.io/watches/lenin-watch.html" title="Lenin Watch"><img src="https://acozar.github.io/src/dials/watches-lenin.png" alt="Watch"></a>
 		</section>
 		<section>
