@@ -11,6 +11,7 @@ image: https://acozar.github.io/src/dials/icon-solar-system.png
 		<section>
 			<h4><a href="https://acozar.github.io/codex/dialectica.html" title="Solar system demo">Solar system demo</a></h4>
 			<a href="https://acozar.github.io/codex/dialectica.html" title="Solar system demo"><img src="https://acozar.github.io/src/dials/solar-system.png" alt="Solar system demo"></a>
+			<em><a href="https://acozar.github.io/codex/dialectica.html" title="Solar system demo">Test it!</a></em>
 		</section>
 	</div>
 </div>
