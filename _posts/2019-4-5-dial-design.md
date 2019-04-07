@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dial design and web watches
-image: https://acozar.github.io/src/dials/dial.png
+image: https://acozar.github.io/src/dials/icon-dial.png
 ---
 
 <div class="ktr-landing-first">
