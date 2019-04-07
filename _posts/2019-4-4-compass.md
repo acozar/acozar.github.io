@@ -12,6 +12,7 @@ image: https://acozar.github.io/src/dials/icon-compass.png
 		<section>
 			<h4><a href="https://acozar.github.io/watches/compass.html" title="Kothar Compass">Kothar Compass</a></h4>
 			<a href="https://acozar.github.io/watches/compass.html" title="Kothar Compass"><img src="https://acozar.github.io/src/img/compass-bg.png" alt="Compass"></a>
+			<em><a href="https://acozar.github.io/watches/compass.html" title="Kothar Compass">Test here</a></em>
 		</section>
 	</div>
 	<hr>
