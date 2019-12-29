@@ -95,8 +95,9 @@ header, footer {
 }
 @media screen and (max-width: 1024px) {
 	.ktr-logo {
-		height: 48px;
-		width: 48px;
+		height: 56px;
+        margin: 0 0 8px;
+		width: 56px;
 	}
 }
 
