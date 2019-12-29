@@ -519,6 +519,18 @@ header, footer {
 		display: none;
 	}
 }
+@media (hover: none) and (pointer: coarse) {
+	.th-tesis:hover:after,
+	.th-antitesis:hover:after,
+	.th-sintesis:hover:after,
+	.th-dialectica:hover:after,
+	.th-aurora:hover:after,
+	.th-meridianus:hover:after,
+	.th-vesperum:hover:after,
+	.th-nox:hover:after {
+		display: none;
+	}
+}
 @media screen and (max-width: 1024px) {
 	.th-tesis:hover:after,
 	.th-antitesis:hover:after,
