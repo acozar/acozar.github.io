@@ -86,8 +86,12 @@ header, footer {
 	text-decoration: none;
 }
 .ktr-logo {
+    border-radius: 50%;
 	height: 64px;
 	width: 64px;
+}
+.ktr-logo:hover {
+	box-shadow: 0 0 6px rgba(150,150,150,.8);
 }
 
 /* KTR Form */
