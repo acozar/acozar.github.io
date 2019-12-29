@@ -93,6 +93,12 @@ header, footer {
 .ktr-logo:hover {
 	box-shadow: 0 0 6px rgba(150,150,150,.8);
 }
+@media screen and (max-width: 1024px) {
+	.ktr-logo {
+		height: 48px;
+		width: 48px;
+	}
+}
 
 /* KTR Form */
 
