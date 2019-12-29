@@ -239,14 +239,18 @@ header, footer {
 
 /* KTR article post */
 
+.article-body {
+    margin: 0 auto;
+    max-width: 768px;
+}
 .article-body img {
 	display: block;
 	margin: 0 auto 64px;
 }
 .article-image {
-	margin: 0 -1% 64px !important;
-	min-width: 102%;
-	max-width: 102%;
+	margin: 0 -20% 64px !important;
+	min-width: 140%;
+	max-width: 140%;
 }
 .article-thumb {
 	position: relative;
