@@ -45,7 +45,7 @@ body {
 	background-color: var(--color-white);
 	color: var(--color-black);
 	font-family: var(--font-default);
-	font-size: 24px;
+	font-size: 20px;
 	line-height: 32px;
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
