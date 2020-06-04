@@ -241,9 +241,11 @@ header, footer {
 
 .article-body {
 	font-size: 22px;
+    line-height: 1.6em;
     margin: 0 auto;
     max-width: 768px;
 }
+.article-body h4 {margin-top: 64px;}
 .article-body img {
 	display: block;
 	margin: 0 auto 64px;
