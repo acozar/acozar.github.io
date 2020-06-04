@@ -245,7 +245,9 @@ header, footer {
     margin: 0 auto;
     max-width: 768px;
 }
-.article-body h4 {margin-top: 64px;}
+.article-body h4, .article-body h5 {
+    margin-top: 32px;line-height:1.2em;
+}
 .article-body img {
 	display: block;
 	margin: 0 auto 64px;
