@@ -10,7 +10,7 @@ image: https://acozar.github.io/src/img/starcorridors/star-corridors-logo.png
 	<br><br><br>
 	<p>Star Corridors is a tribute to the most mythical corridors in the galaxy. </p>
 	<p>It is developed on HTML, CSS and Javascript.</p>
-	<p>It contains a set free and printable of background panels for action figures.</p>
+	<p>It contains a set of free and printable background panels for action figures.</p>
 	<h4>Screenshots</h4>
 	<img src="https://acozar.github.io/src/img/starcorridors/star-corridors-screenshots1.png" alt="Screenshot">
 	<img src="https://acozar.github.io/src/img/starcorridors/star-corridors-screenshots2.png" alt="Screenshot">
