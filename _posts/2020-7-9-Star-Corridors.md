@@ -15,6 +15,8 @@ image: https://acozar.github.io/src/img/starcorridors/star-corridors-logo.png
 	<img src="https://acozar.github.io/src/img/starcorridors/star-corridors-screenshots1.png" alt="Screenshot">
 	<img src="https://acozar.github.io/src/img/starcorridors/star-corridors-screenshots2.png" alt="Screenshot">
 	<img src="https://acozar.github.io/src/img/starcorridors/star-corridors-screenshots3.png" alt="Screenshot">
+	<img src="https://acozar.github.io/src/img/starcorridors/star-corridors-screenshots4.png" alt="Screenshot">
+	<img src="https://acozar.github.io/src/img/starcorridors/star-corridors-screenshots5.png" alt="Screenshot">
 	<hr>
 	<h4>Credits</h4>
 	<h5>Copyright note</h5>
