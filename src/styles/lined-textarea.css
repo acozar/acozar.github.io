@@ -1,0 +1,37 @@
+/*
+ * jQuery Lined Textarea Plugin
+ *   http://alan.blog-city.com/jquerylinedtextarea.htm
+ * Copyright (c) 2010 Alan Williamson
+ * Released under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+.linedwrap {
+	border: 1px solid #c0c0c0;
+	padding: 3px;
+}
+.linedtextarea {
+
+}
+.linedtextarea textarea, .linedwrap .codelines .lineno {
+
+}
+.linedtextarea textarea {
+
+}
+.linedwrap .lines {
+	margin-top: 0px;
+	width: 50px;
+	float: left;
+	overflow: hidden;
+	border-right: 1px solid #c0c0c0;
+	margin-right: 10px;
+}
+.linedwrap .codelines {
+	padding-top: 5px;
+}
+.linedwrap .codelines .lineno {
+	padding-right: 0.5em;
+	padding-top: 0.0em;
+	text-align: right;
+	white-space: nowrap;
+}
