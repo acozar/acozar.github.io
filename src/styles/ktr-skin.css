@@ -61,9 +61,6 @@ blockquote:after {
 header, footer {
 	text-align: center;
 }
-#page-header {
-	padding: 192px;
-}
 @media screen and (max-width: 1024px) {
 	#page-header h1 {
 		font-size: 24px;
@@ -197,7 +194,7 @@ header, footer {
 	.header-app button,
 	.header-app label {
 		line-height: 36px;
-		margin-top: -12px;
+		margin-top: -16px;
 		width: 42px;
 		height: 42px;
 		padding: 0;
