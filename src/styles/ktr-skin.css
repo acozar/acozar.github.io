@@ -181,10 +181,10 @@ header, footer {
 
 @media screen and (max-width: 1024px) {
 	.header-app {
-		height: 64px;
+		height: 48px;
 	}
 	.editor-app textarea {
-		margin: 48px auto 0;
+		margin: 36px auto 0;
 	}
 
 	.header-app button:hover:after,
@@ -194,7 +194,7 @@ header, footer {
 	.header-app button,
 	.header-app label {
 		line-height: 36px;
-		margin-top: -16px;
+		margin-top: -36px;
 		width: 42px;
 		height: 42px;
 		padding: 0;
@@ -703,6 +703,14 @@ header, footer {
 	}
 }
 @media screen and (max-width: 1024px) {
+    .ktr-button-sun-bubble {
+		top: 1px;
+        right: 1px;
+	}
+    .ktr-button-moon-bubble {
+		top: -1px;
+        left: -1px;
+	}
 	.th-tesis:hover:after,
 	.th-antitesis:hover:after,
 	.th-sintesis:hover:after,
