@@ -6,7 +6,7 @@
 		<title>0TITLE0</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="0DESCRIPTION0">
-		<meta name="keywords" content="0TITLE0, 0DESCRIPTION0 by Acózar">
+		<meta name="keywords" content="0TITLE0">
 		<meta name="author" content="Acózar">
 		<!-- Metadata: GeoTags -->
 		<meta name="geo.region" content="Catalunya">
@@ -16,7 +16,7 @@
 		<!-- Metadata: Twitter Cards -->
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:site" content="@polacozar">
-		<meta name="twitter:title" content="0TITLE0">
+		<meta name="twitter:title" content="OTITLE0">
 		<meta name="twitter:description" content="0DESCRIPTION0">
 		<meta name="twitter:image" content="http://acozar.github.io/src/ics/icon.png" />
 		<!-- Screen styles -->
@@ -54,48 +54,62 @@
 		<!-- Page content -->		
 		<div id="page" class="page">
 			
-			<header id="page-header" class="ktr-header">
+			<header class="header-app">
 				<div>
-					<h1><a href="http://www.acozar.com" title="www.acozar.com"><small>www.</small>acózar<small>.com</small></a></h1>
-					<p>- Dialectica -</p>
-						<h1>0TITLE0</h1>
-						<strong>0DESCRIPTION0</strong>
+					<h1 hidden>0TITLE0</h1>
+					<em><label for="modal-help" data-title="Info & Help">?</label></em>
 				</div>
 			</header>
 			
 			<main id="page-main">
 				<div>
-	
-	
 					<hr>
+					<div class="flex-grid-2">
+						<section>
+							<div class="weather-app">
+								<h5>Now</h5>
+								<div id="sky-image"></div>
+								<div id="location"></div>
+								<div id="weather-id"></div>
+								<div>Temperature: <span id="temperature"></span> C &deg</div>
+								<div>Wind speed: <span id="wind-speed"></span></div>
+								<div id="humidity"></div>
+							</div>
+						</section>
+						<section>
+							<div id="rss-news"></div>
+						</section>
+					</div>
 				</div>
 			</main>
 			
-			<!-- Footer -->
-			<footer class="ktr-footer">
-				<div>
-					<h4>- DIALÈCTICA -</h4>
-					<p><a href="http://blog.acozar.com" class="pophover" data-title="www.acozar.com">Blog de Pol Acózar</a></p>
-					<p><a href="mailto:info@acozar.com" class="pophover" data-title="Mail">info@acozar.com</a></p>
-					<p><a href="https://twitter.com/polacozar" class="pophover" data-title="Twitter">@polacozar</a></p>
-					<p><a href="https://acozar.github.io/about/contact.html" class="pophover" data-title="Contacte">Contact</a></p>
-					<p><a href="https://acozar.github.io/about/" class="pophover" data-title="Sobre mi">Info</a></p>
-				</div>
-			</footer>
-			
-			<footer id="page-footer">
-				<div>
-					<p>© <a href="http://acozar.com" class="pophover" data-title="www.acozar.com">Acózar</a> 2018. <a href="https://acozar.github.io/bcncss/" class="pophover" data-title="Made with Barcelona CSS">Barcelona CSS</a></p>
-				</div>
+			<footer id="footer-main" class="footer-app">
+				<p><a href="0URL0" title="0TITLE0 | 0DESCRIPTION0" target="blank">0TITLE0</a> by <a href="http://acozar.github.io" title="acozar.github.io" target="blank">Acózar</a>, <script>document.write(new Date().getFullYear());</script></p>
 			</footer>
 			
 		</div>
 		<!-- /#page -->
 		  
-		<!-- Out of page
+		<!-- Modal
 		================================================== -->
-		<!-- Fixed navigation -->		
-		<div class="ktr-button-moon-bubble">
+		<div>
+			<input id="modal-help" type="checkbox" hidden>
+			<label class="overlay" for="modal-help" hidden></label>
+			<dialog>
+				<label for="modal-help">x</label>
+				<header>
+					<h3>0TITLE0</h3>
+					<p class="lead">0DESCRIPTION0</p>
+				</header>
+				<div>
+					
+				</div>
+			</dialog>
+		</div>
+
+		<!-- Navigation
+		================================================== -->
+		<div class="ktr-button-moon-bubble" id="luna">
 			<input id="moon-bubble" name="moon-bubble" type="checkbox" hidden>
 			<span>
 				<em><a class="th-tesis" href="http://blog.acozar.com/search/label/Tesis" data-title="Tesis"><img src="http://acozar.github.io/src/img/ktr-icons-tesis.png" alt="Tesis"></a></em>
@@ -106,7 +120,7 @@
 			<em><label class="th-switcher" for="moon-bubble" title="Menú"><svg id="moon" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" version="1.1"/></label></em>
 		</div>	
 		
-		<div class="ktr-button-sun-bubble">
+		<div class="ktr-button-sun-bubble" id="sol">
 			<input id="bubble" name="bubble" type="checkbox" hidden>
 			<span>
 				<em><label class="th-nox" for="theme-nox" data-title="Nox"></label></em>
@@ -115,25 +129,17 @@
 				<em><label class="th-aurora" for="theme-aurora" data-title="Aurora"></label></em>
 			</span>
 			<em><label class="th-switcher" for="bubble" title="Themes"><b id="sun-phase"><img src="https://acozar.github.io/src/img/sun-burning.gif"></b></label></em>
-		</div>		
-		
-		<div class="ktr-button-tree-bubble">
-			<input id="tree-bubble" name="star-bubble" type="checkbox" hidden>
-			<span>
-				<em><a class="th-one" href="http://blog.acozar.com" data-title="Dialèctica"><img src="https://acozar.github.io/src/img/ktr-icons-stilo.png" alt="Blog"></a></em>
-				<em><a class="th-two" href="http://graphic.acozar.com" data-title="Illustratio"><img src="https://acozar.github.io/src/img/ktr-icons-illustration.png" alt="Illustratio"></a></em>
-				<em><a class="th-three" href="http://photo.acozar.com" data-title="Imago"><img src="https://acozar.github.io/src/img/ktr-icons-photo.png" alt="Imago"></a></em>
-				<em><a class="th-four" href="http://video.acozar.com" data-title="Register"><img src="https://acozar.github.io/src/img/ktr-icons-video.png" alt="Register"></a></em>
-				<em><a class="th-five" href="https://acozar.github.io/" data-title="Codex"><img src="https://acozar.github.io/src/img/ktr-icons-code.png" alt="Codex"></a></em>
-			</span>
-			<em><label class="th-switcher" for="tree-bubble" title="Menú"><b id="tree-phase"><img src="https://acozar.github.io/src/img/ktr-season-winter.png"></b></label></em>
-		</div>		
+		</div>
 
 		<!-- Scripts
 		================================================== -->
 		<script src="https://acozar.github.io/src/scripts/jquery.js" type="text/javascript"></script>
 		<script src="https://acozar.github.io/src/scripts/moon-phase.js" type="text/javascript"></script>
 		<script src="https://acozar.github.io/src/scripts/sun-phase.js" type="text/javascript"></script>
+		<script src="../src/scripts/weather.js" type="text/javascript"></script>
+		<script src="../src/scripts/moment.min.js" type="text/javascript"></script>
+		<script src="../src/scripts/jquery.rss.min.js" type="text/javascript"></script>
+		<script src="../src/scripts/myfeeds.js" type="text/javascript"></script>
 		<script src="https://acozar.github.io/src/scripts/ga.js" type="text/javascript"></script>
 	</body>
 </html>

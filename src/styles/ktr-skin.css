@@ -547,24 +547,16 @@ header, footer {
 	right: 8px;
 	z-index: 10;
 }
-.ktr-button-star-bubble {
+.ktr-button-tree-bubble {
 	position: fixed;
-	bottom: 64px;
-	left: 50%;
+	bottom: 8px;
+	left: 8px;
 	z-index: 10;
-    transform: translate(-50%, 0);
 }
-.ktr-button-moon-bubble span {
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-.ktr-button-sun-bubble span {
-	position: absolute;
-	top: 0;
-	right: 0;
-}
-.ktr-button-star-bubble span {
+.ktr-button-moon-bubble span,
+.ktr-button-tree-bubble span, 
+.ktr-button-sun-bubble span,
+.ktr-button-air-bubble span {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -575,13 +567,12 @@ header, footer {
 .ktr-button-sun-bubble em label {
 	padding-top: 8px;
 }
-.ktr-button-star-bubble em label {
+.ktr-button-tree-bubble em label {
 	padding-top: 8px;
 }
-.ktr-button-star-bubble span .th-one,
-.ktr-button-star-bubble span .th-two,
-.ktr-button-star-bubble span .th-three
-.ktr-button-star-bubble span .th-four,
+.ktr-button-air-bubble em label {
+	padding-top: 8px;
+}
 .ktr-button-moon-bubble span .th-tesis,
 .ktr-button-moon-bubble span .th-antitesis,
 .ktr-button-moon-bubble span .th-sintesis,
@@ -590,10 +581,11 @@ header, footer {
 .ktr-button-sun-bubble span .th-meridianus,
 .ktr-button-sun-bubble span .th-vesperum,
 .ktr-button-sun-bubble span .th-nox,
-.ktr-button-star-bubble span .th-one,
-.ktr-button-star-bubble span .th-two,
-.ktr-button-star-bubble span .th-three,
-.ktr-button-star-bubble span .th-four {
+.ktr-button-tree-bubble span .th-one,
+.ktr-button-tree-bubble span .th-two,
+.ktr-button-tree-bubble span .th-three,
+.ktr-button-tree-bubble span .th-four,
+.ktr-button-tree-bubble span .th-five {
 	background-color: rgba(255,255,255,.9);
 	border: 2px solid rgba(0,0,0,.2);
 	font-size: 12px;
@@ -621,10 +613,11 @@ header, footer {
 	right: auto;
 	left: 0;
 }
-.ktr-button-star-bubble span .th-one,
-.ktr-button-star-bubble span .th-two,
-.ktr-button-star-bubble span .th-three,
-.ktr-button-star-bubble span .th-four {
+.ktr-button-tree-bubble span .th-one,
+.ktr-button-tree-bubble span .th-two,
+.ktr-button-tree-bubble span .th-three,
+.ktr-button-tree-bubble span .th-four,
+.ktr-button-tree-bubble span .th-five {
 	background-color: rgba(255,255,255,.98);
 	right: 0;
 	left: 0;
@@ -633,6 +626,7 @@ header, footer {
 .th-two:hover:after,
 .th-three:hover:after,
 .th-four:hover:after,
+.th-five:hover:after,
 .th-tesis:hover:after,
 .th-antitesis:hover:after,
 .th-sintesis:hover:after,
@@ -655,18 +649,21 @@ header, footer {
 	min-width: 120px;
 	text-align: center;
 	text-transform: uppercase;
-	left: -190%;
+	left: -180%;
 	right: auto;
-	top: 20%;
+	top: 10%;
 	z-index: 30;
 }
+.th-one:hover:after,
+.th-two:hover:after,
 .th-three:hover:after,
 .th-four:hover:after,
+.th-five:hover:after,
 .th-tesis:hover:after,
 .th-antitesis:hover:after,
 .th-sintesis:hover:after,
 .th-dialectica:hover:after {
-	right: -190%;
+	right: -180%;
 	left: auto;
 }
 
@@ -675,6 +672,7 @@ header, footer {
 	.th-two:hover:after,
 	.th-three:hover:after,
 	.th-four:hover:after,
+	.th-five:hover:after,
 	.th-tesis:hover:after,
 	.th-antitesis:hover:after,
 	.th-sintesis:hover:after,
@@ -691,6 +689,7 @@ header, footer {
 	.th-two:hover:after,
 	.th-three:hover:after,
 	.th-four:hover:after,
+	.th-five:hover:after,
 	.th-tesis:hover:after,
 	.th-antitesis:hover:after,
 	.th-sintesis:hover:after,
@@ -714,7 +713,12 @@ header, footer {
 	.th-tesis:hover:after,
 	.th-antitesis:hover:after,
 	.th-sintesis:hover:after,
-	.th-dialectica:hover:after {
+	.th-dialectica:hover:after,
+	.th-one:hover:after,
+	.th-two:hover:after,
+	.th-three:hover:after,
+	.th-four:hover:after,
+	.th-five:hover:after {
 		top: 10%;
 		right: -300%;
 	}
@@ -724,15 +728,6 @@ header, footer {
 	.th-nox:hover:after {
 		top: 10%;
 		left: -300%;
-	}
-	.th-one:hover:after,
-	.th-two:hover:after {
-		left: -280%;
-	}
-	.th-three:hover:after,
-	.th-four:hover:after {
-		right: -280%;
-		left: auto;
 	}
 	.th-tesis,
 	.th-antitesis,
@@ -744,13 +739,7 @@ header, footer {
 		padding-top: 6px;
 	}
 }
-.th-tesis,
-.th-antitesis,
-.th-sintesis,
-.th-dialectica,
-.th-aurora {
-	background-color: #ffffff;
-}
+
 .th-meridianus {
 	background-color: rgba(248,228,211,1) !important;
 }
@@ -788,17 +777,20 @@ header, footer {
 	transform: scale(1) translateY(300%);
 }
 
-.ktr-button-star-bubble input:checked ~ span .th-one {
-	transform: scale(1) translateY(0%) translateX(-140%);
+.ktr-button-tree-bubble input:checked ~ span .th-one {
+	transform: scale(1) translateX(0%) translateY(-400%);
 }
-.ktr-button-star-bubble input:checked ~ span .th-two {
-	transform: scale(1) translateY(-100%) translateX(-70%);
+.ktr-button-tree-bubble input:checked ~ span .th-two {
+	transform: scale(1) translateX(60%) translateY(-300%);
 }
-.ktr-button-star-bubble input:checked ~ span .th-three {
-	transform: scale(1) translateY(0%) translateX(140%);
+.ktr-button-tree-bubble input:checked ~ span .th-three {
+	transform: scale(1) translateX(120%) translateY(-200%);
 }
-.ktr-button-star-bubble input:checked ~ span .th-four {
-	transform: scale(1) translateY(-100%) translateX(70%);
+.ktr-button-tree-bubble input:checked ~ span .th-four {
+	transform: scale(1) translateX(180%) translateY(-100%);
+}
+.ktr-button-tree-bubble input:checked ~ span .th-five {
+	transform: scale(1) translateX(240%) translateY(0%);
 }
 
 .ktr-button-section {
