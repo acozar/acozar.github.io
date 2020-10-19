@@ -13,14 +13,14 @@ body * {
 	font-weight: 200;
 }
 #page, dialog {
-	cursor: url('http://acozar.github.io/src/cursors/cursor.png'), auto !important;
+	cursor: url('https://acozar.github.io/src/cursors/cursor.png'), auto !important;
 }
 a, label, button {
-	cursor: url('http://acozar.github.io/src/cursors/cursorpointer.png'), auto !important;
+	cursor: url('https://acozar.github.io/src/cursors/cursorpointer.png'), auto !important;
 }
 a:active, label:active, button:active {
 	cursor: pointer;
-	cursor: url('http://acozar.github.io/src/cursors/cursorpointerred.png'), auto !important;
+	cursor: url('https://acozar.github.io/src/cursors/cursorpointerred.png'), auto !important;
 }
 
 /* Responsive hacks */
