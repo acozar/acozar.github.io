@@ -559,6 +559,9 @@ header, footer {
 	bottom: 0px;
 	right: 1%;
 }
+.ktr-button-sun-bubble span {
+     right: 100px;
+}
 .ktr-button-moon-bubble span,
 .ktr-button-tree-bubble span,
 .ktr-button-sun-bubble span,
