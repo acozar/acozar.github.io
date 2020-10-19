@@ -1,5 +1,5 @@
 		jQuery(function($) {
-		  $("#rss-news").rss("https://www.eldiario.es/rss/",
+		  $("#rss-news").rss("https://isardmiralles.com/feed.xml",
 		  {
 			limit: 6,
 			dateFormat: 'D [de] MMMM',
