@@ -552,11 +552,11 @@ header, footer {
 	right: 1%;
 }
 .ktr-button-tree-bubble {
-	bottom: 8px;
+	bottom: 0px;
 	left: 1%;
 }
 .ktr-button-air-bubble {
-	bottom: 8px;
+	bottom: 0px;
 	right: 1%;
 }
 .ktr-button-moon-bubble span,
