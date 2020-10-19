@@ -1,7 +1,7 @@
 	//Turn a canvas element into a sketch area
 	//width and height are grabbed automatically.
 	$("#canvas3").drawr({
-		"enable_tranparency" : true
+		"enable_tranparency" : false
 	});
 
 	//Enable drawing mode, show controls
