@@ -634,7 +634,7 @@ header, footer {
 	text-transform: uppercase;
 	left: -180%;
 	right: auto;
-	top: 10%;
+	top: 20%;
 	z-index: 30;
 }
 .ktr-button-moon-bubble .th-switcher:hover:after,
