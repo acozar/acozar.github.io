@@ -536,42 +536,33 @@ header, footer {
 
 /* KTR bubble Menu */
 
-.ktr-button-moon-bubble {
+.ktr-button-moon-bubble,
+.ktr-button-sun-bubble,
+.ktr-button-tree-bubble,
+.ktr-button-air-bubble {
 	position: fixed;
-	top: 8px;
-	left: 8px;
 	z-index: 10;
+}
+.ktr-button-moon-bubble{
+	top: 8px;
+	left: 1%;
 }
 .ktr-button-sun-bubble {
-	position: fixed;
 	top: 8px;
-	right: 8px;
-	z-index: 10;
+	right: 1%;
 }
 .ktr-button-tree-bubble {
-	position: fixed;
 	bottom: 8px;
-	left: 8px;
-	z-index: 10;
+	left: 1%;
 }
-.ktr-button-moon-bubble span,
-.ktr-button-tree-bubble span, 
-.ktr-button-sun-bubble span,
-.ktr-button-air-bubble span {
-	position: absolute;
-	top: 0;
-	left: 0;
+.ktr-button-air-bubble {
+	bottom: 8px;
+	right: 1%;
 }
 .ktr-button-moon-bubble em label {
 	padding-top: 24px;
 }
 .ktr-button-sun-bubble em label {
-	padding-top: 8px;
-}
-.ktr-button-tree-bubble em label {
-	padding-top: 8px;
-}
-.ktr-button-air-bubble em label {
 	padding-top: 8px;
 }
 .ktr-button-moon-bubble span .th-tesis,
@@ -591,9 +582,6 @@ header, footer {
 	border: 2px solid rgba(0,0,0,.2);
 	font-size: 12px;
 	position: absolute;
-	top: 0;
-	right: 50%;
-	left: auto;
 	transform: scale(0.001) translateX(0px) translateY(0px);
 	
 	-webkit-animation-delay: .5s;
@@ -606,22 +594,6 @@ header, footer {
 		-ms-transition: transform .5s ease;
 		 -o-transition: transform .5s ease;
 			transition: transform .5s ease;
-}
-.ktr-button-moon-bubble span .th-tesis,
-.ktr-button-moon-bubble span .th-antitesis,
-.ktr-button-moon-bubble span .th-sintesis,
-.ktr-button-moon-bubble span .th-dialectica {
-	right: auto;
-	left: 0;
-}
-.ktr-button-tree-bubble span .th-one,
-.ktr-button-tree-bubble span .th-two,
-.ktr-button-tree-bubble span .th-three,
-.ktr-button-tree-bubble span .th-four,
-.ktr-button-tree-bubble span .th-five {
-	background-color: rgba(255,255,255,.98);
-	right: 0;
-	left: 0;
 }
 .ktr-button-moon-bubble .th-switcher:hover:after,
 .ktr-button-sun-bubble .th-switcher:hover:after,
@@ -725,6 +697,14 @@ header, footer {
 		top: -1px;
         left: -1px;
 	}
+    .ktr-button-tree-bubble {
+		bottom: -1px;
+        left: -1px;
+	}
+    .ktr-button-air-bubble {
+		bottom: -1px;
+        right: -1px;
+	}
 	.ktr-button-moon-bubble .th-switcher:hover:after,
 	.ktr-button-tree-bubble .th-switcher:hover:after,
 	.th-tesis:hover:after,
@@ -747,15 +727,6 @@ header, footer {
 	.th-nox:hover:after {
 		top: 10%;
 		left: -300%;
-	}
-	.th-tesis,
-	.th-antitesis,
-	.th-sintesis,
-	.th-dialectica {
-		padding-top: 6px;
-	}
-	.ktr-button-sun-bubble em label {
-		padding-top: 6px;
 	}
 }
 
