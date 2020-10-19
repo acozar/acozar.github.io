@@ -10,7 +10,7 @@ $(document).ready(function() {
 
     // get weather using OpenWeatherMap API
     $.getJSON(
-      "http://api.openweathermap.org/data/2.5/weather?lat=" +
+      "https://api.openweathermap.org/data/2.5/weather?lat=" +
         latitude +
         "&lon=" +
         longitude +
@@ -19,7 +19,7 @@ $(document).ready(function() {
         var windSpeedkmh = Math.round(data.wind.speed * 3.6);
         var Celsius = Math.round(data.main.temp);
         var iconId = data.weather[0].icon;
-        var weatherURL = "http://openweathermap.org/img/w/" + iconId + ".png";
+        var weatherURL = "https://openweathermap.org/img/w/" + iconId + ".png";
 
         var iconImg = "<img src='" + weatherURL + "'>";
         $("#sky-image").html(iconImg);
