@@ -47,3 +47,25 @@ $(function() {
    		$('#sun-phase').html('<img id="sun-phase" src="https://acozar.github.io/src/img/sun-night.gif">');
    });
 });
+
+var themonths = new Date().getMonth();
+
+	var theseason;
+
+	if (themonths >= 0 && themonths < 2) {
+		theseason = night; 
+		$('#tree-phase').html('<img id="tree-phase" src="https://acozar.github.io/src/img/ktr-season-winter.png">');
+
+	} else if (themonths >= 3 && themonths < 5) {
+		theseason = morning;
+		$('#tree-phase').html('<img id="tree-phase" src="https://acozar.github.io/src/img/ktr-season-spring.png">');
+
+	} else if (themonths >= 6 && themonths < 8) {
+		theseason = afternoon;
+		$('#tree-phase').html('<img id="tree-phase" src="https://acozar.github.io/src/img/ktr-season-summer.png">');
+		
+	} else if (themonths >= 9 && themonths < 11) {
+		theseason = evening;
+		$('#tree-phase').html('<img id="tree-phase" src="https://acozar.github.io/src/img/ktr-season-autumn.png">');
+		
+	} 

@@ -133,6 +133,7 @@ header, footer {
 	background-color: rgba(0,0,0,.6);
 	bottom: 0;
 	color: #ccc;
+	font-size: 12px;
 	padding: 8px 0;
 }
 .footer-app a {
@@ -622,6 +623,10 @@ header, footer {
 	right: 0;
 	left: 0;
 }
+.ktr-button-moon-bubble .th-switcher:hover:after,
+.ktr-button-sun-bubble .th-switcher:hover:after,
+.ktr-button-tree-bubble .th-switcher:hover:after,
+.ktr-button-air-bubble .th-switcher:hover:after,
 .th-one:hover:after,
 .th-two:hover:after,
 .th-three:hover:after,
@@ -654,6 +659,8 @@ header, footer {
 	top: 10%;
 	z-index: 30;
 }
+.ktr-button-moon-bubble .th-switcher:hover:after,
+.ktr-button-tree-bubble .th-switcher:hover:after,
 .th-one:hover:after,
 .th-two:hover:after,
 .th-three:hover:after,
@@ -668,6 +675,10 @@ header, footer {
 }
 
 @media screen and (max-width: 600px) {
+	.ktr-button-moon-bubble .th-switcher:hover:after,
+	.ktr-button-tree-bubble .th-switcher:hover:after,
+	.ktr-button-sun-bubble .th-switcher:hover:after,
+	.ktr-button-air-bubble .th-switcher:hover:after,
 	.th-one:hover:after,
 	.th-two:hover:after,
 	.th-three:hover:after,
@@ -685,6 +696,10 @@ header, footer {
 	}
 }
 @media (hover: none) and (pointer: coarse) {
+	.ktr-button-moon-bubble .th-switcher:hover:after,
+	.ktr-button-tree-bubble .th-switcher:hover:after,
+	.ktr-button-sun-bubble .th-switcher:hover:after,
+	.ktr-button-air-bubble .th-switcher:hover:after,
 	.th-one:hover:after,
 	.th-two:hover:after,
 	.th-three:hover:after,
@@ -710,6 +725,8 @@ header, footer {
 		top: -1px;
         left: -1px;
 	}
+	.ktr-button-moon-bubble .th-switcher:hover:after,
+	.ktr-button-tree-bubble .th-switcher:hover:after,
 	.th-tesis:hover:after,
 	.th-antitesis:hover:after,
 	.th-sintesis:hover:after,
@@ -722,6 +739,8 @@ header, footer {
 		top: 10%;
 		right: -300%;
 	}
+	.ktr-button-sun-bubble .th-switcher:hover:after,
+	.ktr-button-air-bubble .th-switcher:hover:after,
 	.th-aurora:hover:after,
 	.th-meridianus:hover:after,
 	.th-vesperum:hover:after,
