@@ -711,6 +711,9 @@ header, footer {
 		bottom: -1px;
         right: -1px;
 	}
+    .ktr-button-sun-bubble span {
+        right: 70px;
+	}
 	.ktr-button-moon-bubble .th-switcher:hover:after,
 	.ktr-button-tree-bubble .th-switcher:hover:after,
 	.th-tesis:hover:after,

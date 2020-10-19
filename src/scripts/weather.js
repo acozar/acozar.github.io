@@ -7,6 +7,9 @@ $(document).ready(function() {
     $("#location").html(
       "Location: " + info.city + ", " + info.region + ", " + info.country
     );
+    $("#clientip").html(
+      "Your IP adress: " + info.ip
+    );
 
     // get weather using OpenWeatherMap API
     $.getJSON(

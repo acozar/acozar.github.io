@@ -21,7 +21,7 @@
 		<meta name="twitter:image" content="https://acozar.github.io/src/ics/icon.png" />
 		<!-- Screen styles -->
 		<link href="https://acozar.github.io/src/styles/screen.components.min.css" rel="stylesheet" media="screen">
-		<link href="https://acozar.github.io//src/styles/ktr-skin.css" rel="stylesheet" media="screen">
+		<link href="../src/styles/ktr-skin.css" rel="stylesheet" media="screen">
 		<link href="https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica" rel="stylesheet">
 		<!-- Print styles -->
 		<link href="https://acozar.github.io/src/styles/print.css" rel="stylesheet" media="print">
@@ -52,7 +52,7 @@
 		<input type="radio" id="theme-nox" name="theme" aria-hidden="true" hidden> 
 					
 		<!-- Page content -->		
-		<div id="page" class="page page-app">
+		<div id="page" class="page">
 			
 			<header class="header-app">
 				<div>
@@ -61,17 +61,30 @@
 				</div>
 			</header>
 			
-			<main id="page-main" class="main-app">
+			<main id="page-main">
 				<div>
-					<div class="weather-app">
-						<div id="sky-image"></div>
-						<div id="location"></div>
-						<div id="clientip"></div>
-						<div id="weather-id"></div>
-						<div>Temperature: <span id="temperature"></span> C &deg</div>
-						<div>Wind speed: <span id="wind-speed"></span></div>
-						<div id="humidity"></div>
-					</div>
+					<hr><hr>
+					<section class="timer">
+						<header>
+							<h2 id="stopwatch">00:00:00</h2>
+						</header>
+						<div class="text-center">
+						    <input type="button" value="Play/Pause" onclick="Example1.Timer.toggle();" />
+						    <input type="button" value="Stop/Reset" onclick="Example1.resetStopwatch();" />
+						</div>
+					</section>
+					<section class="timer">
+						<header>
+							<h2 id="countdown">05:00:00</h2>
+						</header>
+						<div class="text-center">
+							<form id="example2form">
+							    <input type="button" value="Play/Pause" onclick="Example2.Timer.toggle();" />
+							    <input type="button" value="Stop/Reset" onclick="Example2.resetCountdown();" />
+							    <input type="text" name="startTime" value="300">
+							</form>
+						</div>
+					</section>
 				</div>
 			</main>
 			
@@ -128,7 +141,7 @@
 		<script src="https://acozar.github.io/src/scripts/jquery.js" type="text/javascript"></script>
 		<script src="https://acozar.github.io/src/scripts/moon-phase.js" type="text/javascript"></script>
 		<script src="https://acozar.github.io/src/scripts/sun-phase.js" type="text/javascript"></script>
-		<script src="../src/scripts/weather.js" type="text/javascript"></script>
+		<script src="../src/scripts/timer.js" type="text/javascript"></script>
 		<script src="https://acozar.github.io/src/scripts/ga.js" type="text/javascript"></script>
 	</body>
 </html>
