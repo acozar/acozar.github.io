@@ -559,6 +559,12 @@ header, footer {
 	bottom: 8px;
 	right: 1%;
 }
+.ktr-button-moon-bubble span,
+.ktr-button-tree-bubble span,
+.ktr-button-sun-bubble span,
+.ktr-button-air-bubble span{
+    position: absolute;
+}
 .ktr-button-moon-bubble em label {
 	padding-top: 24px;
 }
