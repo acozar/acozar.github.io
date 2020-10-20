@@ -407,6 +407,9 @@ header, footer {
 .ktr-feeds .gallery article div {
     max-height: 280px;
 }
+.ktr-feeds .gallery article {
+    border: 1px solid currentColor;
+}
 .ktr-feeds .gallery h3 {
     max-height: 36px;
     text-transform: uppercase;
