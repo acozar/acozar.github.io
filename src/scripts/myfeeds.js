@@ -1,8 +1,40 @@
 		jQuery(function($) {
-		  $("#rss-news").rss("https://isardmiralles.com/feed.xml",
+		  $("#rss-verbum").rss("http://blog.acozar.com/feeds/posts/default",
 		  {
-			limit: 6,
+			limit: 4,
 			dateFormat: 'D [de] MMMM',
-			entryTemplate:'<div><h5><a href="{url}">{title}</a></h5><p><small>{date}</small></p><div>{teaserImage}{shortBodyPlain}</div><strong class="reverse"><a class="button-icon s circled" href="{url}">Read more</a></strong></div><hr>'
+			entryTemplate:'<article><h3><a href="{url}">{title}</a></h3><strong>{date}</strong><div>{shortBodyPlain}</div></article>'
+		  })
+		})
+		jQuery(function($) {
+		  $("#rss-illustratio").rss("http://graphic.acozar.com/feeds/posts/default",
+		  {
+			limit: 4,
+			dateFormat: 'D [de] MMMM',
+			entryTemplate:'<article><h3><a href="{url}">{title}</a></h3><strong>{date}</strong><div>{teaserImage}{shortBodyPlain}</div></article>'
+		  })
+		})
+		jQuery(function($) {
+		  $("#rss-imago").rss("http://photo.acozar.com/feeds/posts/default",
+		  {
+			limit: 4,
+			dateFormat: 'D [de] MMMM',
+			entryTemplate:'<article><h3><a href="{url}">{title}</a></h3><strong>{date}</strong><div>{teaserImage}{shortBodyPlain}</div></article>'
+		  })
+		})
+		jQuery(function($) {
+		  $("#rss-register").rss("http://video.acozar.com/feeds/posts/default",
+		  {
+			limit: 4,
+			dateFormat: 'D [de] MMMM',
+			entryTemplate:'<article><h3><a href="{url}">{title}</a></h3><strong>{date}</strong><div>{shortBodyPlain}</div></article>'
+		  })
+		})
+		jQuery(function($) {
+		  $("#rss-codex").rss("https://acozar.github.io/feed.xml",
+		  {
+			limit: 4,
+			dateFormat: 'D [de] MMMM',
+			entryTemplate:'<article><h3><a href="{url}">{title}</a></h3><strong>{date}</strong><div>{shortBodyPlain}</div></article>'
 		  })
 		})
