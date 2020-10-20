@@ -408,7 +408,8 @@ header, footer {
     max-height: 280px;
 }
 .ktr-feeds .gallery article {
-    border: 1px solid currentColor;
+    border-top: 1px solid currentColor;
+    padding-top: 36px;
 }
 .ktr-feeds .gallery h3 {
     max-height: 36px;
