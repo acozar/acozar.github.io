@@ -400,6 +400,13 @@ header, footer {
 
 /* KTR article feeds */
 
+.ktr-feeds section {
+    border-bottom: 1px solid currentColor;
+    margin-bottom: 36px;
+}
+.ktr-feeds .gallery article div {
+    max-height: 280px;
+}
 .ktr-feeds .gallery h3 {
     max-height: 36px;
     text-transform: uppercase;
@@ -407,6 +414,10 @@ header, footer {
 .ktr-feeds .gallery strong {
     font-size: 12px;
 
+}
+.ktr-feeds .gallery article em small a {
+    border-radius: 50%;
+    z-index: 11;
 }
 
 /* KTR landing */
