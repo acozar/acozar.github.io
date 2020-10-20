@@ -398,6 +398,17 @@ header, footer {
 	}
 }
 
+/* KTR article feeds */
+
+.ktr-feeds .gallery h3 {
+    max-height: 36px;
+    text-transform: uppercase;
+}
+.ktr-feeds .gallery strong {
+    font-size: 12px;
+
+}
+
 /* KTR landing */
 
 .text-slider {
