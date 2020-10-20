@@ -430,6 +430,15 @@ header, footer {
 	text-decoration: none;
 }
 
+/* KTR article blogroll */
+
+.ktr-blogroll article em small a {
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
 /* KTR landing */
 
 .text-slider {
