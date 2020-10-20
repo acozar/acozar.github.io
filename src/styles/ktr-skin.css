@@ -432,11 +432,22 @@ header, footer {
 
 /* KTR article blogroll */
 
+.ktr-blogroll  .list {
+	display: block;
+	margin: 0 auto;
+	max-width: 90%;
+}
+.ktr-blogroll article h3 {
+	margin-bottom: 32px;
+}
 .ktr-blogroll article em small a {
     border-radius: 50%;
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom:  36px;
+}
+.ktr-blogroll article em small a:hover {
+	text-decoration: none;
 }
 
 /* KTR landing */
