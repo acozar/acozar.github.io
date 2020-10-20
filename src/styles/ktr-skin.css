@@ -423,6 +423,9 @@ header, footer {
     border-radius: 50%;
     z-index: 11;
 }
+.ktr-feeds .gallery article em small a:hover {
+	text-decoration: none;
+}
 
 /* KTR landing */
 
