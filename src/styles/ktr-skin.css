@@ -404,6 +404,9 @@ header, footer {
     border-bottom: 1px solid currentColor;
     margin-bottom: 36px;
 }
+.ktr-feeds section header {
+    border-color: transparent;
+}
 .ktr-feeds .gallery article div {
     max-height: 280px;
 }
