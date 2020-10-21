@@ -196,12 +196,6 @@ header, footer {
     }
 }
 
-#sky-image {
-    display: block;
-    margin: 0 auto;
-    transform: scale(1.5);
-}
-
 .launcher-app {
     position: fixed;
     bottom: 96px;
@@ -666,7 +660,7 @@ header, footer {
 .ktr-button-moon-bubble,
 .ktr-button-sun-bubble,
 .ktr-button-tree-bubble,
-.ktr-button-air-bubble {
+.ktr-button-cloud-bubble {
 	position: fixed;
 	z-index: 10;
 }
@@ -682,7 +676,7 @@ header, footer {
 	bottom: 0px;
 	left: 1%;
 }
-.ktr-button-air-bubble {
+.ktr-button-cloud-bubble {
 	bottom: 0px;
 	right: 1%;
 }
@@ -692,7 +686,7 @@ header, footer {
 .ktr-button-moon-bubble span,
 .ktr-button-tree-bubble span,
 .ktr-button-sun-bubble span,
-.ktr-button-air-bubble span{
+.ktr-button-cloud-bubble span{
     position: absolute;
 }
 .ktr-button-moon-bubble em label {
@@ -713,7 +707,12 @@ header, footer {
 .ktr-button-tree-bubble span .th-two,
 .ktr-button-tree-bubble span .th-three,
 .ktr-button-tree-bubble span .th-four,
-.ktr-button-tree-bubble span .th-five {
+.ktr-button-tree-bubble span .th-five,
+.ktr-button-cloud-bubble span .th-about,
+.ktr-button-cloud-bubble span .th-rss,
+.ktr-button-cloud-bubble span .th-blogroll,
+.ktr-button-cloud-bubble span .th-apps,
+.ktr-button-cloud-bubble span .th-contact {
 	background-color: rgba(255,255,255,.9);
 	border: 2px solid rgba(0,0,0,.2);
 	font-size: 12px;
@@ -747,7 +746,12 @@ header, footer {
 .th-aurora:hover:after,
 .th-meridianus:hover:after,
 .th-vesperum:hover:after,
-.th-nox:hover:after {
+.th-nox:hover:after,
+.th-about:hover:after,
+.th-rss:hover:after,
+.th-blogroll:hover:after,
+.th-apps:hover:after,
+.th-contact:hover:after {
 	background-color: rgba(0,0,0,.9);
 	border: 1px solid rgba(255,255,255,.9);
 	border-radius: 8px;
@@ -799,7 +803,12 @@ header, footer {
 	.th-aurora:hover:after,
 	.th-meridianus:hover:after,
 	.th-vesperum:hover:after,
-	.th-nox:hover:after {
+	.th-nox:hover:after,
+	.th-about:hover:after,
+	.th-rss:hover:after,
+	.th-blogroll:hover:after,
+	.th-apps:hover:after,
+	.th-contact:hover:after {
 		display: none;
 	}
 }
@@ -820,7 +829,12 @@ header, footer {
 	.th-aurora:hover:after,
 	.th-meridianus:hover:after,
 	.th-vesperum:hover:after,
-	.th-nox:hover:after {
+	.th-nox:hover:after,
+	.th-about:hover:after,
+	.th-rss:hover:after,
+	.th-blogroll:hover:after,
+	.th-apps:hover:after,
+	.th-contact:hover:after {
 		display: none;
 	}
 }
@@ -863,7 +877,12 @@ header, footer {
 	.th-aurora:hover:after,
 	.th-meridianus:hover:after,
 	.th-vesperum:hover:after,
-	.th-nox:hover:after {
+	.th-nox:hover:after,
+	.th-about:hover:after,
+	.th-rss:hover:after,
+	.th-blogroll:hover:after,
+	.th-apps:hover:after,
+	.th-contact:hover:after {
 		top: 10%;
 		left: -300%;
 	}
@@ -920,6 +939,22 @@ header, footer {
 }
 .ktr-button-tree-bubble input:checked ~ span .th-five {
 	transform: scale(1) translateX(240%) translateY(0%);
+}
+
+.ktr-button-cloud-bubble input:checked ~ span .th-about {
+	transform: scale(1) translateX(0%) translateY(-400%);
+}
+.ktr-button-cloud-bubble input:checked ~ span .th-rss {
+	transform: scale(1) translateX(-60%) translateY(-300%);
+}
+.ktr-button-cloud-bubble input:checked ~ span .th-blogroll {
+	transform: scale(1) translateX(-120%) translateY(-200%);
+}
+.ktr-button-cloud-bubble input:checked ~ span .th-apps {
+	transform: scale(1) translateX(-180%) translateY(-100%);
+}
+.ktr-button-cloud-bubble input:checked ~ span .th-contact {
+	transform: scale(1) translateX(-240%) translateY(0%);
 }
 
 .ktr-button-section {
