@@ -184,23 +184,6 @@ header, footer {
 	resize: none;
 }
 
-.launcher-app {
-    padding-top: 10vh;
-    text-align: center;
-}
-.launcher-app article {
-    border: none;
-    float: left;
-    margin: 0 2%;
-    padding: 0;
-    width: 21%;
-}
-.launcher-app section header {
-    padding: 0;
-}
-.launcher-app section h3 {
-    margin: 0;
-}
 #sky-image {
     display: block;
     margin: 0 auto;
@@ -229,13 +212,6 @@ header, footer {
 	}
 	.footer-app {
 		padding: 16px 0;
-	}
-	.launcher-app article {
-        font-size: 50%;
-	}
-    .launcher-app h3,
-    .launcher-app img {
-        margin: 0;
 	}
 }
 @media (hover: none) and (pointer: coarse) {
