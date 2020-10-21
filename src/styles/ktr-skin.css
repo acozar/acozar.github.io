@@ -190,6 +190,45 @@ header, footer {
     transform: scale(1.5);
 }
 
+.launcher-app {
+    position: fixed;
+    bottom: 96px;
+    left: 0;
+    right: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: skretch;
+}
+.launcher-app img {
+    width: 128px;
+}
+.launcher-app div:hover {
+    transform: scale(1.4);
+}
+.launcher-app h3,
+.launcher-app p {
+    border-color: currentColor;
+    border-radius: 12px;
+    display: none;
+    position: absolute;
+    width: auto;
+}
+.launcher-app h3 {
+    font-size: 24px;
+    top: -64px;
+    width: 100%;
+}
+.launcher-app p {
+    font-size: 16px;
+    top: -24px;
+    width: 100%;
+}
+.launcher-app div:hover h3,
+.launcher-app div:hover p{
+    display: block;;
+}
+
 @media screen and (max-width: 1024px) {
 	.header-app {
 		height: 48px;
@@ -213,6 +252,17 @@ header, footer {
 	.footer-app {
 		padding: 16px 0;
 	}
+}
+@media screen and (max-width: 640px) {
+    .launcher-app img {
+        width: 72px;
+    }
+    .launcher-app h3 {
+       font-size: 15px;
+    }
+    .launcher-app p {
+       font-size: 10px;
+    }
 }
 @media (hover: none) and (pointer: coarse) {
 	.header-app button:hover:after,
