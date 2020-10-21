@@ -134,7 +134,7 @@ header, footer {
 	bottom: 0;
 	color: #ccc;
 	font-size: 12px;
-	padding: 16px 0;
+	padding: 32px 0;
 }
 .footer-app a {
 	color: #fff !important;
@@ -180,6 +180,24 @@ header, footer {
 	resize: none;
 }
 
+.launcher-app {
+    padding-top: 10vh;
+    text-align: center;
+}
+.launcher-app article {
+    border: none;
+    float: left;
+    margin: 0 2%;
+    padding: 0;
+    width: 21%;
+}
+.launcher-app section header {
+    padding: 0;
+}
+.launcher-app section h3 {
+    margin: 0;
+}
+
 @media screen and (max-width: 1024px) {
 	.header-app {
 		height: 48px;
@@ -199,6 +217,16 @@ header, footer {
 		width: 42px;
 		height: 42px;
 		padding: 0;
+	}
+	.footer-app {
+		padding: 16px 0;
+	}
+	.launcher-app article {
+        font-size: 50%;
+	}
+    .launcher-app h3,
+    .launcher-app img {
+        margin: 0;
 	}
 }
 @media (hover: none) and (pointer: coarse) {

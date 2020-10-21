@@ -3,10 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 		<!-- Metadata -->
-		<title>ZOZ writer</title>
+		<title>PTAH web apps</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Simple Text Processor">
-		<meta name="keywords" content="ZOZ, Simple Text Processor by Acózar">
+		<meta name="description" content="desktop app launcher">
+		<meta name="keywords" content="PTAH, desktop app launcher by Acózar">
 		<meta name="author" content="Acózar">
 		<!-- Metadata: GeoTags -->
 		<meta name="geo.region" content="Catalunya">
@@ -56,27 +56,40 @@
 			
 			<header class="header-app">
 				<div>
-					<h1 hidden>Zoz Editor</h1>
-					<em><button type="button" id="btnOpen" data-title="Open file">&#10514;</button></em>
-					<em><button type="button" id="btnSave" data-title="Save file">&#10515;</button></em>
-					<em><button class="zoomout" data-title="- Font size">-</button></em>
-					<em><button class="zoomin" data-title="+ Font size">+</button></em>
+					<h1 hidden>PTAH web apps</h1>
 					<em><label for="modal-help" data-title="Info & Help">?</label></em>
-					<input type="file" id="exampleInputFile" accept=".txt,.csv,.xml,.md,.css,.html,.js,.php,.xhtml,.tex" hidden>
 				</div>
 			</header>
 			
 			<main id="page-main" class="main-app">
-				<div>
-					<div class="editor-app">
-						<textarea id="work-textarea" placeholder="Type..."></textarea>
-					</div>
+				<div class="launcher-app">
+					<h4>PTAH web apps</h4>
+						<article>
+							<a href="zoz.html" title="ZOZ"><img src="https://acozar.github.io/src/img/apps/ktr-app-zoz.png" alt="ZOZ"></a>
+							<h3><a href="zoz.html" title="ZOZ">ZOZ</a></h3>
+							<strong>text editor</strong>
+						</article>
+						<article>
+							<a href="horus.html" title="HORUS"><img src="https://acozar.github.io/src/img/apps/ktr-app-horus.png" alt="HORUS"></a>
+							<h3><a href="horus.html" title="HORUS">HORUS</a></h3>
+							<strong>draw editor</strong>
+						</article>
+						<article>
+							<a href="isis.html" title="ISIS"><img src="https://acozar.github.io/src/img/apps/ktr-app-isis.png" alt="ISIS"></a>
+							<h3><a href="isis.html" title="ISIS">ISIS</a></h3>
+							<strong>your weather</strong>
+						</article>
+						<article>
+							<a href="hathor.html" title="HATHOR"><img src="https://acozar.github.io/src/img/apps/ktr-app-hathor.png" alt="HATHOR"></a>
+							<h3><a href="hathor.html" title="HATHOR">HATHOR</a></h3>
+							<strong>timers</strong>
+						</article>
+						<hr>
 				</div>
 			</main>
 			
 			<footer id="footer-main" class="footer-app">
-				<p><span id="wordCount">0 words</span>  |  <span id="charCount">0 characters</span></p>
-				<p><small><a href="https://acozar.github.io" title="acozar.github.io" target="blank">ZOZ writer</a> by <a href="https://acozar.github.io" title="acozar.github.io" target="blank">Acózar</a>, <script>document.write(new Date().getFullYear());</script></small></p>
+				<p><small><a href="https://acozar.github.io" title="acozar.github.io" target="blank">PTAH web apps</a> by <a href="https://acozar.github.io" title="acozar.github.io" target="blank">Acózar</a>, <script>document.write(new Date().getFullYear());</script></small></p>
 			</footer>
 			
 		</div>
@@ -90,12 +103,11 @@
 			<dialog>
 				<label for="modal-help">x</label>
 				<header>
-					<h3>ZOZ writer</h3>
+					<h3>PTAH web apps</h3>
 				</header>
 				<div>
-					<p class="lead">ZOZ writer is a javascript engine to open, edit and save simple text files.</p>
-					<p>You can use it with .txt, .csv, .xml, .md, .css, .html, .js, .php, .xhtml and .tex files.</p>
-					<p>More info at <a href="https://acozar.github.io" title="acozar.github.io" target="blank">ZOZ writer</a> by <a href="https://acozar.github.io" title="acozar.github.io" target="blank">Acózar</a></p>
+					<p class="lead">PTAH web apps is a web app launcher developed in javascript.</p>
+					<p>More info at <a href="https://acozar.github.io" title="acozar.github.io" target="blank">PTAH web apps</a> by <a href="https://acozar.github.io" title="acozar.github.io" target="blank">Acózar</a></p>
 				</div>
 			</dialog>
 		</div>
@@ -141,7 +153,6 @@
 		<script src="https://acozar.github.io/src/scripts/jquery.js" type="text/javascript"></script>
 		<script src="https://acozar.github.io/src/scripts/moon-phase.js" type="text/javascript"></script>
 		<script src="https://acozar.github.io/src/scripts/sun-phase.js" type="text/javascript"></script>
-		<script src="https://acozar.github.io/src/scripts/file-manager.js" type="text/javascript"></script>
 		<script src="https://acozar.github.io/src/scripts/ga.js" type="text/javascript"></script>
 	</body>
 </html>
