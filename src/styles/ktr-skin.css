@@ -187,6 +187,14 @@ header, footer {
 	border: none;
 	margin-top: 10vh;
 }
+.main-app section header h3 {
+    margin: 0px;
+}
+@media screen and (max-height: 640px) {
+    .main-app section header {
+        display: none;
+    }
+}
 
 #sky-image {
     display: block;
