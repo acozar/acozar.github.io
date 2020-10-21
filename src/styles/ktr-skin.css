@@ -183,6 +183,10 @@ header, footer {
 	overflow: auto;
 	resize: none;
 }
+.main-app header {
+	border: none;
+	margin-top: 10vh;
+}
 
 #sky-image {
     display: block;
