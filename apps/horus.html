@@ -3,10 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 		<!-- Metadata -->
-		<title>0TITLE0</title>
+		<title>HORUS draw editor</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="0DESCRIPTION0">
-		<meta name="keywords" content="0TITLE0">
+		<meta name="description" content="Simple paint app">
+		<meta name="keywords" content="HORUS draw editor">
 		<meta name="author" content="Acózar">
 		<!-- Metadata: GeoTags -->
 		<meta name="geo.region" content="Catalunya">
@@ -16,8 +16,8 @@
 		<!-- Metadata: Twitter Cards -->
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:site" content="@polacozar">
-		<meta name="twitter:title" content="OTITLE0">
-		<meta name="twitter:description" content="0DESCRIPTION0">
+		<meta name="twitter:title" content="HORUS draw editor">
+		<meta name="twitter:description" content="Simple paint app">
 		<meta name="twitter:image" content="https://acozar.github.io/src/ics/icon.png" />
 		<!-- Screen styles -->
 		<link href="https://acozar.github.io/src/styles/screen.components.min.css" rel="stylesheet" media="screen">
@@ -54,15 +54,26 @@
 					
 		<!-- Page content -->		
 		<div id="page" class="page">
-			<hr>
-			<div style="display:block;margin:0 auto;width:80vw;height:80vh;">
-				<canvas id="canvas3"></canvas>
-			</div>
-			<input type="file" id="file-picker" style="display:none;">
-			<hr><hr><hr><hr><hr>
+		
+			<header class="header-app">
+				<div>
+					<a href="https://acozar.github.io/apps/horus.html" title="HORUS draw editor"><img src="https://acozar.github.io/src/img/apps/ktr-app-horus.png" alt="HORUS" class="ktr-logo"></a>
+					<h1 hidden><small>HORUS draw editor</small></h1>
+				</div>
+			</header>
+			
+			<main id="main-page" class="main-app">
+				<div>
+					<div style="display:block;margin:0 auto;width:80vw;height:80vh;">
+						<canvas id="canvas3"></canvas>
+					</div>
+					<input type="file" id="file-picker" style="display:none;">
+				</div>
+				<hr>
+			</main>
 			
 			<footer id="footer-main" class="footer-app">
-				<p><a href="0URL0" title="0TITLE0 | 0DESCRIPTION0" target="blank">0TITLE0</a> by <a href="https://acozar.github.io" title="acozar.github.io" target="blank">Acózar</a>, <script>document.write(new Date().getFullYear());</script></p>
+				<p><a href="0URL0" title="HORUS draw editor | Simple paint app" target="blank">HORUS draw editor</a> by <a href="https://acozar.github.io" title="acozar.github.io" target="blank">Acózar</a>, <script>document.write(new Date().getFullYear());</script></p>
 			</footer>
 			
 		</div>

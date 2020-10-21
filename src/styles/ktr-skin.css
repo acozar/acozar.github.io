@@ -107,6 +107,7 @@ header, footer {
 .header-app,
 .main-app,
 .footer-app {
+    background-color: inherit;
 	position: fixed;
 	left: 0;
 	right: 0;
@@ -128,6 +129,9 @@ header, footer {
 .main-app {
 	top: 0;
 	height: 100vh;
+    padding-top: 10vh;
+    width: 100vw;
+    text-align: center;
 }
 .footer-app {
 	background-color: rgba(0,0,0,.6);
