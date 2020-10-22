@@ -741,7 +741,7 @@ header, footer {
 .ktr-button-moon-bubble .th-switcher:hover:after,
 .ktr-button-sun-bubble .th-switcher:hover:after,
 .ktr-button-tree-bubble .th-switcher:hover:after,
-.ktr-button-air-bubble .th-switcher:hover:after,
+.ktr-button-cloud-bubble .th-switcher:hover:after,
 .th-one:hover:after,
 .th-two:hover:after,
 .th-three:hover:after,
@@ -798,7 +798,7 @@ header, footer {
 	.ktr-button-moon-bubble .th-switcher:hover:after,
 	.ktr-button-tree-bubble .th-switcher:hover:after,
 	.ktr-button-sun-bubble .th-switcher:hover:after,
-	.ktr-button-air-bubble .th-switcher:hover:after,
+	.ktr-button-cloud-bubble .th-switcher:hover:after,
 	.th-one:hover:after,
 	.th-two:hover:after,
 	.th-three:hover:after,
@@ -824,7 +824,7 @@ header, footer {
 	.ktr-button-moon-bubble .th-switcher:hover:after,
 	.ktr-button-tree-bubble .th-switcher:hover:after,
 	.ktr-button-sun-bubble .th-switcher:hover:after,
-	.ktr-button-air-bubble .th-switcher:hover:after,
+	.ktr-button-cloud-bubble .th-switcher:hover:after,
 	.th-one:hover:after,
 	.th-two:hover:after,
 	.th-three:hover:after,
@@ -859,7 +859,7 @@ header, footer {
 		bottom: -1px;
         left: -1px;
 	}
-    .ktr-button-air-bubble {
+    .ktr-button-cloud-bubble {
 		bottom: -1px;
         right: -1px;
 	}
@@ -881,7 +881,7 @@ header, footer {
 		right: -300%;
 	}
 	.ktr-button-sun-bubble .th-switcher:hover:after,
-	.ktr-button-air-bubble .th-switcher:hover:after,
+	.ktr-button-cloud-bubble .th-switcher:hover:after,
 	.th-aurora:hover:after,
 	.th-meridianus:hover:after,
 	.th-vesperum:hover:after,
