@@ -698,7 +698,7 @@ header, footer {
 .ktr-button-moon-bubble em label img {
 	position: absolute;
     top: 16px;
-    left: 24px;
+    left: 20px;
     z-index: -1;
     width: 50%;
     height: auto;
