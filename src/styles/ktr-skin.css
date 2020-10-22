@@ -695,6 +695,14 @@ header, footer {
 .ktr-button-sun-bubble em label {
 	padding-top: 8px;
 }
+.ktr-button-moon-bubble em label img {
+	position: absolute;
+    top: 16px;
+    left: 24px;
+    z-index: -1;
+    width: 50%;
+    height: auto;
+}
 .ktr-button-moon-bubble span .th-tesis,
 .ktr-button-moon-bubble span .th-antitesis,
 .ktr-button-moon-bubble span .th-sintesis,
