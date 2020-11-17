@@ -7,11 +7,9 @@ progress,
 [class*='jdialog'],
 .tabs label,
 .slide-page button { display: none !important; visibility: hidden !important; } 
-.button-group:hover .dropmenu,
-.button-group:hover .popmenu,
 .no-js,
 .collapsed,
-.closed { clear: both; display: block; }
+.closed { clear: both; display: block; visibility: visible;}
 .slide-wrapper { overflow: auto; }
 .slide-page { position: relative; visibility: visible; z-index: 1; }
 .idpanel,
