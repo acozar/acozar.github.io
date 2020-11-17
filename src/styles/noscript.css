@@ -1,0 +1,38 @@
+/* HiperCSS Noscript by www.hipertextos.net */
+
+dialog,
+progress,
+.no-js,
+[class*='notification'],
+[class*='jdialog'],
+.tabs label,
+.slide-page button { display: none !important; visibility: hidden !important; } 
+.button-group:hover .dropmenu,
+.button-group:hover .popmenu,
+.js,
+.collapsed,
+.closed { clear: both; display: block; }
+.slide-wrapper { overflow: auto; }
+.slide-page { position: relative; visibility: visible; z-index: 1; }
+.idpanel,
+.tabs div {
+	display: block !important;
+	float: none !important;
+	height: auto !important;
+	overflow: none !important;
+	position: relative !important;
+	visibility: visible !important;
+	width: 100% !important;
+}
+.panel-flip:hover .front {
+	z-index: 900;
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+.panel-flip:hover .back {
+	z-index: 1000;
+	-webkit-transform: rotateX(0deg) rotateY(0deg);
+	-moz-transform: rotateX(0deg) rotateY(0deg);
+	transform: rotateX(0deg) rotateY(0deg);
+}
