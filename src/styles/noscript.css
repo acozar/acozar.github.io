@@ -2,14 +2,14 @@
 
 dialog,
 progress,
-.no-js,
+.js,
 [class*='notification'],
 [class*='jdialog'],
 .tabs label,
 .slide-page button { display: none !important; visibility: hidden !important; } 
 .button-group:hover .dropmenu,
 .button-group:hover .popmenu,
-.js,
+.no-js,
 .collapsed,
 .closed { clear: both; display: block; }
 .slide-wrapper { overflow: auto; }
