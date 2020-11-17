@@ -1065,6 +1065,20 @@ header, footer {
 	tranform: translate3D(0, 0, 600px);
 }
 
+/* KTR DB */
+
+.ktr-db {
+    margin: 0 2%
+}
+.ktr-db .book-item {
+    border-radius: 12px;
+}
+.ktr-db .book-item img {
+    float: left;
+    margin: 8px 16px 8px 8px;
+    width: 128px
+}
+
 /* Moon */
 
 .moon { fill:#D6D5C0; }
