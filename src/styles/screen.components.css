@@ -2619,13 +2619,16 @@ nav strong label mark {
 	color: #000;
 	display: block;
 	float: right;
-	margin: 0 8px 8px;
+	margin: 0 8px 0px;
 	padding: 0;
 	text-align: center;
 	text-decoration: none;
 	line-height: 44px;
 	height: 48px;
 	width: 48px;
+}
+#tools-switcher label {
+	margin: 0 10px 16px;
 }
 #tools-nav #label-aurora { background-color: #fff; }
 #tools-nav #label-meridianus { background-color: rgba(255,245,238,1); }

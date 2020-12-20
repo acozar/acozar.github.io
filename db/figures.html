@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="utf-8">
 		<!-- Metadata -->
-		<title>0TITLE0</title>
+		<title>Bibliografía</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="0DESCRIPTION0">
-		<meta name="keywords" content="0TITLE0, 0DESCRIPTION0 by Acózar">
+		<meta name="description" content="Libros recomendados">
+		<meta name="keywords" content="Bibliografía, Libros recomendados por Acózar">
 		<meta name="author" content="Acózar">
 		<!-- Metadata: GeoTags -->
 		<meta name="geo.region" content="Catalunya">
@@ -16,31 +16,31 @@
 		<!-- Metadata: Twitter Cards -->
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:site" content="@polacozar">
-		<meta name="twitter:title" content="0TITLE0">
-		<meta name="twitter:description" content="0DESCRIPTION0">
-		<meta name="twitter:image" content="http://acozar.github.io/src/ics/icon.png" />
+		<meta name="twitter:title" content="Bibliografía">
+		<meta name="twitter:description" content="Libros recomendados">
+		<meta name="twitter:image" content="https://acozar.github.io/src/ics/icon.png" />
 		<!-- Screen styles -->
 		<link href="https://acozar.github.io/src/styles/screen.components.min.css" rel="stylesheet" media="screen">
-		<link href="../src/styles/ktr-skin.css" rel="stylesheet" media="screen">
+		<link href="https://acozar.github.io/src/styles/ktr-skin.css" rel="stylesheet" media="screen">
 		<link href="https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica" rel="stylesheet">
 		<!-- Print styles -->
-		<link href="http://acozar.github.io/src/styles/print.css" rel="stylesheet" media="print">
+		<link href="https://acozar.github.io/src/styles/print.css" rel="stylesheet" media="print">
 		<!-- If iexplorer :( -->
-		<!--[if lt IE 9]><script src="http://acozar.github.io/src/styles/html5shiv.js"></script><![endif]-->
-		<!--[if IE]><link rel="stylesheet" type="text/css" href="http://acozar.github.io/src/styles/iexplorer.css" /><![endif]-->
+		<!--[if lt IE 9]><script src="https://acozar.github.io/src/styles/html5shiv.js"></script><![endif]-->
+		<!--[if IE]><link rel="stylesheet" type="text/css" href="https://acozar.github.io/src/styles/iexplorer.css" /><![endif]-->
 		<!-- No Script styles -->		
-		<noscript><link href="http://acozar.github.io/src/styles/noscript.css" rel="stylesheet" media="screen"></noscript>
+		<noscript><link href="https://acozar.github.io/src/styles/noscript.css" rel="stylesheet" media="screen"></noscript>
 		<!-- Site Feed -->
 		<link rel="alternate" type="application/rss+xml" title="rss" href="http://blog.acozar.com/feeds/posts/default">
 		<!-- Page Icons -->
-		<link rel="apple-touch-icon" sizes="180x180" href="http://acozar.github.io/src/ics/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="http://acozar.github.io/src/ics/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="http://acozar.github.io/src/ics/favicon-16x16.png">
-		<link rel="manifest" href="http://acozar.github.io/src/ics/site.webmanifest">
-		<link rel="mask-icon" href="http://acozar.github.io/src/ics/safari-pinned-tab.svg" color="#777777">
-		<link rel="shortcut icon" href="http://acozar.github.io/src/ics/favicon.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="https://acozar.github.io/src/ics/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="https://acozar.github.io/src/ics/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="https://acozar.github.io/src/ics/favicon-16x16.png">
+		<link rel="manifest" href="https://acozar.github.io/src/ics/site.webmanifest">
+		<link rel="mask-icon" href="https://acozar.github.io/src/ics/safari-pinned-tab.svg" color="#777777">
+		<link rel="shortcut icon" href="https://acozar.github.io/src/ics/favicon.ico">
 		<meta name="msapplication-TileColor" content="#eeeeee">
-		<meta name="msapplication-config" content="http://acozar.github.io/src/ics/browserconfig.xml">
+		<meta name="msapplication-config" content="https://acozar.github.io/src/ics/browserconfig.xml">
 		<meta name="theme-color" content="#ffffff">
 	</head>
 	<body>
@@ -57,17 +57,38 @@
 			<header id="page-header" class="ktr-header">
 				<div>
 					<h1><a href="http://www.acozar.com" title="www.acozar.com" class="notranslate"><small>www.</small>acózar<small>.com</small></a></h1>
-					<p>- Dialectica -</p>
-						<h1>0TITLE0</h1>
-						<strong>0DESCRIPTION0</strong>
+					<p>- Bibliografia -</p>
 				</div>
 			</header>
 			
 			<main id="page-main">
 				<div>
 	
-				
-					<hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+					<div class="no-js">
+						<h2>Sorry! Javascript is disabled on your browser.</h2> 
+						<p>Please turn on to see this page.</p>
+					</div>
+					
+					<div id="hr" class="ktr-db">
+						<script id="hr-template" type="text/x-handlebars-template">
+							<article class="book-item">
+								<header>
+									<h3>{{cells.Personaje}}</h3>
+									<strong> {{cells.Fabricante}}</strong>
+								</header>
+								<div>
+									<p>{{cells.Personaje}} {{cells.Descripcion}}</p>
+									<p>Valoración: <b>{{cells.Valoracion}}</b>
+									<p>Año: <b>{{cells.Fecha}}</b>
+									<p><a href="{{cells.Link}}">{{cells.Personaje}}</a>
+									<hr>
+								</div>
+							</article>
+							<hr>
+						</script>
+					</div>
+						
+					<hr>
 				</div>
 			</main>
 			
@@ -97,12 +118,12 @@
 		<div class="ktr-button-moon-bubble" id="mutatio">
 			<input id="moon-bubble" name="moon-bubble" type="checkbox" hidden>
 			<span>
-				<em><a class="th-tesis" href="http://blog.acozar.com/search/label/Tesis" data-title="Tesis"><img src="http://acozar.github.io/src/img/ktr-icons-tesis.png" alt="Tesis"></a></em>
-				<em><a class="th-antitesis" href="http://blog.acozar.com/search/label/Antitesis" data-title="Antítesis"><img src="http://acozar.github.io/src/img/ktr-icons-antitesis.png" alt="Antítesis"></a></em>
-				<em><a class="th-sintesis" href="http://blog.acozar.com/search/label/Sintesis" data-title="Síntesis"><img src="http://acozar.github.io/src/img/ktr-icons-sintesis.png" alt="Síntesis"></a></em>
-				<em><a class="th-dialectica" href="http://acozar.github.io/codex/dialectica.html" data-title="Dialèctica"><img src="http://acozar.github.io/src/img/ktr-icons-dialectica.png" alt="Dialèctica"></a>
+				<em><a class="th-tesis" href="http://blog.acozar.com/search/label/Tesis" data-title="Tesis"><img src="https://acozar.github.io/src/img/ktr-icons-tesis.png" alt="Tesis"></a></em>
+				<em><a class="th-antitesis" href="http://blog.acozar.com/search/label/Antitesis" data-title="Antítesis"><img src="https://acozar.github.io/src/img/ktr-icons-antitesis.png" alt="Antítesis"></a></em>
+				<em><a class="th-sintesis" href="http://blog.acozar.com/search/label/Sintesis" data-title="Síntesis"><img src="https://acozar.github.io/src/img/ktr-icons-sintesis.png" alt="Síntesis"></a></em>
+				<em><a class="th-dialectica" href="https://acozar.github.io/codex/dialectica.html" data-title="Dialèctica"><img src="https://acozar.github.io/src/img/ktr-icons-dialectica.png" alt="Dialèctica"></a>
 			</span>
-			<em><label class="th-switcher" for="moon-bubble" data-title="Mutatio"><svg id="moon" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" version="1.1"/><img src="http://acozar.github.io/src/img/moon.png"></label></em>
+			<em><label class="th-switcher" for="moon-bubble" data-title="Mutatio"><svg id="moon" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" version="1.1"/><img src="https://acozar.github.io/src/img/moon.png"></label></em>
 		</div>	
 		
 		<div class="ktr-button-sun-bubble" id="sol">
@@ -137,14 +158,28 @@
 				<em><a class="th-apps" href="https://acozar.github.io/apps/ptah.html" data-title="Apps"><img src="https://acozar.github.io/src/img/ktr-icons-ptah.png" alt="Apps"></a></em>
 				<em><a class="th-contact" href="https://acozar.github.io/about/contact.html" data-title="Contact"><img src="https://acozar.github.io/src/img/ktr-icons-contact.png" alt="Contact"></a></em>
 			</span>
-			<em><label class="th-switcher" for="cloud-bubble" data-title="Nubes"><img src="../src/img/cloud.gif"></label></em>
+			<em><label class="th-switcher" for="cloud-bubble" data-title="Nubes"><img src="https://acozar.github.io/src/img/cloud.png"></label></em>
 		</div>		
 
 		<!-- Scripts
 		================================================== -->
 		<script src="https://acozar.github.io/src/scripts/jquery.js" type="text/javascript"></script>
 		<script src="https://acozar.github.io/src/scripts/moon-phase.js" type="text/javascript"></script>
-		<script src="../src/scripts/sun-phase.js" type="text/javascript"></script>
+		<script src="https://acozar.github.io/src/scripts/sun-phase.js" type="text/javascript"></script>
+		<script src="https://acozar.github.io/src/scripts/handlebars.min.js" type="text/javascript"></script>
+		<script src="https://acozar.github.io/src/scripts/sheetrock.min.js" type="text/javascript"></script>
 		<script src="https://acozar.github.io/src/scripts/ga.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			// Define spreadsheet URL.
+			var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1pA7-Kk_DZ99A4qnMaERskA5EOw-xa8Be7uRNMlUgEYc/edit#gid=476413492';
+			// Compile the Handlebars template for HR leaders.
+			var HRTemplate = Handlebars.compile($('#hr-template').html());
+			// Load top five HR leaders.
+			$('#hr').sheetrock({
+			  url: mySpreadsheet,
+			  query: "select B,C,D,F,P order by I desc",
+			  rowTemplate: HRTemplate
+			});
+		</script>
 	</body>
 </html>

@@ -52,20 +52,19 @@ var themonths = new Date().getMonth();
 
 	var theseason;
 
-	if (themonths >= 0 && themonths < 2) {
+	if (themonths >= 0 && themonths < 3) {
 		theseason = night; 
 		$('#tree-phase').html('<img id="tree-phase" src="https://acozar.github.io/src/img/ktr-season-winter.png">');
 
-	} else if (themonths >= 3 && themonths < 5) {
+	} else if (themonths >= 4 && themonths < 6) {
 		theseason = morning;
 		$('#tree-phase').html('<img id="tree-phase" src="https://acozar.github.io/src/img/ktr-season-spring.png">');
 
-	} else if (themonths >= 6 && themonths < 8) {
+	} else if (themonths >= 7 && themonths < 9) {
 		theseason = afternoon;
 		$('#tree-phase').html('<img id="tree-phase" src="https://acozar.github.io/src/img/ktr-season-summer.png">');
 		
-	} else if (themonths >= 9 && themonths < 11) {
+	} else if (themonths >= 10 && themonths < 12) {
 		theseason = evening;
 		$('#tree-phase').html('<img id="tree-phase" src="https://acozar.github.io/src/img/ktr-season-autumn.png">');
-		
 	} 
