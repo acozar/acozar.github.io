@@ -1,0 +1,216 @@
+/* BCN App CSS by Acózar 2020 (www.acozar.com) */
+
+/* Version 1.0 */
+/* General MIT License (MIT) */
+/* Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: */
+/* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. */
+/* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. */
+
+/* ------------------------------------------------------------ Random Background */
+
+.randombg {
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0; 
+	right: 0;
+	background: url('https://acozar.github.io/src/img/picture-1.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	opacity: .8;
+}
+.randombg.bg1 {
+	background-image: url('https://acozar.github.io/src/img/picture-1.jpg');
+}
+.randombg.bg2 {
+	background-image: url('https://acozar.github.io/src/img/picture-2.jpg');
+}
+.randombg.bg3 {
+	background-image: url('https://acozar.github.io/src/img/picture-3.jpg');
+}
+
+/* ------------------------------------------------------------ Page structure */
+
+#main-check:checked ~ main {
+	display: none;
+}
+#page header,
+#page footer {
+	text-align: center;
+}
+#page header {
+
+}
+#page footer {
+	background-color: rgba(0,0,0,.5);
+	border: 1px solid #ffffff;
+	border-radius: 12px;
+	font-size: 16px;
+	margin: 16px;
+	padding: 6px 0;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 180px;
+	z-index: 99;
+}
+#page footer a {
+	color: #ffffff;
+	font-weight: bold;
+}
+
+/* ------------------------------------------------------------ Page Boxes */
+
+h5 {
+	border-bottom: 1px solid currentColor;
+}
+#page .search-box,
+#page .weather-box,
+#page .clock-box,
+#page .browser-box,
+#page .coin-box {
+	background-color: var(--color-white);
+	border: 1px solid currentColor;
+	border-radius: 12px;
+	text-align: center;
+	opacity: .8;
+}
+#page .search-box:hover,
+#page .weather-box:hover,
+#page .clock-box:hover,
+#page .browser-box:hover,
+#page .coin-box:hover {
+	opacity: 1;
+}
+#theme-meridianus:checked ~ #page .search-box,
+#theme-meridianus:checked ~ #page .weather-box,
+#theme-meridianus:checked ~ #page .clock-box,
+#theme-meridianus:checked ~ #page .browser-box,
+#theme-meridianus:checked ~ #page .coin-box {
+	background-color: var(--color-bgmeridianus);
+}
+#theme-vesperum:checked ~ #page .search-box,
+#theme-vesperum:checked ~ #page .weather-box,
+#theme-vesperum:checked ~ #page .clock-box,
+#theme-vesperum:checked ~ #page .browser-box,
+#theme-vesperum:checked ~ #page .coin-box {
+	background-color: var(--color-bgvesperum);
+}
+#theme-nox:checked ~ #page .search-box,
+#theme-nox:checked ~ #page .weather-box,
+#theme-nox:checked ~ #page .clock-box,
+#theme-nox:checked ~ #page .browser-box,
+#theme-nox:checked ~ #page .coin-box {
+	background-color: var(--color-black);
+}
+#page .search-box {
+	margin: 16px 1%;
+	position: relative;
+	width: 97%;
+}
+#page .search-box input {
+	border-radius: 32px;
+	margin: 0;
+}
+#page .weather-box,
+#page .clock-box,
+#page .browser-box  {
+	line-height: 1.2em;
+	margin: 16px 1%;
+	padding-bottom: 64px;
+	width: 31%;
+}
+#page .weather-box img {
+	background-color: var(--color-softblue);
+	border: 1px solid #333;
+	border-radius: 50%;
+	display: block;
+	margin: 0px auto 64px;
+	width: 64px;
+}
+
+.browser-box div span {
+	font-size: 2em;
+}
+.android-os:before,
+.i-os:before,
+.mac-os:before,
+.windows-os:before,
+.linux-os:before,
+.chrome:before,
+.firefox:before, 
+.ie:before,
+.safari:before {
+	border: 1px solid red;
+	border-radius: 50%;
+	content: ' ';
+	display: block;
+	margin: 8px auto;
+	width: 120px;
+	height: 120px;
+}
+
+.android-os:before {
+	background-image: url('../src/img/osbrowsers/android.png');
+}
+.i-os:before {
+	background: url('../src/img/osbrowsers/apple.png') no-repeat center transparent;
+}
+.linux-os:before {
+	background: url('../src/img/osbrowsers/linux.png') no-repeat center transparent;
+}
+.mac-os:before {
+	background-image: url('../src/img/osbrowsers/apple.png');
+	background-size: cover;
+}
+.windows-os:before {
+	background: url('../src/img/osbrowsers/windows.png') no-repeat center transparent;
+}
+
+.chrome:before {
+	background: url('../src/img/osbrowsers/chrome.png') no-repeat center transparent;
+}
+.firefox:before {
+	background: url('../src/img/osbrowsers/firefox.png') no-repeat center transparent;
+}
+.ie:before {
+	background: url('../src/img/osbrowsers/ie.png') no-repeat center transparent;
+}
+.safari:before {
+	background: url('../src/img/osbrowsers/safari.png') no-repeat center transparent;
+}
+
+.android-os:after {
+	content: 'Android OS';
+}
+.i-os:after {
+	content: 'iOS';
+}
+.linux-os:after {
+	content: 'Linux OS';
+}
+.mac-os:after {
+	content: 'mac OS';
+}
+.windows-os:after {
+	content: 'Windows OS';
+}
+
+.chrome:after {
+	content: 'Chrome';
+}
+.firefox:after {
+	content: 'Mozilla Firefox';
+}
+.ie:after {
+	content: 'Internet Explorer';
+}
+.safari:after {
+	content: ' Safari';
+}
+
+
+/* The end */

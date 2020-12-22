@@ -1,0 +1,231 @@
+/* https://basicuse.net/articles/pl/textile/html_css/creating_analog_clock_with_responsive_design_using_animation_in_css3 */
+
+@-webkit-keyframes rotation {
+  from { -webkit-transform: rotate(0deg); }    
+  to { -webkit-transform: rotate(360deg); }
+}
+
+@-moz-keyframes rotation {
+  from { -moz-transform: rotate(0deg); }    
+  to { -moz-transform: rotate(360deg); }
+}
+
+@-o-keyframes rotation {
+  from { -o-transform: rotate(0deg); }    
+  to { -o-transform: rotate(360deg); }
+}
+
+@keyframes rotation {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.clock {
+	display: block;
+	margin: 16px auto 32px;
+	height: 200px;
+	max-width: 240px;
+	position: relative;
+}
+.clock-case,
+.clock-case-back {
+  background: url('../../src/dials/bg-brushed-metal.jpg') no-repeat center 100% white;
+  background-size: cover;	
+  display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	
+	-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent) , to(rgba(250, 250, 250, 0.1)));
+	   -moz-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent) , to(rgba(250, 250, 250, 0.1)));
+		 -o-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent) , to(rgba(250, 250, 250, 0.1)));
+			box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent) , to(rgba(250, 250, 250, 0.1)));
+	
+	-webkit-transform-style: preserve-3d;
+	   -moz-transform-style: preserve-3d;
+		 -o-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+	
+	-webkit-backface-visibility: hidden;
+	   -moz-backface-visibility: hidden;
+	     -o-backface-visibility: hidden;
+			backface-visibility: hidden;
+
+	-webkit-transition: all .4s ease-in-out;
+	   -moz-transition: all .4s ease-in-out;
+		 -o-transition: all .4s ease-in-out;
+			transition: all .4s ease-in-out;
+}
+
+.clock-case {
+	background-color: #62696F;
+	padding: 1%;
+	z-index: 8;
+	-webkit-transform: rotateX(0deg) rotateY(0deg);
+	   -moz-transform: rotateX(0deg) rotateY(0deg);
+	     -o-transform: rotateX(0deg) rotateY(0deg);
+			transform: rotateX(0deg) rotateY(0deg);
+}
+
+.clock-dial {
+  background: url('../../src/dials/bg-brushed-metal.jpg') no-repeat center 100% white;
+  background-size: cover;
+  position: relative;
+  box-shadow: inset 1px -32px 32px rgba(0,0,0,.7), inset 1px 12px 12px rgba(0,0,0,.7);
+}
+
+.clock-ratio {
+  padding-bottom: 100%;
+  height: 0;
+  overflow: hidden;
+}
+
+.clock-second-hand {
+  width: 2px;
+  height: 100%;
+  margin-left: -1%;
+  position: absolute;
+  left: 50%;
+  -webkit-animation: rotation 60s infinite linear;
+  -moz-animation: rotation 60s infinite linear;
+  -o-animation: rotation 60s infinite linear;
+  animation: rotation 60s infinite linear;
+}
+
+.clock-second-hand:before {
+  content: "";
+  background-color: red;
+  width: 100%;
+  height: 55%;
+  top: 4%;
+  position: absolute;
+  box-shadow: 8px 8px 8px rgba(0,0,0,.5);
+}
+
+.clock-minute-hand {
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  -webkit-animation: rotation 3600s infinite linear;
+  -moz-animation: rotation 3600s infinite linear;
+  -o-animation: rotation 3600s infinite linear;
+  animation: rotation 3600s infinite linear;
+}
+
+.clock-minute-hand:before {
+  content: "";
+  background-color: #bbbbbb;
+  width: 100%;
+  height: 50%;
+  top: 8%;
+  position: absolute;
+  box-shadow: 8px 8px 8px rgba(0,0,0,.5);
+}
+
+.clock-hour-hand {
+  width: 6px;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  -webkit-animation: rotation 43200s infinite linear;
+  -moz-animation: rotation 43200s infinite linear;
+  -o-animation: rotation 43200s infinite linear;
+  animation: rotation 43200s infinite linear;
+}
+
+.clock-hour-hand:before {
+  content: "";
+  background-color: #eeeeee;
+  width: 100%;
+  height: 40%;
+  top: 20%;
+  position: absolute;
+  box-shadow: 8px 8px 8px rgba(0,0,0,.5);
+}
+/*
+.clock-zenit-hand {
+  width: 12px;
+  height: 100%;
+  margin-left: -2%;
+  position: absolute;
+  left: 50%;
+  -webkit-animation: rotation 86400s infinite linear;
+  -moz-animation: rotation 86400s infinite linear;
+  -o-animation: rotation 86400s infinite linear;
+  animation: rotation 86400s infinite linear;
+}
+
+.clock-zenit-hand:before {
+  content: "";
+  background-color: #dd0000;
+  width: 100%;
+  height: 36%;
+  bottom: 22%;
+  position: absolute;
+  box-shadow: 8px 8px 8px rgba(0,0,0,.5);
+} */
+
+.clock-zenit-hand {
+	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0; left: 0;
+	-webkit-animation: rotation 86400s infinite linear;
+	-moz-animation: rotation 86400s infinite linear;
+	-o-animation: rotation 86400s infinite linear;
+	animation: rotation 86400s infinite linear;
+}
+.clock-zenit-hand:before {
+	border-radius: 50%;
+	color: #dd0000;
+	content: "\2609";
+	display: block;
+	font-size: 32px;
+	font-weight: bold;
+	text-align: center;
+	position: absolute;
+	bottom: 20%;
+	left: 48.5%;
+}
+
+.clock-nut {
+	position: absolute;
+	top: 48%;
+	left: 48%;
+	width: 4%;
+	height: 4%;
+	background-color: #dddddd;
+	box-shadow: 8px 8px 8px rgba(0,0,0,.5);
+}
+
+.clock-back {
+	background-color: rgba(0,0,0,.7);
+	display: block;
+	padding: 50%;
+	position: relative;
+}
+
+.clock-data {
+	color: rgba(0,0,0,.5);
+	display: block;
+	position: absolute;
+	top:45%;
+	left: 0;
+	padding-top: 1em;
+	width: 100%;
+	text-align: center;
+	text-shadow: 0px 1px 0px rgba(255,255,255,.9);
+}
+
+.clock, .clock-case, .clock-case-back, .clock-dial, .clock-nut, .clock-back,
+em small a, em small label {
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+	     -o-border-radius: 50%;
+			border-radius: 50%;
+}
+
+/* The end */

@@ -5,10 +5,10 @@ $(document).ready(function() {
     var latitude = parseFloat(locString[0]);
     var longitude = parseFloat(locString[0]);
     $("#location").html(
-      "Location: " + info.city + ", " + info.region + ", " + info.country
+      info.city + ", " + info.region + ", " + info.country
     );
     $("#clientip").html(
-      "Your IP adress: " + info.ip
+      info.ip
     );
 
     // get weather using OpenWeatherMap API
@@ -26,7 +26,7 @@ $(document).ready(function() {
 
         var iconImg = "<img src='" + weatherURL + "'>";
         $("#sky-image").html(iconImg);
-        $("#weather-id").html("Skies: " + data.weather[0].description);
+        $("#weather-id").html(data.weather[0].description);
 
         $("#temperature").html(Celsius);
         $("#toFahrenheit").click(function() {
@@ -35,7 +35,7 @@ $(document).ready(function() {
         });
 
         $("#wind-speed").html(windSpeedkmh + " km/h");
-        $("#humidity").html("Humidity: " + data.main.humidity + " %");
+        $("#humidity").html(data.main.humidity + " %");
       }
     );
   });
