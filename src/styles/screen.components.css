@@ -2413,7 +2413,7 @@ input:not(:checked) ~ .alert + em label {
 	color: #fff;
 	min-width: 64px;
 	padding: 8px 0;
-	top: -64px;
+	top: -72px;
 	left: -100%;
 	right: -100%;
 }
