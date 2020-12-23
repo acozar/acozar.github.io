@@ -87,6 +87,25 @@
 						</section>
 					</div>
 					
+					<div class="collapser widget-box pad-box">
+						<em><label for="pad">Pad</label></em>
+						<input type="checkbox" id="pad" name="checkcollapser" hidden>
+						<div hidden>
+							<nav>
+								<button type="button" id="btnOpen" data-title="Open file">&#10514; Load</button>
+								<button type="button" id="btnSave" data-title="Save file">&#10515; Save</button>
+								<button class="zoomout" data-title="- Font size">- Decrease</button>
+								<button class="zoomin" data-title="+ Font size">+ Increase</button>
+								<input type="file" id="exampleInputFile" accept=".txt,.csv,.xml,.md,.css,.html,.js,.php,.xhtml,.tex" hidden>
+							</nav>
+							<div class="editor-app">
+								<textarea id="work-textarea" placeholder="Type..."></textarea>
+								<p><span id="wordCount">0 words</span>  |  <span id="charCount">0 characters</span></p>
+							</div>
+						</div>
+						
+					</div>
+					
 					<div class="flex-box-4">
 						<section class="widget-box browser-box">
 							<h5>Browser</h5>
@@ -101,11 +120,12 @@
 							</div>
 						</section>
 						<section class="widget-box map-box">
-								<h5>Map</h5>
+								<h5>Location</h5>
 									<div class="map">
 										<iframe style="width: 100%;margin: -8px 0;" src="https://www.openstreetmap.org/export/embed.html?bbox="></iframe>
 									<p>Your location: <br><b><span id="location"></span></b></p>
 									<p>Your IP: <br><b><span id="clientip"></span></b></p>
+									<p><a href="https://www.openstreetmap.org/" title="Open Street Map">Maps</a></p>
 									</div>
 						</section>
 						<section class="widget-box weather-box">

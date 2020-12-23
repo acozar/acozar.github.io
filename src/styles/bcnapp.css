@@ -31,7 +31,8 @@
 
 /* ------------------------------------------------------------ Page structure */
 
-#main-check:checked ~ main {
+#main-check:checked ~ main,
+#main-check:checked ~ footer {
 	display: none;
 }
 #page header,
@@ -100,6 +101,19 @@
 
 /* ------------------------------------------------------------ Page Boxes */
 
+@-webkit-keyframes moveFromBottomFade {
+	from { opacity: 0; -webkit-transform: translateY(100%); }
+}
+@-moz-keyframes moveFromBottomFade {
+	from { opacity: 0; -moz-transform: translateY(100%); }
+}
+@-o-keyframes moveFromBottomFade {
+	from { opacity: 0; -moz-transform: translateY(100%); }
+}
+@keyframes moveFromBottomFade {
+	from { opacity: 0; transform: translateY(100%); }
+}
+
 h5 {
 	border-bottom: 1px solid currentColor;
 	margin: 0 0 16px;
@@ -115,6 +129,14 @@ h5 {
 	padding-bottom: 32px;
 	text-align: center;
 	width: 23%;
+	-webkit-animation: moveFromBottomFade .7s ease both;
+	   -moz-animation: moveFromBottomFade .7s ease both;
+		-o-animation: moveFromBottomFade .7s ease both;
+			animation: moveFromBottomFade .7s ease both;
+	-webkit-animation-delay: 1s;
+	   -moz-animation-delay: 1s;
+		 -o-animation-delay: 1s;
+			animation-delay: 1s;
 }
 #page .widget-box:hover {
 	opacity: 1;
@@ -140,12 +162,46 @@ h5 {
 
 #page .search-box {
 	margin: 16px 1%;
+	padding: 16px 0px 0px;
 	position: relative;
-	width: 100%;
+	width: 98%;
 }
 #page .search-box input {
 	border-radius: 32px;
-	margin: 0;
+	margin: 0 5%;
+	width: 90%;
+}
+
+/* ------------------------------------------------------------ Page Pad Box */
+
+#page .pad-box {
+	margin: 16px 1%;
+	position: relative;
+	width: 98%;
+}
+#page .pad-box em label {
+	border-color: transparent;
+	border-bottom: 1px solid currentColor;
+	font-size: 32px;
+	font-weight: bold;
+}
+#page .pad-box nav {
+	border-color: transparent;
+}
+#page .pad-box nav button,
+#page .pad-box nav label {
+	border: 1px solid rgba(0,0,0,.2);
+	border-radius: 16px;
+	font-size: 12px;
+	margin: 0 0 16px;
+	padding: 8px 4px;
+	text-transform: uppercase;
+	width: 24%;
+}
+#page .pad-box textarea {
+	border-color: rgba(0,0,0,.2);
+	border-radius: 12px;
+	min-height: 420px;
 }
 
 /* ------------------------------------------------------------ Page Weather Box */
