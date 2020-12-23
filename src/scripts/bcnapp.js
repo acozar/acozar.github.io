@@ -42,11 +42,11 @@ $(".randombg").RandBG({
   if(navigator.platform.toUpperCase().indexOf('MAC')>=0) {
     jQuery('#os').addClass('mac-os');
   }
+    if(navigator.platform.toUpperCase().indexOf('IPHONE')>=0) {
+    jQuery('#os').addClass('i-os');
+  }
   if(navigator.appVersion.indexOf("Linux")!=-1) {
     jQuery('#os').addClass('linux-os');
-  }
-    if(navigator.appVersion.indexOf("Apple-iPhone")!=-1) {
-    jQuery('#os').addClass('i-os');
   }
       if(navigator.appVersion.indexOf("Android")!=-1) {
     jQuery('#os').addClass('android-os');
