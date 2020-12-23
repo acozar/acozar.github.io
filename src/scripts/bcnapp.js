@@ -45,6 +45,12 @@ $(".randombg").RandBG({
     if(navigator.platform.toUpperCase().indexOf('IPHONE')>=0) {
     jQuery('#os').addClass('i-os');
   }
+      if(navigator.platform.toUpperCase().indexOf('IPAD')>=0) {
+    jQuery('#os').addClass('i-os');
+  }
+      if(navigator.platform.toUpperCase().indexOf('IPOD')>=0) {
+    jQuery('#os').addClass('i-os');
+  }
   if(navigator.appVersion.indexOf("Linux")!=-1) {
     jQuery('#os').addClass('linux-os');
   }
