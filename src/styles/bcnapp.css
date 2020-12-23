@@ -227,6 +227,71 @@ h5 {
 	width: 64px;
 }
 
+/* ------------------------------------------------------------ Page TODO Box */
+
+#page .todo-box form {
+  border: 1px solid currentColor;
+  margin: 32px 0 0;
+  outline: 0;
+}
+#page .todo-box input[type="text"] {
+  outline: 0;
+  border: none;
+  text-align: center;
+  width: 100%;
+}
+#page .todo-box .add {
+  background-color: #3b3b3b;
+  outline: 0;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+#page .todo-box ul,
+#page .todo-box li {
+	line-height: 1em;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	list-style: none;
+}
+#page .todo-box hr {
+	border-bottom: 1px solid currentColor;
+	margin: 0 0 6px;
+	padding: 0;
+	height: 0;
+}
+#page .todo-box input[type="checkbox"] { 
+	float: left;
+	margin-right: 8px;
+ }
+#page .todo-box .remove {
+  float: right;
+  cursor: pointer;
+}
+#page .todo-box .completed { text-decoration: line-through; }
+
+/* ------------------------------------------------------------ Page RSS Box */
+
+#page .rss-box ul {
+	font-size: 16px;
+	line-height: 1.2em;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+#page .rss-box li {
+	margin: 0 0 8px;
+	padding: 0;
+}
+#page .rss-box li a {
+	text-decoration: none;
+}
+#page .rss-box li a:hover {
+	text-decoration: underline;
+}
+
 /* ------------------------------------------------------------ Page Browser Box */
 
 .browser-box div span,
