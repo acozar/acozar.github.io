@@ -73,6 +73,9 @@
 	color: #ffffff;
 	font-weight: bold;
 }
+.pophover:hover:after {
+	border-radius: 24px;
+}
 
 /* ------------------------------------------------------------ Page Fixed tools */
 
@@ -191,12 +194,20 @@ h5 {
 #page .pad-box nav button,
 #page .pad-box nav label {
 	border: 1px solid rgba(0,0,0,.2);
-	border-radius: 16px;
+	border-radius: 24px;
 	font-size: 12px;
 	margin: 0 0 16px;
 	padding: 8px 4px;
 	text-transform: uppercase;
 	width: 24%;
+}
+#page .pad-box .pophover:hover:after {
+	width: 88%;
+	margin: 0;
+	padding: 8px 16px;
+	left: 0;
+	right: auto;
+	top: 56px;
 }
 #page .pad-box textarea {
 	border-color: rgba(0,0,0,.2);
