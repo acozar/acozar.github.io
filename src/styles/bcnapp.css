@@ -199,7 +199,7 @@ h5 {
 	margin: 0 0 16px;
 	padding: 8px 4px;
 	text-transform: uppercase;
-	width: 24%;
+	max-width: 24%;
 }
 #page .pad-box .pophover:hover:after {
 	width: 88%;
