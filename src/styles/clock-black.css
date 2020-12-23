@@ -27,9 +27,8 @@
 	max-width: 240px;
 	position: relative;
 }
-.clock-case,
-.clock-case-back {
-  background: url('../../src/dials/bg-brushed-metal.jpg') no-repeat center 100% white;
+.clock-case {
+  background: url('../../src/dials/dial-black.jpg') no-repeat center 100% white;
   background-size: cover;	
   display: block;
 	position: absolute;

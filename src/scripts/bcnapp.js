@@ -21,223 +21,16 @@ $(".randombg").RandBG({
 
 // Current date
 
-function date(format, timestamp) {
-  
-    var that = this,
-        jsdate, f, formatChr = /\\?([a-z])/gi,
-        formatChrCb,
-        // Keep this here (works, but for code commented-out
-        // below for file size reasons)
-        //, tal= [],
-        _pad = function(n, c) {
-            n = n.toString();
-            return n.length < c ? _pad('0' + n, c, '0') : n;
-        },
-        txt_words = ["Sun", "Mon", "Tues", "Wednes", "Thurs", "Fri", "Satur", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    formatChrCb = function(t, s) {
-        return f[t] ? f[t]() : s;
-    };
-    f = {
-        // Day
-        d: function() { // Day of month w/leading 0; 01..31
-            return _pad(f.j(), 2);
-        },
-        D: function() { // Shorthand day name; Mon...Sun
-            return f.l().slice(0, 3);
-        },
-        j: function() { // Day of month; 1..31
-            return jsdate.getDate();
-        },
-        l: function() { // Full day name; Monday...Sunday
-            return txt_words[f.w()] + 'day';
-        },
-        N: function() { // ISO-8601 day of week; 1[Mon]..7[Sun]
-            return f.w() || 7;
-        },
-        S: function() { // Ordinal suffix for day of month; st, nd, rd, th
-            var j = f.j();
-            if (j < 4 || j > 20) {
-                return (['st', 'nd', 'rd'])[j % 10 - 1];
-            }
-            else {
-                return 'th';
-            }
-        },
-        w: function() { // Day of week; 0[Sun]..6[Sat]
-            return jsdate.getDay();
-        },
-        z: function() { // Day of year; 0..365
-            var a = new Date(f.Y(), f.n() - 1, f.j()),
-                b = new Date(f.Y(), 0, 1);
-            return Math.round((a - b) / 864e5);
-        },
-
-        // Week
-        W: function() { // ISO-8601 week number
-            var a = new Date(f.Y(), f.n() - 1, f.j() - f.N() + 3),
-                b = new Date(a.getFullYear(), 0, 4);
-            return _pad(1 + Math.round((a - b) / 864e5 / 7), 2);
-        },
-
-        // Month
-        F: function() { // Full month name; January...December
-            return txt_words[6 + f.n()];
-        },
-        m: function() { // Month w/leading 0; 01...12
-            return _pad(f.n(), 2);
-        },
-        M: function() { // Shorthand month name; Jan...Dec
-            return f.F().slice(0, 3);
-        },
-        n: function() { // Month; 1...12
-            return jsdate.getMonth() + 1;
-        },
-        t: function() { // Days in month; 28...31
-            return (new Date(f.Y(), f.n(), 0)).getDate();
-        },
-
-        // Year
-        L: function() { // Is leap year?; 0 or 1
-            var j = f.Y();
-            return j % 4 === 0 & j % 100 !== 0 | j % 400 === 0;
-        },
-        o: function() { // ISO-8601 year
-            var n = f.n(),
-                W = f.W(),
-                Y = f.Y();
-            return Y + (n === 12 && W < 9 ? 1 : n === 1 && W > 9 ? -1 : 0);
-        },
-        Y: function() { // Full year; e.g. 1980...2010
-            return jsdate.getFullYear();
-        },
-        y: function() { // Last two digits of year; 00...99
-            return f.Y().toString().slice(-2);
-        },
-
-        // Time
-        a: function() { // am or pm
-            return jsdate.getHours() > 11 ? "pm" : "am";
-        },
-        A: function() { // AM or PM
-            return f.a().toUpperCase();
-        },
-        B: function() { // Swatch Internet time; 000..999
-            var H = jsdate.getUTCHours() * 36e2,
-                // Hours
-                i = jsdate.getUTCMinutes() * 60,
-                // Minutes
-                s = jsdate.getUTCSeconds(); // Seconds
-            return _pad(Math.floor((H + i + s + 36e2) / 86.4) % 1e3, 3);
-        },
-        g: function() { // 12-Hours; 1..12
-            return f.G() % 12 || 12;
-        },
-        G: function() { // 24-Hours; 0..23
-            return jsdate.getHours();
-        },
-        h: function() { // 12-Hours w/leading 0; 01..12
-            return _pad(f.g(), 2);
-        },
-        H: function() { // 24-Hours w/leading 0; 00..23
-            return _pad(f.G(), 2);
-        },
-        i: function() { // Minutes w/leading 0; 00..59
-            return _pad(jsdate.getMinutes(), 2);
-        },
-        s: function() { // Seconds w/leading 0; 00..59
-            return _pad(jsdate.getSeconds(), 2);
-        },
-        u: function() { // Microseconds; 000000-999000
-            return _pad(jsdate.getMilliseconds() * 1000, 6);
-        },
-
-        // Timezone
-        e: function() { // Timezone identifier; e.g. Atlantic/Azores, ...
-            // The following works, but requires inclusion of the very large
-            // timezone_abbreviations_list() function.
-/*              return that.date_default_timezone_get();
-*/
-            throw 'Not supported (see source code of date() for timezone on how to add support)';
-        },
-        I: function() { // DST observed?; 0 or 1
-            // Compares Jan 1 minus Jan 1 UTC to Jul 1 minus Jul 1 UTC.
-            // If they are not equal, then DST is observed.
-            var a = new Date(f.Y(), 0),
-                // Jan 1
-                c = Date.UTC(f.Y(), 0),
-                // Jan 1 UTC
-                b = new Date(f.Y(), 6),
-                // Jul 1
-                d = Date.UTC(f.Y(), 6); // Jul 1 UTC
-            return ((a - c) !== (b - d)) ? 1 : 0;
-        },
-        O: function() { // Difference to GMT in hour format; e.g. +0200
-            var tzo = jsdate.getTimezoneOffset(),
-                a = Math.abs(tzo);
-            return (tzo > 0 ? "-" : "+") + _pad(Math.floor(a / 60) * 100 + a % 60, 4);
-        },
-        P: function() { // Difference to GMT w/colon; e.g. +02:00
-            var O = f.O();
-            return (O.substr(0, 3) + ":" + O.substr(3, 2));
-        },
-        T: function() { // Timezone abbreviation; e.g. EST, MDT, ...
-            // The following works, but requires inclusion of the very
-            // large timezone_abbreviations_list() function.
-/*              var abbr = '', i = 0, os = 0, default = 0;
-      if (!tal.length) {
-        tal = that.timezone_abbreviations_list();
-      }
-      if (that.php_js && that.php_js.default_timezone) {
-        default = that.php_js.default_timezone;
-        for (abbr in tal) {
-          for (i=0; i < tal[abbr].length; i++) {
-            if (tal[abbr][i].timezone_id === default) {
-              return abbr.toUpperCase();
-            }
-          }
-        }
-      }
-      for (abbr in tal) {
-        for (i = 0; i < tal[abbr].length; i++) {
-          os = -jsdate.getTimezoneOffset() * 60;
-          if (tal[abbr][i].offset === os) {
-            return abbr.toUpperCase();
-          }
-        }
-      }
-*/
-            return 'UTC';
-        },
-        Z: function() { // Timezone offset in seconds (-43200...50400)
-            return -jsdate.getTimezoneOffset() * 60;
-        },
-
-        // Full Date/Time
-        c: function() { // ISO-8601 date.
-            return 'Y-m-d\\TH:i:sP'.replace(formatChr, formatChrCb);
-        },
-        r: function() { // RFC 2822
-            return 'D, d M Y H:i:s O'.replace(formatChr, formatChrCb);
-        },
-        U: function() { // Seconds since UNIX epoch
-            return jsdate / 1000 | 0;
-        }
-    };
-    this.date = function(format, timestamp) {
-        that = this;
-        jsdate = (timestamp === undefined ? new Date() : // Not provided
-        (timestamp instanceof Date) ? new Date(timestamp) : // JS Date()
-        new Date(timestamp * 1000) // UNIX timestamp (auto-convert to int)
-        );
-        return format.replace(formatChr, formatChrCb);
-    };
-    return this.date(format, timestamp);
-}
-
-$(function() {
-    $('#date').text(date('l, F jS, Y, h:i:s A'));
-});
-
+	var date=new Date();
+	var months=["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
+	var valDay=date.getDate();
+	var valMonth=months[date.getMonth()];
+	var valYear=date.getFullYear();
+	$(document).ready(function(){
+			$("#month").text(valMonth);
+			$("#day").text(valDay);
+			$("#year").text(valYear);
+	});
 
  /**
    * Detect OS & browsers
@@ -252,7 +45,7 @@ $(function() {
   if(navigator.appVersion.indexOf("Linux")!=-1) {
     jQuery('#os').addClass('linux-os');
   }
-    if(navigator.appVersion.indexOf("iOS")!=-1) {
+    if(navigator.appVersion.indexOf("Apple-iPhone")!=-1) {
     jQuery('#os').addClass('i-os');
   }
       if(navigator.appVersion.indexOf("Android")!=-1) {
@@ -280,3 +73,415 @@ $(function() {
   } else { 
     //jQuery('body').addClass('not-fire-fox');
   }
+  
+  // Weather
+  
+  $(document).ready(function() {
+  // get location from user's IP address
+  $.getJSON("https://ipinfo.io", function(info) {
+    var locString = info.loc.split(", ");
+    var latitude = parseFloat(locString[0]);
+    var longitude = parseFloat(locString[0]);
+    $("#location").html(
+      info.city + ", " + info.country
+    );
+    $("#clientip").html(
+      info.ip
+    );
+
+    // get weather using OpenWeatherMap API
+    $.getJSON(
+      "https://api.openweathermap.org/data/2.5/weather?lat=" +
+        latitude +
+        "&lon=" +
+        longitude +
+        "&units=metric&APPID=c9d1024b1304071dddfa30661e69da3d",
+      function(data) {
+        var windSpeedkmh = Math.round(data.wind.speed * 3.6);
+        var Celsius = Math.round(data.main.temp);
+        var iconId = data.weather[0].icon;
+        var weatherURL = "https://openweathermap.org/img/w/" + iconId + ".png";
+
+        var iconImg = "<img src='" + weatherURL + "'>";
+        $("#sky-image").html(iconImg);
+        $("#weather-id").html(data.weather[0].description);
+
+        $("#temperature").html(Celsius);
+        $("#toFahrenheit").click(function() {
+          $("#temperature").html(Math.round(9 / 5 * Celsius + 32));
+          $("#wind-speed").html(Math.round(windSpeedkmh * 0.621) + " mph");
+        });
+
+        $("#wind-speed").html(windSpeedkmh + " km/h");
+        $("#humidity").html(data.main.humidity + " %");
+      }
+    );
+  });
+});
+
+
+// Clock
+
+jQuery( document ).ready(function() {
+  currentDate = new Date();
+  currentSeconds = currentDate.getSeconds();
+  currentMinutes = currentSeconds + ( currentDate.getMinutes() * 60 );
+  currentAnalogHours = ( currentDate.getHours() > 11 ) ? currentDate.getHours() - 12 : currentDate.getHours();
+  currentHours = currentMinutes + ( currentAnalogHours * 3600 );
+  currentZenitHours = currentMinutes + ( currentDate.getHours() * 3600 );
+  jQuery( '.clock-second-hand' ).css( 'animation-delay', '-' + currentSeconds + 's' );
+  jQuery( '.clock-minute-hand' ).css( 'animation-delay', '-' + currentMinutes + 's' );
+  jQuery( '.clock-hour-hand' ).css( 'animation-delay', '-' + currentHours + 's' );
+  jQuery( '.clock-zenit-hand' ).css( 'animation-delay', '-' + currentZenitHours + 's' );
+});
+
+
+/**
+ * jquery.timer.js
+ *
+ * Copyright (c) 2011 Jason Chavannes <jason.chavannes@gmail.com>
+ *
+ * http://jchavannes.com/jquery-timer
+ *
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without
+ * restriction, including without limitation the rights to use, copy,
+ * modify, merge, publish, distribute, sublicense, and/or sell copies
+ * of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+ * BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ * ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
+;(function($) {
+
+    $.timer = Timer;
+
+    /**
+     * First parameter can either be a function or an object of parameters.
+     *
+     * @param {function | {
+     *   action: function,
+     *   time: int=,
+     *   autostart: boolean=
+     * }} action
+     * @param {int=} time
+     * @param {boolean=} autostart
+     * @returns {Timer}
+     */
+    function Timer(action, time, autostart) {
+
+        if (this.constructor != Timer || this.init) {
+            return new Timer(action, time, autostart);
+        }
+
+        this.set(action, time, autostart);
+
+        return this;
+
+    }
+
+    /**
+     * @see Timer
+     *
+     * @param {function | {
+     *   action: function,
+     *   time: int=,
+     *   autostart: boolean=
+     * }} action
+     * @param {int=} time
+     * @param {boolean=} autostart
+     * @returns {Timer}
+     */
+    Timer.prototype.set = function(action, time, autostart) {
+
+        this.init = true;
+
+        if (typeof action == "object") {
+
+            if (action.time) {
+                time = action.time;
+            }
+
+            if (action.autostart) {
+                autostart = action.autostart;
+            }
+
+            action = action.action;
+
+        }
+
+        if (typeof action == "function") {
+            this.action = action;
+        }
+
+        if (!isNaN(time)) {
+            this.intervalTime = time;
+        }
+
+        if (autostart && this.isReadyToStart()) {
+            this.isActive = true;
+            this.setTimer();
+        }
+
+        return this;
+
+    };
+
+    Timer.prototype.isReadyToStart = function() {
+
+        var notActive = !this.active;
+        var hasAction = typeof this.action == "function";
+        var hasTime   = !isNaN(this.intervalTime);
+
+        return notActive && hasAction && hasTime;
+
+    };
+
+    /**
+     * @param {int=} time
+     * @returns {Timer}
+     */
+    Timer.prototype.once = function(time) {
+
+        var timer = this;
+
+        if (isNaN(time)) {
+            timer.action();
+            return this;
+        }
+
+        setTimeout(fnTimeout, time);
+        return this;
+
+        function fnTimeout() {
+            timer.action();
+        }
+
+    };
+
+    /**
+     * @param {boolean=} reset
+     * @returns {Timer}
+     */
+    Timer.prototype.play = function(reset) {
+
+        if (this.isReadyToStart()) {
+
+            if (reset) {
+                this.setTimer();
+            }
+            else {
+                this.setTimer(this.remaining);
+            }
+
+            this.isActive = true;
+
+        }
+
+        return this;
+
+    };
+
+    /**
+     * @returns {Timer}
+     */
+    Timer.prototype.pause = function() {
+
+        if (this.isActive) {
+
+            this.isActive   = false;
+            this.remaining -= new Date() - this.last;
+
+            this.clearTimer();
+
+        }
+
+        return this;
+
+    };
+
+    /**
+     * @returns {Timer}
+     */
+    Timer.prototype.stop = function() {
+
+        this.isActive  = false;
+        this.remaining = this.intervalTime;
+
+        this.clearTimer();
+
+        return this;
+
+    };
+
+    /**
+     * @param {boolean=} reset
+     * @returns {Timer}
+     */
+    Timer.prototype.toggle = function(reset) {
+
+        if (this.isActive) {
+            this.pause();
+        }
+        else if (reset) {
+            this.play(true);
+        }
+        else {
+            this.play();
+        }
+
+        return this;
+
+    };
+
+    /**
+     * @returns {Timer}
+     */
+    Timer.prototype.reset = function() {
+
+        this.isActive = false;
+        this.play(true);
+
+        return this;
+
+    };
+
+    /**
+     * @returns {Timer}
+     */
+    Timer.prototype.clearTimer = function() {
+        clearTimeout(this.timeoutObject);
+        return this;
+    };
+
+    /**
+     * @returns {Timer}
+     */
+    Timer.prototype.setTimer = function(time) {
+
+        var timer = this;
+
+        if (isNaN(time)) {
+            time = this.intervalTime;
+        }
+
+        this.remaining = time;
+        this.last      = new Date();
+
+        this.clearTimer();
+
+        this.timeoutObject = setTimeout(fnTimeout, time);
+
+        return this;
+
+        function fnTimeout() {
+            timer.execute();
+        }
+
+    };
+
+    /**
+     * @returns {Timer}
+     */
+    Timer.prototype.execute = function() {
+
+        if (this.isActive) {
+
+            try {
+                this.action();
+            }
+            finally {
+                this.setTimer();
+            }
+
+        }
+
+        return this;
+
+    };
+    
+})(jQuery);
+
+/* Chronometer */
+
+var Example1 = new (function() {
+    var $stopwatch, // Stopwatch element on the page
+        incrementTime = 70, // Timer speed in milliseconds
+        currentTime = 0, // Current time in hundredths of a second
+        updateTimer = function() {
+            $stopwatch.html(formatTime(currentTime));
+            currentTime += incrementTime / 10;
+        },
+        init = function() {
+            $stopwatch = $('#stopwatch');
+            Example1.Timer = $.timer(updateTimer, incrementTime, true);
+        };
+    this.resetStopwatch = function() {
+        currentTime = 0;
+        this.Timer.stop().once();
+    };
+    $(init);
+});
+
+/*Countdown */
+
+var Example2 = new (function() {
+    var $countdown,
+        $form, // Form used to change the countdown time
+        incrementTime = 70,
+        currentTime = 3000,
+        updateTimer = function() {
+            $countdown.html(formatTime(currentTime));
+            if (currentTime == 0) {
+                Example2.Timer.stop();
+                timerComplete();
+                Example2.resetCountdown();
+                return;
+            }
+            currentTime -= incrementTime / 10;
+            if (currentTime < 0) currentTime = 0;
+        },
+        timerComplete = function() {
+            alert('Countdown timer complete!');
+        },
+        init = function() {
+            $countdown = $('#countdown');
+            Example2.Timer = $.timer(updateTimer, incrementTime, false);
+            $form = $('#example2form');
+            $form.bind('submit', function() {
+                Example2.resetCountdown();
+                return false;
+            });
+        };
+    this.resetCountdown = function() {
+        var newTime = parseInt($form.find('input[type=text]').val()) * 100;
+        if (newTime > 0) {currentTime = newTime;}
+        this.Timer.stop().once();
+    };
+    $(init);
+});
+
+// Common functions
+function pad(number, length) {
+    var str = '' + number;
+    while (str.length < length) {str = '0' + str;}
+    return str;
+}
+function formatTime(time) {
+    var min = parseInt(time / 6000),
+        sec = parseInt(time / 100) - (min * 60),
+        hundredths = pad(time - (sec * 100) - (min * 6000), 2);
+    return (min > 0 ? pad(min, 2) : "00") + ":" + pad(sec, 2) + ":" + hundredths;
+}

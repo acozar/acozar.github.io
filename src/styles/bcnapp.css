@@ -10,15 +10,12 @@
 
 .randombg {
 	display: block;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	bottom: 0;
 	left: 0; 
 	right: 0;
 	background: url('https://acozar.github.io/src/img/picture-1.jpg') no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
 	opacity: .8;
 }
@@ -42,7 +39,21 @@
 	text-align: center;
 }
 #page header {
-
+	background-color: rgba(255,255,255,.1);
+	border-bottom: 1px solid currentColor;
+	height: 64px;
+	overflow: hidden;
+	padding: 8px;
+	text-align: center;
+}
+#page header div {
+	padding: 0;
+}
+#page header h1 {
+	font-size: 24px;
+	line-height: 48px;
+	margin: 0;
+	width: 100%;
 }
 #page footer {
 	background-color: rgba(0,0,0,.5);
@@ -62,77 +73,96 @@
 	font-weight: bold;
 }
 
+/* ------------------------------------------------------------ Page Fixed tools */
+
+.fixed-tools {
+		position: fixed;
+		top: 8px;
+		right: 8px;
+		height: 48px;
+		margin: 0;
+		width: 48px;
+		z-index: 10;
+}
+.fixed-tools em small label {
+	background: #ffffff;
+		height: 48px;
+		line-height: 48px;
+		padding: 0;
+		width: 48px;
+		text-overflow: clip;	
+}
+.fixed-tools .pophover:hover:after {
+	text-align: center;
+	top: 44px;
+	width: 104px;
+}
+
 /* ------------------------------------------------------------ Page Boxes */
 
 h5 {
 	border-bottom: 1px solid currentColor;
+	margin: 0 0 16px;
 }
-#page .search-box,
-#page .weather-box,
-#page .clock-box,
-#page .browser-box,
-#page .coin-box {
+#page .widget-box {
 	background-color: var(--color-white);
+	box-shadow: 0px 3px 3px rgba(0,0,0,.5);
 	border: 1px solid currentColor;
 	border-radius: 12px;
+	line-height: 1.2em;
+	margin: 8px 1%;
+	opacity: .9;
+	padding-bottom: 32px;
 	text-align: center;
-	opacity: .8;
+	width: 23%;
 }
-#page .search-box:hover,
-#page .weather-box:hover,
-#page .clock-box:hover,
-#page .browser-box:hover,
-#page .coin-box:hover {
+#page .widget-box:hover {
 	opacity: 1;
 }
-#theme-meridianus:checked ~ #page .search-box,
-#theme-meridianus:checked ~ #page .weather-box,
-#theme-meridianus:checked ~ #page .clock-box,
-#theme-meridianus:checked ~ #page .browser-box,
-#theme-meridianus:checked ~ #page .coin-box {
+#theme-meridianus:checked ~ #page .widget-box {
 	background-color: var(--color-bgmeridianus);
 }
-#theme-vesperum:checked ~ #page .search-box,
-#theme-vesperum:checked ~ #page .weather-box,
-#theme-vesperum:checked ~ #page .clock-box,
-#theme-vesperum:checked ~ #page .browser-box,
-#theme-vesperum:checked ~ #page .coin-box {
+#theme-vesperum:checked ~ #page .widget-box {
 	background-color: var(--color-bgvesperum);
 }
-#theme-nox:checked ~ #page .search-box,
-#theme-nox:checked ~ #page .weather-box,
-#theme-nox:checked ~ #page .clock-box,
-#theme-nox:checked ~ #page .browser-box,
-#theme-nox:checked ~ #page .coin-box {
+#theme-nox:checked ~ #page .widget-box {
 	background-color: var(--color-black);
 }
+@media screen and (max-width: 1024px) {
+	#page .widget-box {
+		transform: scale(0.8);
+		margin: 0;
+		width: 50%;
+	}
+}
+
+/* ------------------------------------------------------------ Page Search Box */
+
 #page .search-box {
 	margin: 16px 1%;
 	position: relative;
-	width: 97%;
+	width: 100%;
 }
 #page .search-box input {
 	border-radius: 32px;
 	margin: 0;
 }
-#page .weather-box,
-#page .clock-box,
-#page .browser-box  {
-	line-height: 1.2em;
-	margin: 16px 1%;
-	padding-bottom: 64px;
-	width: 31%;
-}
+
+/* ------------------------------------------------------------ Page Weather Box */
+
 #page .weather-box img {
 	background-color: var(--color-softblue);
 	border: 1px solid #333;
 	border-radius: 50%;
 	display: block;
-	margin: 0px auto 64px;
+	margin: 0px auto 16px;
 	width: 64px;
 }
 
-.browser-box div span {
+/* ------------------------------------------------------------ Page Browser Box */
+
+.browser-box div span,
+.os-box div span {
 	font-size: 2em;
 }
 .android-os:before,
@@ -144,43 +174,46 @@ h5 {
 .firefox:before, 
 .ie:before,
 .safari:before {
-	border: 1px solid red;
+	background-color: #ffffff;
+	background-size: 72px;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 1px solid currentColor;
 	border-radius: 50%;
 	content: ' ';
 	display: block;
 	margin: 8px auto;
-	width: 120px;
-	height: 120px;
+	width: 96px;
+	height: 96px;
 }
 
 .android-os:before {
-	background-image: url('../src/img/osbrowsers/android.png');
+	background-image: url('https://acozar.github.io/src/img/osbrowsers/android.png');
 }
 .i-os:before {
-	background: url('../src/img/osbrowsers/apple.png') no-repeat center transparent;
+	background-image: url('https://acozar.github.io/src/img/osbrowsers/apple.png');
 }
 .linux-os:before {
-	background: url('../src/img/osbrowsers/linux.png') no-repeat center transparent;
+	background-image: url('https://acozar.github.io/src/img/osbrowsers/linux.png');
 }
 .mac-os:before {
-	background-image: url('../src/img/osbrowsers/apple.png');
-	background-size: cover;
+	background-image: url('https://acozar.github.io/src/img/osbrowsers/apple.png');
 }
 .windows-os:before {
-	background: url('../src/img/osbrowsers/windows.png') no-repeat center transparent;
+	background-image: url('https://acozar.github.io/src/img/osbrowsers/windows.png');
 }
 
 .chrome:before {
-	background: url('../src/img/osbrowsers/chrome.png') no-repeat center transparent;
+	background-image: url('https://acozar.github.io/src/img/osbrowsers/chrome.png');
 }
 .firefox:before {
-	background: url('../src/img/osbrowsers/firefox.png') no-repeat center transparent;
+	background-image: url('https://acozar.github.io/src/img/osbrowsers/firefox.png');
 }
 .ie:before {
-	background: url('../src/img/osbrowsers/ie.png') no-repeat center transparent;
+	background-image: url('https://acozar.github.io/src/img/osbrowsers/ie.png');
 }
 .safari:before {
-	background: url('../src/img/osbrowsers/safari.png') no-repeat center transparent;
+	background-image: url('https://acozar.github.io/src/img/osbrowsers/safari.png');
 }
 
 .android-os:after {
@@ -212,5 +245,261 @@ h5 {
 	content: ' Safari';
 }
 
+/* ------------------------------------------------------------ Page Clock Box */
+
+.timer-box label {
+	font-size: 12px;
+	line-height: 1em;
+}
+.chrono-box input ,
+.timer-box input {
+	border-radius: 24px;
+	margin: 0 0 8px;
+	text-align: center;
+	width: 100%;
+}
+.timer-play {
+	background-color: var(--color-green);
+	color: #ffffff;
+}
+.timer-reset {
+	background-color: var(--color-red);
+	color: #ffffff;
+}
+
+/* ------------------------------------------------------------ Page Clock Box */
+
+/* Clock */
+
+@-webkit-keyframes rotation {
+  from { -webkit-transform: rotate(0deg); }    
+  to { -webkit-transform: rotate(360deg); }
+}
+
+@-moz-keyframes rotation {
+  from { -moz-transform: rotate(0deg); }    
+  to { -moz-transform: rotate(360deg); }
+}
+
+@-o-keyframes rotation {
+  from { -o-transform: rotate(0deg); }    
+  to { -o-transform: rotate(360deg); }
+}
+
+@keyframes rotation {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.clock {
+	display: block;
+	margin: 16px auto 32px;
+	height: 200px;
+	max-width: 240px;
+	position: relative;
+}
+.clock-case {
+  background: url('../../src/dials/dial-black.jpg') no-repeat center 100% white;
+  background-size: cover;	
+  display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent) , to(rgba(250, 250, 250, 0.1)));
+	   -moz-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent) , to(rgba(250, 250, 250, 0.1)));
+		 -o-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent) , to(rgba(250, 250, 250, 0.1)));
+			box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent) , to(rgba(250, 250, 250, 0.1)));
+	
+	-webkit-transform-style: preserve-3d;
+	   -moz-transform-style: preserve-3d;
+		 -o-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+	
+	-webkit-backface-visibility: hidden;
+	   -moz-backface-visibility: hidden;
+	     -o-backface-visibility: hidden;
+			backface-visibility: hidden;
+
+	-webkit-transition: all .4s ease-in-out;
+	   -moz-transition: all .4s ease-in-out;
+		 -o-transition: all .4s ease-in-out;
+			transition: all .4s ease-in-out;
+}
+.clock-case {
+	background-color: #62696F;
+	padding: 1%;
+	z-index: 8;
+	-webkit-transform: rotateX(0deg) rotateY(0deg);
+	   -moz-transform: rotateX(0deg) rotateY(0deg);
+	     -o-transform: rotateX(0deg) rotateY(0deg);
+			transform: rotateX(0deg) rotateY(0deg);
+}
+.clock-dial {
+  background: url('../../src/dials/dial-black.jpg') no-repeat center 100% white;
+  background-size: cover;
+  position: relative;
+  box-shadow: inset 1px -32px 32px rgba(0,0,0,.2), inset 1px 12px 12px rgba(0,0,0,.1);
+}
+.clock-ratio {
+  padding-bottom: 100%;
+  height: 0;
+  overflow: hidden;
+}
+.clock-second-hand {
+  width: 2px;
+  height: 100%;
+  margin-left: -1%;
+  position: absolute;
+  left: 50%;
+  -webkit-animation: rotation 60s infinite linear;
+  -moz-animation: rotation 60s infinite linear;
+  -o-animation: rotation 60s infinite linear;
+  animation: rotation 60s infinite linear;
+}
+.clock-second-hand:before {
+  content: "";
+  background-color: red;
+  width: 100%;
+  height: 55%;
+  top: 4%;
+  position: absolute;
+  box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+}
+.clock-minute-hand {
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  -webkit-animation: rotation 3600s infinite linear;
+  -moz-animation: rotation 3600s infinite linear;
+  -o-animation: rotation 3600s infinite linear;
+  animation: rotation 3600s infinite linear;
+}
+.clock-minute-hand:before {
+  content: "";
+  background-color: #bbbbbb;
+  width: 100%;
+  height: 50%;
+  top: 8%;
+  left: -1px;
+  position: absolute;
+  box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+}
+.clock-hour-hand {
+  width: 6px;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  -webkit-animation: rotation 43200s infinite linear;
+  -moz-animation: rotation 43200s infinite linear;
+  -o-animation: rotation 43200s infinite linear;
+  animation: rotation 43200s infinite linear;
+}
+.clock-hour-hand:before {
+  content: "";
+  background-color: #eeeeee;
+  width: 100%;
+  height: 40%;
+  top: 20%;
+  left: -2px;
+  position: absolute;
+  box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+}
+.clock-zenit-hand {
+	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0; 
+	left: -12px; /* Hack */
+	-webkit-animation: rotation 86400s infinite linear;
+	-moz-animation: rotation 86400s infinite linear;
+	-o-animation: rotation 86400s infinite linear;
+	animation: rotation 86400s infinite linear;
+}
+.clock-zenit-hand:before {
+	border-radius: 50%;
+	color: #dd0000;
+	content: "\2609";
+	display: block;
+	font-size: 32px;
+	font-weight: bold;
+	text-align: center;
+	position: absolute;
+	bottom: 20%;
+	left: 48.5%;
+}
+
+.clock-nut {
+	position: absolute;
+	top: 48%;
+	left: 48%;
+	width: 4%;
+	height: 4%;
+	background-color: #dddddd;
+	box-shadow: 8px 8px 8px rgba(0,0,0,.5);
+}
+
+.clock-back {
+	background-color: rgba(0,0,0,.7);
+	display: block;
+	padding: 50%;
+	position: relative;
+}
+
+.clock-data {
+	color: rgba(0,0,0,.5);
+	display: block;
+	position: absolute;
+	top:45%;
+	left: 0;
+	padding-top: 1em;
+	width: 100%;
+	text-align: center;
+	text-shadow: 0px 1px 0px rgba(255,255,255,.9);
+}
+
+.clock, .clock-case, .clock-case-back, .clock-dial, .clock-nut, .clock-back,
+em small a, em small label {
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+	     -o-border-radius: 50%;
+			border-radius: 50%;
+}
+
+/* Calendar */
+
+.calendar {
+	background: #ffffff;
+	border: 1px solid currentColor;
+	display: block;
+	margin: 32px auto;
+	padding: 0;
+	width: 80%;
+}
+#month,
+#day,
+#year {
+	color: #000000;
+	display: block;
+}
+#month {
+	background: #ff0000;
+	color: #ffffff;
+	font-size: 24px;
+	height: 48px;
+	line-height: 48px;
+	padding: 4px;
+}
+#day {
+	font-size: 64px;
+	line-height: 64px;
+	margin: 8px auto 16px;
+}
+#year {
+	border-top: 1px solid #333;
+	
+}
 
 /* The end */
