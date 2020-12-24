@@ -272,6 +272,48 @@ h5 {
 }
 #page .todo-box .completed { text-decoration: line-through; }
 
+/* ------------------------------------------------------------ Page Calc Box */
+
+.ui {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+.calc-box table,
+.calc-box tr,
+.calc-box td {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+.calc-box td {
+	max-width: 3em;
+}
+.numBtn ,
+.opBtn {
+	border-radius: 50%;
+	width: 2em;
+	height: 2em;
+	margin: 0;
+	padding: 0;
+}
+.clrBtn {
+  width: 2em;
+  height: 2em;
+} 
+.calBtn,
+.numtxt {
+	border-radius: 2em;
+	display: block;
+	height: 2em;
+	margin: 0;
+	padding: 0;
+	width: 125%;
+}
+.numtxt {
+	text-align: right;
+}
+
 /* ------------------------------------------------------------ Page RSS Box */
 
 #page .rss-box ul {

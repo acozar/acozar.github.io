@@ -94,8 +94,8 @@
 							<nav>
 								<button type="button" id="btnOpen" class="pophover" data-title="Open file"> &#10514; </button>
 								<button type="button" id="btnSave" class="pophover" data-title="Save file"> &#10515; </button>
-								<button class="zoomout pophover" data-title="- Font size"> - </button>
-								<button class="zoomin pophover" data-title="+ Font size"> + </button>
+								<button class="zoomout pophover" data-title="- size"> - </button>
+								<button class="zoomin pophover" data-title="+ size"> + </button>
 								<input type="file" id="exampleInputFile" accept=".txt,.csv,.xml,.md,.css,.html,.js,.php,.xhtml,.tex" hidden>
 							</nav>
 							<div class="editor-app">
@@ -194,13 +194,52 @@
 							<h5>Wired News</h5>
 							<div id="rss-wired"></div>
 						</section>
-							<section class="widget-box todo-box">
+						<section class="widget-box todo-box">
 							<h5>To Do</h5>
 							 <ul id="list-items"></ul>
 							<form class="add-items">
 								<input type="text" class="form-control" id="todo-list-item" placeholder="What to do?"><br>
                 				<button class="add" type="submit">Add to List</button>
            					 </form>
+						</section>
+						<section class="widget-box calc-box">
+							<h5>Calc</h5>
+							<div class="ui"> 
+								<table>
+									<tr>
+									<td colspan="3"><input type="text" class="numtxt" id="input"></td>
+									</tr>
+									<tr>
+										<td><button class="numBtn" value="1">1</button></td>
+										<td><button class="numBtn" value="2">2</button></td>
+										<td><button class="numBtn" value="3">3</button></td>
+										<td><button class="opBtn" value="+">+</button></td>
+									</tr>
+									<tr>
+										<td><button class="numBtn" value="4">4</button></td>
+										<td><button class="numBtn" value="5">5</button></td>
+										<td><button class="numBtn" value="6">6</button></td>
+										<td><button class="opBtn" value="-">-</button></td>
+									</tr>
+									<tr>
+										<td><button class="numBtn" value="7">7</button></td>
+										<td><button class="numBtn" value="8">8</button></td>
+										<td><button class="numBtn" value="9">9</button></td>
+										<td><button class="opBtn" value="*">*</button></td>
+									</tr>
+									<tr>
+										<td><button class="clrBtn"  value="c">C</button></td>
+										<td><button class="numBtn" value="0">0</button></td>
+										<td></td>
+										<td><button class="opBtn" value="/">/</button></td>
+									</tr>
+									<tr>
+									</tr>
+									<tr>
+										<td colspan="3"><button class="calBtn" value="=">=</button></td>
+									</tr>
+								</table>
+							</div>
 						</section>
 						
 					</div>
