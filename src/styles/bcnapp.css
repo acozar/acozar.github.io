@@ -160,6 +160,13 @@ h5 {
 		width: 49%;
 	}
 }
+@media screen and (max-width: 640px) {
+	#page .widget-box {
+		transform: scale(0.9);
+		margin: 8px 1%;
+		width: 98%;
+	}
+}
 
 /* ------------------------------------------------------------ Page Search Box */
 
