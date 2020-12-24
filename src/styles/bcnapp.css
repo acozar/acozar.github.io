@@ -155,9 +155,9 @@ h5 {
 }
 @media screen and (max-width: 1024px) {
 	#page .widget-box {
-		transform: scale(0.8);
-		margin: 0;
-		width: 50%;
+		transform: scale(0.9);
+		margin: 8px 0.5%;
+		width: 49%;
 	}
 }
 
@@ -307,7 +307,7 @@ h5 {
 	display: block;
 	height: 2em;
 	margin: 0;
-	padding: 0;
+	padding: 0 8px;
 	width: 125%;
 }
 .numtxt {
