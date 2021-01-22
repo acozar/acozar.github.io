@@ -15,18 +15,21 @@
 	bottom: 0;
 	left: 0; 
 	right: 0;
-	background: url('https://acozar.github.io/src/img/picture-1.jpg') no-repeat center center fixed;
+	background: url('https://acozar.github.io/src/img/abstract-bg-1.jpg') no-repeat center center fixed;
 	background-size: cover;
 	opacity: .8;
 }
 .randombg.bg1 {
-	background-image: url('https://acozar.github.io/src/img/picture-1.jpg');
+	background-image: url('https://acozar.github.io/src/img/abstract-bg-1.jpg');
 }
 .randombg.bg2 {
-	background-image: url('https://acozar.github.io/src/img/picture-2.jpg');
+	background-image: url('https://acozar.github.io/src/img/abstract-bg-2.jpg');
 }
 .randombg.bg3 {
-	background-image: url('https://acozar.github.io/src/img/picture-3.jpg');
+	background-image: url('https://acozar.github.io/src/img/abstract-bg-3.jpg');
+}
+.randombg.bg3 {
+	background-image: url('https://acozar.github.io/src/img/abstract-bg-4.jpg');
 }
 
 /* ------------------------------------------------------------ Page structure */
