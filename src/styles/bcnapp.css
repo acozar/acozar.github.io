@@ -34,10 +34,6 @@
 
 /* ------------------------------------------------------------ Page structure */
 
-#main-check:checked ~ main,
-#main-check:checked ~ footer {
-	display: none;
-}
 #page header,
 #page footer {
 	text-align: center;
@@ -59,21 +55,21 @@
 	margin: 0;
 	width: 100%;
 }
-#page footer {
+#page #page-footer {
 	background-color: rgba(0,0,0,.5);
 	border: 1px solid #ffffff;
 	border-radius: 12px;
 	font-size: 16px;
-	margin: 16px;
+	margin: 16px auto;
 	padding: 6px 0;
 	width: 180px;
 }
-#page footer a {
+#page #page-footer a {
 	color: #ffffff;
 	font-weight: bold;
 }
 .pophover:hover:after {
-	border-radius: 24px;
+	border-radius: 16px;
 }
 
 /* ------------------------------------------------------------ Page Fixed tools */
@@ -115,11 +111,36 @@
 @keyframes moveFromBottomFade {
 	from { opacity: 0; transform: translateY(100%); }
 }
-
-h5 {
-	border-bottom: 1px solid currentColor;
-	margin: 0 0 16px;
+#page .widget-box {
+	-webkit-animation: moveFromBottomFade .7s ease both;
+	   -moz-animation: moveFromBottomFade .7s ease both;
+		-o-animation: moveFromBottomFade .7s ease both;
+			animation: moveFromBottomFade .7s ease both;
+	-webkit-animation-delay: .5s;
+	   -moz-animation-delay: .5s;
+		 -o-animation-delay: .5s;
+			animation-delay: .5s;
 }
+
+#main-check:checked ~ main .widget {
+	display: none;
+}
+main .about-box {
+	display: none;
+}
+#main-check:checked ~ main .about-box {
+	display: block;
+}
+
+.widget-box h5 {
+	border-bottom: 1px solid currentColor;
+	margin: 0;
+	padding: 16px 0;
+}
+.flex-box-4 .widget-box h5 {
+	cursor: move;
+}
+
 #page .widget-box {
 	background-color: var(--color-white);
 	box-shadow: 0px 3px 3px rgba(0,0,0,.5);
@@ -127,18 +148,11 @@ h5 {
 	border-radius: 12px;
 	line-height: 1.2em;
 	margin: 8px 1%;
+	padding: 0;
 	opacity: .9;
-	padding-bottom: 32px;
+	overflow: hidden;
 	text-align: center;
 	width: 23%;
-	-webkit-animation: moveFromBottomFade .7s ease both;
-	   -moz-animation: moveFromBottomFade .7s ease both;
-		-o-animation: moveFromBottomFade .7s ease both;
-			animation: moveFromBottomFade .7s ease both;
-	-webkit-animation-delay: 1s;
-	   -moz-animation-delay: 1s;
-		 -o-animation-delay: 1s;
-			animation-delay: 1s;
 }
 #page .widget-box:hover {
 	opacity: 1;
@@ -166,12 +180,33 @@ h5 {
 		width: 98%;
 	}
 }
+#page .widget-box em label {
+	border-color: transparent;
+	border-bottom: 1px solid currentColor;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	font-size: 32px;
+	font-weight: bold;
+	margin: 0;
+	overflow: hidden;
+}
+#page .widget-box > div {
+	border-color: transparent;
+}
+
+/* ------------------------------------------------------------ Page About Box */
+
+#page .about-box {
+	margin: 16px 1%;
+	position: relative;
+	width: 98%;
+}
+
 
 /* ------------------------------------------------------------ Page Search Box */
 
 #page .search-box {
 	margin: 16px 1%;
-	padding: 16px 0px 0px;
 	position: relative;
 	width: 98%;
 }
@@ -188,12 +223,7 @@ h5 {
 	position: relative;
 	width: 98%;
 }
-#page .pad-box em label {
-	border-color: transparent;
-	border-bottom: 1px solid currentColor;
-	font-size: 32px;
-	font-weight: bold;
-}
+
 #page .pad-box nav {
 	border-color: transparent;
 }
@@ -233,6 +263,21 @@ h5 {
 	width: 64px;
 }
 
+/* ------------------------------------------------------------ Page Timer & Countdown Box */
+
+#page .timer-box form,
+#page .chrono-box form {
+	margin: 0 5%;
+	width: 90%;
+}
+
+/* ------------------------------------------------------------ Page Coin Box */
+
+#page .coin-box {
+
+}
+
+
 /* ------------------------------------------------------------ Page TODO Box */
 
 #page .todo-box form {
@@ -253,6 +298,10 @@ h5 {
   border: none;
   cursor: pointer;
   width: 100%;
+}
+#page .todo-box .todo {
+	margin: 0 5%;
+	width: 90%;
 }
 #page .todo-box ul,
 #page .todo-box li {
@@ -283,7 +332,7 @@ h5 {
 .ui {
 	display: block;
 	margin: 0 auto;
-	width: 100%;
+	width: 90%;
 }
 .calc-box table,
 .calc-box tr,

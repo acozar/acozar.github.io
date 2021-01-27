@@ -821,4 +821,14 @@ $(document).ready(function(){
 	  });
 });
     
+// Sortable
+
+    $(document).ready(function(){
+    //@JA - Logout Fuction
+    $( "#sortable" ).sortable({
+        placeholder: "ui-state-highlight"
+    });
+    $( "#sortable" ).disableSelection();
+});
+
     // End
