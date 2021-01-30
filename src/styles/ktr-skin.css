@@ -503,6 +503,7 @@ header, footer {
 
 .ktr-nav-menu {
     border: none;
+    margin: 0 0 -48px;
     text-align: center;
 }
 .ktr-nav-menu .overlay-transparent {
@@ -516,6 +517,11 @@ header, footer {
 }
 #theme-nox:checked ~ #page .ktr-nav-menu a:hover {
     color: #333333;
+}
+@media (max-width: 1024px) {
+    .ktr-nav-menu {
+        display: none;
+    }  
 }
 
 /* KTR article blogroll */
