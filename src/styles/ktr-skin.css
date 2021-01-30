@@ -499,6 +499,25 @@ header, footer {
 	text-decoration: none;
 }
 
+/* KTR Menu */
+
+.ktr-nav-menu {
+    border: none;
+    text-align: center;
+}
+.ktr-nav-menu .overlay-transparent {
+    opacity: 0;
+}
+#theme-nox:checked ~ #page .ktr-nav-menu a {
+    color: #111111 !important;
+}
+#theme-nox:checked ~ #page .ktr-nav-menu a:visited {
+    color: #999999 !important;
+}
+#theme-nox:checked ~ #page .ktr-nav-menu a:hover {
+    color: #333333;
+}
+
 /* KTR article blogroll */
 
 .ktr-blogroll  .list {
