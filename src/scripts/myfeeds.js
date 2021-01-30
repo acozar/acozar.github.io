@@ -59,4 +59,3 @@
 			dateFormat: 'D [de] MMMM',
 			entryTemplate:'<article><h3><a href="{url}">{title}</a></h3><strong>{date}</strong><div>{shortBodyPlain}</div><em><small><a href="{url}">+</a></small></em></article>'
 		  })
-		})
