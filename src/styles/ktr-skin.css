@@ -62,16 +62,16 @@ header, footer {
 	text-align: center;
 }
 @media screen and (max-width: 1024px) {
-	#page-header h1 {
+	#page-header h2 {
 		font-size: 24px;
 		margin: 0px;
 	}
-	#page-header p {
+	#page-header h1 small {
 		font-size: 16px;
 	}
 }
 .ktr-header,
-.ktr-header h1 {
+.ktr-header h2 {
 	border-color: transparent;
 	line-height: 1.2em;
 	margin: 0;
@@ -82,7 +82,7 @@ header, footer {
   		-ms-hyphens: none;
   			hyphens: none;
 }
-.ktr-header h1 a {
+.ktr-header h2 a {
 	text-decoration: none;
 }
 .ktr-logo {
