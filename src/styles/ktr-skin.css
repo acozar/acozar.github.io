@@ -61,15 +61,6 @@ blockquote:after {
 header, footer {
 	text-align: center;
 }
-@media screen and (max-width: 1024px) {
-	#page-header h2 {
-		font-size: 24px;
-		margin: 0px;
-	}
-	#page-header h1 small {
-		font-size: 16px;
-	}
-}
 .ktr-header,
 .ktr-header h2 {
 	border-color: transparent;
@@ -94,6 +85,16 @@ header, footer {
 	box-shadow: 0 0 6px rgba(150,150,150,.8);
 }
 @media screen and (max-width: 1024px) {
+	#page-header h1 {
+		margin: 0 0 -16px;
+	}
+	#page-header h2 {
+		font-size: 24px;
+		margin: 0 0 -32px;
+	}
+	#page-header h1 small {
+		font-size: 16px;
+	}
 	.ktr-logo {
 		height: 56px;
         margin: 0 0 8px;
