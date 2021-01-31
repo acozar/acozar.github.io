@@ -510,6 +510,10 @@ header, footer {
 .ktr-nav-menu .overlay-transparent {
     opacity: 0;
 }
+.ktr-nav-menu label,
+.ktr-nav-menu nav {
+    border-radius: 12px;
+}
 #theme-nox:checked ~ #page .ktr-nav-menu a {
     color: #111111 !important;
 }
