@@ -15,7 +15,7 @@
   height: 0;
   border-left: 60px solid transparent;
   border-right: 60px solid transparent;
-  border-bottom: 120px solid #ccc;
+  border-bottom: 116px solid #ccc;
   transform-origin: 50% 0%;
   animation: spin 5s infinite linear;
 }
@@ -35,11 +35,11 @@
 @keyframes spin {
   0% {
     transform: rotateY(0deg) rotateX(30deg);
-    border-bottom-color: #1abcff;
+    border-bottom-color: #666;
   }
   25% {
     transform: rotateY(90deg) rotateX(30deg);
-    border-bottom-color: #00a2e6;
+    border-bottom-color: #999999;
     opacity: 1;
   }
   25.1% {
@@ -47,19 +47,19 @@
   }
   50% {
     transform: rotateY(180deg) rotateX(30deg);
-    border-bottom-color: #0089c2;
+    border-bottom-color: #666666;
   }
   74.9% {
     opacity: 0;
   }
   75% {
     transform: rotateY(270deg) rotateX(30deg);
-    border-bottom-color: #007eb3;
+    border-bottom-color: #999999;
     opacity: 1;
   }
   100% {
     transform: rotateY(360deg) rotateX(30deg);
-    border-bottom-color: #1abcff;
+    border-bottom-color: #666666;
   }
 }
 .pyramid .shadow {
