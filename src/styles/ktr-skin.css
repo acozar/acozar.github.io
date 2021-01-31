@@ -84,6 +84,9 @@ header, footer {
 .ktr-logo:hover {
 	box-shadow: 0 0 6px rgba(150,150,150,.8);
 }
+#page-footer p {
+    padding: 24px 0 0;
+}
 @media screen and (max-width: 1024px) {
 	#page-header h1 {
 		margin: 0 0 -16px;
@@ -680,7 +683,7 @@ header, footer {
 /* KTR footer */
 
 .ktr-footer {
-	background-position: center bottom;
+	background-position: center 95%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-image: url('../ics/isotype.png');
