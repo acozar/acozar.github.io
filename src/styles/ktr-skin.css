@@ -85,7 +85,7 @@ header, footer {
 	box-shadow: 0 0 6px rgba(150,150,150,.8);
 }
 #page-footer p {
-    padding: 48px 0 0;
+    padding: 24px 0;
 }
 @media screen and (max-width: 1024px) {
 	#page-header h1 {
