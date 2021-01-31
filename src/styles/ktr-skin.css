@@ -471,7 +471,6 @@ header, footer {
 /* KTR article feeds */
 
 .ktr-feeds section {
-    border-bottom: 1px solid currentColor;
     margin-bottom: 36px;
 }
 .ktr-feeds section header {
