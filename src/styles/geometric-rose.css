@@ -1,10 +1,13 @@
+/* Geometric rose */
+/* Inspired by Mike King's Twisty (https://codepen.io/micjamking/pen/obdGw) */
+
 .rose-container {
   height: 400px;
   position: relative;
   overflow: hidden;
 }
 
-.rose{
+.geometric-rose{
   height: 300px;
   width: 300px;
   position: absolute;
@@ -16,7 +19,7 @@
 .square{
   height: 94%;
   width: 94%;
-  background: white;
+  background: currentColor;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -24,7 +27,7 @@
 }
 
 .black{ 
-  background: black;  
+  background: rgba(0,0,0,.8);  
   animation: rotate 20s infinite linear; 
 }
 
