@@ -475,6 +475,19 @@ header, footer {
 }
 .ktr-feeds section header {
     border-color: transparent;
+    padding: 0 20%;
+}
+.ktr-feeds section header h3 {
+    line-height: 32px;
+  	-webkit-hyphens: none;
+  	   -moz-hyphens: none;
+  		-ms-hyphens: none;
+  			hyphens: none;
+}
+.ktr-feeds section blockquote p {
+    font-size: 24px;
+    font-style: italic;
+    padding: 0 20%;
 }
 .ktr-feeds .gallery article div {
     max-height: 280px;
