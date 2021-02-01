@@ -310,7 +310,8 @@ header, footer {
 /* KTR about */
 
 .ktr-about p {
-	font-size: 32px;
+	font-size: 24px;
+    margin-bottom: 12px;
 	text-align: center;
 }
 
