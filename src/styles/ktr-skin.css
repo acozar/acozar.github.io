@@ -516,6 +516,8 @@ header, footer {
     display: block;
     height: 220px;
     margin: 0 auto 48px;
+	object-fit: cover;
+	object-position: center;
     width: 220px;
 }
 .ktr-feeds .gallery h3 {
