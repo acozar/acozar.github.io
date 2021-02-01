@@ -491,8 +491,7 @@ header, footer {
 .ktr-feeds section footer {
     border-color: transparent;
 }
-.ktr-feeds section header h3 {
-    line-height: 32px;
+.ktr-feeds section h3 {
   	-webkit-hyphens: none;
   	   -moz-hyphens: none;
   		-ms-hyphens: none;
@@ -504,16 +503,17 @@ header, footer {
     padding: 0 20%;
 }
 .ktr-feeds .gallery article div {
-    max-height: 280px;
+    max-height: 240px;
 }
 .ktr-feeds .gallery article img {
     border: 1px solid currentColor;
     border-radius: 50%;
     display: block;
     height: 200px;
-    margin: 0 auto 48px;
+    margin: 0 auto;
 	object-fit: cover;
 	object-position: center;
+    overflow: hidden;
     width: 200px;
 }
 .ktr-feeds .gallery h3 {
@@ -524,13 +524,7 @@ header, footer {
     font-size: 12px;
 
 }
-.ktr-feeds .gallery article em small a {
-    border-radius: 50%;
-    z-index: 11;
-}
-.ktr-feeds .gallery article em small a:hover {
-	text-decoration: none;
-}
+
 
 /* KTR Menu */
 
