@@ -361,7 +361,7 @@ header, footer {
 	border-color: transparent;
 	float: left;
 	height: 256px;
-	margin: 0 0 64px 1%;
+	margin: 0 0 104px 1%;
 	width: 24%;
 }
 .ktr-gallery article:first-child {
@@ -394,8 +394,10 @@ header, footer {
 .ktr-gallery article h3,
 .ktr-media article h3 {
 	font-size: 20px;
+    height: 48px;
 	line-height: 1.2em;
 	margin: 32px 0 0;
+    overflow: hidden;
 	text-transform: uppercase;
   	-webkit-hyphens: none;
   	   -moz-hyphens: none;
