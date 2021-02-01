@@ -397,8 +397,6 @@ header, footer {
 	object-position: center;
 	height: 200px;
 	width: 200px;
-    min-height: 200px;
-	min-width: 200px;
 }
 .ktr-media article img {
 	display: block;
@@ -437,19 +435,20 @@ header, footer {
 	.ktr-gallery article,
 	.ktr-media article,
     .ktr-feeds article {
+        margin: 32px 0;
 		width: 48%;
 	}
 	.ktr-gallery article img,
 	.ktr-media article img {
-		height: 128px;
-		width: 128px;
+		height: 160px;
+		width: 160px;
 	}
 	.ktr-gallery article h3,
 	.ktr-gallery article:first-child h3 {
 		font-size: 16px;
 	}
 }
-@media (max-width: 640px) {
+@media (max-width: 520px) {
 	.ktr-gallery article,
 	.ktr-media article,
     .ktr-feeds article {
