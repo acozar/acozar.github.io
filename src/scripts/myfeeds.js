@@ -3,7 +3,7 @@
 		  {
 			limit: 4,
 			dateFormat: 'D [de] MMMM',
-			entryTemplate:'<article><div><a href="{url}">{teaserImage}</a></div><h3><a href="{url}">{title}</a></h3><strong>{date}</strong></article>'
+			entryTemplate:'<article><div><a href="{url}">{teaserImage}</a></div><h3><a href="{url}">{title}</a></h3><strong>[{author}@{date}]</strong></article>'
 		  })
 		})
 		jQuery(function($) {
@@ -11,7 +11,7 @@
 		  {
 			limit: 4,
 			dateFormat: 'D [de] MMMM',
-			entryTemplate:'<article><div><a href="{url}">{teaserImage}</a></div><h3><a href="{url}">{title}</a></h3><strong>{date}</strong></article>'
+			entryTemplate:'<article><div><a href="{url}">{teaserImage}</a></div><h3><a href="{url}">{title}</a></h3><strong>[{author}@{date}]</strong></article>'
 		  })
 		})
 		jQuery(function($) {
@@ -19,7 +19,7 @@
 		  {
 			limit: 4,
 			dateFormat: 'D [de] MMMM',
-			entryTemplate:'<article><div><a href="{url}">{teaserImage}</a></div><h3><a href="{url}">{title}</a></h3><strong>{date}</strong></article>'
+			entryTemplate:'<article><div><a href="{url}">{teaserImage}</a></div><h3><a href="{url}">{title}</a></h3><strong>[{author}@{date}]</strong></article>'
 		  })
 		})
 		jQuery(function($) {
@@ -27,7 +27,7 @@
 		  {
 			limit: 4,
 			dateFormat: 'D [de] MMMM',
-			entryTemplate:'<article><div><a href="{url}">{teaserImage}</a></div><h3><a href="{url}">{title}</a></h3><strong>{date}</strong></article>'
+			entryTemplate:'<article><div><a href="{url}">{teaserImage}</a></div><h3><a href="{url}">{title}</a></h3><strong>[{author}@{date}]</strong></article>'
 		  })
 		})
 		jQuery(function($) {
@@ -35,7 +35,7 @@
 		  {
 			limit: 4,
 			dateFormat: 'D [de] MMMM',
-			entryTemplate:'<article><div><a href="{url}">{teaserImage}</a></div><h3><a href="{url}">{title}</a></h3><strong>{date}</strong></article>'
+			entryTemplate:'<article><div><a href="{url}">{teaserImage}</a></div><h3><a href="{url}">{title}</a></h3><strong>[{author}@{date}]</strong></article>'
 		  })
 		})
 		jQuery(function($) {
@@ -43,7 +43,7 @@
 		  {
 			limit: 12,
 			dateFormat: 'D [de] MMMM',
-			entryTemplate:'<article><div><a href="{url}">{teaserImage}</a></div><h3><a href="{url}">{title}</a></h3><strong>{date}</strong></article>'
+			entryTemplate:'<article><div><a href="{url}">{teaserImage}</a></div><h3><a href="{url}">{title}</a></h3><strong>[{author}@{date}]</strong></article>'
 		  })
 		})
 		jQuery(function($) {
@@ -51,7 +51,7 @@
 		  {
 			limit: 12,
 			dateFormat: 'D [de] MMMM',
-			entryTemplate:'<article><div><a href="{url}">{teaserImage}</a></div><h3><a href="{url}">{title}</a></h3><strong>{date}</strong></article>'
+			entryTemplate:'<article><div><a href="{url}">{teaserImage}</a></div><h3><a href="{url}">{title}</a></h3><strong>[{author}@{date}]</strong></article>'
 		  })
 		})
 		jQuery(function($) {
@@ -59,6 +59,6 @@
 		  {
 			limit: 12,
 			dateFormat: 'D [de] MMMM',
-			entryTemplate:'<article><div><a href="{url}">{teaserImage}</a></div><h3><a href="{url}">{title}</a></h3><strong>{date}</strong></article>'
+			entryTemplate:'<article><div><a href="{url}">{teaserImage}</a></div><h3><a href="{url}">{title}</a></h3><strong>[{author}@{date}]</strong></article>'
 		  })
 		})
