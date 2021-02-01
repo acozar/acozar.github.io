@@ -87,6 +87,23 @@ header, footer {
 #page-footer p {
     padding: 24px 0;
 }
+.ktr-footer {
+	background-position: center 95%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-image: url('../ics/isotype.png');
+	background-size: 512px;
+	padding-bottom: 512px;
+}
+@media screen and (max-width: 1024px) {
+	.ktr-footer {
+		background-size: 256px;
+		padding-bottom: 360px;
+	}
+}
+#page-footer {
+	padding: 8px;
+}
 @media screen and (max-width: 1024px) {
 	#page-header h1 {
 		margin: 0 0 -16px;
@@ -351,7 +368,8 @@ header, footer {
 /* KTR article gallery */
 
 .ktr-gallery,
-.ktr-media {
+.ktr-media,
+.ktr-feeds {
 	margin: 64px auto;
 	text-align: center;
 	width: 80%;
@@ -369,7 +387,8 @@ header, footer {
 	height: 384px;
 	width: 99%;
 }
-.ktr-gallery article img {
+.ktr-gallery article img,
+.ktr-feeds .gallery article img{
 	border: 1px solid rgba(0,0,0,.5);
 	border-radius: 50%;
 	display: block;
@@ -378,6 +397,8 @@ header, footer {
 	object-position: center;
 	height: 200px;
 	width: 200px;
+    min-height: 200px;
+	min-width: 200px;
 }
 .ktr-media article img {
 	display: block;
@@ -392,7 +413,8 @@ header, footer {
 	width: 256px;
 }
 .ktr-gallery article h3,
-.ktr-media article h3 {
+.ktr-media article h3,
+.ktr-feeds article h3 {
 	font-size: 20px;
     height: 48px;
 	line-height: 1.2em;
@@ -413,7 +435,8 @@ header, footer {
 }
 @media (max-width: 1024px) {
 	.ktr-gallery article,
-	.ktr-media article {
+	.ktr-media article,
+    .ktr-feeds article {
 		width: 48%;
 	}
 	.ktr-gallery article img,
@@ -426,6 +449,41 @@ header, footer {
 		font-size: 16px;
 	}
 }
+@media (max-width: 640px) {
+	.ktr-gallery article,
+	.ktr-media article,
+    .ktr-feeds article {
+		width: 100%;
+	}
+}
+
+/* KTR article feeds */
+
+.ktr-feeds section {
+    margin-bottom: 36px;
+}
+.ktr-feeds section header {
+    border-color: transparent;
+    padding: 0 20%;
+}
+.ktr-feeds section footer {
+    border-color: transparent;
+}
+.ktr-feeds section h3 {
+  	-webkit-hyphens: none;
+  	   -moz-hyphens: none;
+  		-ms-hyphens: none;
+  			hyphens: none;
+}
+.ktr-feeds section blockquote p {
+    font-size: 24px;
+    font-style: italic;
+    padding: 0 20%;
+}
+.ktr-feeds .gallery article div {
+    max-height: 240px;
+}
+
 
 /* KTR article post */
 
@@ -481,54 +539,7 @@ header, footer {
 	}
 }
 
-/* KTR article feeds */
-
-.ktr-feeds section {
-    margin-bottom: 36px;
-}
-.ktr-feeds section header {
-    border-color: transparent;
-    padding: 0 20%;
-}
-.ktr-feeds section footer {
-    border-color: transparent;
-}
-.ktr-feeds section h3 {
-  	-webkit-hyphens: none;
-  	   -moz-hyphens: none;
-  		-ms-hyphens: none;
-  			hyphens: none;
-}
-.ktr-feeds section blockquote p {
-    font-size: 24px;
-    font-style: italic;
-    padding: 0 20%;
-}
-.ktr-feeds .gallery article div {
-    max-height: 240px;
-}
-.ktr-feeds .gallery article img {
-    border: 1px solid currentColor;
-    border-radius: 50%;
-    display: block;
-    height: 200px;
-    margin: 0 auto;
-	object-fit: cover;
-	object-position: center;
-    overflow: hidden;
-    width: 200px;
-}
-.ktr-feeds .gallery h3 {
-    max-height: 36px;
-    text-transform: uppercase;
-}
-.ktr-feeds .gallery strong {
-    font-size: 12px;
-
-}
-
-
-/* KTR Menu */
+/* KTR Nav Menu (tags for photos) */
 
 .ktr-nav-menu {
     border: none;
@@ -691,26 +702,6 @@ header, footer {
 	-moz-animation: fadeIn .7s ease both;
 	-o-animation: fadeIn .7s ease both;
 	animation: fadeIn .7s ease both;
-}
-
-/* KTR footer */
-
-.ktr-footer {
-	background-position: center 95%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-image: url('../ics/isotype.png');
-	background-size: 512px;
-	padding-bottom: 512px;
-}
-@media screen and (max-width: 1024px) {
-	.ktr-footer {
-		background-size: 256px;
-		padding-bottom: 360px;
-	}
-}
-#page-footer {
-	padding: 8px;
 }
 
 /* KTR bubble Menu */
@@ -1146,8 +1137,6 @@ header, footer {
 
 .moon { fill:#D6D5C0; }
 .moonback { fill:black;stroke:#fff;stroke-width:1px; }
-
-/* Blogger Hacks */
 
 /* Blogger labels */
 
