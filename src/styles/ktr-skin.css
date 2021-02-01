@@ -397,6 +397,8 @@ header, footer {
 	object-position: center;
 	height: 200px;
 	width: 200px;
+	min-height: 200px;
+	min-width: 200px;
 }
 .ktr-media article img {
 	display: block;
@@ -437,11 +439,6 @@ header, footer {
     .ktr-feeds article {
         margin: 32px 0;
 		width: 48%;
-	}
-	.ktr-gallery article img,
-	.ktr-media article img {
-		height: 160px;
-		width: 160px;
 	}
 	.ktr-gallery article h3,
 	.ktr-gallery article:first-child h3 {
