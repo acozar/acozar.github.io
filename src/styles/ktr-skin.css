@@ -376,8 +376,8 @@ header, footer {
 	margin: 0 auto;
 	object-fit: cover;
 	object-position: center;
-	height: 160px;
-	width: 160px;
+	height: 200px;
+	width: 200px;
 }
 .ktr-media article img {
 	display: block;
@@ -407,7 +407,7 @@ header, footer {
 }
 .ktr-gallery article strong,
 .ktr-media article strong {
-	font-size: 12px;;
+	font-size: 12px;
 }
 @media (max-width: 1024px) {
 	.ktr-gallery article,
@@ -510,11 +510,11 @@ header, footer {
     border: 1px solid currentColor;
     border-radius: 50%;
     display: block;
-    height: 220px;
+    height: 200px;
     margin: 0 auto 48px;
 	object-fit: cover;
 	object-position: center;
-    width: 220px;
+    width: 200px;
 }
 .ktr-feeds .gallery h3 {
     max-height: 36px;
