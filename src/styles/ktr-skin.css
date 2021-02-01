@@ -503,10 +503,6 @@ header, footer {
     font-style: italic;
     padding: 0 20%;
 }
-.ktr-feeds .gallery article {
-    border-top: 1px solid currentColor;
-    padding-top: 36px;
-}
 .ktr-feeds .gallery article div {
     max-height: 280px;
 }
