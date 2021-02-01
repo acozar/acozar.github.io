@@ -480,6 +480,9 @@ header, footer {
     border-color: transparent;
     padding: 0 20%;
 }
+.ktr-feeds section footer {
+    border-color: transparent;
+}
 .ktr-feeds section header h3 {
     line-height: 32px;
   	-webkit-hyphens: none;
