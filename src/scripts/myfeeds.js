@@ -51,7 +51,7 @@
 		  {
 			limit: 12,
 			dateFormat: 'D [de] MMMM',
-			entryTemplate:'<article><h3><a href="{url}">{title}</a></h3><strong>{date}</strong><div>{teaserImage}{shortBodyPlain}</div><em><small><a href="{url}">+</a></small></em></article>'
+			entryTemplate:'<article><div>{teaserImage}{shortBodyPlain}</div><h3><a href="{url}">{title}</a></h3><strong>{date}</strong></article>'
 		  })
 		})
 		jQuery(function($) {
