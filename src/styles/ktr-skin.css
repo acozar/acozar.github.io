@@ -386,8 +386,8 @@ header, footer {
 	width: 99%;
 }
 .ktr-gallery article img,
-.ktr-feeds .gallery article img,
-.ktr-media article img{
+.ktr-media article img,
+.ktr-feeds .gallery article img{
 	border: 1px solid rgba(0,0,0,.5);
 	display: block;
 	margin: 0 auto;
@@ -398,7 +398,8 @@ header, footer {
 	min-height: 200px;
 	min-width: 200px;
 }
-.ktr-gallery article img {
+.ktr-gallery article img,
+.ktr-feeds .gallery article img{
 	border-radius: 50%;
 }
 .ktr-gallery article:first-child img {
