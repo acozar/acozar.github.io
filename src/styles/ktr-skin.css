@@ -284,8 +284,16 @@ header, footer {
     .ktr-feeds .gallery article {
 		width: 49%;
 	}
+	.ktr-gallery article img,
+	.ktr-media article img,
+    .ktr-feeds .gallery article img {
+		height: 110px;
+		width: 110px;
+		min-height: 110px;
+		min-width: 110px;
+	}
 }
-@media (max-width: 360px) {
+@media (max-width: 320px) {
 	.ktr-gallery article,
 	.ktr-media article,
     .ktr-feeds .gallery article {
