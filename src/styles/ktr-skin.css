@@ -292,9 +292,19 @@ header, footer {
 		min-height: 110px;
 		min-width: 110px;
 	}
+    .ktr-gallery article:first-child {
+        height: 320px;
+    }
+    .ktr-gallery article:first-child img {
+		height: 220px;
+		width: 220px;
+		min-height: 220px;
+		min-width: 220px;
+    }
 }
 @media (max-width: 320px) {
 	.ktr-gallery article,
+    .ktr-gallery article:first-child,
 	.ktr-media article,
     .ktr-feeds .gallery article {
 		width: 98%;
