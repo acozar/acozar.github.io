@@ -285,7 +285,7 @@ header, footer {
 		width: 49%;
 	}
 }
-@media (max-width: 400px) {
+@media (max-width: 360px) {
 	.ktr-gallery article,
 	.ktr-media article,
     .ktr-feeds .gallery article {
