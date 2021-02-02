@@ -339,6 +339,30 @@ header, footer {
 }
 
 
+/* KTR Naips */
+
+.ktr-naips h3 {
+    text-align: center;
+}
+.thumbnails {
+	display: box;
+	display: flexbox;
+	display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+}
+.thumbnails div {
+    width: 16%;
+}
+.thumbnails div a {
+    position: relative;
+}
+.thumbnails div a:hover {
+    opacity: .6;
+}
+
+
 /* KTR article post */
 
 .article-body {
