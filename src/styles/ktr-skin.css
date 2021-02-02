@@ -95,12 +95,6 @@ header, footer {
 	background-size: 512px;
 	padding-bottom: 512px;
 }
-@media screen and (max-width: 1024px) {
-	.ktr-footer {
-		background-size: 256px;
-		padding-bottom: 360px;
-	}
-}
 #page-footer {
 	padding: 8px;
 }
@@ -117,8 +111,12 @@ header, footer {
 	}
 	.ktr-logo {
 		height: 56px;
-        margin: 0 0 8px;
+        margin: 16px 0 8px;
 		width: 56px;
+	}
+	.ktr-footer {
+		background-size: 256px;
+		padding-bottom: 360px;
 	}
 }
 
@@ -388,9 +386,9 @@ header, footer {
 	width: 99%;
 }
 .ktr-gallery article img,
-.ktr-feeds .gallery article img{
+.ktr-feeds .gallery article img,
+.ktr-media article img{
 	border: 1px solid rgba(0,0,0,.5);
-	border-radius: 50%;
 	display: block;
 	margin: 0 auto;
 	object-fit: cover;
@@ -400,13 +398,8 @@ header, footer {
 	min-height: 200px;
 	min-width: 200px;
 }
-.ktr-media article img {
-	display: block;
-	margin: 0 auto;
-	object-fit: cover;
-	object-position: center;
-	height: 160px;
-	width: 284px;
+.ktr-gallery article img {
+	border-radius: 50%;
 }
 .ktr-gallery article:first-child img {
 	height: 256px;
