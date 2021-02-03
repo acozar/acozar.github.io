@@ -371,7 +371,7 @@ header, footer {
     margin: 256px 0 0;
 }
 .curve {
-  stroke-width: 1px;
+  stroke-width: 2px;
   stroke-opacity: 0;
 }
 .curve path {
