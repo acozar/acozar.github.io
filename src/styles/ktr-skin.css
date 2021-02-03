@@ -361,19 +361,14 @@ header, footer {
 .thumbnails div a:hover {
     opacity: .6;
 }
-.pitagoras-bg {
+.body-bg {
     position: fixed;
     top: 0:
     left: 0;
     right: 0;
     bottom: 0;
 }
-#star-of-pitagoras .star-line {
-    stroke: #666666;
-}
-#star-of-pitagoras .star-path {
-    stroke: #aaaaaa;
-}
+
 
 /* KTR article post */
 
