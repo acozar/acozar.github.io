@@ -367,6 +367,8 @@ header, footer {
     left: 0;
     height: 100%;
     width: 100%;
+}.body-bg svg {
+    margin: 256px 0 0;
 }
 .curve {
   stroke-width: 1px;
