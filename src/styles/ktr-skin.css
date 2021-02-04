@@ -412,6 +412,16 @@ header, footer {
     stroke-opacity: 0;
   }
 }
+@media (max-width: 1024px) {
+    .curve {
+    stroke-width: 4px;
+    }
+}
+@media (max-width: 768px) {
+    .curve {
+    stroke-width: 6px;
+    }
+}
 
 
 /* KTR article post */
