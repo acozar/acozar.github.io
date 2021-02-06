@@ -93,6 +93,11 @@ header, footer {
 	background-attachment: fixed;
 	background-image: url('https://acozar.github.io/src/ics/isotype.png');
 	background-size: 512px;
+    padding-bottom: 512px;
+}
+.ktr-footer:after {
+    content: ' ';
+    height: 64px;
 }
 #page-footer {
 	padding: 8px;
