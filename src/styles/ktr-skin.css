@@ -381,6 +381,9 @@ header, footer {
     margin-bottom: 1em;
     text-align: left;
 }
+.naips-txt blockquote p {
+    text-align: center;
+}
 .thumbnails {
 	display: box;
 	display: flexbox;
