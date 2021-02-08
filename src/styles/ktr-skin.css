@@ -368,6 +368,14 @@ header, footer {
 		-o-animation-delay: 1.5s;
 			animation-delay: 1.5s;
 }
+.naips-lead {
+    margin-bottom: 2em;
+}
+.naips-lead p,
+.naips-txt p {
+    margin-bottom: 1em;
+    text-align: left;
+}
 .thumbnails {
 	display: box;
 	display: flexbox;
