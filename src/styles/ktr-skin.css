@@ -368,6 +368,11 @@ header, footer {
 		-o-animation-delay: 1.5s;
 			animation-delay: 1.5s;
 }
+.naips-txt h2,
+.naips-txt h3,
+.naips-txt h4 {
+    margin: 64px 0 32px;
+}
 .naips-lead {
     margin-bottom: 2em;
 }
