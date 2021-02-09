@@ -150,6 +150,17 @@ header, footer {
 	width: 50%;
 }
 
+/* KTR social */
+
+.ktr-social {
+    margin: 64px auto;
+    text-align: center;
+}
+.ktr-social img {
+    width: 32px;
+}
+
+
 /* KTR about */
 
 .ktr-about p {
