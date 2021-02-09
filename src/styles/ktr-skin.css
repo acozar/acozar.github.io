@@ -376,6 +376,9 @@ header, footer {
 .naips-lead {
     margin-bottom: 2em;
 }
+.naips-txt img {
+    width: 30%;
+}
 .naips-lead p,
 .naips-txt p {
     margin-bottom: 1em;
