@@ -346,7 +346,7 @@ header, footer {
 /* KTR Naips */
 
 .ktr-naips  {
-    margin: 92px auto;
+    margin: 92px 16px;
     text-align: center;
     max-width: 768px;
 }
