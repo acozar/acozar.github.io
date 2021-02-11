@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: acozar.github.io
-Token: e5458d2a1072290d839039e7cc0e58a3d85036f9e300c60732d7f8aa8f27d022
