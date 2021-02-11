@@ -61,9 +61,7 @@ function phase_junk(phase) {
     } else if (phase <= 1) {
         sweep = [ 0, 1 ];
         mag = 20 * (phase - 0.75) * 4
-    } else { 
-        exit; 
-    }
+    } 
     var unicode_moon;
     if (phase <= 0.0625 || phase > 0.9375) {
         unicode_moon = "\uD83C\uDF11";
