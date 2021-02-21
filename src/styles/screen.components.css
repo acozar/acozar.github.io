@@ -1103,9 +1103,7 @@ a:visited:active {
 	color: var(--color-textmeridianus);
 }
 #theme-meridianus:checked ~ #page label:hover,
-#theme-meridianus:checked ~ #page button:hover,
-#theme-meridianus:checked ~ #page a:hover,
-#theme-meridianus:checked ~ #page a:visited:hover {
+#theme-meridianus:checked ~ #page button:hover {
 	color: var(--color-starredmeridianus);
 }
 #theme-meridianus:checked ~ #page a:active,
@@ -1140,9 +1138,7 @@ a:visited:active {
 	color: var(--color-textvesperum);
 }
 #theme-vesperum:checked ~ #page label:hover,
-#theme-vesperum:checked ~ #page button:hover,
-#theme-vesperum:checked ~ #page a:hover,
-#theme-vesperum:checked ~ #page a:visited:hover {
+#theme-vesperum:checked ~ #page button:hover {
 	color: var(--color-starredvesperum);
 }
 #theme-vesperum:checked ~ #page a:active,
@@ -1237,12 +1233,12 @@ a:visited:active {
 	/* Meridianus Theme */
     --color-bgmeridianus: rgba(234, 231, 220, 1);
     --color-textmeridianus: rgba(122, 0, 29, 1);
-    --color-starredmeridianus: rgba(168, 47, 47, 1);
+    --color-starredmeridianus: rgba(238,213,213, 1);
 	
 	/* vesperum Theme */
 	--color-bgvesperum: rgba(228,220,238,1);
 	--color-textvesperum: rgba(72, 49, 101,1);
-	--color-starredvesperum: rgba(102,2,60,1);
+	--color-starredvesperum: rgba(228,220,238,1);
 	
 	/* Overlays */
 	--color-translucentblack: rgba(0,0,0,.5);
