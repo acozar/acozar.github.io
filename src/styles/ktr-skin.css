@@ -981,13 +981,13 @@ header, footer {
 }
 
 .th-meridianus {
-	background-color: rgba(248,228,211,1) !important;
+	background-color: var(--color-bgmeridianus) !important;
 }
 .th-vesperum {
-	background-color: rgba(228,220,238,1) !important;
+	background-color: var(--color-bgvesperum) !important;
 }
 .th-nox {
-	background-color: #000000 !important;
+	background-color: var(--color-softblack) !important;
 	color: #ffffff !important;
 }
 
