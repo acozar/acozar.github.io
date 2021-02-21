@@ -1108,7 +1108,7 @@ a:visited:active {
 }
 #theme-meridianus:checked ~ #page a:active,
 #theme-meridianus:checked ~ #page a:visited:active {
-	color: var(--color-textmeridianus);
+	color: var(--color-starredmeridianus);
 }
 #theme-meridianus:checked ~ #page nav a:hover,
 #theme-meridianus:checked ~ #page nav label:hover {
