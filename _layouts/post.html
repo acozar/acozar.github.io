@@ -6,10 +6,8 @@ layout: default
 	<div class="content">
 		<h6><a href="http://www.acozar.com" title="www.acozar.com">www.acozar.com</a></h6>
 		<a href="https://acozar.github.io" title="Codex"><img src="https://acozar.github.io/src/img/ktr-icons-code.png" alt="Codi" class="ktr-logo"></a>
-		<Blogger>
 			<h1>{{ page.title }}</h1>
 			<strong><small><time>{{ page.date | date: "%B %e, %Y" }}</time></small></strong>
-		</Blogger>
 	</div>
 </header>
 
@@ -17,7 +15,7 @@ layout: default
 	<div>
 	
 		<div class="article-body">
-			<img src="{{ page.image }}" alt="{{ post.title }}">
+			<img src="{{ page.image }}" alt="{{ page.title }}">
 			{{ content }}
 			<hr>
 		</div>

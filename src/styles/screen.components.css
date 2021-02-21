@@ -1231,17 +1231,17 @@ a:visited:active {
 	--color-softgrey: rgba(230,230,230,1);
 	--color-grey: rgba(150,150,150,1);
 	--color-hardgrey: rgba(90,90,90,1);
-	--color-softblack: rgba(60,60,60,1);
+    --color-softblack: rgba(49,52,66,1);
 	--color-black: rgba(0,0,0,1);
 	
 	/* Meridianus Theme */
-	--color-bgmeridianus: rgba(248,228,211,1);
-	--color-textmeridianus: rgba(204,119,34,1);
-	--color-starredmeridianus: rgba(168,47,47,1);
+    --color-bgmeridianus: rgba(234, 231, 220, 1);
+    --color-textmeridianus: rgba(122, 0, 29, 1);
+    --color-starredmeridianus: rgba(168, 47, 47, 1);
 	
 	/* vesperum Theme */
 	--color-bgvesperum: rgba(228,220,238,1);
-	--color-textvesperum: rgba(120,81,169,1);
+	--color-textvesperum: rgba(72, 49, 101,1);
 	--color-starredvesperum: rgba(102,2,60,1);
 	
 	/* Overlays */
