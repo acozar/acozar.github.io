@@ -12,8 +12,9 @@ image: https://acozar.github.io/src/img/openboard/openboard-logo.png
 		<figcaption>Openboard screenshot</figcaption>
 	</figure>
 	<br><br><br>
-	<h3>- Another customizable Homepage -</h3>
-	
+	<h3>- A customizable Homepage -</h3>
+</div>
+<div class="">
 <p>Openboard is a simple, customizable home page for your browser.</p>
 
 <p>It has been developed to meet my own needs, but can be freely adapted by modifying just a few lines of code. It has some practical applications such as a plain text editor, as well as a small set of widgets (location, weather, stopwatch, timer, calculator, task list, RSS headlines, etc ...).</p>
@@ -35,5 +36,4 @@ image: https://acozar.github.io/src/img/openboard/openboard-logo.png
 		<figcaption>Pad screenshot</figcaption>
 	</figure>
 	<br><br><br>
-	
 </div>
