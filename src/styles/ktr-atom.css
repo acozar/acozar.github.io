@@ -43,10 +43,6 @@
 	margin: 32px auto 0;
 	overflow: hidden;
 	position: relative;
-	-webkit-transform: scale(1.2, 1.2);
-	-moz-transform: scale(1.2, 1.2);
-	-o-transform: scale(1.2, 1.2);
-	transform: scale(1.2, 1.2);
 	-webkit-animation: loopRotate 10s infinite linear;
 	-moz-animation: loopRotate 10s infinite linear;
 	-o-animation: loopRotate 10s infinite linear;
@@ -79,13 +75,18 @@
 	-o-animation: loopRotate 10s infinite linear;
 	animation: loopRotate 10s infinite linear;
 }
-@media screen and (max-height: 600px) {
+@media screen (max-height: 700px), (max-width: 700px) {
 	.atom-system {
-		width: 320px;
+		width: 360px;
+	    -webkit-transform: scale(.8);
+	    -moz-transform: scale(.8);
+	    -o-transform: scale(.8);
+	    transform: scale(.8);
 	}
 	.atom {
 		height: 220px;
 		width: 220px;
+
 	}
 	.yin-yang img {
 		margin: 0 auto;
