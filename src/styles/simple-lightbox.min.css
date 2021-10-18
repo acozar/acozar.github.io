@@ -160,6 +160,7 @@ body.hidden-scroll {
 }
 
 .sl-wrapper .sl-image img {
+    cursor: grab;
     margin: 0;
     padding: 0;
     display: block;
