@@ -254,9 +254,9 @@ header, footer {
 .ktr-media article h3,
 .ktr-feeds article h3 {
 	font-size: 20px;
-    height: 48px;
+    height: 72px;
 	line-height: 1.2em;
-	margin: 32px 0 0;
+	margin: 16px 0 0;
     overflow: hidden;
 	text-transform: uppercase;
   	-webkit-hyphens: none;
