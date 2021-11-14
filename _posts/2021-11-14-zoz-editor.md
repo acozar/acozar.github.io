@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Openboard
+title: Zoz editor
 image: https://acozar.github.io/src/img/ktr-icons-zoz.png
 ---
 
@@ -8,11 +8,11 @@ image: https://acozar.github.io/src/img/ktr-icons-zoz.png
 	<em><a href="https://acozar.github.io/apps/zoz.html" title="Go to ZOZ editor"> ZOZ editor </a></em>
 	<br><br><br>
 	<figure>
-		<img src="https://acozar.github.io/src/img/openboard/openboard-screenshot.jpg" alt="Openboard">
-		<figcaption>Openboard screenshot</figcaption>
+		<img src="https://acozar.github.io/src/img/apps/zoz-screenshot.jpg" alt="ZOZ">
+		<figcaption>Zoz editor screenshot</figcaption>
 	</figure>
 	<br><br><br>
-	<h3>- A customizable Homepage -</h3>
+	<h3>- A simple text editor -</h3>
 </div>
 <div class="">
 
