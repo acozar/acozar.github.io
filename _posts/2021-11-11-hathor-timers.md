@@ -15,5 +15,5 @@ image: https://acozar.github.io/src/img/apps/ktr-app-hathor.png
 	<h3>- A simple timer app -</h3>
 </div>
 <div class="">
-	<p>HATHOR timers is a javascript engine with a simple chrnometer and timer app.</p>
+	<p>HATHOR timers is a javascript engine with a simple chronometer and timer app.</p>
 </div>
