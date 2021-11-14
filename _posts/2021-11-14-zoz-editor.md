@@ -20,6 +20,7 @@ image: https://acozar.github.io/src/img/apps/ktr-app-zoz.png
 	<p>It is build with a few jQuery lines</p>
 	<h4>Features</h4>
 	<ul>
+		<li>Minimal design</li>
 		<li>Open simple text files</li>
 		<li>Edit simple text files</li>
 		<li>Save simple text files</li>
