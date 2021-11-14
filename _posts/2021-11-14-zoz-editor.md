@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Zoz editor
-image: https://acozar.github.io/src/img/ktr-icons-zoz.png
+image: https://acozar.github.io/src/img/apps/ktr-app-zoz.png
 ---
 
 <div class="ktr-landing-first">
