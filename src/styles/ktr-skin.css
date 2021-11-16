@@ -105,6 +105,16 @@ header, footer {
 #page-footer {
 	padding: 8px;
 }
+.dialectica-icon {
+    border-radius: 50%;
+    width:64px;
+    height: 64px;
+    margin: 0 auto 16px;
+    display: block;
+}
+.dialectica-icon img {
+    width:64px;
+}
 @media screen and (max-width: 1024px) {
 	#page-header h1 {
 		margin: 0 0 -16px;
