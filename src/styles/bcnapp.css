@@ -18,6 +18,9 @@
 	background: url('https://acozar.github.io/src/img/abstract-bg-1.jpg') no-repeat center center fixed;
 	background-size: cover;
 	opacity: .8;
+	background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
 }
 .randombg.bg1 {
 	background-image: url('https://acozar.github.io/src/img/abstract-bg-1.jpg');
