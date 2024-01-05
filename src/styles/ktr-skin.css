@@ -1273,15 +1273,7 @@ header, footer {
 
 /* Blogger Pagination */
 
-.pagination {
-	border-color: transparent;
-	margin: 3em auto 1em;
-	text-align: center;
-}
 .pagination a {
-	visibility: hidden;
-}
-.pagination a:after {
 	border: 1px solid currentColor;
 	border-radius: 2em;
 	color: inherit;
@@ -1289,13 +1281,6 @@ header, footer {
 	margin-left: -5em;
 	padding: .75em 1em;
 	visibility: visible;
-}
-.pagination a:nth-child(1):after {
-	content: '< Posterior';
-}
-.pagination a:nth-child(2):after,
-.pagination a:only-child:after {
-	content: ' Anterior >';
 }
 
 /* Blogger Cookies info */
