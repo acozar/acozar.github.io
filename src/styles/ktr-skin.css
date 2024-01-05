@@ -1273,14 +1273,19 @@ header, footer {
 
 /* Blogger Pagination */
 
+.pagination {
+    border:none;
+    display:block;
+    margin: 64px auto;
+    padding: 32px 0;
+    text-align:center;
+}
 .pagination a {
 	border: 1px solid currentColor;
 	border-radius: 2em;
 	color: inherit;
 	font-weight: normal;
-	margin-left: -5em;
-	padding: .75em 1em;
-	visibility: visible;
+	padding: .75em 2em;
 }
 
 /* Blogger Cookies info */
