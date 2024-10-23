@@ -23,9 +23,9 @@
 	background: transparent;
 	color: #000;
 	display: inline;
-	font-size: 16pt; 
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
-	line-height: 26pt;
+	font-size: 12pt; 
+	font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, Georgia, ‘Times New Roman’, serif; 
+	line-height: 18pt;
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -67,7 +67,7 @@ h3 {
 h1 { font-size: 32pt; }
 h2 { font-size: 24pt; }
 h3 { font-size: 20pt; }
-h4 { font-size: 218pt; }
+h4 { font-size: 18pt; }
 h5 { font-size: 16pt; }
 h6 { font-size: 14pt; font-weight: bold; }
 p { font-size: 12pt; }
