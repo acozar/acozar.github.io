@@ -93,7 +93,7 @@ a, a:link, a:visited {
 img, figure, svg {
 	display: block;
 	margin: 2.6pt auto;
-	width: 25%;
+	width: 45%;
 	break-before: auto;
     break-after: auto;
     page-break-before: auto;
@@ -164,7 +164,8 @@ td {
 .ktr-gallery,
 #thumbs,
 .thumbnails,
-.naips-toc {
+.naips-toc,
+.ktr-logo {
 	display: none;
 }
 
