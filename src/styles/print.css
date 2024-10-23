@@ -154,7 +154,12 @@ td {
 #arbor,
 #nubes,
 .ktr-footer,
-.blogger-labels {
+.blogger-labels,
+.ktr-landing-first,
+.ktr-gallery,
+#thumbs,
+.thumbnails,
+.naips-toc {
 	display: none;
 }
 
