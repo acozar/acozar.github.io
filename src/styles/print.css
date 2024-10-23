@@ -34,9 +34,9 @@
 body {
 	background: white;
 	color: #000;
-	font-size: 16pt; 
+	font-size: 14pt; 
 	font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, Georgia, ‘Times New Roman’, serif; 
-	line-height: 26pt;
+	line-height: 24pt;
 }
 h1,
 h2,
@@ -62,15 +62,15 @@ div {
 h1,
 h2,
 h3 {
-	line-height: 52pt;
+	line-height: 32pt;
 }
-h1 { font-size: 68pt; }
-h2 { font-size: 52pt; }
-h3 { font-size: 42pt; }
-h4 { font-size: 26pt; }
-h5 { font-size: 20pt; }
-h6 { font-size: 16pt; }
-p { font-size: 16pt; }
+h1 { font-size: 36pt; }
+h2 { font-size: 32pt; }
+h3 { font-size: 24pt; }
+h4 { font-size: 20pt; }
+h5 { font-size: 16pt; }
+h6 { font-size: 14pt; font-weight: bold; }
+p { font-size: 14pt; }
 h1 em,
 h2 em,
 h3 em,
@@ -87,10 +87,6 @@ a, a:link, a:visited {
 	font-weight: bold;
 	margin: 0 10pt;
 	text-decoration: underline; 
-}
-a:after { 
-	content: " (" attr(href) ") ";
-	font-size: 10pt
 }
 img, figure, svg {
 	display: block;
@@ -146,6 +142,21 @@ thead {
 th,
 td {
 	padding: 5pt;
+}
+
+
+/* Extras */
+
+
+#page-header h6,
+#page-header .prev-next,
+#mutatio,
+#sol,
+#arbor,
+#nubes,
+.ktr-footer,
+.blogger-labels {
+	display: none;
 }
 
 /* The end */
