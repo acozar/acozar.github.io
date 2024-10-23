@@ -34,7 +34,7 @@
 body {
 	background: white;
 	color: #000;
-	font-size: 14pt; 
+	font-size: 12pt; 
 	font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, Georgia, ‘Times New Roman’, serif; 
 	line-height: 24pt;
 }
@@ -62,15 +62,15 @@ div {
 h1,
 h2,
 h3 {
-	line-height: 32pt;
+	line-height: 24pt;
 }
-h1 { font-size: 36pt; }
-h2 { font-size: 32pt; }
-h3 { font-size: 24pt; }
-h4 { font-size: 20pt; }
+h1 { font-size: 32pt; }
+h2 { font-size: 24pt; }
+h3 { font-size: 20pt; }
+h4 { font-size: 218pt; }
 h5 { font-size: 16pt; }
 h6 { font-size: 14pt; font-weight: bold; }
-p { font-size: 14pt; }
+p { font-size: 12pt; }
 h1 em,
 h2 em,
 h3 em,
@@ -84,8 +84,7 @@ h6 em {
 a, a:link, a:visited {
 	color: #aa0000;
 	display: inline;
-	font-weight: bold;
-	margin: 0 10pt;
+	margin: 0 1pt;
 	text-decoration: underline; 
 }
 img, figure, svg {
