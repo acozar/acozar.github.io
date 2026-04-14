@@ -282,10 +282,12 @@ article > div {
 }
 .simple article div img,
 #layout-simple:checked ~ #layout-result article div img {
-	height: 254px;
-	margin-bottom: 24px;
-	object-fit: cover;
-	width: 100%;
+    float:left;
+    height: 254px;
+    margin-right:24px;
+    margin-bottom: 24px;
+    object-fit: cover;
+    width:20%
 }
 .simple article nav,
 #layout-simple:checked ~ #layout-result article nav {
