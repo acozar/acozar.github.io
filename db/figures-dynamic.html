@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<!-- Metadata -->
-		<title>Figuras</title>
+		<title>Figures</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="Libros recomendados">
 		<meta name="keywords" content="Bibliografía, Libros recomendados por Acózar">
@@ -57,36 +57,56 @@
 			<header id="page-header" class="ktr-header">
 				<div>
 					<h2><a href="http://www.acozar.com" title="www.acozar.com" class="notranslate"><small>www.</small>acózar<small>.com</small></a></h2>
-					<h1><small>- Figuras -</small></h1>
+					<h1><small>- Figures -</small></h1>
 				</div>
 			</header>
 			
 			<main id="page-main">
-				<div>
+				<div id="layout">
 	
+					<nav class="nav-scroll">
+						<div>
+							<label for="layout-simple" title="Simple" id="label-simple">Simple</label>
+							<label for="layout-list" title="List" id="label-list">List</label>
+							<label for="layout-table" title="Table" id="label-table">Table</label>
+							<label for="layout-gallery" title="Gallery" id="label-gallery">Gallery</label>
+							<label for="layout-cards" title="Cards" id="label-cards">Cards</label>
+							<label for="layout-tiles" title="Tiles" id="label-tiles">Tiles</label>
+						 </div>
+					</nav>
+					<hr>
+					
+					<input type="radio" name="layout" id="layout-simple" aria-hidden="true" hidden>
+					<input type="radio" name="layout" id="layout-list" aria-hidden="true" hidden checked>
+					<input type="radio" name="layout" id="layout-table" aria-hidden="true" hidden>
+					<input type="radio" name="layout" id="layout-gallery" aria-hidden="true" hidden>
+					<input type="radio" name="layout" id="layout-cards" aria-hidden="true" hidden>
+					<input type="radio" name="layout" id="layout-tiles" aria-hidden="true" hidden>
+					
 					<div class="no-js">
 						<h2>Sorry! Javascript is disabled on your browser.</h2> 
 						<p>Please turn on to see this page.</p>
 					</div>
 					
-					<div id="hr" class="ktr-db">
+					<div id="layout-result">
+					<div id="hr">
 						<script id="hr-template" type="text/x-handlebars-template">
-							<article class="book-item">
-								<header>
-									<h3>{{cells.Personaje}}</h3>
-									<strong> {{cells.Fabricante}}</strong>
-								</header>
+							<article>
+								<h3>{{cells.Personaje}}</h3>
+								<strong> {{cells.Fabricante}}</strong>
 								<div>
 									<img src="{{cells.Imageurl}}" alt="{{cells.Title}}">
 									<p>{{cells.Personaje}} {{cells.Descripcion}}</p>
-									<p>Valoración: <b>{{cells.Valoracion}}</b>
-									<p>Año: <b>{{cells.Fecha}}</b>
-									<p><a href="{{cells.Link}}">{{cells.Personaje}}</a>
+									<p>Valoració: <b>{{cells.Valoracion}}</b></p>
+									<p>Any: <b>{{cells.Fecha}}</b></p>
+									<p>Galactic figures: <a href="{{cells.Link}}">{{cells.Personaje}}</a></p>
+									<nav><a href="{{cells.Link}}">+</a></nav>
 									<hr>
 								</div>
 							</article>
-							<hr>
 						</script>
+						<hr>
+					</div>
 					</div>
 						
 					<hr>
